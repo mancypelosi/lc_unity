@@ -40,7 +40,7 @@ public class NewCharacter : MonoBehaviour
         player.bonusGold = 100;
         player.bonusExp = 100;
         // Equip weapons
-        player.weapon1 = (Weapon)player.Equip(weapon.GetWeaponById(weapon.WeaponList(), 00101));
+        player.weapon1 = (Weapon)player.Equip(weapon.GetWeaponById(weapon.WeaponList(), 000101));
         player.weapon2 = (Weapon)player.Equip(new Weapon());
         player.weapon3 = (Weapon)player.Equip(new Weapon());
         player.equippedWeapon = player.weapon1;
@@ -51,10 +51,6 @@ public class NewCharacter : MonoBehaviour
         player.legs = (Armor)player.Equip(armor.GetArmorById(armor.ArmorList(), 0004));
         player.boots = (Armor)player.Equip(armor.GetArmorById(armor.ArmorList(), 0005));
         // Inventory
-        //Modifier mod = new Modifier();
-        //player.inventory.Add(weapon.GetWeaponById(weapon.WeaponList(), 00101).AddModifier(mod.GetModifierById(mod.PrefixList(), 1102)));
-        //player.inventory.Add(weapon.GetWeaponById(weapon.WeaponList(), 19303));
-        player.inventory.Add(weapon.GetWeaponById(weapon.WeaponList(), 5));
 
         // Load Main scene
         GameManager.gm.LoadScene("Town");
@@ -82,7 +78,7 @@ public class NewCharacter : MonoBehaviour
         player.bonusGold = 100;
         player.bonusExp = 100;
         // Equip weapons
-        player.weapon1 = (Weapon)player.Equip(weapon.GetWeaponById(weapon.WeaponList(), 00205));
+        player.weapon1 = (Weapon)player.Equip(weapon.GetWeaponById(weapon.WeaponList(), 000205));
         player.weapon2 = (Weapon)player.Equip(new Weapon());
         player.weapon3 = (Weapon)player.Equip(new Weapon());
         player.equippedWeapon = player.weapon1;
@@ -120,7 +116,7 @@ public class NewCharacter : MonoBehaviour
         player.bonusGold = 100;
         player.bonusExp = 100;
         // Equip weapons
-        player.weapon1 = (Weapon)player.Equip(weapon.GetWeaponById(weapon.WeaponList(), 00309));
+        player.weapon1 = (Weapon)player.Equip(weapon.GetWeaponById(weapon.WeaponList(), 000309));
         player.weapon2 = (Weapon)player.Equip(new Weapon());
         player.weapon3 = (Weapon)player.Equip(new Weapon());
         player.equippedWeapon = player.weapon1;
