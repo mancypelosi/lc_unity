@@ -29,19 +29,10 @@ public class Enemy {
     // Scale the monster based on the world level
     public Enemy Scale(World world)
     {
-        int value = 1;
-        if (world.worldName == "Forest")
-            value = 1;
-        if (world.worldName == "Cave")
-            value = 2;
-        if (world.worldName == "River")
-            value = 3;
-        if (world.worldName == "Swamp")
-            value = 4;
-
+        int value = world.enemyScaling;
         health = health * value;
-        armor = Convert.ToInt32(armor * value * .35);
-        magicResist = Convert.ToInt32(magicResist * value * .35);
+        armor = Convert.ToInt32((armor * value) * .35);
+        magicResist = Convert.ToInt32((magicResist * value) * .35);
         xpToGive = xpToGive * value;
         goldToGive = goldToGive * value;
 
