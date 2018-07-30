@@ -574,6 +574,179 @@ public class Weapon : Item
         };
         weaponList.Add(weapon);
 
+        /********************/
+        /*** LEGENDARIES ***/
+        /******************/
+
+        // Executioner Sword
+        weapon = new Weapon
+        {
+            itemId = 010001,
+            name = "Executioner Sword",
+            flavorText = "Death calls...",
+            spritePath = "Icons/bigsword",
+            soundPath = "Sfx/swordsfx",
+            rarity = Rarity.Legendary,
+            buyValue = 1000,
+            sellValue = 100,
+            requiredLevel = 5,
+            weaponType = WeaponType.Sword,
+            elementType = ElementType.None,
+            damageType = DamageType.Physical,
+            statMod = StatModifier.Strength,
+            apc = 1,
+            minDamage = 1,
+            maxDamage = 15,
+            strength = 3,
+            critChance = -5,
+            critDamage = 15,
+            isSundering = true
+        };
+        weaponList.Add(weapon);
+
+        // Polished Rapier
+        weapon = new Weapon
+        {
+            itemId = 010002,
+            name = "Polished Rapier",
+            spritePath = "Icons/rapier",
+            soundPath = "Sfx/stab1sfx",
+            rarity = Rarity.Legendary,
+            buyValue = 1000,
+            sellValue = 100,
+            requiredLevel = 5,
+            weaponType = WeaponType.Sword,
+            elementType = ElementType.None,
+            damageType = DamageType.Physical,
+            statMod = StatModifier.Dexterity,
+            apc = 2,
+            minDamage = 1,
+            maxDamage = 6,
+            dexterity = 3,
+            critChance = 10,
+            critDamage = 0
+        };
+        weaponList.Add(weapon);
+
+        // Shotgun Fireball
+        weapon = new Weapon
+        {
+            itemId = 010003,
+            name = "Shotgun Fireball",
+            spritePath = "Icons/spell",
+            soundPath = "Sfx/shotgunsfx",
+            rarity = Rarity.Legendary,
+            buyValue = 1000,
+            sellValue = 100,
+            requiredLevel = 5,
+            weaponType = WeaponType.Spell,
+            elementType = ElementType.Fire,
+            damageType = DamageType.Magical,
+            statMod = StatModifier.Intelligence,
+            apc = 5,
+            minDamage = 1,
+            maxDamage = 2,
+            intelligence = 3,
+            critChance = 5
+        };
+        weaponList.Add(weapon);
+
+        // Ivy Sword
+        weapon = new Weapon
+        {
+            itemId = 991001,
+            name = "Ivy Sword",
+            flavorText = "Get it? It sounds like Ivysaur",
+            spritePath = "Icons/plantsword",
+            soundPath = "Sfx/swordsfx",
+            rarity = Rarity.Legendary,
+            buyValue = 1000,
+            sellValue = 100,
+            requiredLevel = 5,
+            weaponType = WeaponType.Sword,
+            elementType = ElementType.Poison,
+            damageType = DamageType.Magical,
+            statMod = StatModifier.Strength,
+            apc = 1,
+            minDamage = 6,
+            maxDamage = 13,
+            strength = 5,
+            critChance = 0,
+            critDamage = 0,
+            magicPen = 5,
+            isNegating = true
+        };
+        weaponList.Add(weapon);
+
+        // Seed Bomb
+        weapon = new Weapon
+        {
+            itemId = 991002,
+            name = "Seed Bomb",
+            spritePath = "Icons/spell",
+            soundPath = "Sfx/seedbombsfx",
+            rarity = Rarity.Legendary,
+            buyValue = 1000,
+            sellValue = 100,
+            requiredLevel = 5,
+            weaponType = WeaponType.Spell,
+            elementType = ElementType.Earth,
+            damageType = DamageType.Physical,
+            statMod = StatModifier.Intelligence,
+            apc = 3,
+            minDamage = 1,
+            maxDamage = 4,
+            intelligence = 0,
+            armorPen = 15,
+        };
+        weaponList.Add(weapon);
+
+        // Create dex shield
+        weapon = new Weapon
+        {
+            itemId = 991003,
+            name = "Venusaurhide Buckler",
+            spritePath = "Icons/shield",
+            soundPath = "Sfx/donksfx",
+            rarity = Rarity.Common,
+            buyValue = 1000,
+            sellValue = 100,
+            requiredLevel = 5,
+            requiredDex = 10,
+            weaponType = WeaponType.Shield,
+            elementType = ElementType.Earth,
+            damageType = DamageType.Magical,
+            statMod = StatModifier.Dexterity,
+            apc = 1,
+            minDamage = 1,
+            maxDamage = 8,
+            dexterity = 5,
+            critChance = 3,
+            critDamage = 10,
+        };
+        weaponList.Add(weapon);
+
+        weapon = new Weapon
+        {
+            itemId = 04001,
+            name = "OP Sword of Breath Holding",
+            flavorText = "Garrett, hold your breath",
+            spritePath = "Icons/sword",
+            soundPath = "Sfx/swordsfx",
+            rarity = Rarity.Legendary,
+            buyValue = 100000,
+            sellValue = 100,
+            requiredLevel = 1,
+            weaponType = WeaponType.Sword,
+            elementType = ElementType.Fire,
+            damageType = DamageType.Physical,
+            statMod = StatModifier.Strength,
+            apc = 1,
+            minDamage = 100,
+            maxDamage = 100
+        };
+        weaponList.Add(weapon);
+
         /***************/
         /*** TIER 2 ***/
         /*************/
@@ -1302,6 +1475,225 @@ public class Weapon : Item
             minDamage = 1,
             maxDamage = 2,
             intelligence = 8
+        };
+        weaponList.Add(weapon);
+        /********************/
+        /*** LEGENDARIES ***/
+        /******************/
+        
+         weapon = new Weapon
+        {
+            itemId = 020001,
+            name = "Summon Skeleton",
+            flavorText = "*Bones rattle*",
+            spritePath = "Icons/spell",
+            soundPath = "Sfx/skeletonsfx",
+            rarity = Rarity.Legendary,
+            buyValue = 100000,
+            sellValue = 100,
+            requiredLevel = 5,
+            requiredInt = 10,
+            weaponType = WeaponType.Sword,
+            elementType = ElementType.Dark,
+            damageType = DamageType.Physical,
+            statMod = StatModifier.Intelligence,
+            isDot = true,
+            apc = 1,
+            minDamage = 5,
+            maxDamage = 12
+        };
+        weaponList.Add(weapon);
+
+        // Create axe weapon
+        weapon = new Weapon
+        {
+            itemId = 020002,
+            name = "Berserker Axes",
+            spritePath = "Icons/axes",
+            soundPath = "Sfx/axesfx",
+            rarity = Rarity.Common,
+            buyValue = 100000,
+            sellValue = 1000,
+            requiredLevel = 5,
+            requiredStr = 10,
+            weaponType = WeaponType.Axe,
+            elementType = ElementType.None,
+            damageType = DamageType.Physical,
+            statMod = StatModifier.Strength,
+            apc = 2,
+            minDamage = 8,
+            maxDamage = 15,
+            armorPen = -20
+        };
+        weaponList.Add(weapon);
+
+        // Create wand
+        weapon = new Weapon
+        {
+            itemId = 020003,
+            name = "Colt .45 Lead Wand",
+            flavorText = "This uh, might be a gun",
+            spritePath = "Icons/wand",
+            soundPath = "Sfx/gunsfx",
+            rarity = Rarity.Legendary,
+            buyValue = 100000,
+            sellValue = 1000,
+            requiredLevel = 5,
+            requiredInt = 10,
+            weaponType = WeaponType.Wand,
+            elementType = ElementType.None,
+            damageType = DamageType.Physical,
+            statMod = StatModifier.Intelligence,
+            apc = 1,
+            minDamage = 10,
+            maxDamage = 20,
+            critDamage = 30
+        };
+        weaponList.Add(weapon);
+
+        // Create thunder bow
+        weapon = new Weapon
+        {
+            itemId = 020004,
+            name = "The Moonbow",
+            spritePath = "Icons/bow",
+            soundPath = "Sfx/moonlightsfx",
+            rarity = Rarity.Legendary,
+            buyValue = 100000,
+            sellValue = 100,
+            requiredLevel = 5,
+            requiredDex = 10,
+            weaponType = WeaponType.Bow,
+            elementType = ElementType.Light,
+            damageType = DamageType.Magical,
+            statMod = StatModifier.Dexterity,
+            apc = 1,
+            minDamage = 8,
+            maxDamage = 18,
+            dexterity = 5,
+            magicPen = 10,
+            isNegating = true
+        };
+        weaponList.Add(weapon);
+
+        // Create dagger weapon
+        weapon = new Weapon
+        {
+            itemId = 020005,
+            name = "Fan of Knives",
+            spritePath = "Icons/3dagger",
+            soundPath = "Sfx/3stabsfx",
+            rarity = Rarity.Legendary,
+            buyValue = 100000,
+            sellValue = 100,
+            requiredLevel = 5,
+            requiredDex = 10,
+            weaponType = WeaponType.Dagger,
+            elementType = ElementType.None,
+            damageType = DamageType.Physical,
+            statMod = StatModifier.Dexterity,
+            apc = 3,
+            minDamage = 3,
+            maxDamage = 8,
+            critChance = 5,
+            critDamage = 10
+        };
+        weaponList.Add(weapon);
+
+        // Create sword weapon
+        weapon = new Weapon
+        {
+            itemId = 020006,
+            name = "Toy Sword",
+            spritePath = "Icons/sword",
+            soundPath = "Sfx/donksfx",
+            rarity = Rarity.Legendary,
+            buyValue = 100000,
+            sellValue = 100,
+            requiredLevel = 5,
+            requiredStr = 10,
+            weaponType = WeaponType.Sword,
+            elementType = ElementType.None,
+            damageType = DamageType.Physical,
+            statMod = StatModifier.Strength,
+            apc = 1,
+            minDamage = 5,
+            maxDamage = 10,
+            bonusExp = 25,
+            bonusGold = 50,
+            itemFind = 50,
+            magicFind = 25
+        };
+        weaponList.Add(weapon);
+
+        // Create axe weapon
+        weapon = new Weapon
+        {
+            itemId = 992001,
+            name = "Lava-Hewn Axe",
+            spritePath = "Icons/axes",
+            soundPath = "Sfx/axesfx",
+            rarity = Rarity.Common,
+            buyValue = 100000,
+            sellValue = 1000,
+            requiredLevel = 5,
+            requiredStr = 10,
+            weaponType = WeaponType.Axe,
+            elementType = ElementType.Fire,
+            damageType = DamageType.Physical,
+            statMod = StatModifier.Strength,
+            apc = 1,
+            minDamage = 10,
+            maxDamage = 30,
+            armorPen = -20
+        };
+        weaponList.Add(weapon);
+
+        // Create spear
+        weapon = new Weapon
+        {
+            itemId = 992002,
+            name = "Hades’ Trident",
+            spritePath = "Icons/spear",
+            soundPath = "Sfx/spearsfx",
+            rarity = Rarity.Legendary,
+            buyValue = 100000,
+            sellValue = 100,
+            requiredLevel = 5,
+            requiredDex = 10,
+            weaponType = WeaponType.Spear,
+            elementType = ElementType.Fire,
+            damageType = DamageType.Magical,
+            statMod = StatModifier.Dexterity,
+            apc = 1,
+            minDamage = 13,
+            maxDamage = 16,
+            critChance = 3,
+            dexterity = 5
+        };
+        weaponList.Add(weapon);
+
+        // Create int shield
+        weapon = new Weapon
+        {
+            itemId = 992003,
+            name = "Charizard’s Eternal Flame",
+            spritePath = "Icons/shield",
+            soundPath = "Sfx/donksfx",
+            rarity = Rarity.Legendary,
+            buyValue = 100000,
+            sellValue = 100,
+            requiredLevel = 5,
+            requiredInt = 10,
+            weaponType = WeaponType.Shield,
+            elementType = ElementType.Fire,
+            damageType = DamageType.Magical,
+            statMod = StatModifier.Intelligence,
+            apc = 1,
+            minDamage = 1,
+            maxDamage = 10,
+            intelligence = 8,
+            magicPen = 15
         };
         weaponList.Add(weapon);
 
@@ -2034,411 +2426,11 @@ public class Weapon : Item
             intelligence = 12
         };
         weaponList.Add(weapon);
-        /***************/
-        /*** TIER 4 ***/
-        /*************/
-
         /********************/
         /*** LEGENDARIES ***/
         /******************/
-
-        /*******************/
-        /*** TIER 1 YO ***/
-        /*******************/
-        // Executioner Sword
-        weapon = new Weapon
-        {
-            itemId = 010001,
-            name = "Executioner Sword",
-            flavorText = "Death calls...",
-            spritePath = "Icons/bigsword",
-            soundPath = "Sfx/swordsfx",
-            rarity = Rarity.Legendary,
-            buyValue = 1000,
-            sellValue = 100,
-            requiredLevel = 5,
-            weaponType = WeaponType.Sword,
-            elementType = ElementType.None,
-            damageType = DamageType.Physical,
-            statMod = StatModifier.Strength,
-            apc = 1,
-            minDamage = 1,
-            maxDamage = 15,
-            strength = 3,
-            critChance = -5,
-            critDamage = 15,
-            isSundering = true
-        };
-        weaponList.Add(weapon);
-
-        // Polished Rapier
-        weapon = new Weapon
-        {
-            itemId = 010002,
-            name = "Polished Rapier",
-            spritePath = "Icons/rapier",
-            soundPath = "Sfx/stab1sfx",
-            rarity = Rarity.Legendary,
-            buyValue = 1000,
-            sellValue = 100,
-            requiredLevel = 5,
-            weaponType = WeaponType.Sword,
-            elementType = ElementType.None,
-            damageType = DamageType.Physical,
-            statMod = StatModifier.Dexterity,
-            apc = 2,
-            minDamage = 1,
-            maxDamage = 6,
-            dexterity = 3,
-            critChance = 10,
-            critDamage = 0
-        };
-        weaponList.Add(weapon);
-
-        // Shotgun Fireball
-        weapon = new Weapon
-        {
-            itemId = 010003,
-            name = "Shotgun Fireball",
-            spritePath = "Icons/spell",
-            soundPath = "Sfx/shotgunsfx",
-            rarity = Rarity.Legendary,
-            buyValue = 1000,
-            sellValue = 100,
-            requiredLevel = 5,
-            weaponType = WeaponType.Spell,
-            elementType = ElementType.Fire,
-            damageType = DamageType.Magical,
-            statMod = StatModifier.Intelligence,
-            apc = 5,
-            minDamage = 1,
-            maxDamage = 2,
-            intelligence = 3,
-            critChance = 5
-        };
-        weaponList.Add(weapon);
-
-        // Ivy Sword
-        weapon = new Weapon
-        {
-            itemId = 991001,
-            name = "Ivy Sword",
-            flavorText = "Get it? It sounds like Ivysaur",
-            spritePath = "Icons/plantsword",
-            soundPath = "Sfx/swordsfx",
-            rarity = Rarity.Legendary,
-            buyValue = 1000,
-            sellValue = 100,
-            requiredLevel = 5,
-            weaponType = WeaponType.Sword,
-            elementType = ElementType.Poison,
-            damageType = DamageType.Magical,
-            statMod = StatModifier.Strength,
-            apc = 1,
-            minDamage = 6,
-            maxDamage = 13,
-            strength = 5,
-            critChance = 0,
-            critDamage = 0,
-            magicPen = 5,
-            isNegating = true
-        };
-        weaponList.Add(weapon);
-
-        // Seed Bomb
-        weapon = new Weapon
-        {
-            itemId = 991002,
-            name = "Seed Bomb",
-            spritePath = "Icons/spell",
-            soundPath = "Sfx/seedbombsfx",
-            rarity = Rarity.Legendary,
-            buyValue = 1000,
-            sellValue = 100,
-            requiredLevel = 5,
-            weaponType = WeaponType.Spell,
-            elementType = ElementType.Earth,
-            damageType = DamageType.Physical,
-            statMod = StatModifier.Intelligence,
-            apc = 3,
-            minDamage = 1,
-            maxDamage = 4,
-            intelligence = 0,
-            armorPen = 15,
-        };
-        weaponList.Add(weapon);
-
-        // Create dex shield
-        weapon = new Weapon
-        {
-            itemId = 991003,
-            name = "Venusaurhide Buckler",
-            spritePath = "Icons/shield",
-            soundPath = "Sfx/donksfx",
-            rarity = Rarity.Common,
-            buyValue = 1000,
-            sellValue = 100,
-            requiredLevel = 5,
-            requiredDex = 10,
-            weaponType = WeaponType.Shield,
-            elementType = ElementType.Earth,
-            damageType = DamageType.Magical,
-            statMod = StatModifier.Dexterity,
-            apc = 1,
-            minDamage = 1,
-            maxDamage = 8,
-            dexterity = 5,
-            critChance = 3,
-            critDamage = 10,
-        };
-        weaponList.Add(weapon);
-
-        weapon = new Weapon
-        {
-            itemId = 04001,
-            name = "OP Sword of Breath Holding",
-            flavorText = "Garrett, hold your breath",
-            spritePath = "Icons/sword",
-            soundPath = "Sfx/swordsfx",
-            rarity = Rarity.Legendary,
-            buyValue = 100000,
-            sellValue = 100,
-            requiredLevel = 1,
-            weaponType = WeaponType.Sword,
-            elementType = ElementType.Fire,
-            damageType = DamageType.Physical,
-            statMod = StatModifier.Strength,
-            apc = 1,
-            minDamage = 100,
-            maxDamage = 100
-        };
-        weaponList.Add(weapon);
-
-        /*******************/
-        /*** TIER 2 YO ***/
-        /*******************/
-
-        weapon = new Weapon
-        {
-            itemId = 020001,
-            name = "Summon Skeleton",
-            flavorText = "*Bones rattle*",
-            spritePath = "Icons/spell",
-            soundPath = "Sfx/skeletonsfx",
-            rarity = Rarity.Legendary,
-            buyValue = 100000,
-            sellValue = 100,
-            requiredLevel = 5,
-            requiredInt = 10,
-            weaponType = WeaponType.Sword,
-            elementType = ElementType.Dark,
-            damageType = DamageType.Physical,
-            statMod = StatModifier.Intelligence,
-            isDot = true,
-            apc = 1,
-            minDamage = 5,
-            maxDamage = 12
-        };
-        weaponList.Add(weapon);
-
-        // Create axe weapon
-        weapon = new Weapon
-        {
-            itemId = 020002,
-            name = "Berserker Axes",
-            spritePath = "Icons/axes",
-            soundPath = "Sfx/axesfx",
-            rarity = Rarity.Common,
-            buyValue = 100000,
-            sellValue = 1000,
-            requiredLevel = 5,
-            requiredStr = 10,
-            weaponType = WeaponType.Axe,
-            elementType = ElementType.None,
-            damageType = DamageType.Physical,
-            statMod = StatModifier.Strength,
-            apc = 2,
-            minDamage = 8,
-            maxDamage = 15,
-            armorPen = -20
-        };
-        weaponList.Add(weapon);
-
-        // Create wand
-        weapon = new Weapon
-        {
-            itemId = 020003,
-            name = "Colt .45 Lead Wand",
-            flavorText = "This uh, might be a gun",
-            spritePath = "Icons/wand",
-            soundPath = "Sfx/gunsfx",
-            rarity = Rarity.Legendary,
-            buyValue = 100000,
-            sellValue = 1000,
-            requiredLevel = 5,
-            requiredInt = 10,
-            weaponType = WeaponType.Wand,
-            elementType = ElementType.None,
-            damageType = DamageType.Physical,
-            statMod = StatModifier.Intelligence,
-            apc = 1,
-            minDamage = 10,
-            maxDamage = 20,
-            critDamage = 30
-        };
-        weaponList.Add(weapon);
-
-        // Create thunder bow
-        weapon = new Weapon
-        {
-            itemId = 020004,
-            name = "The Moonbow",
-            spritePath = "Icons/bow",
-            soundPath = "Sfx/moonlightsfx",
-            rarity = Rarity.Legendary,
-            buyValue = 100000,
-            sellValue = 100,
-            requiredLevel = 5,
-            requiredDex = 10,
-            weaponType = WeaponType.Bow,
-            elementType = ElementType.Light,
-            damageType = DamageType.Magical,
-            statMod = StatModifier.Dexterity,
-            apc = 1,
-            minDamage = 8,
-            maxDamage = 18,
-            dexterity = 5,
-            magicPen = 10,
-            isNegating = true
-        };
-        weaponList.Add(weapon);
-
-        // Create dagger weapon
-        weapon = new Weapon
-        {
-            itemId = 020005,
-            name = "Fan of Knives",
-            spritePath = "Icons/3dagger",
-            soundPath = "Sfx/3stabsfx",
-            rarity = Rarity.Legendary,
-            buyValue = 100000,
-            sellValue = 100,
-            requiredLevel = 5,
-            requiredDex = 10,
-            weaponType = WeaponType.Dagger,
-            elementType = ElementType.None,
-            damageType = DamageType.Physical,
-            statMod = StatModifier.Dexterity,
-            apc = 3,
-            minDamage = 3,
-            maxDamage = 8,
-            critChance = 5,
-            critDamage = 10
-        };
-        weaponList.Add(weapon);
-
-        // Create sword weapon
-        weapon = new Weapon
-        {
-            itemId = 020006,
-            name = "Toy Sword",
-            spritePath = "Icons/sword",
-            soundPath = "Sfx/donksfx",
-            rarity = Rarity.Legendary,
-            buyValue = 100000,
-            sellValue = 100,
-            requiredLevel = 5,
-            requiredStr = 10,
-            weaponType = WeaponType.Sword,
-            elementType = ElementType.None,
-            damageType = DamageType.Physical,
-            statMod = StatModifier.Strength,
-            apc = 1,
-            minDamage = 5,
-            maxDamage = 10,
-            bonusExp = 25,
-            bonusGold = 50,
-            itemFind = 50,
-            magicFind = 25
-        };
-        weaponList.Add(weapon);
-
-        // Create axe weapon
-        weapon = new Weapon
-        {
-            itemId = 992001,
-            name = "Lava-Hewn Axe",
-            spritePath = "Icons/axes",
-            soundPath = "Sfx/axesfx",
-            rarity = Rarity.Common,
-            buyValue = 100000,
-            sellValue = 1000,
-            requiredLevel = 5,
-            requiredStr = 10,
-            weaponType = WeaponType.Axe,
-            elementType = ElementType.Fire,
-            damageType = DamageType.Physical,
-            statMod = StatModifier.Strength,
-            apc = 1,
-            minDamage = 10,
-            maxDamage = 30,
-            armorPen = -20
-        };
-        weaponList.Add(weapon);
-
-        // Create spear
-        weapon = new Weapon
-        {
-            itemId = 992002,
-            name = "Hades’ Trident",
-            spritePath = "Icons/spear",
-            soundPath = "Sfx/spearsfx",
-            rarity = Rarity.Legendary,
-            buyValue = 100000,
-            sellValue = 100,
-            requiredLevel = 5,
-            requiredDex = 10,
-            weaponType = WeaponType.Spear,
-            elementType = ElementType.Fire,
-            damageType = DamageType.Magical,
-            statMod = StatModifier.Dexterity,
-            apc = 1,
-            minDamage = 13,
-            maxDamage = 16,
-            critChance = 3,
-            dexterity = 5
-        };
-        weaponList.Add(weapon);
-
-        // Create int shield
-        weapon = new Weapon
-        {
-            itemId = 992003,
-            name = "Charizard’s Eternal Flame",
-            spritePath = "Icons/shield",
-            soundPath = "Sfx/donksfx",
-            rarity = Rarity.Legendary,
-            buyValue = 100000,
-            sellValue = 100,
-            requiredLevel = 5,
-            requiredInt = 10,
-            weaponType = WeaponType.Shield,
-            elementType = ElementType.Fire,
-            damageType = DamageType.Magical,
-            statMod = StatModifier.Intelligence,
-            apc = 1,
-            minDamage = 1,
-            maxDamage = 10,
-            intelligence = 8,
-            magicPen = 15
-        };
-        weaponList.Add(weapon);
-
-        /*******************/
-        /*** TIER 3 YO ***/
-        /*******************/
-
-        // Create str shield
+        
+         // Create str shield
         weapon = new Weapon
         {
             itemId = 993001,
@@ -2578,6 +2570,12 @@ public class Weapon : Item
             critDamage = 50
         };
         weaponList.Add(weapon);
+        /***************/
+        /*** TIER 4 ***/
+        /*************/
+
+        
+
 
         return weaponList;
     }
