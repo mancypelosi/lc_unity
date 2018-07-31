@@ -645,9 +645,9 @@ public class Weapon : Item
             statMod = StatModifier.Intelligence,
             apc = 5,
             minDamage = 1,
-            maxDamage = 2,
+            maxDamage = 3,
             intelligence = 3,
-            critChance = 5
+            critChance = 3
         };
         weaponList.Add(weapon);
 
@@ -1619,10 +1619,10 @@ public class Weapon : Item
             apc = 1,
             minDamage = 5,
             maxDamage = 10,
-            bonusExp = 25,
-            bonusGold = 50,
-            itemFind = 50,
-            magicFind = 25
+            bonusExp = 10,
+            bonusGold = 20,
+            itemFind = 5,
+            magicFind = 2.5
         };
         weaponList.Add(weapon);
 
@@ -1704,7 +1704,7 @@ public class Weapon : Item
         weapon = new Weapon
         {
             itemId = 030101,
-            name = "Mithril Sword",
+            name = "Silver Sword",
             spritePath = "Icons/sword",
             soundPath = "Sfx/swordsfx",
             rarity = Rarity.Common,
@@ -1726,7 +1726,7 @@ public class Weapon : Item
         weapon = new Weapon
         {
             itemId = 031101,
-            name = "Flaming Mithril Sword",
+            name = "Flaming Silver Sword",
             spritePath = "Icons/sword",
             soundPath = "Sfx/swordsfx",
             rarity = Rarity.Uncommon,
@@ -1773,7 +1773,7 @@ public class Weapon : Item
         weapon = new Weapon
         {
             itemId = 030102,
-            name = "Mithril Axe",
+            name = "Silver Axe",
             spritePath = "Icons/axe",
             soundPath = "Sfx/axesfx",
             rarity = Rarity.Common,
@@ -1796,7 +1796,7 @@ public class Weapon : Item
         weapon = new Weapon
         {
             itemId = 037102,
-            name = "Mithril Conductive Axe",
+            name = "Silver Conductive Axe",
             spritePath = "Icons/axe",
             soundPath = "Sfx/axesfx",
             rarity = Rarity.Uncommon,
@@ -1819,7 +1819,7 @@ public class Weapon : Item
         weapon = new Weapon
         {
             itemId = 030103,
-            name = "Mithril Mace",
+            name = "Silver Mace",
             spritePath = "Icons/mace",
             soundPath = "Sfx/macesfx",
             rarity = Rarity.Common,
@@ -1842,7 +1842,7 @@ public class Weapon : Item
         weapon = new Weapon
         {
             itemId = 038103,
-            name = "Mithril Crusader Mace",
+            name = "Silver Crusader Mace",
             spritePath = "Icons/mace",
             soundPath = "Sfx/macesfx",
             rarity = Rarity.Uncommon,
@@ -1865,7 +1865,7 @@ public class Weapon : Item
         weapon = new Weapon
         {
             itemId = 038103,
-            name = "Mithril Warhammer",
+            name = "Silver Warhammer",
             spritePath = "Icons/mace",
             soundPath = "Sfx/macesfx",
             rarity = Rarity.Uncommon,
@@ -1878,7 +1878,7 @@ public class Weapon : Item
             damageType = DamageType.Physical,
             statMod = StatModifier.Strength,
             apc = 1,
-            minDamage = 1,
+            minDamage = 10,
             maxDamage = 20,
             armorPen = 13
         };
@@ -1888,7 +1888,7 @@ public class Weapon : Item
         weapon = new Weapon
         {
             itemId = 030205,
-            name = "Mithril Dagger",
+            name = "Silver Dagger",
             spritePath = "Icons/dagger",
             soundPath = "Sfx/stabsfx",
             rarity = Rarity.Common,
@@ -1910,7 +1910,7 @@ public class Weapon : Item
         weapon = new Weapon
         {
             itemId = 031205,
-            name = "Flaming Mithril Dagger",
+            name = "Flaming Silver Dagger",
             spritePath = "Icons/dagger",
             soundPath = "Sfx/stabsfx",
             rarity = Rarity.Uncommon,
@@ -1932,7 +1932,7 @@ public class Weapon : Item
         weapon = new Weapon
         {
             itemId = 033202,
-            name = "Poisoned Mithril Dagger",
+            name = "Poisoned Silver Dagger",
             spritePath = "Icons/dagger",
             soundPath = "Sfx/stabsfx",
             rarity = Rarity.Uncommon,
@@ -1999,7 +1999,7 @@ public class Weapon : Item
         weapon = new Weapon
         {
             itemId = 030104,
-            name = "Mithril Rifle",
+            name = "Silver Rifle",
             spritePath = "Icons/rifle",
             soundPath = "Sfx/gunsfx",
             rarity = Rarity.Common,
@@ -2021,7 +2021,7 @@ public class Weapon : Item
         weapon = new Weapon
         {
             itemId = 030104,
-            name = "Mithril Boulder Launcher",
+            name = "Silver Boulder Launcher",
             flavorText = "Beats throwing them",
             spritePath = "Icons/rifle",
             soundPath = "Sfx/gunsfx",
@@ -2045,7 +2045,7 @@ public class Weapon : Item
         weapon = new Weapon
         {
             itemId = 030206,
-            name = "Mithril Spear",
+            name = "Silver Spear",
             spritePath = "Icons/spear",
             soundPath = "Sfx/spearsfx",
             rarity = Rarity.Common,
@@ -2067,7 +2067,7 @@ public class Weapon : Item
         weapon = new Weapon
         {
             itemId = 030206,
-            name = "Mithril Warglaive",
+            name = "Silver Warglaive",
             spritePath = "Icons/spear",
             soundPath = "Sfx/spearsfx",
             rarity = Rarity.Common,
@@ -2090,7 +2090,7 @@ public class Weapon : Item
         weapon = new Weapon
         {
             itemId = 034206,
-            name = "Mithril Water Trident",
+            name = "Silver Water Trident",
             spritePath = "Icons/spear",
             soundPath = "Sfx/spearsfx",
             rarity = Rarity.Uncommon,
@@ -2156,7 +2156,7 @@ public class Weapon : Item
         weapon = new Weapon
         {
             itemId = 030206,
-            name = "Mithril Claws",
+            name = "Silver Claws",
             spritePath = "Icons/claws",
             soundPath = "Sfx/clawsfx",
             rarity = Rarity.Common,
@@ -2179,7 +2179,7 @@ public class Weapon : Item
         weapon = new Weapon
         {
             itemId = 039206,
-            name = "Mithril Shadow Claws",
+            name = "Silver Shadow Claws",
             spritePath = "Icons/claws",
             soundPath = "Sfx/clawsfx",
             rarity = Rarity.Uncommon,
@@ -2315,7 +2315,7 @@ public class Weapon : Item
         weapon = new Weapon
         {
             itemId = 030311,
-            name = "Mithril Chakram",
+            name = "Silver Chakram",
             spritePath = "Icons/chakram",
             soundPath = "Sfx/chakramsfx",
             rarity = Rarity.Common,
@@ -2338,7 +2338,7 @@ public class Weapon : Item
         weapon = new Weapon
         {
             itemId = 038311,
-            name = "Mithril Angelic Chakram",
+            name = "Silver Angelic Chakram",
             spritePath = "Icons/chakram",
             soundPath = "Sfx/chakramsfx",
             rarity = Rarity.Uncommon,
@@ -2362,7 +2362,7 @@ public class Weapon : Item
         weapon = new Weapon
         {
             itemId = 030113,
-            name = "Mithril Shield",
+            name = "Silver Shield",
             spritePath = "Icons/shield",
             soundPath = "Sfx/donksfx",
             rarity = Rarity.Common,
@@ -2385,7 +2385,7 @@ public class Weapon : Item
         weapon = new Weapon
         {
             itemId = 030213,
-            name = "Mithril Buckler",
+            name = "Silver Buckler",
             spritePath = "Icons/shield",
             soundPath = "Sfx/donksfx",
             rarity = Rarity.Common,
@@ -2574,6 +2574,732 @@ public class Weapon : Item
         /*** TIER 4 ***/
         /*************/
 
+        // Create sword weapon
+        weapon = new Weapon
+        {
+            itemId = 040101,
+            name = "Mithril Sword",
+            spritePath = "Icons/sword",
+            soundPath = "Sfx/swordsfx",
+            rarity = Rarity.Common,
+            buyValue = 200,
+            sellValue = 80,
+            requiredLevel = 20,
+            requiredStr = 75,
+            weaponType = WeaponType.Sword,
+            elementType = ElementType.None,
+            damageType = DamageType.Physical,
+            statMod = StatModifier.Strength,
+            apc = 1,
+            minDamage = 18,
+            maxDamage = 33
+        };
+        weaponList.Add(weapon);
+
+        // Create flaming sword weapon
+        weapon = new Weapon
+        {
+            itemId = 041101,
+            name = "Flaming Mithril Sword",
+            spritePath = "Icons/sword",
+            soundPath = "Sfx/swordsfx",
+            rarity = Rarity.Uncommon,
+            buyValue = 240,
+            sellValue = 100,
+            requiredLevel = 20,
+            requiredStr = 75,
+            weaponType = WeaponType.Sword,
+            elementType = ElementType.Fire,
+            damageType = DamageType.Magical,
+            statMod = StatModifier.Strength,
+            apc = 1,
+            minDamage = 18,
+            maxDamage = 33
+        };
+        weaponList.Add(weapon);
+
+        // Create windblade weapon
+        weapon = new Weapon
+        {
+            itemId = 046101,
+            name = "Typhoon Blade",
+            flavorText = "Measure twice, cut once",
+            spritePath = "Icons/windblade",
+            soundPath = "Sfx/windbladesfx",
+            rarity = Rarity.Uncommon,
+            buyValue = 240,
+            sellValue = 100,
+            requiredLevel = 20,
+            requiredStr = 75,
+            weaponType = WeaponType.Sword,
+            elementType = ElementType.Air,
+            damageType = DamageType.Magical,
+            statMod = StatModifier.Strength,
+            apc = 1,
+            minDamage = 16,
+            maxDamage = 30,
+            critChance = 4
+        };
+        weaponList.Add(weapon);
+
+
+        // Create axe weapon
+        weapon = new Weapon
+        {
+            itemId = 040102,
+            name = "Mithril Axe",
+            spritePath = "Icons/axe",
+            soundPath = "Sfx/axesfx",
+            rarity = Rarity.Common,
+            buyValue = 200,
+            sellValue = 80,
+            requiredLevel = 20,
+            requiredStr = 75,
+            weaponType = WeaponType.Axe,
+            elementType = ElementType.None,
+            damageType = DamageType.Physical,
+            statMod = StatModifier.Strength,
+            apc = 1,
+            minDamage = 20,
+            maxDamage = 37,
+            armorPen = -15
+        };
+        weaponList.Add(weapon);
+
+        // Create axe weapon
+        weapon = new Weapon
+        {
+            itemId = 047102,
+            name = "Mithril Conductive Axe",
+            spritePath = "Icons/axe",
+            soundPath = "Sfx/axesfx",
+            rarity = Rarity.Uncommon,
+            buyValue = 240,
+            sellValue = 100,
+            requiredLevel = 20,
+            requiredStr = 75,
+            weaponType = WeaponType.Axe,
+            elementType = ElementType.Lightning,
+            damageType = DamageType.Physical,
+            statMod = StatModifier.Strength,
+            apc = 1,
+            minDamage = 20,
+            maxDamage = 37,
+            magicPen = -15
+        };
+        weaponList.Add(weapon);
+
+        // Create mace weapon
+        weapon = new Weapon
+        {
+            itemId = 040103,
+            name = "Mithril Mace",
+            spritePath = "Icons/mace",
+            soundPath = "Sfx/macesfx",
+            rarity = Rarity.Common,
+            buyValue = 200,
+            sellValue = 80,
+            requiredLevel = 20,
+            requiredStr = 75,
+            weaponType = WeaponType.Mace,
+            elementType = ElementType.None,
+            damageType = DamageType.Physical,
+            statMod = StatModifier.Strength,
+            apc = 1,
+            minDamage = 16,
+            maxDamage = 27,
+            armorPen = 15
+        };
+        weaponList.Add(weapon);
+
+        // Create mace weapon
+        weapon = new Weapon
+        {
+            itemId = 048103,
+            name = "Mithril Crusader Mace",
+            spritePath = "Icons/mace",
+            soundPath = "Sfx/macesfx",
+            rarity = Rarity.Uncommon,
+            buyValue = 240,
+            sellValue = 100,
+            requiredLevel = 20,
+            requiredStr = 75,
+            weaponType = WeaponType.Mace,
+            elementType = ElementType.Light,
+            damageType = DamageType.Magical,
+            statMod = StatModifier.Strength,
+            apc = 1,
+            minDamage = 16,
+            maxDamage = 27,
+            magicPen = 15
+        };
+        weaponList.Add(weapon);
+
+        // Create warhammer weapon
+        weapon = new Weapon
+        {
+            itemId = 048103,
+            name = "Mithril Warhammer",
+            spritePath = "Icons/mace",
+            soundPath = "Sfx/macesfx",
+            rarity = Rarity.Uncommon,
+            buyValue = 240,
+            sellValue = 10,
+            requiredLevel = 20,
+            requiredStr = 75,
+            weaponType = WeaponType.Mace,
+            elementType = ElementType.None,
+            damageType = DamageType.Physical,
+            statMod = StatModifier.Strength,
+            apc = 1,
+            minDamage = 15,
+            maxDamage = 30,
+            armorPen = 20
+        };
+        weaponList.Add(weapon);
+
+        // Create dagger weapon
+        weapon = new Weapon
+        {
+            itemId = 040205,
+            name = "Mithril Dagger",
+            spritePath = "Icons/dagger",
+            soundPath = "Sfx/stabsfx",
+            rarity = Rarity.Common,
+            buyValue = 200,
+            sellValue = 80,
+            requiredLevel = 20,
+            requiredDex = 75,
+            weaponType = WeaponType.Dagger,
+            elementType = ElementType.None,
+            damageType = DamageType.Physical,
+            statMod = StatModifier.Dexterity,
+            apc = 2,
+            minDamage = 8,
+            maxDamage = 19
+        };
+        weaponList.Add(weapon);
+
+        // Create flaming dagger weapon
+        weapon = new Weapon
+        {
+            itemId = 041205,
+            name = "Flaming Mithril Dagger",
+            spritePath = "Icons/dagger",
+            soundPath = "Sfx/stabsfx",
+            rarity = Rarity.Uncommon,
+            buyValue = 240,
+            sellValue = 100,
+            requiredLevel = 20,
+            requiredDex = 75,
+            weaponType = WeaponType.Dagger,
+            elementType = ElementType.Fire,
+            damageType = DamageType.Magical,
+            statMod = StatModifier.Dexterity,
+            apc = 2,
+            minDamage = 8,
+            maxDamage = 19
+        };
+        weaponList.Add(weapon);
+
+        // Create poison dagger weapon
+        weapon = new Weapon
+        {
+            itemId = 043202,
+            name = "Poisoned Mithril Dagger",
+            spritePath = "Icons/dagger",
+            soundPath = "Sfx/stabsfx",
+            rarity = Rarity.Uncommon,
+            buyValue = 240,
+            sellValue = 100,
+            requiredLevel = 20,
+            requiredDex = 75,
+            weaponType = WeaponType.Dagger,
+            elementType = ElementType.Poison,
+            damageType = DamageType.Physical,
+            statMod = StatModifier.Dexterity,
+            apc = 1,
+            isDot = true,
+            minDamage = 9,
+            maxDamage = 22
+        };
+        weaponList.Add(weapon);
+
+        // Create staff weapon
+        weapon = new Weapon
+        {
+            itemId = 040309,
+            name = "Birch Staff",
+            spritePath = "Icons/staff",
+            soundPath = "Sfx/bamboosfx",
+            rarity = Rarity.Common,
+            buyValue = 200,
+            sellValue = 80,
+            requiredLevel = 20,
+            requiredInt = 75,
+            weaponType = WeaponType.Staff,
+            elementType = ElementType.None,
+            damageType = DamageType.Physical,
+            statMod = StatModifier.Intelligence,
+            apc = 1,
+            minDamage = 18,
+            maxDamage = 33
+        };
+        weaponList.Add(weapon);
+
+        // Create Earth staff weapon
+        weapon = new Weapon
+        {
+            itemId = 044309,
+            name = "Shocking Birch Staff",
+            spritePath = "Icons/staff",
+            soundPath = "Sfx/bamboosfx",
+            rarity = Rarity.Uncommon,
+            buyValue = 240,
+            sellValue = 100,
+            requiredLevel = 20,
+            requiredInt = 75,
+            weaponType = WeaponType.Staff,
+            elementType = ElementType.Lightning,
+            damageType = DamageType.Magical,
+            statMod = StatModifier.Intelligence,
+            apc = 1,
+            minDamage = 18,
+            maxDamage = 33
+        };
+        weaponList.Add(weapon);
+
+        // Create rifle
+        weapon = new Weapon
+        {
+            itemId = 040104,
+            name = "Mithril Rifle",
+            spritePath = "Icons/rifle",
+            soundPath = "Sfx/gunsfx",
+            rarity = Rarity.Common,
+            buyValue = 200,
+            sellValue = 80,
+            requiredLevel = 20,
+            requiredStr = 75,
+            weaponType = WeaponType.Gun,
+            elementType = ElementType.None,
+            damageType = DamageType.Physical,
+            statMod = StatModifier.Strength,
+            apc = 1,
+            minDamage = 18,
+            maxDamage = 33
+        };
+        weaponList.Add(weapon);
+
+        // Create rifle
+        weapon = new Weapon
+        {
+            itemId = 040104,
+            name = "Mithril Boulder Launcher",
+            flavorText = "Beats throwing them",
+            spritePath = "Icons/rifle",
+            soundPath = "Sfx/gunsfx",
+            rarity = Rarity.Common,
+            buyValue = 240,
+            sellValue = 100,
+            requiredLevel = 20,
+            requiredStr = 75,
+            weaponType = WeaponType.Gun,
+            elementType = ElementType.Earth,
+            damageType = DamageType.Magical,
+            statMod = StatModifier.Strength,
+            apc = 1,
+            minDamage = 18,
+            maxDamage = 33
+        };
+        weaponList.Add(weapon);
+
+
+        // Create spear
+        weapon = new Weapon
+        {
+            itemId = 040206,
+            name = "Mithril Spear",
+            spritePath = "Icons/spear",
+            soundPath = "Sfx/spearsfx",
+            rarity = Rarity.Common,
+            buyValue = 200,
+            sellValue = 80,
+            requiredLevel = 20,
+            requiredDex = 75,
+            weaponType = WeaponType.Spear,
+            elementType = ElementType.None,
+            damageType = DamageType.Physical,
+            statMod = StatModifier.Dexterity,
+            apc = 1,
+            minDamage = 22,
+            maxDamage = 27
+        };
+        weaponList.Add(weapon);
+
+        // Create glaive
+        weapon = new Weapon
+        {
+            itemId = 040206,
+            name = "Mithril Warglaive",
+            spritePath = "Icons/spear",
+            soundPath = "Sfx/spearsfx",
+            rarity = Rarity.Common,
+            buyValue = 240,
+            sellValue = 100,
+            requiredLevel = 20,
+            requiredDex = 75,
+            weaponType = WeaponType.Spear,
+            elementType = ElementType.None,
+            damageType = DamageType.Physical,
+            statMod = StatModifier.Dexterity,
+            apc = 1,
+            minDamage = 22,
+            maxDamage = 25,
+            critChance = 7
+        };
+        weaponList.Add(weapon);
+
+        // Create spear
+        weapon = new Weapon
+        {
+            itemId = 044206,
+            name = "Mithril Water Trident",
+            spritePath = "Icons/spear",
+            soundPath = "Sfx/spearsfx",
+            rarity = Rarity.Uncommon,
+            buyValue = 240,
+            sellValue = 100,
+            requiredLevel = 20,
+            requiredDex = 75,
+            weaponType = WeaponType.Spear,
+            elementType = ElementType.Water,
+            damageType = DamageType.Magical,
+            statMod = StatModifier.Dexterity,
+            apc = 1,
+            minDamage = 22,
+            maxDamage = 27
+        };
+        weaponList.Add(weapon);
+
+        // Create bow
+        weapon = new Weapon
+        {
+            itemId = 040208,
+            name = "Birch Bow",
+            spritePath = "Icons/bow",
+            soundPath = "Sfx/bowsfx",
+            rarity = Rarity.Common,
+            buyValue = 200,
+            sellValue = 80,
+            requiredLevel = 20,
+            requiredInt = 75,
+            weaponType = WeaponType.Bow,
+            elementType = ElementType.None,
+            damageType = DamageType.Physical,
+            statMod = StatModifier.Dexterity,
+            apc = 1,
+            minDamage = 18,
+            maxDamage = 33
+        };
+        weaponList.Add(weapon);
+
+        // Create thunder bow
+        weapon = new Weapon
+        {
+            itemId = 047208,
+            name = "Thunder Birch Bow",
+            spritePath = "Icons/bow",
+            soundPath = "Sfx/thundersfx",
+            rarity = Rarity.Uncommon,
+            buyValue = 240,
+            sellValue = 100,
+            requiredLevel = 20,
+            requiredDex = 75,
+            weaponType = WeaponType.Bow,
+            elementType = ElementType.Lightning,
+            damageType = DamageType.Magical,
+            statMod = StatModifier.Dexterity,
+            apc = 1,
+            minDamage = 18,
+            maxDamage = 33
+        };
+        weaponList.Add(weapon);
+
+        // Create claw
+        weapon = new Weapon
+        {
+            itemId = 040206,
+            name = "Mithril Claws",
+            spritePath = "Icons/claws",
+            soundPath = "Sfx/clawsfx",
+            rarity = Rarity.Common,
+            buyValue = 200,
+            sellValue = 80,
+            requiredLevel = 20,
+            requiredInt = 75,
+            weaponType = WeaponType.Claw,
+            elementType = ElementType.None,
+            damageType = DamageType.Physical,
+            statMod = StatModifier.Dexterity,
+            apc = 2,
+            minDamage = 5,
+            maxDamage = 19,
+            critDamage = 25
+        };
+        weaponList.Add(weapon);
+
+        // Create claw
+        weapon = new Weapon
+        {
+            itemId = 049206,
+            name = "Mithril Shadow Claws",
+            spritePath = "Icons/claws",
+            soundPath = "Sfx/clawsfx",
+            rarity = Rarity.Uncommon,
+            buyValue = 240,
+            sellValue = 100,
+            requiredLevel = 20,
+            requiredDex = 75,
+            weaponType = WeaponType.Claw,
+            elementType = ElementType.Dark,
+            damageType = DamageType.Magical,
+            statMod = StatModifier.Dexterity,
+            apc = 2,
+            minDamage = 5,
+            maxDamage = 19,
+            critDamage = 25
+        };
+        weaponList.Add(weapon);
+
+        // Create fireball
+        weapon = new Weapon
+        {
+            itemId = 041312,
+            name = "Lava Strike",
+            spritePath = "Icons/spell",
+            soundPath = "Sfx/fireballsfx",
+            rarity = Rarity.Common,
+            buyValue = 200,
+            sellValue = 80,
+            requiredLevel = 20,
+            requiredInt = 75,
+            weaponType = WeaponType.Spell,
+            elementType = ElementType.Fire,
+            damageType = DamageType.Magical,
+            statMod = StatModifier.Intelligence,
+            apc = 1,
+            minDamage = 18,
+            maxDamage = 33
+        };
+        weaponList.Add(weapon);
+
+        // Create ice storm
+        weapon = new Weapon
+        {
+            itemId = 045312,
+            name = "Deep Freeze",
+            spritePath = "Icons/spell",
+            soundPath = "Sfx/icesfx",
+            rarity = Rarity.Uncommon,
+            buyValue = 240,
+            sellValue = 100,
+            requiredLevel = 20,
+            requiredInt = 75,
+            weaponType = WeaponType.Spell,
+            elementType = ElementType.Ice,
+            damageType = DamageType.Magical,
+            statMod = StatModifier.Intelligence,
+            apc = 1,
+            minDamage = 1,
+            maxDamage = 50
+        };
+        weaponList.Add(weapon);
+
+        // Create wand
+        weapon = new Weapon
+        {
+            itemId = 041310,
+            name = "Birch Wand",
+            spritePath = "Icons/wand",
+            soundPath = "Sfx/wandsfx1",
+            rarity = Rarity.Common,
+            buyValue = 200,
+            sellValue = 80,
+            requiredLevel = 20,
+            requiredInt = 75,
+            weaponType = WeaponType.Wand,
+            elementType = ElementType.None,
+            damageType = DamageType.Magical,
+            statMod = StatModifier.Intelligence,
+            apc = 1,
+            minDamage = 15,
+            maxDamage = 36
+        };
+        weaponList.Add(weapon);
+
+        // Create enfeebling ray
+        weapon = new Weapon
+        {
+            itemId = 049312,
+            name = "Soul Quench",
+            spritePath = "Icons/spell",
+            soundPath = "Sfx/lasersfx",
+            rarity = Rarity.Common,
+            buyValue = 200,
+            sellValue = 80,
+            requiredLevel = 20,
+            requiredInt = 75,
+            weaponType = WeaponType.Spell,
+            elementType = ElementType.Dark,
+            damageType = DamageType.Magical,
+            statMod = StatModifier.Intelligence,
+            apc = 1,
+            minDamage = 22,
+            maxDamage = 22,
+            magicPen = 18
+        };
+        weaponList.Add(weapon);
+
+        // Create ZOMBIES
+        weapon = new Weapon
+        {
+            itemId = 049303,
+            name = "Summon Zombie Ogre",
+            spritePath = "Icons/zombie",
+            soundPath = "Sfx/groansfx",
+            rarity = Rarity.Uncommon,
+            buyValue = 240,
+            sellValue = 100,
+            requiredLevel = 20,
+            requiredInt = 75,
+            weaponType = WeaponType.Mace,
+            elementType = ElementType.Dark,
+            damageType = DamageType.Physical,
+            statMod = StatModifier.Intelligence,
+            apc = 1,
+            isDot = true,
+            minDamage = 9,
+            maxDamage = 19,
+
+        };
+        weaponList.Add(weapon);
+
+        // Create chakram
+        weapon = new Weapon
+        {
+            itemId = 040311,
+            name = "Mithril Chakram",
+            spritePath = "Icons/chakram",
+            soundPath = "Sfx/chakramsfx",
+            rarity = Rarity.Common,
+            buyValue = 200,
+            sellValue = 80,
+            requiredLevel = 20,
+            requiredInt = 75,
+            weaponType = WeaponType.Chakram,
+            elementType = ElementType.None,
+            damageType = DamageType.Physical,
+            statMod = StatModifier.Intelligence,
+            apc = 2,
+            minDamage = 1,
+            maxDamage = 24,
+            critChance = 4
+        };
+        weaponList.Add(weapon);
+
+        // Create chakram
+        weapon = new Weapon
+        {
+            itemId = 048311,
+            name = "Mithril Angelic Chakram",
+            spritePath = "Icons/chakram",
+            soundPath = "Sfx/chakramsfx",
+            rarity = Rarity.Uncommon,
+            buyValue = 240,
+            sellValue = 100,
+            requiredLevel = 20,
+            requiredInt = 75,
+            weaponType = WeaponType.Chakram,
+            elementType = ElementType.Light,
+            damageType = DamageType.Magical,
+            statMod = StatModifier.Intelligence,
+            apc = 2,
+            minDamage = 1,
+            maxDamage = 24,
+            critChance = 4
+        };
+        weaponList.Add(weapon);
+
+
+        // Create str shield
+        weapon = new Weapon
+        {
+            itemId = 040113,
+            name = "Mithril Shield",
+            spritePath = "Icons/shield",
+            soundPath = "Sfx/donksfx",
+            rarity = Rarity.Common,
+            buyValue = 200,
+            sellValue = 80,
+            requiredLevel = 20,
+            requiredStr = 75,
+            weaponType = WeaponType.Shield,
+            elementType = ElementType.None,
+            damageType = DamageType.Physical,
+            statMod = StatModifier.Strength,
+            apc = 1,
+            minDamage = 1,
+            maxDamage = 3,
+            strength = 17
+        };
+        weaponList.Add(weapon);
+
+        // Create dex shield
+        weapon = new Weapon
+        {
+            itemId = 040213,
+            name = "Mithril Buckler",
+            spritePath = "Icons/shield",
+            soundPath = "Sfx/donksfx",
+            rarity = Rarity.Common,
+            buyValue = 200,
+            sellValue = 80,
+            requiredLevel = 20,
+            requiredDex = 75,
+            weaponType = WeaponType.Shield,
+            elementType = ElementType.None,
+            damageType = DamageType.Physical,
+            statMod = StatModifier.Dexterity,
+            apc = 1,
+            minDamage = 1,
+            maxDamage = 3,
+            dexterity = 17
+        };
+        weaponList.Add(weapon);
+
+        // Create int shield
+        weapon = new Weapon
+        {
+            itemId = 030313,
+            name = "Birch Spirit Totem",
+            spritePath = "Icons/shield",
+            soundPath = "Sfx/donksfx",
+            rarity = Rarity.Common,
+            buyValue = 200,
+            sellValue = 80,
+            requiredLevel = 20,
+            requiredInt = 75,
+            weaponType = WeaponType.Shield,
+            elementType = ElementType.None,
+            damageType = DamageType.Physical,
+            statMod = StatModifier.Intelligence,
+            apc = 1,
+            minDamage = 1,
+            maxDamage = 3,
+            intelligence = 17
+        };
+        weaponList.Add(weapon);
         
 
 
