@@ -62,7 +62,7 @@ public class Modifier : Stats
             dexterity = 0,
             intelligence = 0,
             critChance = 1,
-            critDamage = 1,
+            critDamage = 0,
             bonusPhysical = 0,
             bonusMagical = 0,
             itemFind = 0,
@@ -131,7 +131,7 @@ public class Modifier : Stats
             dexterity = 0,
             intelligence = 0,
             critChance = 1,
-            critDamage = 3,
+            critDamage = 0,
             bonusPhysical = 0,
             bonusMagical = 0,
             itemFind = 0,
@@ -202,8 +202,8 @@ public class Modifier : Stats
             critDamage = 0,
             bonusPhysical = 0,
             bonusMagical = 0,
-            itemFind = 5,
-            magicFind = 5,
+            itemFind = 1,
+            magicFind = 1,
             bonusGold = 5,
             bonusExp = 0
         };
@@ -223,8 +223,8 @@ public class Modifier : Stats
             critDamage = 0,
             bonusPhysical = 0,
             bonusMagical = 0,
-            itemFind = 5,
-            magicFind = 5,
+            itemFind = 1,
+            magicFind = 1,
             bonusGold = 0,
             bonusExp = 0
         };
@@ -377,7 +377,7 @@ public class Modifier : Stats
             critDamage = 0,
             bonusPhysical = 0,
             bonusMagical = 0,
-            itemFind = 5,
+            itemFind = 1,
             magicFind = 0,
             bonusGold = 0,
             bonusExp = 0,
@@ -398,8 +398,8 @@ public class Modifier : Stats
             strength = 5,
             dexterity = 0,
             intelligence = 0,
-            critChance = 2,
-            critDamage = 5,
+            critChance = 3,
+            critDamage = 0,
             bonusPhysical = 0,
             bonusMagical = 0,
             itemFind = 0,
@@ -421,8 +421,8 @@ public class Modifier : Stats
             strength = 0,
             dexterity = 2,
             intelligence = 0,
-            critChance = 5,
-            critDamage = 10
+            critChance = 2,
+            critDamage = 5
         };
         modifierList.Add(modifier);
 
@@ -436,7 +436,7 @@ public class Modifier : Stats
             strength = 0,
             dexterity = 0,
             intelligence = 3,
-            critChance = 3,
+            critChance = 2,
             critDamage = 5
         };
         modifierList.Add(modifier);
@@ -470,8 +470,8 @@ public class Modifier : Stats
             critDamage = 0,
             bonusPhysical = 0,
             bonusMagical = 0,
-            itemFind = 8,
-            magicFind = 8,
+            itemFind = 2,
+            magicFind = 2,
             bonusGold = 8,
             bonusExp = 0
         };
@@ -491,8 +491,8 @@ public class Modifier : Stats
             critDamage = 0,
             bonusPhysical = 0,
             bonusMagical = 0,
-            itemFind = 8,
-            magicFind = 8,
+            itemFind = 2,
+            magicFind = 2,
             bonusGold = 0,
             bonusExp = 0
         };
@@ -645,7 +645,7 @@ public class Modifier : Stats
             critDamage = 0,
             bonusPhysical = 0,
             bonusMagical = 0,
-            itemFind = 8,
+            itemFind = 2,
             magicFind = 0,
             bonusGold = 0,
             bonusExp = 0,
@@ -666,8 +666,8 @@ public class Modifier : Stats
             strength = 7,
             dexterity = 0,
             intelligence = 0,
-            critChance = 3,
-            critDamage = 8,
+            critChance = 4,
+            critDamage = 0,
             bonusPhysical = 0,
             bonusMagical = 0,
             itemFind = 0,
@@ -689,8 +689,8 @@ public class Modifier : Stats
             strength = 0,
             dexterity = 3,
             intelligence = 0,
-            critChance = 7,
-            critDamage = 15
+            critChance = 3,
+            critDamage = 20
         };
         modifierList.Add(modifier);
 
@@ -738,8 +738,8 @@ public class Modifier : Stats
             critDamage = 0,
             bonusPhysical = 0,
             bonusMagical = 0,
-            itemFind = 12,
-            magicFind = 12,
+            itemFind = 3,
+            magicFind = 3,
             bonusGold = 12,
             bonusExp = 0
         };
@@ -759,8 +759,8 @@ public class Modifier : Stats
             critDamage = 0,
             bonusPhysical = 0,
             bonusMagical = 0,
-            itemFind = 12,
-            magicFind = 12,
+            itemFind = 3,
+            magicFind = 3,
             bonusGold = 0,
             bonusExp = 0
         };
@@ -913,7 +913,275 @@ public class Modifier : Stats
             critDamage = 0,
             bonusPhysical = 0,
             bonusMagical = 0,
-            itemFind = 12,
+            itemFind = 3,
+            magicFind = 0,
+            bonusGold = 0,
+            bonusExp = 0,
+            armorPen = 0
+        };
+        modifierList.Add(modifier);
+        
+        /***************/
+        /*** TIER 4 ***/
+        /*************/
+        modifier = new Modifier
+        {
+            modId = 4101,
+            type = ModifierType.Prefix,
+            name = "Warrior",
+            buyValue = 120,
+            sellValue = 60,
+            strength = 12,
+            dexterity = 0,
+            intelligence = 0,
+            critChance = 5,
+            critDamage = 0,
+            bonusPhysical = 0,
+            bonusMagical = 0,
+            itemFind = 0,
+            magicFind = 0,
+            bonusGold = 0,
+            bonusExp = 0,
+            armorPen = 0,
+            magicPen = 0
+        };
+        modifierList.Add(modifier);
+
+        modifier = new Modifier
+        {
+            modId = 4102,
+            type = ModifierType.Prefix,
+            name = "Rogue",
+            buyValue = 120,
+            sellValue = 60,
+            strength = 0,
+            dexterity = 5,
+            intelligence = 0,
+            critChance = 8,
+            critDamage = 25
+        };
+        modifierList.Add(modifier);
+
+        modifier = new Modifier
+        {
+            modId = 4103,
+            type = ModifierType.Prefix,
+            name = "Mage",
+            buyValue = 120,
+            sellValue = 60,
+            strength = 0,
+            dexterity = 0,
+            intelligence = 10,
+            critChance = 5,
+            critDamage = 15
+        };
+        modifierList.Add(modifier);
+
+        modifier = new Modifier
+        {
+            modId = 4104,
+            type = ModifierType.Prefix,
+            name = "Critical",
+            buyValue = 120,
+            sellValue = 60,
+            strength = 0,
+            dexterity = 0,
+            intelligence = 0,
+            critChance = 5,
+            critDamage = 30
+        };
+        modifierList.Add(modifier);
+
+        modifier = new Modifier
+        {
+            modId = 4105,
+            type = ModifierType.Prefix,
+            name = "Greedy",
+            buyValue = 120,
+            sellValue = 60,
+            strength = 0,
+            dexterity = 0,
+            intelligence = 0,
+            critChance = 0,
+            critDamage = 0,
+            bonusPhysical = 0,
+            bonusMagical = 0,
+            itemFind = 4,
+            magicFind = 4,
+            bonusGold = 16,
+            bonusExp = 0
+        };
+        modifierList.Add(modifier);
+
+        modifier = new Modifier
+        {
+            modId = 4106,
+            type = ModifierType.Prefix,
+            name = "Lucky",
+            buyValue = 120,
+            sellValue = 60,
+            strength = 0,
+            dexterity = 0,
+            intelligence = 0,
+            critChance = 8,
+            critDamage = 0,
+            bonusPhysical = 0,
+            bonusMagical = 0,
+            itemFind = 4,
+            magicFind = 4,
+            bonusGold = 0,
+            bonusExp = 0
+        };
+        modifierList.Add(modifier);
+
+        modifier = new Modifier
+        {
+            modId = 4107,
+            type = ModifierType.Prefix,
+            name = "Berserker",
+            buyValue = 120,
+            sellValue = 60,
+            strength = 10,
+            dexterity = 0,
+            intelligence = 0,
+            critChance = 0,
+            critDamage = 0,
+            bonusPhysical = 0,
+            bonusMagical = 0,
+            itemFind = 0,
+            magicFind = 0,
+            bonusGold = 0,
+            bonusExp = 0,
+            armorPen = 10
+        };
+        modifierList.Add(modifier);
+
+        modifier = new Modifier
+        {
+            modId = 4108,
+            type = ModifierType.Prefix,
+            name = "Assassin",
+            buyValue = 120,
+            sellValue = 60,
+            strength = 0,
+            dexterity = 5,
+            intelligence = 0,
+            critChance = 0,
+            critDamage = 45,
+            bonusPhysical = 0,
+            bonusMagical = 0,
+            itemFind = 0,
+            magicFind = 0,
+            bonusGold = 0,
+            bonusExp = 0,
+            armorPen = 10
+        };
+        modifierList.Add(modifier);
+
+        modifier = new Modifier
+        {
+            modId = 4109,
+            type = ModifierType.Prefix,
+            name = "Warlock",
+            buyValue = 120,
+            sellValue = 60,
+            strength = 0,
+            dexterity = 0,
+            intelligence = 8,
+            critChance = 0,
+            critDamage = 0,
+            bonusPhysical = 0,
+            bonusMagical = 0,
+            itemFind = 0,
+            magicFind = 0,
+            bonusGold = 0,
+            bonusExp = 0,
+            magicPen = 17,
+            armorPen = 0
+        };
+        modifierList.Add(modifier);
+
+        modifier = new Modifier
+        {
+            modId = 4110,
+            type = ModifierType.Prefix,
+            name = ":Thinking",
+            buyValue = 120,
+            sellValue = 60,
+            strength = 0,
+            dexterity = 0,
+            intelligence = 8,
+            critChance = 0,
+            critDamage = 0,
+            bonusPhysical = 0,
+            bonusMagical = 0,
+            itemFind = 0,
+            magicFind = 0,
+            bonusGold = 0,
+            bonusExp = 16,
+            armorPen = 0
+        };
+        modifierList.Add(modifier);
+
+        modifier = new Modifier
+        {
+            modId = 4111,
+            type = ModifierType.Prefix,
+            name = "Savant",
+            buyValue = 120,
+            sellValue = 60,
+            strength = 4,
+            dexterity = 4,
+            intelligence = 4,
+            critChance = 0,
+            critDamage = 0,
+            bonusPhysical = 0,
+            bonusMagical = 0,
+            itemFind = 0,
+            magicFind = 0,
+            bonusGold = 0,
+            bonusExp = 30,
+            armorPen = 0
+        };
+        modifierList.Add(modifier);
+
+        modifier = new Modifier
+        {
+            modId = 4112,
+            type = ModifierType.Prefix,
+            name = "Chad",
+            buyValue = 120,
+            sellValue = 60,
+            strength = 10,
+            dexterity = 0,
+            intelligence = 0,
+            critChance = 0,
+            critDamage = 0,
+            bonusPhysical = 0,
+            bonusMagical = 0,
+            itemFind = 0,
+            magicFind = 0,
+            bonusGold = 16,
+            bonusExp = 0,
+            armorPen = 0
+        };
+        modifierList.Add(modifier);
+
+        modifier = new Modifier
+        {
+            modId = 4113,
+            type = ModifierType.Prefix,
+            name = "Sneaky",
+            buyValue = 120,
+            sellValue = 60,
+            strength = 0,
+            dexterity = 8,
+            intelligence = 0,
+            critChance = 0,
+            critDamage = 0,
+            bonusPhysical = 0,
+            bonusMagical = 0,
+            itemFind = 4,
             magicFind = 0,
             bonusGold = 0,
             bonusExp = 0,
@@ -1086,7 +1354,7 @@ public class Modifier : Stats
             critDamage = 0,
             bonusPhysical = 0,
             bonusMagical = 0,
-            itemFind = 5,
+            itemFind = 1,
             magicFind = 0,
             bonusGold = 5,
             bonusExp = 0,
@@ -1237,7 +1505,7 @@ public class Modifier : Stats
         {
             modId = 1212,
             type = ModifierType.Suffix,
-            name = "of the Necromancer",
+            name = "of the Lich",
             buyValue = 20,
             sellValue = 10,
             strength = 0,
@@ -1389,7 +1657,7 @@ public class Modifier : Stats
             critDamage = 0,
             bonusPhysical = 0,
             bonusMagical = 0,
-            itemFind = 8,
+            itemFind = 2,
             magicFind = 0,
             bonusGold = 8,
             bonusExp = 0,
@@ -1540,7 +1808,7 @@ public class Modifier : Stats
         {
             modId = 2212,
             type = ModifierType.Suffix,
-            name = "of the Necromancer",
+            name = "of the Lich",
             buyValue = 40,
             sellValue = 20,
             strength = 0,
@@ -1689,7 +1957,7 @@ public class Modifier : Stats
             critDamage = 0,
             bonusPhysical = 0,
             bonusMagical = 0,
-            itemFind = 12,
+            itemFind = 3,
             magicFind = 0,
             bonusGold = 12,
             bonusExp = 0,
@@ -1840,7 +2108,7 @@ public class Modifier : Stats
         {
             modId = 3212,
             type = ModifierType.Suffix,
-            name = "of the Necromancer",
+            name = "of the Lich",
             buyValue = 60,
             sellValue = 30,
             strength = 0,
@@ -1905,6 +2173,307 @@ public class Modifier : Stats
         };
         modifierList.Add(modifier);
 
+
+        /************/
+        /***TIER 4***/
+        /************/
+        modifier = new Modifier
+        {
+            modId = 4201,
+            type = ModifierType.Suffix,
+            name = "of the Bear",
+            buyValue = 120,
+            sellValue = 60,
+            strength = 18,
+            dexterity = 0,
+            intelligence = 0,
+            critChance = 0,
+            critDamage = 0,
+            bonusPhysical = 0,
+            bonusMagical = 0,
+            itemFind = 0,
+            magicFind = 0,
+            bonusGold = 0,
+            bonusExp = 0,
+            magicPen = 0,
+            armorPen = 0
+        };
+        modifierList.Add(modifier);
+
+        modifier = new Modifier
+        {
+            modId = 4202,
+            type = ModifierType.Suffix,
+            name = "of the Snake",
+            buyValue = 120,
+            sellValue = 60,
+            strength = 0,
+            dexterity = 18,
+            intelligence = 0,
+            critChance = 0,
+            critDamage = 0
+        };
+        modifierList.Add(modifier);
+
+        modifier = new Modifier
+        {
+            modId = 4203,
+            type = ModifierType.Suffix,
+            name = "of the Owl",
+            buyValue = 120,
+            sellValue = 60,
+            strength = 0,
+            dexterity = 0,
+            intelligence = 18,
+            critChance = 0,
+            critDamage = 0
+        };
+        modifierList.Add(modifier);
+
+        modifier = new Modifier
+        {
+            modId = 4204,
+            type = ModifierType.Suffix,
+            name = "of Crittingham",
+            buyValue = 120,
+            sellValue = 60,
+            strength = 0,
+            dexterity = 0,
+            intelligence = 0,
+            critChance = 15,
+            critDamage = 0
+        };
+        modifierList.Add(modifier);
+
+        modifier = new Modifier
+        {
+            modId = 4205,
+            type = ModifierType.Suffix,
+            name = "of the Thief",
+            buyValue = 120,
+            sellValue = 60,
+            strength = 0,
+            dexterity = 10,
+            intelligence = 0,
+            critChance = 0,
+            critDamage = 0,
+            bonusPhysical = 0,
+            bonusMagical = 0,
+            itemFind = 4,
+            magicFind = 0,
+            bonusGold = 16,
+            bonusExp = 0,
+            magicPen = 0,
+            armorPen = 0
+        };
+        modifierList.Add(modifier);
+
+        modifier = new Modifier
+        {
+            modId = 4206,
+            type = ModifierType.Suffix,
+            name = "of the Mercenary",
+            buyValue = 120,
+            sellValue = 60,
+            strength = 10,
+            dexterity = 0,
+            intelligence = 0,
+            critChance = 0,
+            critDamage = 0,
+            bonusPhysical = 0,
+            bonusMagical = 0,
+            itemFind = 0,
+            magicFind = 0,
+            bonusGold = 30,
+            bonusExp = 0,
+            magicPen = 0,
+            armorPen = 0
+        };
+        modifierList.Add(modifier);
+
+        modifier = new Modifier
+        {
+            modId = 4207,
+            type = ModifierType.Suffix,
+            name = "of the Nerd",
+            buyValue = 120,
+            sellValue = 60,
+            strength = 0,
+            dexterity = 0,
+            intelligence = 10,
+            critChance = 0,
+            critDamage = 0,
+            bonusPhysical = 0,
+            bonusMagical = 0,
+            itemFind = 0,
+            magicFind = 0,
+            bonusGold = 0,
+            bonusExp = 30,
+            magicPen = 0,
+            armorPen = 0
+        };
+        modifierList.Add(modifier);
+
+        modifier = new Modifier
+        {
+            modId = 4208,
+            type = ModifierType.Suffix,
+            name = "of the Dabbler",
+            buyValue = 120,
+            sellValue = 60,
+            strength = 4,
+            dexterity = 4,
+            intelligence = 4,
+            critChance = 4,
+            critDamage = 4,
+            bonusPhysical = 4,
+            bonusMagical = 4,
+            itemFind = 4,
+            magicFind = 4,
+            bonusGold = 4,
+            bonusExp = 4,
+            magicPen = 4,
+            armorPen = 4,
+        };
+        modifierList.Add(modifier);
+
+        modifier = new Modifier
+        {
+            modId = 4209,
+            type = ModifierType.Suffix,
+            name = "of the Boar",
+            buyValue = 120,
+            sellValue = 60,
+            strength = 12,
+            dexterity = 0,
+            intelligence = 0,
+            critChance = 0,
+            critDamage = 0,
+            bonusPhysical = 0,
+            bonusMagical = 0,
+            itemFind = 0,
+            magicFind = 0,
+            bonusGold = 0,
+            bonusExp = 0,
+            magicPen = 0,
+            armorPen = 12
+        };
+        modifierList.Add(modifier);
+
+        modifier = new Modifier
+        {
+            modId = 4210,
+            type = ModifierType.Suffix,
+            name = "of the Duelist",
+            buyValue = 120,
+            sellValue = 60,
+            strength = 0,
+            dexterity = 7,
+            intelligence = 0,
+            critChance = 7,
+            critDamage = 0,
+            bonusPhysical = 0,
+            bonusMagical = 0,
+            itemFind = 0,
+            magicFind = 0,
+            bonusGold = 0,
+            bonusExp = 0,
+            magicPen = 0,
+            armorPen = 7
+        };
+        modifierList.Add(modifier);
+
+        modifier = new Modifier
+        {
+            modId = 4211,
+            type = ModifierType.Suffix,
+            name = "of the Negator",
+            buyValue = 120,
+            sellValue = 60,
+            strength = 0,
+            dexterity = 0,
+            intelligence = 0,
+            critChance = 0,
+            critDamage = 0,
+            bonusPhysical = 0,
+            bonusMagical = 0,
+            itemFind = 0,
+            magicFind = 0,
+            bonusGold = 0,
+            bonusExp = 0,
+            magicPen = 17,
+            armorPen = 0
+        };
+        modifierList.Add(modifier);
+
+        modifier = new Modifier
+        {
+            modId = 4212,
+            type = ModifierType.Suffix,
+            name = "of the Lich",
+            buyValue = 120,
+            sellValue = 60,
+            strength = 0,
+            dexterity = 0,
+            intelligence = 7,
+            critChance = 0,
+            critDamage = 0,
+            bonusPhysical = 7,
+            bonusMagical = 0,
+            itemFind = 0,
+            magicFind = 0,
+            bonusGold = 0,
+            bonusExp = 0,
+            magicPen = 0,
+            armorPen = 7
+        };
+        modifierList.Add(modifier);
+
+        modifier = new Modifier
+        {
+            modId = 4213,
+            type = ModifierType.Suffix,
+            name = "of the Crusader",
+            buyValue = 120,
+            sellValue = 60,
+            strength = 7,
+            dexterity = 0,
+            intelligence = 0,
+            critChance = 0,
+            critDamage = 0,
+            bonusPhysical = 0,
+            bonusMagical = 7,
+            itemFind = 0,
+            magicFind = 0,
+            bonusGold = 0,
+            bonusExp = 0,
+            magicPen = 7,
+            armorPen = 0
+        };
+        modifierList.Add(modifier);
+
+        modifier = new Modifier
+        {
+            modId = 4214,
+            type = ModifierType.Suffix,
+            name = "of the Illusionist",
+            buyValue = 120,
+            sellValue = 60,
+            strength = 0,
+            dexterity = 7,
+            intelligence = 0,
+            critChance = 0,
+            critDamage = 0,
+            bonusPhysical = 0,
+            bonusMagical = 7,
+            itemFind = 0,
+            magicFind = 0,
+            bonusGold = 0,
+            bonusExp = 0,
+            magicPen = 7,
+            armorPen = 0
+        };
+        modifierList.Add(modifier);
         return modifierList;
     }
 }
