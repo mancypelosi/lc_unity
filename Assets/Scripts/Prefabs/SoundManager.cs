@@ -6,6 +6,7 @@ public class SoundManager : MonoBehaviour {
     public static SoundManager sm;
     public AudioSource fxSource;
     public AudioSource musicSource;
+    public AudioSource extraSource;
     public float sfxVolume = 0.2f;
     public float musicVolume = 0.1f;
 
@@ -34,10 +35,10 @@ public class SoundManager : MonoBehaviour {
     {
         //Debug.Log("Sfx Volume: " + sfxVolume);
         float pitch = 1;
-        fxSource.pitch = pitch;
-        fxSource.volume = sfxVolume;
-        fxSource.clip = clip;
-        fxSource.Play();
+        extraSource.pitch = pitch;
+        extraSource.volume = sfxVolume;
+        extraSource.clip = clip;
+        extraSource.Play();
     }
 
     // Play sound effect for attacks with pitch adjustments

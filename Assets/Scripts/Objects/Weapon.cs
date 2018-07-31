@@ -124,11 +124,28 @@ public class Weapon : Item
         List<Weapon> tierList = new List<Weapon>();
         foreach (Weapon w in list)
         {
-            // Check if the first digit of the id matches the tier
+            // Check if the first 2 digits of the id matches the tier
             if ((Int32.Parse(w.itemId.ToString("000000").Substring(0, 2))) == tier)
                 tierList.Add(w);
         }
         return tierList;
+    }
+
+    // Get a list of all the rarities specified 
+    public List<Weapon> GetListByRarity(List<Weapon> list, Rarity rarity)
+    {
+        List<Weapon> rarityList = new List<Weapon>();
+        //Debug.Log("Rarity: " + rarity.ToString());
+        foreach (Weapon w in list)
+        {
+            if (w.rarity == rarity)
+                rarityList.Add(w);
+        }
+        // Check if the list is empty
+        if (rarityList.Count == 0)
+            rarityList = list;
+
+        return rarityList;
     }
 
     // List of all weapons
@@ -1480,8 +1497,8 @@ public class Weapon : Item
         /********************/
         /*** LEGENDARIES ***/
         /******************/
-        
-         weapon = new Weapon
+
+        weapon = new Weapon
         {
             itemId = 020001,
             name = "Summon Skeleton",
@@ -2429,8 +2446,8 @@ public class Weapon : Item
         /********************/
         /*** LEGENDARIES ***/
         /******************/
-        
-         // Create str shield
+
+        // Create str shield
         weapon = new Weapon
         {
             itemId = 993001,
@@ -2574,7 +2591,7 @@ public class Weapon : Item
         /*** TIER 4 ***/
         /*************/
 
-        
+
 
 
         return weaponList;

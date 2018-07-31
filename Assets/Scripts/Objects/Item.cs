@@ -89,35 +89,39 @@ public abstract class Item : Stats
     // Add modifier to item, randomize the values
     public Item AddModifier(Modifier mod)
     {
-        // Update name
-        if (mod.type == Modifier.ModifierType.Prefix)
-            name = mod.name + " " + name;
-        else if (mod.type == Modifier.ModifierType.Suffix)
-            name = name + " " + mod.name;
+        if (this.rarity != Rarity.Legendary || this.rarity != Rarity.Set)
+        {
+            // Update name
+            if (mod.type == Modifier.ModifierType.Prefix)
+                name = mod.name + " " + name;
+            else if (mod.type == Modifier.ModifierType.Suffix)
+                name = name + " " + mod.name;
 
-        // Stats
-        strength += Convert.ToInt32(UnityEngine.Random.Range(.2f, 1f) * mod.strength);
-        dexterity += Convert.ToInt32(UnityEngine.Random.Range(.2f, 1f) * mod.dexterity);
-        intelligence += Convert.ToInt32(UnityEngine.Random.Range(.2f, 1f) * mod.intelligence);
-        armorPen += Convert.ToInt32(UnityEngine.Random.Range(.2f, 1f) * mod.armorPen);
-        magicPen += Convert.ToInt32(UnityEngine.Random.Range(.2f, 1f) * mod.magicPen);
-        critChance += Convert.ToInt32(UnityEngine.Random.Range(.2f, 1f) * mod.critChance);
-        critDamage += Math.Round(UnityEngine.Random.Range(.2f, 1f) * mod.critDamage);
-        bonusPhysical += Math.Round(UnityEngine.Random.Range(.2f, 1f) * mod.bonusPhysical);
-        bonusMagical += Math.Round(UnityEngine.Random.Range(.2f, 1f) * mod.bonusMagical);
+            // Stats
+            strength += Convert.ToInt32(UnityEngine.Random.Range(.2f, 1f) * mod.strength);
+            dexterity += Convert.ToInt32(UnityEngine.Random.Range(.2f, 1f) * mod.dexterity);
+            intelligence += Convert.ToInt32(UnityEngine.Random.Range(.2f, 1f) * mod.intelligence);
+            armorPen += Convert.ToInt32(UnityEngine.Random.Range(.2f, 1f) * mod.armorPen);
+            magicPen += Convert.ToInt32(UnityEngine.Random.Range(.2f, 1f) * mod.magicPen);
+            critChance += Convert.ToInt32(UnityEngine.Random.Range(.2f, 1f) * mod.critChance);
+            critDamage += Math.Round(UnityEngine.Random.Range(.2f, 1f) * mod.critDamage);
+            bonusPhysical += Math.Round(UnityEngine.Random.Range(.2f, 1f) * mod.bonusPhysical);
+            bonusMagical += Math.Round(UnityEngine.Random.Range(.2f, 1f) * mod.bonusMagical);
 
-        itemFind += Convert.ToInt32(UnityEngine.Random.Range(.2f, 1f) * mod.itemFind);
-        magicFind += Convert.ToInt32(UnityEngine.Random.Range(.2f, 1f) * mod.magicFind);
-        bonusGold += Math.Round(UnityEngine.Random.Range(.2f, 1f) * mod.bonusGold);
-        bonusExp += Math.Round(UnityEngine.Random.Range(.2f, 1f) * mod.bonusExp);
+            itemFind += Convert.ToInt32(UnityEngine.Random.Range(.2f, 1f) * mod.itemFind);
+            magicFind += Convert.ToInt32(UnityEngine.Random.Range(.2f, 1f) * mod.magicFind);
+            bonusGold += Math.Round(UnityEngine.Random.Range(.2f, 1f) * mod.bonusGold);
+            bonusExp += Math.Round(UnityEngine.Random.Range(.2f, 1f) * mod.bonusExp);
 
-        buyValue += mod.buyValue;
-        sellValue += mod.sellValue;
+            // Increase gold values on the item
+            buyValue += mod.buyValue;
+            sellValue += mod.sellValue;
 
-        // Add mod to item modList
-        modList.Add(mod);
-        // Upgrade rarity
-        rarity = IncrementRarity(rarity);
+            // Add mod to item modList
+            modList.Add(mod);
+            // Upgrade rarity
+            rarity = IncrementRarity(rarity);
+        }
         // Return item
         return this;
     }

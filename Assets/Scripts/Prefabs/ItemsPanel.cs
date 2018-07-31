@@ -37,10 +37,8 @@ public class ItemsPanel : MonoBehaviour {
         {
             // Item to GameObject
             gameObject.GetComponent<ItemPanel>().item = item;
-
             // Sprite
             gameObject.GetComponentInChildren<Image>().sprite = Resources.Load<Sprite>(item.spritePath);
-
             // Rarities
             gameObject.GetComponentInParent<Outline>().effectColor = item.GetRarityColor();
         }

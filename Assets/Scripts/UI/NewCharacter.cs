@@ -51,6 +51,7 @@ public class NewCharacter : MonoBehaviour
         player.legs = (Armor)player.Equip(armor.GetArmorById(armor.ArmorList(), 0004));
         player.boots = (Armor)player.Equip(armor.GetArmorById(armor.ArmorList(), 0005));
         // Inventory
+        player.inventory.Add(weapon.GetWeaponById(weapon.WeaponList(), 019303));
 
         // Load Main scene
         GameManager.gm.LoadScene("Town");

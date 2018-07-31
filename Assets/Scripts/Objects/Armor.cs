@@ -63,6 +63,21 @@ public class Armor : Item {
         return tierList;
     }
 
+    // Get a list of all the rarities specified 
+    public List<Armor> GetListByRarity(List<Armor> list, Rarity rarity)
+    {
+        List<Armor> rarityList = new List<Armor>();
+        foreach (Armor a in list)
+        {
+            if (a.rarity == rarity)
+                rarityList.Add(a);
+        }
+        // Check if the list is empty
+        if (rarityList.Count == 0)
+            rarityList = list;
+        return rarityList;
+    }
+
     // List of all armor
     public List<Armor> ArmorList()
     {

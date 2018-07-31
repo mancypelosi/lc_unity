@@ -14,7 +14,7 @@ public class Battle : MonoBehaviour
     private Enemy enemy;
     private World world;
     private bool timer = false;
-    private float time = 15;
+    private float bossTime = 15;
     private List<Damage> dotTimers = new List<Damage>();
     private List<Damage> deadTimers = new List<Damage>();
 
@@ -64,6 +64,8 @@ public class Battle : MonoBehaviour
         else if (player.equippedWeapon.name == GameObject.Find("Slot3Button").GetComponentInChildren<Text>().text)
             GameObject.Find("Slot3Button").GetComponentInChildren<Outline>().effectColor = Color.white;
 
+        // Create a repeating check for dot damage
+        InvokeRepeating("DotDamage", 0f, 0.5f);
     }
 
     // Update is called once per frame
@@ -83,9 +85,8 @@ public class Battle : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.I))
             SpawnItem();
 
-        // Timers
+        // Timer
         BossTimer();
-        DotDamage();
 
         // Check if enemy dies
         if (enemy.health <= 0)
@@ -133,7 +134,7 @@ public class Battle : MonoBehaviour
             damage.resist = false;
             damage.crit = false;
             damage.dot = true;
-            damage.dotTimer = 3.1f;
+            damage.dotTimer = 3.0f;
             dotTimers.Add(damage);
         }
 
@@ -166,27 +167,25 @@ public class Battle : MonoBehaviour
             foreach (Damage dot in dotTimers)
             {
                 //float seconds = dot.dotTimer % 60;//Use the euclidean division for the seconds.
-                float fraction = (dot.dotTimer * 100) % 100;
-                //GameObject.Find("BossTimer").GetComponent<Text>().text = string.Format("{0:00} : {1:00}", seconds, fraction);
-                if (Int32.Parse(fraction.ToString().Substring(0, 1)) % 10 == 0)
-                {
-                    //Debug.Log("Dot damage");
-                    // Trigger floating text
-                    ShowDamageText(dot);
 
-                    // Apply damage to enemy
-                    enemy.health -= dot.value;
-                    GameObject.Find("EnemyHealthLabel").GetComponent<Text>().text = "HP: " + enemy.health.ToString();
-                    GameObject.Find("EnemyHealthBar").GetComponent<Slider>().value = enemy.health;
+                //Debug.Log("Dot damage");
+                // Trigger floating text
+                ShowDamageText(dot);
 
-                }
-                dot.dotTimer -= Time.deltaTime;
+                // Apply damage to enemy
+                enemy.health -= dot.value;
+                GameObject.Find("EnemyHealthLabel").GetComponent<Text>().text = "HP: " + enemy.health.ToString();
+                GameObject.Find("EnemyHealthBar").GetComponent<Slider>().value = enemy.health;
+
+
+                dot.dotTimer--;
                 if (dot.dotTimer < 0)
                     deadTimers.Add(dot);
             }
         }
 
-        if (deadTimers.Count > 0) { 
+        if (deadTimers.Count > 0)
+        {
             foreach (Damage deadDot in deadTimers)
                 dotTimers.Remove(deadDot);
             deadTimers.Clear();
@@ -230,6 +229,7 @@ public class Battle : MonoBehaviour
             floatingText.GetComponentInChildren<Text>().fontSize = 40;
         }
 
+        // Change text if DoT
         if (damage.dot)
         {
             floatingText.GetComponentInChildren<Outline>().effectColor = Color.gray;
@@ -291,7 +291,7 @@ public class Battle : MonoBehaviour
                         player.world3 = true;
                     if (world.worldName == "River")
                         player.world4 = true;
-                    
+
                     // Stop music and play the victory sound!
                     SoundManager.sm.StopMusic();
                     SoundManager.sm.PlaySoundFX(Resources.Load<AudioClip>("Sfx/finalfantasy"));
@@ -316,6 +316,8 @@ public class Battle : MonoBehaviour
     {
         // Player level up
         player.LevelUp();
+        // Play sound
+        SoundManager.sm.PlaySoundFX(Resources.Load<AudioClip>("Sfx/coinsfx"));
         // Update the gui
         GameObject.Find("Level").GetComponentInChildren<Text>().text = "Level: " + player.playerLevel.ToString();
         GameObject.Find("TNL").GetComponentInChildren<Text>().text = "XP TNL: " + player.xpTNL.ToString();
@@ -328,23 +330,48 @@ public class Battle : MonoBehaviour
         //Debug.Log("Spawn item");
         Item item = null;
         Modifier mod = new Modifier();
+
+        // Rng weapon or armor
         int type = UnityEngine.Random.Range(0, 2);
         // Create weapon
         if (type == 0)
         {
             Weapon weapon = new Weapon();
-            int listCount = world.weaponList.Count;
+            List<Weapon> wl = new List<Weapon>();
+            // Rarity weighting
+            int rarityRng = UnityEngine.Random.Range(0, 100);
+            Debug.Log("Weapon rarity: " + rarityRng);
+            if (rarityRng > 95)
+                    wl = weapon.GetListByRarity(world.weaponList, Item.Rarity.Set);
+            else if (rarityRng > 90)
+                wl = weapon.GetListByRarity(world.weaponList, Item.Rarity.Legendary);
+            else if (rarityRng > 65)
+                wl = weapon.GetListByRarity(world.weaponList, Item.Rarity.Uncommon);
+            else
+                wl = weapon.GetListByRarity(world.weaponList, Item.Rarity.Common);
+            int listCount = wl.Count;
             int rng = UnityEngine.Random.Range(0, listCount);
-            int id = world.weaponList[rng].itemId;
+            int id = wl[rng].itemId;
             item = weapon.GetWeaponById(weapon.WeaponList(), id);
         }
         // Create armor
         else if (type == 1)
         {
             Armor armor = new Armor();
-            int listCount = world.armorList.Count;
+            List<Armor> al = world.armorList;
+            // Rarity weighting
+            int rarityRng = UnityEngine.Random.Range(0, 100);
+            Debug.Log("Armor rarity: " + rarityRng);
+            if (rarityRng > 95)
+                al = armor.GetListByRarity(world.armorList, Item.Rarity.Set);
+            else if (rarityRng > 90)
+                al = armor.GetListByRarity(world.armorList, Item.Rarity.Legendary);
+            else
+                al = armor.GetListByRarity(world.armorList, Item.Rarity.Uncommon);
+            // Armor does not contain common rarities
+            int listCount = al.Count;
             int rng = UnityEngine.Random.Range(0, listCount);
-            int id = world.armorList[rng].itemId;
+            int id = al[rng].itemId;
             item = armor.GetArmorById(armor.ArmorList(), id);
         }
 
@@ -356,7 +383,6 @@ public class Battle : MonoBehaviour
             int id = world.prefixList[rng].modId;
             item.AddModifier(mod.GetModifierById(mod.PrefixList(), id));
         }
-
         // Check to add suffix
         if (UnityEngine.Random.Range(0, 100) < player.magicFind)
         {
@@ -368,9 +394,14 @@ public class Battle : MonoBehaviour
 
         // Add item to inventory
         if (player.inventory.Count < 15)
+        {
             player.inventory.Add(item);
+            SoundManager.sm.PlaySoundFX(Resources.Load<AudioClip>("Sfx/pickupitemsfx"));
+        }
         else
+        {
             SoundManager.sm.PlaySoundFX(Resources.Load<AudioClip>("Sfx/dropsfx"));
+        }
 
         // Update Inventory (Set item border color to match rarity)
         for (int i = 0; i < player.inventory.Count; i++)
@@ -387,8 +418,8 @@ public class Battle : MonoBehaviour
     {
         if (timer)
         {
-            time -= Time.deltaTime;
-            if (time < 0)
+            bossTime -= Time.deltaTime;
+            if (bossTime < 0)
             {
                 timer = false;
                 // Have to traverse through Canvas to get disabled UI elements
@@ -404,8 +435,8 @@ public class Battle : MonoBehaviour
                     }
                 }
             }
-            float seconds = time % 60;//Use the euclidean division for the seconds.
-            float fraction = (time * 100) % 100;
+            float seconds = bossTime % 60;//Use the euclidean division for the seconds.
+            float fraction = (bossTime * 100) % 100;
             // Update the label value
             GameObject.Find("BossTimer").GetComponent<Text>().text = string.Format("{0:00} : {1:00}", seconds, fraction);
         }
