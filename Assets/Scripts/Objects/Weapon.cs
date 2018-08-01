@@ -1,8 +1,5 @@
-﻿
-using System;
-using System.Collections;
+﻿using System;
 using System.Collections.Generic;
-using UnityEngine;
 
 [Serializable]
 public class Weapon : Item
@@ -89,6 +86,10 @@ public class Weapon : Item
         tooltip += "Damage: [" + minDamage + "-" + maxDamage + "]" + Environment.NewLine;
         tooltip += "APC: " + apc + Environment.NewLine;
         tooltip += "Str: " + strength + " Dex: " + dexterity + " Int: " + intelligence + Environment.NewLine;
+        if (armorPen > 0 || magicPen > 0)
+            tooltip += "A Pen: " + armorPen + " M Pen: " + magicPen + Environment.NewLine;
+        if (critChance > 0 || critDamage > 0)
+            tooltip += "Crit: " + critChance + "% Crit Dmg: " + critDamage + "%" + Environment.NewLine;
         if (isDot)
             tooltip += "DoT" + Environment.NewLine;
         if (isSundering)
@@ -105,7 +106,7 @@ public class Weapon : Item
             tooltip += "Required Int: " + requiredInt + Environment.NewLine;
         if (flavorText != "")
             tooltip += '"' + flavorText + '"' + Environment.NewLine;
-        tooltip += "Value: " + sellValue + Environment.NewLine;
+        tooltip += "Sell Value: " + sellValue + "G" + Environment.NewLine;
         return tooltip;
     }
 
@@ -1607,7 +1608,7 @@ public class Weapon : Item
         {
             itemId = 992002,
             name = "Hades’ Trident",
-            spritePath = "Icons/spear",
+            spritePath = "Icons/trident",
             soundPath = "Sfx/spearsfx",
             rarity = Rarity.Legendary,
             buyValue = 100000,
@@ -1999,7 +2000,7 @@ public class Weapon : Item
         {
             itemId = 034206,
             name = "Silver Water Trident",
-            spritePath = "Icons/spear",
+            spritePath = "Icons/trident",
             soundPath = "Sfx/spearsfx",
             rarity = Rarity.Uncommon,
             buyValue = 120,
@@ -2499,7 +2500,7 @@ public class Weapon : Item
             apc = 1,
             minDamage = 15,
             maxDamage = 25,
-            armorpen = 50,
+            armorPen = 50,
             isSundering = true,
         };
         weaponList.Add(weapon);
@@ -2720,7 +2721,7 @@ public class Weapon : Item
         {
             itemId = 040106,
             name = "Mithril Halberd",
-            spritePath = "Icons/spear",
+            spritePath = "Icons/halberd",
             soundPath = "Sfx/spearsfx",
             rarity = Rarity.Common,
             buyValue = 200,
@@ -2922,7 +2923,7 @@ public class Weapon : Item
         {
             itemId = 044206,
             name = "Mithril Water Trident",
-            spritePath = "Icons/spear",
+            spritePath = "Icons/trident",
             soundPath = "Sfx/spearsfx",
             rarity = Rarity.Uncommon,
             buyValue = 240,
@@ -2988,8 +2989,8 @@ public class Weapon : Item
         {
             itemId = 040103,
             name = "Mithril Blackjack",
-            spritePath = "Icons/mace",
-            soundPath = "Sfx/macesfx",
+            spritePath = "Icons/blackjack",
+            soundPath = "Sfx/blackjacksfx",
             rarity = Rarity.Common,
             buyValue = 200,
             sellValue = 80,
@@ -3216,7 +3217,7 @@ public class Weapon : Item
         {
             itemId = 040301,
             name = "Psiblade",
-            spritePath = "Icons/sword",
+            spritePath = "Icons/mindblade",
             soundPath = "Sfx/energyswordsfx",
             rarity = Rarity.Common,
             buyValue = 200,
@@ -3335,7 +3336,7 @@ public class Weapon : Item
             itemId = 004002,
             name = "Horn of the Goatfather",
             spritePath = "Icons/horn",
-            flavorText = "Forged by the mighty Oarn himself, a champion may blow to summon goats to his aid"
+            flavorText = "Forged by the mighty Oarn himself, a champion may blow to summon goats to his aid",
             soundPath = "Sfx/baroosfx",
             rarity = Rarity.Legendary,
             buyValue = 250000,
@@ -3358,7 +3359,7 @@ public class Weapon : Item
         {
             itemId = 004003,
             name = "Crackling Blackjack",
-            spritePath = "Icons/mace",
+            spritePath = "Icons/blackjack",
             soundPath = "Sfx/thundersfx",
             rarity = Rarity.Legendary,
             buyValue = 250000,
@@ -3383,7 +3384,7 @@ public class Weapon : Item
         {
             itemId = 004004,
             name = "Blade of Judgment",
-            spritePath = "Icons/sword",
+            spritePath = "Icons/mindblade",
             flavorText = "Clean your room, bucko",
             soundPath = "Sfx/energyswordsfx",
             rarity = Rarity.Legendary,
@@ -3407,8 +3408,8 @@ public class Weapon : Item
         {
             itemId = 004005,
             name = "Dread Halberd",
-            spritePath = "Icons/spell",
-            flavorText = "Edgy af"
+            spritePath = "Icons/halberd",
+            flavorText = "Edgy af",
             soundPath = "Sfx/spearsfx",
             rarity = Rarity.Legendary,
             buyValue = 250000,

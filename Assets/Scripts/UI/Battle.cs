@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -9,19 +8,20 @@ using UnityEngine.UI;
 public class Battle : MonoBehaviour
 {
     public GameObject floatingTextPrefab;
-    public GameObject ItemPanel;
     private Player player;
     private Enemy enemy;
     private World world;
-    private bool timer = false;
-    private float bossTime = 15;
-    private List<Damage> dotTimers = new List<Damage>();
-    private List<Damage> deadTimers = new List<Damage>();
+    private float clickTimer = 0.0f; // Click timer that resets every second
+    private int clickCount = 0; // Anti cheat click count
+    private bool clickLimit = false; // Check for clickCount > 15
+    private bool timer = false; // Check for bossTime < 0
+    private float bossTime = 15; // Time left to defeat boss
+    private List<Damage> dotTimers = new List<Damage>(); // DoT timers list
+    private List<Damage> deadTimers = new List<Damage>(); // DoT timers that have ended list
 
     // Use this for initialization
     void Start()
     {
-
         // Set GameManger properties
         player = GameManager.gm.player;
         enemy = GameManager.gm.enemy;
@@ -48,7 +48,8 @@ public class Battle : MonoBehaviour
         GameObject.Find("EnemyHealthBar").GetComponent<Slider>().maxValue = enemy.health;
         GameObject.Find("EnemyHealthBar").GetComponent<Slider>().value = enemy.health;
         GameObject.Find("EnemyArmor").GetComponent<Text>().text = "A: " + enemy.armor + " MR: " + enemy.magicResist;
-        GameObject.Find("EnemyResists").GetComponent<Text>().text = "W: " + string.Join(",", enemy.weaknesses.ToArray()) + Environment.NewLine + "R: " + string.Join(",", enemy.resistances.ToArray());
+        GameObject.Find("EnemyResists").GetComponent<Text>().text = "W: " + string.Join(",", enemy.weaknesses.ToArray()) + 
+            Environment.NewLine + "R: " + string.Join(",", enemy.resistances.ToArray());
 
         // Weapon Buttons
         GameObject.Find("Slot1Button").GetComponentInChildren<Text>().text = player.weapon1.name;
@@ -85,7 +86,9 @@ public class Battle : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.I))
             SpawnItem();
 
-        // Timer
+        // Anti-cheat, check if user clicks over 15 times in a second
+        AntiCheat();
+        // Boss Timer
         BossTimer();
 
         // Check if enemy dies
@@ -105,57 +108,61 @@ public class Battle : MonoBehaviour
     // Whenever player clicks the enemy
     private void ClickDamage()
     {
-        // Instantiate new damage object
-        Damage damage = new Damage();
-
-        // Trigger sound fx
-        SoundManager.sm.PlaySoundFX(Resources.Load<AudioClip>(player.equippedWeapon.soundPath), damage.weak, damage.resist, damage.crit);
-
-        // Deal an instance of damage for number of apc's the weapon has
-        for (int i = 0; i < player.equippedWeapon.apc; i++)
+        // Check for anti cheat before doing damage
+        if (!clickLimit)
         {
-            // Calculate daamge
-            damage.Calculate(player, enemy);
+            // Create new damage object
+            Damage damage = new Damage();
 
-            // Trigger floating text
-            ShowDamageText(damage);
+            // Trigger sound fx
+            SoundManager.sm.PlaySoundFX(Resources.Load<AudioClip>(player.equippedWeapon.soundPath), damage.weak, damage.resist, damage.crit);
 
-            // Apply damage to enemy
-            enemy.health -= damage.value;
-            GameObject.Find("EnemyHealthLabel").GetComponent<Text>().text = "HP: " + enemy.health.ToString();
-            GameObject.Find("EnemyHealthBar").GetComponent<Slider>().value = enemy.health;
-        }
+            // Deal an instance of damage for number of apc's the weapon has
+            for (int i = 0; i < player.equippedWeapon.apc; i++)
+            {
+                // Calculate daamge
+                damage.Calculate(player, enemy);
 
-        // DoT check
-        if (player.equippedWeapon.isDot)
-        {
-            damage.value = damage.value / 2;
-            damage.weak = false;
-            damage.resist = false;
-            damage.crit = false;
-            damage.dot = true;
-            damage.dotTimer = 3.0f;
-            dotTimers.Add(damage);
-        }
+                // Trigger floating text
+                ShowDamageText(damage);
 
-        // Sunder check
-        int sunderValue = 1;
-        if (player.equippedWeapon.isSundering)
-        {
-            if (enemy.armor - sunderValue >= 0)
-                enemy.armor -= sunderValue;
-            else
-                enemy.armor = 0;
-        }
+                // Apply damage to enemy
+                enemy.health -= damage.value;
+                GameObject.Find("EnemyHealthLabel").GetComponent<Text>().text = "HP: " + enemy.health.ToString();
+                GameObject.Find("EnemyHealthBar").GetComponent<Slider>().value = enemy.health;
+            }
 
-        // Negate check
-        int negateValue = 1;
-        if (player.equippedWeapon.isNegating)
-        {
-            if (enemy.magicResist - negateValue > 0)
-                enemy.magicResist -= negateValue;
-            else
-                enemy.magicResist = 0;
+            // DoT check
+            if (player.equippedWeapon.isDot)
+            {
+                damage.value = damage.value / 2;
+                damage.weak = false;
+                damage.resist = false;
+                damage.crit = false;
+                damage.dot = true;
+                damage.dotTimer = 3.0f;
+                dotTimers.Add(damage);
+            }
+
+            // Sunder check
+            int sunderValue = 1;
+            if (player.equippedWeapon.isSundering)
+            {
+                if (enemy.armor - sunderValue >= 0)
+                    enemy.armor -= sunderValue;
+                else
+                    enemy.armor = 0;
+            }
+
+            // Negate check
+            int negateValue = 1;
+            if (player.equippedWeapon.isNegating)
+            {
+                if (enemy.magicResist - negateValue > 0)
+                    enemy.magicResist -= negateValue;
+                else
+                    enemy.magicResist = 0;
+            }
         }
     }
 
@@ -440,6 +447,35 @@ public class Battle : MonoBehaviour
             // Update the label value
             GameObject.Find("BossTimer").GetComponent<Text>().text = string.Format("{0:00} : {1:00}", seconds, fraction);
         }
+    }
+
+    // Anti-cheat, check if user clicks over 15 times in a second
+    private void AntiCheat()
+    {
+        // Checks in 1 second intervals
+        if (clickTimer < 1.0f)
+        {
+            // Check if user clicks, add it to click count
+            if (Input.GetMouseButtonDown(0))
+            {
+                clickCount++;
+                //Debug.Log("clickCount: " + clickCount);
+            }
+            // Check if user has gone over max click amount
+            if (clickCount > 15)
+            {
+                clickLimit = true;
+            }
+        }
+        // Reset anti-cheat variables after 1 second
+        else
+        {
+            clickTimer = 0.0f;
+            clickCount = 0;
+            clickLimit = false;
+        }
+        // Update click timer time
+        clickTimer += Time.deltaTime;
     }
 
     // Equip player weapon1

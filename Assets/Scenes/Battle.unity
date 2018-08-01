@@ -4664,7 +4664,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   floatingTextPrefab: {fileID: 1025291103011096, guid: ee3886833bec9bb4497c25bb703f7f2e,
     type: 2}
-  ItemPanel: {fileID: 0}
 --- !u!114 &1883419968
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5195,7 +5194,7 @@ Prefab:
     - target: {fileID: 224945004975895522, guid: 8411cebb50605324996073c1b2b2cc06,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 280
+      value: 260
       objectReference: {fileID: 0}
     - target: {fileID: 224945004975895522, guid: 8411cebb50605324996073c1b2b2cc06,
         type: 2}

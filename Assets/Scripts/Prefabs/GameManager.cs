@@ -70,8 +70,13 @@ public class GameManager : MonoBehaviour {
     // Standard Unity LoadScene, but also set the previousScene variable 
     public void LoadScene(string scene)
     {
+        // Save the game on scene transition
+        Save();
+        // Get currentScene
         string currentScene = SceneManager.GetActiveScene().name;
+        // Load scene
         SceneManager.LoadScene(scene);
+        // Set previous scene to the currentScene that was captured
         previousScene = currentScene;
     }
 }

@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 
 [Serializable]
 public class Armor : Item {
@@ -34,8 +32,10 @@ public class Armor : Item {
         string tooltip = "";
         tooltip += "Armor Type: " + armorType + Environment.NewLine;
         tooltip += "Str: " + strength + " Dex: " + dexterity + " Int: " + intelligence + Environment.NewLine;
-        tooltip += "A Pen: " + armorPen + " M Pen: " + magicPen + Environment.NewLine;
-        tooltip += "Crit: " + critChance + "% Crit Dmg: " + critDamage + "%" + Environment.NewLine;
+        if (armorPen > 0 || magicPen > 0)
+            tooltip += "A Pen: " + armorPen + " M Pen: " + magicPen + Environment.NewLine;
+        if (critChance > 0 || critDamage > 0)
+            tooltip += "Crit: " + critChance + "% Crit Dmg: " + critDamage + "%" + Environment.NewLine;
         if (requiredLevel > 0)
             tooltip += "Required Level: " + requiredLevel + Environment.NewLine;
         if (requiredStr > 0)
@@ -46,7 +46,7 @@ public class Armor : Item {
             tooltip += "Required Int: " + requiredInt + Environment.NewLine;
         if (flavorText != "")
             tooltip += '"' + flavorText + '"' + Environment.NewLine;
-        tooltip += "Value: " + sellValue + Environment.NewLine;
+        tooltip += "Sell Value: " + sellValue + "G" + Environment.NewLine;
         return tooltip;
     }
 
@@ -99,8 +99,6 @@ public class Armor : Item {
         /***************/
         /*** TIER 0 ***/
         /*************/
-
-        // Create base head armor
         armor = new Armor
         {
             itemId = 0001,
@@ -120,7 +118,6 @@ public class Armor : Item {
         };
         armorList.Add(armor);
 
-        // Create base chest armor
         armor = new Armor
         {
             itemId = 0002,
@@ -140,7 +137,6 @@ public class Armor : Item {
         };
         armorList.Add(armor);
 
-        // Create base glove armor
         armor = new Armor
         {
             itemId = 0003,
@@ -160,7 +156,6 @@ public class Armor : Item {
         };
         armorList.Add(armor);
 
-        // Create base legs armor
         armor = new Armor
         {
             itemId = 0004,
@@ -180,7 +175,6 @@ public class Armor : Item {
         };
         armorList.Add(armor);
 
-        // Create base boots armor
         armor = new Armor
         {
             itemId = 0005,
@@ -203,7 +197,6 @@ public class Armor : Item {
         /***************/
         /*** TIER 1 ***/
         /*************/
-        // Create iron head armor
         armor = new Armor
         {
             itemId = 1101,
@@ -224,7 +217,6 @@ public class Armor : Item {
         };
         armorList.Add(armor);
 
-        // Create iron chest armor
         armor = new Armor
         {
             itemId = 1102,
@@ -245,7 +237,6 @@ public class Armor : Item {
         };
         armorList.Add(armor);
 
-        // Create iron gloves armor
         armor = new Armor
         {
             itemId = 1103,
@@ -266,7 +257,6 @@ public class Armor : Item {
         };
         armorList.Add(armor);
 
-        // Create iron greaves armor
         armor = new Armor
         {
             itemId = 1104,
@@ -287,7 +277,6 @@ public class Armor : Item {
         };
         armorList.Add(armor);
 
-        // Create iron boots armor
         armor = new Armor
         {
             itemId = 1105,
@@ -308,8 +297,6 @@ public class Armor : Item {
         };
         armorList.Add(armor);
 
-
-        // Create leather head armor
         armor = new Armor
         {
             itemId = 1201,
@@ -329,7 +316,6 @@ public class Armor : Item {
         };
         armorList.Add(armor);
 
-        // Create leather chest armor
         armor = new Armor
         {
             itemId = 1202,
@@ -349,7 +335,6 @@ public class Armor : Item {
         };
         armorList.Add(armor);
 
-        // Create leather gloves armor
         armor = new Armor
         {
             itemId = 1203,
@@ -369,7 +354,6 @@ public class Armor : Item {
         };
         armorList.Add(armor);
 
-        // Create leather legs armor
         armor = new Armor
         {
             itemId = 1204,
@@ -389,7 +373,6 @@ public class Armor : Item {
         };
         armorList.Add(armor);
 
-        // Create leather boots armor
         armor = new Armor
         {
             itemId = 1205,
@@ -409,7 +392,6 @@ public class Armor : Item {
         };
         armorList.Add(armor);
 
-        // Create cloth hood armor
         armor = new Armor
         {
             itemId = 1301,
@@ -430,7 +412,6 @@ public class Armor : Item {
         };
         armorList.Add(armor);
 
-        // Create cloth robes armor
         armor = new Armor
         {
             itemId = 1302,
@@ -451,7 +432,6 @@ public class Armor : Item {
         };
         armorList.Add(armor);
 
-        // Create cloth gloves armor
         armor = new Armor
         {
             itemId = 1303,
@@ -472,7 +452,6 @@ public class Armor : Item {
         };
         armorList.Add(armor);
 
-        // Create cloth Legs armor
         armor = new Armor
         {
             itemId = 1304,
@@ -493,7 +472,6 @@ public class Armor : Item {
         };
         armorList.Add(armor);
 
-        // Create cloth hood armor
         armor = new Armor
         {
             itemId = 1305,
@@ -517,7 +495,6 @@ public class Armor : Item {
         /********************/
         /*** LEGENDARIES ***/
         /******************/
-       //create new flashlight hat
         armor = new Armor
         {
             itemId = 1111,
@@ -541,7 +518,6 @@ public class Armor : Item {
         };
         armorList.Add(armor);
 
-        // Create leather gloves armor
         armor = new Armor
         {
             itemId = 1213,
@@ -561,7 +537,6 @@ public class Armor : Item {
         };
         armorList.Add(armor);
 
-        // Create leather gloves armor
         armor = new Armor
         {
             itemId = 1212,
@@ -581,7 +556,6 @@ public class Armor : Item {
         };
         armorList.Add(armor);
 
-        // Create leather gloves armor
         armor = new Armor
         {
             itemId = 1215,
@@ -601,7 +575,6 @@ public class Armor : Item {
         };
         armorList.Add(armor);
 
-         // Create cloth gloves armor
         armor = new Armor
         {
             itemId = 1313,
@@ -626,7 +599,6 @@ public class Armor : Item {
         /********************/
         /***   TIER 2    ***/
         /******************/
-        // Create iron head armor
         armor = new Armor
         {
             itemId = 2101,
@@ -648,7 +620,6 @@ public class Armor : Item {
         };
         armorList.Add(armor);
 
-        // Create iron chest armor
         armor = new Armor
         {
             itemId = 2102,
@@ -670,7 +641,6 @@ public class Armor : Item {
         };
         armorList.Add(armor);
 
-        // Create iron gloves armor
         armor = new Armor
         {
             itemId = 2103,
@@ -692,7 +662,6 @@ public class Armor : Item {
         };
         armorList.Add(armor);
 
-        // Create iron greaves armor
         armor = new Armor
         {
             itemId = 2104,
@@ -714,7 +683,6 @@ public class Armor : Item {
         };
         armorList.Add(armor);
 
-        // Create iron boots armor
         armor = new Armor
         {
             itemId = 2105,
@@ -736,8 +704,6 @@ public class Armor : Item {
         };
         armorList.Add(armor);
 
-
-        // Create leather head armor
         armor = new Armor
         {
             itemId = 2201,
@@ -758,7 +724,6 @@ public class Armor : Item {
         };
         armorList.Add(armor);
 
-        // Create leather chest armor
         armor = new Armor
         {
             itemId = 2202,
@@ -779,7 +744,6 @@ public class Armor : Item {
         };
         armorList.Add(armor);
 
-        // Create leather gloves armor
         armor = new Armor
         {
             itemId = 2203,
@@ -800,7 +764,6 @@ public class Armor : Item {
         };
         armorList.Add(armor);
 
-        // Create leather legs armor
         armor = new Armor
         {
             itemId = 2204,
@@ -821,7 +784,6 @@ public class Armor : Item {
         };
         armorList.Add(armor);
 
-        // Create leather boots armor
         armor = new Armor
         {
             itemId = 2205,
@@ -842,7 +804,6 @@ public class Armor : Item {
         };
         armorList.Add(armor);
 
-        // Create cloth hood armor
         armor = new Armor
         {
             itemId = 2301,
@@ -864,7 +825,6 @@ public class Armor : Item {
         };
         armorList.Add(armor);
 
-        // Create cloth robes armor
         armor = new Armor
         {
             itemId = 2302,
@@ -886,7 +846,6 @@ public class Armor : Item {
         };
         armorList.Add(armor);
 
-        // Create cloth gloves armor
         armor = new Armor
         {
             itemId = 2303,
@@ -908,7 +867,6 @@ public class Armor : Item {
         };
         armorList.Add(armor);
 
-        // Create cloth Legs armor
         armor = new Armor
         {
             itemId = 2304,
@@ -930,7 +888,6 @@ public class Armor : Item {
         };
         armorList.Add(armor);
 
-        // Create cloth hood armor
         armor = new Armor
         {
             itemId = 2305,
@@ -954,7 +911,6 @@ public class Armor : Item {
         /********************/
         /***   LEYENDOS  ***/
         /******************/
-        // Create cloth hood armor
         armor = new Armor
         {
             itemId = 2311,
@@ -1001,7 +957,6 @@ public class Armor : Item {
         };
         armorList.Add(armor);
 
-        // Create leather gloves armor
         armor = new Armor
         {
             itemId = 2213,
@@ -1023,7 +978,6 @@ public class Armor : Item {
         };
         armorList.Add(armor);
 
-         // Create iron gloves armor
         armor = new Armor
         {
             itemId = 2113,
@@ -1042,7 +996,6 @@ public class Armor : Item {
         };
         armorList.Add(armor);
 
-        // Create iron head armor
         armor = new Armor
         {
             itemId = 2111,
@@ -1065,7 +1018,6 @@ public class Armor : Item {
         };
         armorList.Add(armor);
 
-        // Create iron chest armor
         armor = new Armor
         {
             itemId = 2102,
@@ -1091,8 +1043,6 @@ public class Armor : Item {
         /********************/
         /***   TIER 3    ***/
         /******************/
-
-        // Create iron head armor
         armor = new Armor
         {
             itemId = 3101,
@@ -1114,7 +1064,6 @@ public class Armor : Item {
         };
         armorList.Add(armor);
 
-        // Create iron chest armor
         armor = new Armor
         {
             itemId = 3102,
@@ -1136,7 +1085,6 @@ public class Armor : Item {
         };
         armorList.Add(armor);
 
-        // Create iron gloves armor
         armor = new Armor
         {
             itemId = 3103,
@@ -1157,7 +1105,6 @@ public class Armor : Item {
         };
         armorList.Add(armor);
 
-        // Create iron greaves armor
         armor = new Armor
         {
             itemId = 3104,
@@ -1179,7 +1126,6 @@ public class Armor : Item {
         };
         armorList.Add(armor);
 
-        // Create iron boots armor
         armor = new Armor
         {
             itemId = 3105,
@@ -1200,8 +1146,6 @@ public class Armor : Item {
         };
         armorList.Add(armor);
 
-
-        // Create leather head armor
         armor = new Armor
         {
             itemId = 3201,
@@ -1222,7 +1166,6 @@ public class Armor : Item {
         };
         armorList.Add(armor);
 
-        // Create leather chest armor
         armor = new Armor
         {
             itemId = 3202,
@@ -1243,7 +1186,6 @@ public class Armor : Item {
         };
         armorList.Add(armor);
 
-        // Create leather gloves armor
         armor = new Armor
         {
             itemId = 3203,
@@ -1264,7 +1206,6 @@ public class Armor : Item {
         };
         armorList.Add(armor);
 
-        // Create leather legs armor
         armor = new Armor
         {
             itemId = 3204,
@@ -1285,7 +1226,6 @@ public class Armor : Item {
         };
         armorList.Add(armor);
 
-        // Create leather boots armor
         armor = new Armor
         {
             itemId = 3205,
@@ -1306,7 +1246,6 @@ public class Armor : Item {
         };
         armorList.Add(armor);
 
-        // Create cloth hood armor
         armor = new Armor
         {
             itemId = 3301,
@@ -1328,7 +1267,6 @@ public class Armor : Item {
         };
         armorList.Add(armor);
 
-        // Create cloth robes armor
         armor = new Armor
         {
             itemId = 3302,
@@ -1350,7 +1288,6 @@ public class Armor : Item {
         };
         armorList.Add(armor);
 
-        // Create cloth gloves armor
         armor = new Armor
         {
             itemId = 3303,
@@ -1372,7 +1309,6 @@ public class Armor : Item {
         };
         armorList.Add(armor);
 
-        // Create cloth Legs armor
         armor = new Armor
         {
             itemId = 3304,
@@ -1394,7 +1330,6 @@ public class Armor : Item {
         };
         armorList.Add(armor);
 
-        // Create cloth boots armor
         armor = new Armor
         {
             itemId = 3305,
@@ -1415,10 +1350,10 @@ public class Armor : Item {
 
         };
         armorList.Add(armor);
+
         /****************/
         /*** LEYENDOS ***/
         /****************/
-        // Create iron head armor
         armor = new Armor
         {
             itemId = 3111,
@@ -1507,7 +1442,6 @@ public class Armor : Item {
         };
         armorList.Add(armor);
 
-        // Create leather legs armor
         armor = new Armor
         {
             itemId = 3214,
@@ -1527,7 +1461,7 @@ public class Armor : Item {
 
         };
         armorList.Add(armor);
-        // Create leather shoes armor
+
         armor = new Armor
         {
             itemId = 3215,
@@ -1551,8 +1485,6 @@ public class Armor : Item {
         /********************/
         /***   TIER 4    ***/
         /******************/
-
-        // Create iron head armor
         armor = new Armor
         {
             itemId = 4101,
@@ -1574,7 +1506,6 @@ public class Armor : Item {
         };
         armorList.Add(armor);
 
-        // Create iron chest armor
         armor = new Armor
         {
             itemId = 4102,
@@ -1596,7 +1527,6 @@ public class Armor : Item {
         };
         armorList.Add(armor);
 
-        // Create iron gloves armor
         armor = new Armor
         {
             itemId = 4103,
@@ -1617,7 +1547,6 @@ public class Armor : Item {
         };
         armorList.Add(armor);
 
-        // Create iron greaves armor
         armor = new Armor
         {
             itemId = 4104,
@@ -1639,7 +1568,6 @@ public class Armor : Item {
         };
         armorList.Add(armor);
 
-        // Create iron boots armor
         armor = new Armor
         {
             itemId = 4105,
@@ -1660,8 +1588,6 @@ public class Armor : Item {
         };
         armorList.Add(armor);
 
-
-        // Create leather head armor
         armor = new Armor
         {
             itemId = 4201,
@@ -1681,7 +1607,6 @@ public class Armor : Item {
         };
         armorList.Add(armor);
 
-        // Create leather chest armor
         armor = new Armor
         {
             itemId = 4202,
@@ -1701,7 +1626,6 @@ public class Armor : Item {
         };
         armorList.Add(armor);
 
-        // Create leather gloves armor
         armor = new Armor
         {
             itemId = 4203,
@@ -1721,7 +1645,6 @@ public class Armor : Item {
         };
         armorList.Add(armor);
 
-        // Create leather legs armor
         armor = new Armor
         {
             itemId = 4204,
@@ -1741,7 +1664,6 @@ public class Armor : Item {
         };
         armorList.Add(armor);
 
-        // Create leather boots armor
         armor = new Armor
         {
             itemId = 4205,
@@ -1761,7 +1683,6 @@ public class Armor : Item {
         };
         armorList.Add(armor);
 
-        // Create cloth hood armor
         armor = new Armor
         {
             itemId = 4301,
@@ -1782,7 +1703,6 @@ public class Armor : Item {
         };
         armorList.Add(armor);
 
-        // Create cloth robes armor
         armor = new Armor
         {
             itemId = 4302,
@@ -1803,7 +1723,6 @@ public class Armor : Item {
         };
         armorList.Add(armor);
 
-        // Create cloth gloves armor
         armor = new Armor
         {
             itemId = 4303,
@@ -1824,7 +1743,6 @@ public class Armor : Item {
         };
         armorList.Add(armor);
 
-        // Create cloth Legs armor
         armor = new Armor
         {
             itemId = 4304,
@@ -1845,7 +1763,6 @@ public class Armor : Item {
         };
         armorList.Add(armor);
 
-        // Create cloth boots armor
         armor = new Armor
         {
             itemId = 4305,
@@ -1869,14 +1786,12 @@ public class Armor : Item {
         /****************/
         /****LEYENDOS****/
         /****************/
-        
-        // Create cloth boots armor
         armor = new Armor
         {
             itemId = 4315,
             name = "Nightmage Shoes",
             spritePath = "Icons/boots2",
-            rarity = Rarity.Uncommon,
+            rarity = Rarity.Legendary,
             buyValue = 200000,
             sellValue = 300,
             requiredLevel = 20,
@@ -1891,18 +1806,17 @@ public class Armor : Item {
         };
         armorList.Add(armor);
         
-        // Create cloth robes armor
         armor = new Armor
         {
             itemId = 4312,
             name = "Nightmage Robes",
             spritePath = "Icons/chest",
-            rarity = Rarity.Uncommon,
+            rarity = Rarity.Legendary,
             buyValue = 200000,
             sellValue = 300,
             requiredLevel = 20,
             requiredInt = 75,
-            armorType = ArmorType.Chest
+            armorType = ArmorType.Chest,
             strength = 5,
             dexterity = 5,
             intelligence = 10,
@@ -1912,13 +1826,12 @@ public class Armor : Item {
         };
         armorList.Add(armor);
         
-        // Create cloth boots armor
         armor = new Armor
         {
             itemId = 4311,
             name = "Nightmage Hood",
             spritePath = "Icons/helm",
-            rarity = Rarity.Uncommon,
+            rarity = Rarity.Legendary,
             buyValue = 200000,
             sellValue = 300,
             requiredLevel = 20,
@@ -1933,14 +1846,13 @@ public class Armor : Item {
         };
         armorList.Add(armor);
         
-        // Create leather gloves armor
         armor = new Armor
         {
             itemId = 4213,
             name = "Fingerless Nomad Gloves",
             spritePath = "Icons/gloves2",
-            flavorText = "You totally look cool"
-            rarity = Rarity.Uncommon,
+            flavorText = "You totally look cool",
+            rarity = Rarity.Legendary,
             buyValue = 200000,
             sellValue = 300,
             requiredLevel = 20,
@@ -1954,13 +1866,13 @@ public class Armor : Item {
         };
         armorList.Add(armor);
         
-        // Create iron greaves armor
         armor = new Armor
         {
             itemId = 4114,
-            name = "Assless Greaves",
+            name = "Crotchless Chaps",
             spritePath = "Icons/legs",
-            rarity = Rarity.Uncommon,
+            flavorText = "Dick cleavage",
+            rarity = Rarity.Legendary,
             buyValue = 200000,
             sellValue = 300,
             requiredLevel = 20,
@@ -1971,7 +1883,6 @@ public class Armor : Item {
             intelligence = 5,
             armorPen = 25,
             bonusPhysical = 0,
-
         };
         armorList.Add(armor);
         

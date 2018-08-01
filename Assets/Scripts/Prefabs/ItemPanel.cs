@@ -16,7 +16,7 @@ public class ItemPanel : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
     public GameObject tooltipPrefab;
     // Pointer variables
     private GameObject tooltip;
-    private Vector3 offset = new Vector3(-86, -154, 0);
+    private Vector3 offset = new Vector3(-100, -154, 0);
     // Drag static variables
     private static Item startItem;
     private static GameObject startObject;
@@ -68,13 +68,38 @@ public class ItemPanel : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
     public void OnDrop(PointerEventData eventData)
     {
         Debug.Log("On drop");
+        Debug.Log("Type: " + startObject.GetComponent<ItemPanel>().type);
+        // Store
+        if (startObject.GetComponent<ItemPanel>().type == "Store")
+        {
+            if (GameManager.gm.player.playerGold > startItem.buyValue)
+            {
+                Debug.Log("Dragged from Store");
+                GameManager.gm.player.inventory.Add(startItem);
+                RemoveItem(startObject);
+                GameManager.gm.player.playerGold -= startItem.buyValue;
+                // Inventory (Set item border color to match rarity)
+                for (int i = 0; i < GameManager.gm.player.inventory.Count; i++)
+                {
+                    SetItem(GameObject.Find("Item" + i), GameManager.gm.player.inventory[i]);
+                }
+            } else
+            {
+                SoundManager.sm.PlaySoundFX(Resources.Load<AudioClip>("Sfx/failsfx"));
+            }
+        }
+        else if (gameObject.GetComponent<ItemPanel>().type == "Store")
+        {
+            Debug.Log("Dragged to Store");
+            // Do nothing
+        }
         // Equip
-        if (!equipTypes.Contains(startObject.name) && equipTypes.Contains(gameObject.name))
+        else if (!equipTypes.Contains(startObject.name) && equipTypes.Contains(gameObject.name))
         {
             Debug.Log("Equip");
             Equip();
         }
-        if (weaponTypes.Contains(startObject.name) && weaponTypes.Contains(gameObject.name))
+        else if (weaponTypes.Contains(startObject.name) && weaponTypes.Contains(gameObject.name))
         {
             Debug.Log("Equip - swap weapon");
             Equip();

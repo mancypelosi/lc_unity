@@ -92,7 +92,7 @@ public abstract class Item : Stats
     public Item AddModifier(Modifier mod)
     {
         // Don't add modifiers to Legendary or Set items
-        if (this.rarity != Rarity.Legendary || this.rarity != Rarity.Set)
+        if (rarity != Rarity.Legendary && rarity != Rarity.Set)
         {
             // Update name
             if (mod.type == Modifier.ModifierType.Prefix)

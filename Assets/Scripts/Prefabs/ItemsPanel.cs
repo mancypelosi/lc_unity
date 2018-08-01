@@ -14,9 +14,7 @@ public class ItemsPanel : MonoBehaviour {
         // Inventory (Set item border color to match rarity)
         for (int i = 0; i < player.inventory.Count; i++)
         {
-            GameObject.Find("Item" + i).GetComponent<ItemPanel>().item = player.inventory[i];
-            GameObject.Find("Item" + i).GetComponentInChildren<Image>().sprite = Resources.Load<Sprite>(player.inventory[i].spritePath);
-            GameObject.Find("ItemPanel" + i).GetComponentInChildren<Outline>().effectColor = player.inventory[i].GetRarityColor();
+            SetItem(GameObject.Find("Item" + i), player.inventory[i]);
         }
 
         // Equipment
@@ -42,6 +40,5 @@ public class ItemsPanel : MonoBehaviour {
             // Rarities
             gameObject.GetComponentInParent<Outline>().effectColor = item.GetRarityColor();
         }
-
     }
 }

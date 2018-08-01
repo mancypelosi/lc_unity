@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class World {
 
-    public string worldName;
+    public string worldName = "";
     public int enemyScaling = 1;
     public int currentStage = 1;
     public string backgroundPath;
