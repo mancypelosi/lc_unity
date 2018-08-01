@@ -1678,7 +1678,6 @@ public class Armor : Item {
             intelligence = 5,
             critChance = 0,
             critDamage = 20,
-
         };
         armorList.Add(armor);
 
@@ -1699,7 +1698,6 @@ public class Armor : Item {
             intelligence = 5,
             critChance = 0,
             critDamage = 20,
-
         };
         armorList.Add(armor);
 
@@ -1720,7 +1718,6 @@ public class Armor : Item {
             intelligence = 5,
             critChance = 0,
             critDamage = 20,
-
         };
         armorList.Add(armor);
 
@@ -1741,7 +1738,6 @@ public class Armor : Item {
             intelligence = 5,
             critChance = 0,
             critDamage = 20,
-
         };
         armorList.Add(armor);
 
@@ -1762,7 +1758,6 @@ public class Armor : Item {
             intelligence = 5,
             critChance = 0,
             critDamage = 20,
-
         };
         armorList.Add(armor);
 
@@ -1784,7 +1779,6 @@ public class Armor : Item {
             critChance = 0,
             critDamage = 0,
             bonusMagical = 5,
-
         };
         armorList.Add(armor);
 
@@ -1806,7 +1800,6 @@ public class Armor : Item {
             critChance = 0,
             critDamage = 0,
             bonusMagical = 5,
-
         };
         armorList.Add(armor);
 
@@ -1828,7 +1821,6 @@ public class Armor : Item {
             critChance = 0,
             critDamage = 0,
             bonusMagical = 5,
-
         };
         armorList.Add(armor);
 
@@ -1850,7 +1842,6 @@ public class Armor : Item {
             critChance = 0,
             critDamage = 0,
             bonusMagical = 5,
-
         };
         armorList.Add(armor);
 
@@ -1872,6 +1863,114 @@ public class Armor : Item {
             critChance = 0,
             critDamage = 0,
             bonusMagical = 5,
+        };
+        armorList.Add(armor);
+        
+        /****************/
+        /****LEYENDOS****/
+        /****************/
+        
+        // Create cloth boots armor
+        armor = new Armor
+        {
+            itemId = 4315,
+            name = "Nightmage Shoes",
+            spritePath = "Icons/boots2",
+            rarity = Rarity.Uncommon,
+            buyValue = 200000,
+            sellValue = 300,
+            requiredLevel = 20,
+            requiredInt = 75,
+            armorType = ArmorType.Boots,
+            strength = 5,
+            dexterity = 5,
+            intelligence = 10,
+            critChance = 5,
+            critDamage = 25,
+            bonusMagical = 0,
+        };
+        armorList.Add(armor);
+        
+        // Create cloth robes armor
+        armor = new Armor
+        {
+            itemId = 4312,
+            name = "Nightmage Robes",
+            spritePath = "Icons/chest",
+            rarity = Rarity.Uncommon,
+            buyValue = 200000,
+            sellValue = 300,
+            requiredLevel = 20,
+            requiredInt = 75,
+            armorType = ArmorType.Chest
+            strength = 5,
+            dexterity = 5,
+            intelligence = 10,
+            critChance = 5,
+            critDamage = 25,
+            bonusMagical = 0,
+        };
+        armorList.Add(armor);
+        
+        // Create cloth boots armor
+        armor = new Armor
+        {
+            itemId = 4311,
+            name = "Nightmage Hood",
+            spritePath = "Icons/helm",
+            rarity = Rarity.Uncommon,
+            buyValue = 200000,
+            sellValue = 300,
+            requiredLevel = 20,
+            requiredInt = 75,
+            armorType = ArmorType.Head,
+            strength = 5,
+            dexterity = 5,
+            intelligence = 10,
+            critChance = 5,
+            critDamage = 25,
+            bonusMagical = 0,
+        };
+        armorList.Add(armor);
+        
+        // Create leather gloves armor
+        armor = new Armor
+        {
+            itemId = 4213,
+            name = "Fingerless Nomad Gloves",
+            spritePath = "Icons/gloves2",
+            flavorText = "You totally look cool"
+            rarity = Rarity.Uncommon,
+            buyValue = 200000,
+            sellValue = 300,
+            requiredLevel = 20,
+            requiredDex = 75,
+            armorType = ArmorType.Gloves,
+            strength = 5,
+            dexterity = 25,
+            intelligence = 5,
+            critChance = 0,
+            critDamage = 20,
+        };
+        armorList.Add(armor);
+        
+        // Create iron greaves armor
+        armor = new Armor
+        {
+            itemId = 4114,
+            name = "Assless Greaves",
+            spritePath = "Icons/legs",
+            rarity = Rarity.Uncommon,
+            buyValue = 200000,
+            sellValue = 300,
+            requiredLevel = 20,
+            requiredStr = 75,
+            armorType = ArmorType.Legs,
+            strength = 10,
+            dexterity = 5,
+            intelligence = 5,
+            armorPen = 25,
+            bonusPhysical = 0,
 
         };
         armorList.Add(armor);
