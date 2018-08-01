@@ -1530,7 +1530,7 @@ public class Modifier : Stats
         {
             modId = 1213,
             type = ModifierType.Suffix,
-            name = "of the Crusader",
+            name = "of the Spellsword",
             buyValue = 20,
             sellValue = 10,
             strength = 2,
@@ -1832,7 +1832,7 @@ public class Modifier : Stats
         {
             modId = 2213,
             type = ModifierType.Suffix,
-            name = "of the Crusader",
+            name = "of the Spellsword",
             buyValue = 40,
             sellValue = 20,
             strength = 3,
@@ -2132,7 +2132,7 @@ public class Modifier : Stats
         {
             modId = 3213,
             type = ModifierType.Suffix,
-            name = "of the Crusader",
+            name = "of the Spellsword",
             buyValue = 60,
             sellValue = 30,
             strength = 5,
@@ -2434,7 +2434,7 @@ public class Modifier : Stats
         {
             modId = 4213,
             type = ModifierType.Suffix,
-            name = "of the Crusader",
+            name = "of the Spellsword",
             buyValue = 120,
             sellValue = 60,
             strength = 7,
