@@ -931,28 +931,6 @@ public class Weapon : Item
         };
         weaponList.Add(weapon);
 
-        // Create warhammer weapon
-        weapon = new Weapon
-        {
-            itemId = 028103,
-            name = "Steel Warhammer",
-            spritePath = "Icons/mace",
-            soundPath = "Sfx/macesfx",
-            rarity = Rarity.Uncommon,
-            buyValue = 60,
-            sellValue = 30,
-            requiredLevel = 5,
-            requiredStr = 15,
-            weaponType = WeaponType.Mace,
-            elementType = ElementType.None,
-            damageType = DamageType.Physical,
-            statMod = StatModifier.Strength,
-            apc = 1,
-            minDamage = 7,
-            maxDamage = 14,
-            armorPen = 10
-        };
-        weaponList.Add(weapon);
 
         // Create dagger weapon
         weapon = new Weapon
@@ -1133,50 +1111,6 @@ public class Weapon : Item
         };
         weaponList.Add(weapon);
 
-        // Create glaive
-        weapon = new Weapon
-        {
-            itemId = 020206,
-            name = "Steel Warglaive",
-            spritePath = "Icons/spear",
-            soundPath = "Sfx/spearsfx",
-            rarity = Rarity.Common,
-            buyValue = 60,
-            sellValue = 30,
-            requiredLevel = 5,
-            requiredDex = 15,
-            weaponType = WeaponType.Spear,
-            elementType = ElementType.None,
-            damageType = DamageType.Physical,
-            statMod = StatModifier.Dexterity,
-            apc = 1,
-            minDamage = 10,
-            maxDamage = 11,
-            critChance = 5
-        };
-        weaponList.Add(weapon);
-
-        // Create spear
-        weapon = new Weapon
-        {
-            itemId = 024206,
-            name = "Steel Water Trident",
-            spritePath = "Icons/spear",
-            soundPath = "Sfx/spearsfx",
-            rarity = Rarity.Uncommon,
-            buyValue = 60,
-            sellValue = 30,
-            requiredLevel = 5,
-            requiredDex = 10,
-            weaponType = WeaponType.Spear,
-            elementType = ElementType.Water,
-            damageType = DamageType.Magical,
-            statMod = StatModifier.Dexterity,
-            apc = 1,
-            minDamage = 10,
-            maxDamage = 13
-        };
-        weaponList.Add(weapon);
 
         // Create bow
         weapon = new Weapon
@@ -1880,28 +1814,6 @@ public class Weapon : Item
         };
         weaponList.Add(weapon);
 
-        // Create warhammer weapon
-        weapon = new Weapon
-        {
-            itemId = 038103,
-            name = "Silver Warhammer",
-            spritePath = "Icons/mace",
-            soundPath = "Sfx/macesfx",
-            rarity = Rarity.Uncommon,
-            buyValue = 120,
-            sellValue = 60,
-            requiredLevel = 15,
-            requiredStr = 50,
-            weaponType = WeaponType.Mace,
-            elementType = ElementType.None,
-            damageType = DamageType.Physical,
-            statMod = StatModifier.Strength,
-            apc = 1,
-            minDamage = 10,
-            maxDamage = 20,
-            armorPen = 13
-        };
-        weaponList.Add(weapon);
 
         // Create dagger weapon
         weapon = new Weapon
@@ -2082,29 +1994,6 @@ public class Weapon : Item
         };
         weaponList.Add(weapon);
 
-        // Create glaive
-        weapon = new Weapon
-        {
-            itemId = 030206,
-            name = "Silver Warglaive",
-            spritePath = "Icons/spear",
-            soundPath = "Sfx/spearsfx",
-            rarity = Rarity.Common,
-            buyValue = 120,
-            sellValue = 60,
-            requiredLevel = 15,
-            requiredDex = 50,
-            weaponType = WeaponType.Spear,
-            elementType = ElementType.None,
-            damageType = DamageType.Physical,
-            statMod = StatModifier.Dexterity,
-            apc = 1,
-            minDamage = 15,
-            maxDamage = 17,
-            critChance = 5
-        };
-        weaponList.Add(weapon);
-
         // Create spear
         weapon = new Weapon
         {
@@ -2138,7 +2027,7 @@ public class Weapon : Item
             buyValue = 100,
             sellValue = 40,
             requiredLevel = 15,
-            requiredInt = 50,
+            requiredDex = 50,
             weaponType = WeaponType.Bow,
             elementType = ElementType.None,
             damageType = DamageType.Physical,
@@ -2459,8 +2348,8 @@ public class Weapon : Item
             rarity = Rarity.Legendary,
             buyValue = 100000,
             sellValue = 100,
-            requiredLevel = 5,
-            requiredStr = 10,
+            requiredLevel = 15,
+            requiredStr = 50,
             weaponType = WeaponType.Shield,
             elementType = ElementType.None,
             damageType = DamageType.Physical,
@@ -2483,8 +2372,8 @@ public class Weapon : Item
             rarity = Rarity.Legendary,
             buyValue = 100000,
             sellValue = 100,
-            requiredLevel = 5,
-            requiredInt = 10,
+            requiredLevel = 15,
+            requiredInt = 50,
             weaponType = WeaponType.Chakram,
             elementType = ElementType.Water,
             damageType = DamageType.Magical,
@@ -2499,15 +2388,15 @@ public class Weapon : Item
         // Create spell
         weapon = new Weapon
         {
-            itemId = 993003,
+            itemId = 003001,
             name = "Steam Burst",
             spritePath = "Icons/spell",
             soundPath = "Sfx/steamsfx",
             rarity = Rarity.Legendary,
             buyValue = 100000,
             sellValue = 100,
-            requiredLevel = 5,
-            requiredInt = 10,
+            requiredLevel = 15,
+            requiredInt = 50,
             weaponType = WeaponType.Spell,
             elementType = ElementType.Air,
             damageType = DamageType.Magical,
@@ -2523,7 +2412,7 @@ public class Weapon : Item
         // Create rifle
         weapon = new Weapon
         {
-            itemId = 993004,
+            itemId = 993003,
             name = "Super Soaker",
             flavorText = "Where does the water come from?",
             spritePath = "Icons/rifle",
@@ -2531,8 +2420,8 @@ public class Weapon : Item
             rarity = Rarity.Legendary,
             buyValue = 100000,
             sellValue = 100,
-            requiredLevel = 5,
-            requiredStr = 10,
+            requiredLevel = 15,
+            requiredStr = 50,
             weaponType = WeaponType.Gun,
             elementType = ElementType.Water,
             damageType = DamageType.Magical,
@@ -2546,14 +2435,15 @@ public class Weapon : Item
         // Create ice dagger weapon
         weapon = new Weapon
         {
-            itemId = 993005,
-            name = "Frozen Shard of Blastoise-water",
+            itemId = 003002,
+            name = "Frozen Shard",
             spritePath = "Icons/dagger",
             soundPath = "Sfx/stabsfx",
             rarity = Rarity.Legendary,
             buyValue = 100000,
             sellValue = 100,
-            requiredLevel = 1,
+            requiredLevel = 15,
+            requiredDex = 50,
             weaponType = WeaponType.Dagger,
             elementType = ElementType.Ice,
             damageType = DamageType.Magical,
@@ -2569,15 +2459,15 @@ public class Weapon : Item
         // Create claw
         weapon = new Weapon
         {
-            itemId = 993006,
+            itemId = 003003,
             name = "Steam Claws",
             spritePath = "Icons/claws",
             soundPath = "Sfx/clawsfx",
             rarity = Rarity.Legendary,
             buyValue = 100000,
             sellValue = 100,
-            requiredLevel = 5,
-            requiredDex = 10,
+            requiredLevel = 15,
+            requiredDex = 50,
             weaponType = WeaponType.Claw,
             elementType = ElementType.Air,
             damageType = DamageType.Magical,
@@ -2587,6 +2477,76 @@ public class Weapon : Item
             maxDamage = 13,
             critChance = 10,
             critDamage = 50
+        };
+        weaponList.Add(weapon);
+        
+        // Create frying pan
+        weapon = new Weapon
+        {
+            itemId = 003004,
+            name = "Frying Pan",
+            spritePath = "Icons/fryingpan",
+            soundPath = "Sfx/donksfx",
+            rarity = Rarity.Legendary,
+            buyValue = 100000,
+            sellValue = 100,
+            requiredLevel = 15,
+            requiredStr = 50,
+            weaponType = WeaponType.Mace,
+            elementType = ElementType.None,
+            damageType = DamageType.Physical,
+            statMod = StatModifier.Strength,
+            apc = 1,
+            minDamage = 15,
+            maxDamage = 25,
+            armorpen = 50,
+            isSundering = true,
+        };
+        weaponList.Add(weapon);
+        
+        // Create bow
+        weapon = new Weapon
+        {
+            itemId = 003005,
+            name = "Silverbolt Crossbow",
+            spritePath = "Icons/xbow",
+            soundPath = "Sfx/bowsfx",
+            rarity = Rarity.Common,
+            buyValue = 100000,
+            sellValue = 100,
+            requiredLevel = 15,
+            requiredDex = 50,
+            weaponType = WeaponType.Bow,
+            elementType = ElementType.Light,
+            damageType = DamageType.Physical,
+            statMod = StatModifier.Dexterity,
+            apc = 1,
+            minDamage = 15,
+            maxDamage = 30,
+            critDamage = 15,
+        };
+        weaponList.Add(weapon);
+        
+        // Create spell
+        weapon = new Weapon
+        {
+            itemId = 003006,
+            name = "Acid Wand",
+            spritePath = "Icons/spell",
+            soundPath = "Sfx/gassfx",
+            rarity = Rarity.Legendary,
+            buyValue = 100000,
+            sellValue = 100,
+            requiredLevel = 15,
+            requiredInt = 50,
+            weaponType = WeaponType.Wand,
+            elementType = ElementType.Poison,
+            damageType = DamageType.Physical,
+            statMod = StatModifier.Intelligence,
+            apc = 1,
+            minDamage = 15,
+            maxDamage = 25,
+            armorPen = 25,
         };
         weaponList.Add(weapon);
         /***************/
@@ -2657,7 +2617,7 @@ public class Weapon : Item
             apc = 1,
             minDamage = 16,
             maxDamage = 30,
-            critChance = 4
+            critChance = 5
         };
         weaponList.Add(weapon);
 
@@ -2754,26 +2714,26 @@ public class Weapon : Item
         };
         weaponList.Add(weapon);
 
-        // Create warhammer weapon
+
+        // Create spear
         weapon = new Weapon
         {
-            itemId = 048103,
-            name = "Mithril Warhammer",
-            spritePath = "Icons/mace",
-            soundPath = "Sfx/macesfx",
-            rarity = Rarity.Uncommon,
-            buyValue = 240,
-            sellValue = 10,
+            itemId = 040106,
+            name = "Mithril Halberd",
+            spritePath = "Icons/spear",
+            soundPath = "Sfx/spearsfx",
+            rarity = Rarity.Common,
+            buyValue = 200,
+            sellValue = 80,
             requiredLevel = 20,
             requiredStr = 75,
-            weaponType = WeaponType.Mace,
+            weaponType = WeaponType.Spear,
             elementType = ElementType.None,
             damageType = DamageType.Physical,
             statMod = StatModifier.Strength,
             apc = 1,
-            minDamage = 15,
-            maxDamage = 30,
-            armorPen = 20
+            minDamage = 24,
+            maxDamage = 25
         };
         weaponList.Add(weapon);
 
@@ -2956,28 +2916,6 @@ public class Weapon : Item
         };
         weaponList.Add(weapon);
 
-        // Create glaive
-        weapon = new Weapon
-        {
-            itemId = 040206,
-            name = "Mithril Warglaive",
-            spritePath = "Icons/spear",
-            soundPath = "Sfx/spearsfx",
-            rarity = Rarity.Common,
-            buyValue = 240,
-            sellValue = 100,
-            requiredLevel = 20,
-            requiredDex = 75,
-            weaponType = WeaponType.Spear,
-            elementType = ElementType.None,
-            damageType = DamageType.Physical,
-            statMod = StatModifier.Dexterity,
-            apc = 1,
-            minDamage = 22,
-            maxDamage = 25,
-            critChance = 7
-        };
-        weaponList.Add(weapon);
 
         // Create spear
         weapon = new Weapon
@@ -3042,6 +2980,29 @@ public class Weapon : Item
             apc = 1,
             minDamage = 18,
             maxDamage = 33
+        };
+        weaponList.Add(weapon);
+
+        // Create mace weapon
+        weapon = new Weapon
+        {
+            itemId = 040103,
+            name = "Mithril Blackjack",
+            spritePath = "Icons/mace",
+            soundPath = "Sfx/macesfx",
+            rarity = Rarity.Common,
+            buyValue = 200,
+            sellValue = 80,
+            requiredLevel = 20,
+            requiredStr = 75,
+            weaponType = WeaponType.Mace,
+            elementType = ElementType.None,
+            damageType = DamageType.Physical,
+            statMod = StatModifier.Dexterity,
+            apc = 1,
+            minDamage = 15,
+            maxDamage = 26,
+            armorPen = 20
         };
         weaponList.Add(weapon);
 
@@ -3250,6 +3211,27 @@ public class Weapon : Item
         };
         weaponList.Add(weapon);
 
+        // Create sword weapon
+        weapon = new Weapon
+        {
+            itemId = 040301,
+            name = "Psiblade",
+            spritePath = "Icons/sword",
+            soundPath = "Sfx/energyswordsfx",
+            rarity = Rarity.Common,
+            buyValue = 200,
+            sellValue = 80,
+            requiredLevel = 20,
+            requiredStr = 75,
+            weaponType = WeaponType.Sword,
+            elementType = ElementType.None,
+            damageType = DamageType.Physical,
+            statMod = StatModifier.Intelligence,
+            apc = 1,
+            minDamage = 18,
+            maxDamage = 33
+        };
+        weaponList.Add(weapon);
 
         // Create str shield
         weapon = new Weapon
@@ -3300,7 +3282,7 @@ public class Weapon : Item
         // Create int shield
         weapon = new Weapon
         {
-            itemId = 030313,
+            itemId = 040313,
             name = "Birch Spirit Totem",
             spritePath = "Icons/shield",
             soundPath = "Sfx/donksfx",
@@ -3320,6 +3302,156 @@ public class Weapon : Item
         };
         weaponList.Add(weapon);
 
+        /********************/
+        /*** LEGENDARIES ***/
+        /******************/
+        // Create spell
+        weapon = new Weapon
+        {
+            itemId = 004001,
+            name = "Stormbolt",
+            spritePath = "Icons/spell",
+            soundPath = "Sfx/thundersfx",
+            rarity = Rarity.Legendary,
+            buyValue = 250000,
+            sellValue = 300,
+            requiredLevel = 20,
+            requiredInt = 75,
+            weaponType = WeaponType.Spell,
+            elementType = ElementType.Lightning,
+            damageType = DamageType.Magical,
+            statMod = StatModifier.Intelligence,
+            apc = 1,
+            minDamage = 1,
+            maxDamage = 65,
+            isNegating = true,
+            magicPen = 30,
+        };
+        weaponList.Add(weapon);
+        
+        // Create horn
+        weapon = new Weapon
+        {
+            itemId = 004002,
+            name = "Horn of the Goatfather",
+            spritePath = "Icons/horn",
+            flavorText = "Forged by the mighty Oarn himself, a champion may blow to summon goats to his aid"
+            soundPath = "Sfx/baroosfx",
+            rarity = Rarity.Legendary,
+            buyValue = 250000,
+            sellValue = 300,
+            requiredLevel = 20,
+            requiredStr = 75,
+            weaponType = WeaponType.Mace,
+            elementType = ElementType.Fire,
+            damageType = DamageType.Physical,
+            statMod = StatModifier.Strength,
+            apc = 1,
+            isDot = true,
+            minDamage = 18,
+            maxDamage = 38,
+        };
+        weaponList.Add(weapon);
+        
+        // Create blackjack
+        weapon = new Weapon
+        {
+            itemId = 004003,
+            name = "Crackling Blackjack",
+            spritePath = "Icons/mace",
+            soundPath = "Sfx/thundersfx",
+            rarity = Rarity.Legendary,
+            buyValue = 250000,
+            sellValue = 300,
+            requiredLevel = 20,
+            requiredDex = 75,
+            weaponType = WeaponType.Mace,
+            elementType = ElementType.Lightning,
+            damageType = DamageType.Magical,
+            statMod = StatModifier.Dexterity,
+            apc = 1,
+            minDamage = 12,
+            maxDamage = 52,
+            magicPen = 25,
+            isNegating = true,
+            critDamage = 25,
+        };
+        weaponList.Add(weapon);
+        
+        // Create mindblade
+        weapon = new Weapon
+        {
+            itemId = 004004,
+            name = "Blade of Judgment",
+            spritePath = "Icons/sword",
+            flavorText = "Clean your room, bucko",
+            soundPath = "Sfx/energyswordsfx",
+            rarity = Rarity.Legendary,
+            buyValue = 250000,
+            sellValue = 300,
+            requiredLevel = 20,
+            requiredInt = 75,
+            weaponType = WeaponType.Sword,
+            elementType = ElementType.Light,
+            damageType = DamageType.Physical,
+            statMod = StatModifier.Intelligence,
+            apc = 1,
+            minDamage = 27,
+            maxDamage = 50,
+            isSundering = true,
+        };
+        weaponList.Add(weapon);
+        
+        // Create halberd
+        weapon = new Weapon
+        {
+            itemId = 004005,
+            name = "Dread Halberd",
+            spritePath = "Icons/spell",
+            flavorText = "Edgy af"
+            soundPath = "Sfx/spearsfx",
+            rarity = Rarity.Legendary,
+            buyValue = 250000,
+            sellValue = 300,
+            requiredLevel = 20,
+            requiredStr = 75,
+            weaponType = WeaponType.Spear,
+            elementType = ElementType.Dark,
+            damageType = DamageType.Physical,
+            statMod = StatModifier.Strength,
+            apc = 1,
+            minDamage = 44,
+            maxDamage = 44,
+            armorPen = 15,
+            isSundering = true,
+            critChance = -10,
+        };
+        weaponList.Add(weapon);
+        
+        // Create blackjack
+        weapon = new Weapon
+        {
+            itemId = 004006,
+            name = "Repeater Crossbow",
+            spritePath = "Icons/xbow",
+            soundPath = "Sfx/bowsfx",
+            rarity = Rarity.Legendary,
+            buyValue = 250000,
+            sellValue = 300,
+            requiredLevel = 20,
+            requiredDex = 75,
+            weaponType = WeaponType.Bow,
+            elementType = ElementType.None,
+            damageType = DamageType.Physical,
+            statMod = StatModifier.Dexterity,
+            apc = 5,
+            minDamage = 1,
+            maxDamage = 15,
+            critChance = 5,
+            critDamage = 15,
+        };
+        weaponList.Add(weapon);
+        
         return weaponList;
     }
 
