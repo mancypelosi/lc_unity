@@ -5,7 +5,7 @@ using UnityEngine;
 [Serializable]
 public abstract class Item : Stats
 {
-
+    // Enumerator
     public enum Rarity
     {
         Common,
@@ -55,40 +55,43 @@ public abstract class Item : Stats
     // Increment rarity of the item one level higher
     private Rarity IncrementRarity(Rarity rarity)
     {
-        //Debug.Log("rarity: " + rarity);
         // Upgrade rarity if it's not legendary or set rarity
         if (rarity != Rarity.Legendary && rarity != Rarity.Set)
         {
             // Get rarity index
             int rarityIndex = (int)rarity;
-            // Increment to next rarity
+            // Increment rarity
             rarityIndex++;
             return (Rarity)rarityIndex;
         }
         else
+        {
             return rarity;
+        }
     }
 
     // Decrement rarity of the item one level lower
     private Rarity DecrementRarity(Rarity rarity)
     {
-        //Debug.Log("rarity: " + rarity);
         // Upgrade rarity if it's not legendary or set rarity
         if (rarity != Rarity.Legendary && rarity != Rarity.Set)
         {
             // Get rarity index
             int rarityIndex = (int)rarity;
-            // Increment to next rarity
+            // Decrement rarity
             rarityIndex--;
             return (Rarity)rarityIndex;
         }
         else
+        {
             return rarity;
+        }
     }
 
     // Add modifier to item, randomize the values
     public Item AddModifier(Modifier mod)
     {
+        // Don't add modifiers to Legendary or Set items
         if (this.rarity != Rarity.Legendary || this.rarity != Rarity.Set)
         {
             // Update name

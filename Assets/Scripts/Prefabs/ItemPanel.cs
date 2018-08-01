@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-// ItemPanel class for the Items using Pointer and Drag EventHandlers
+// Class for the Items using Pointer and Drag EventHandlers, attached to the ItemPanel prefab object
 public class ItemPanel : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler,
     IBeginDragHandler, IDragHandler, IEndDragHandler, IDropHandler
 {

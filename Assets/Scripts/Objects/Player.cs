@@ -19,6 +19,10 @@ public class Player : Stats {
     public bool world2 = false;
     public bool world3 = false;
     public bool world4 = false;
+    public bool world5 = false;
+    public bool world6 = false;
+    public bool world7 = false;
+    public bool world8 = false;
 
     // Weapons
     public Weapon equippedWeapon = new Weapon();

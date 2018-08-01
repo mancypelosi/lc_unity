@@ -31,14 +31,23 @@ public class Armor : Item {
     override
     public string GetToolTip()
     {
-        return "Armor Type: " + armorType + Environment.NewLine +
-            "Str: " + strength + " Dex: " + dexterity + " Int: " + intelligence + Environment.NewLine +
-            "Armor Pen: " + armorPen + Environment.NewLine +
-            "Magic Pen: " + magicPen + Environment.NewLine +
-            "Crit Chance: " + critChance + "%" + Environment.NewLine +
-            "Crit Damage: " + critDamage + "%" + Environment.NewLine +
-            '"' + flavorText + '"' + Environment.NewLine +
-            "Value: " + sellValue + Environment.NewLine;
+        string tooltip = "";
+        tooltip += "Armor Type: " + armorType + Environment.NewLine;
+        tooltip += "Str: " + strength + " Dex: " + dexterity + " Int: " + intelligence + Environment.NewLine;
+        tooltip += "A Pen: " + armorPen + " M Pen: " + magicPen + Environment.NewLine;
+        tooltip += "Crit: " + critChance + "% Crit Dmg: " + critDamage + "%" + Environment.NewLine;
+        if (requiredLevel > 0)
+            tooltip += "Required Level: " + requiredLevel + Environment.NewLine;
+        if (requiredStr > 0)
+            tooltip += "Required Str: " + requiredStr + Environment.NewLine;
+        if (requiredDex > 0)
+            tooltip += "Required Dex: " + requiredDex + Environment.NewLine;
+        if (requiredInt > 0)
+            tooltip += "Required Int: " + requiredInt + Environment.NewLine;
+        if (flavorText != "")
+            tooltip += '"' + flavorText + '"' + Environment.NewLine;
+        tooltip += "Value: " + sellValue + Environment.NewLine;
+        return tooltip;
     }
 
     // Get Armor by item id from list
@@ -60,6 +69,8 @@ public class Armor : Item {
             if ((Int32.Parse(a.itemId.ToString("0000").Substring(0, 1))) == tier)
                 tierList.Add(a);
         }
+        if (tierList.Count == 0)
+            tierList = list;
         return tierList;
     }
 

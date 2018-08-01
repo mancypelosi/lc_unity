@@ -26,15 +26,16 @@ public class Enemy {
         return e;
     }
 
-    // Scale the monster based on the world level
-    public Enemy Scale(World world)
+    // Scale the monster based on the world's enemyScaling
+    public Enemy ScaleDifficulty(World world)
     {
-        int value = world.enemyScaling;
-        health = health * value;
-        armor = Convert.ToInt32((armor * value) * .35);
-        magicResist = Convert.ToInt32((magicResist * value) * .35);
-        xpToGive = xpToGive * value;
-        goldToGive = goldToGive * value;
+        int scale = world.enemyScaling;
+
+        health = health * scale;
+        armor = Convert.ToInt32((armor * scale) * .5);
+        magicResist = Convert.ToInt32((magicResist * scale) * .5);
+        xpToGive = xpToGive * scale;
+        goldToGive = goldToGive * scale;
 
         return this;
     }

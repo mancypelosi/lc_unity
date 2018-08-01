@@ -112,10 +112,10 @@ public class World {
             enemy.GetEnemyById(el, 049), enemy.GetEnemyById(el, 023), enemy.GetEnemyById(el, 024)},
             miniBoss = enemy.GetEnemyById(el, 044),
             boss = enemy.GetEnemyById(el, 045),
-            weaponList = weapon.GetListByTier(wl, 03),
-            armorList = armor.GetListByTier(al, 3),
-            prefixList = mod.GetListByTier(pl, 3),
-            suffixList = mod.GetListByTier(sl, 3)
+            weaponList = weapon.GetListByTier(wl, 04),
+            armorList = armor.GetListByTier(al, 4),
+            prefixList = mod.GetListByTier(pl, 4),
+            suffixList = mod.GetListByTier(sl, 4)
         };
         worldList.Add(world);
 

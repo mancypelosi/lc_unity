@@ -1,41 +1,24 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.SceneManagement;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
+// CharacterSelect scene, this code attached to Canvas
 public class CharacterSelect : MonoBehaviour {
-
-    public Player[] players;
 
 	// Use this for initialization
 	void Start () {
         if (GameManager.gm.player.playerClass == "None")
-        {
             GameObject.Find("CharacterSlot1").GetComponentInChildren<Text>().text = "NEW CHARACTER";
-        }
         else
-        {
             GameObject.Find("CharacterSlot1").GetComponentInChildren<Text>().text = 
                 "Name:" + GameManager.gm.player.playerName + " Level:" + GameManager.gm.player.playerLevel;
-        }
     }
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 
     // Load NewCharacter scene
     public void LoadCharacter(int characterChoice)
     {
         if (GameManager.gm.player.playerClass != "None")
-        {
-            SceneManager.LoadScene("Town");
-        }
+            GameManager.gm.LoadScene("Town");
         else
-        {
-            SceneManager.LoadScene("NewCharacter");
-        }
+            GameManager.gm.LoadScene("NewCharacter");
     }
 }

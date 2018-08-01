@@ -4,6 +4,7 @@ using System.IO;
 using UnityEngine;
 using UnityEngine.UI;
 
+// MainMenu scene, this code attached to MenuPanel
 public class SettingsMenu : MonoBehaviour {
 
 	// Use this for initialization

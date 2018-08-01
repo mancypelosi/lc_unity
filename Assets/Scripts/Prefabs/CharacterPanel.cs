@@ -1,15 +1,13 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
+// This code attached to the CharacterPanel prefab object
 public class CharacterPanel : MonoBehaviour {
 
     private Player player;
 
     // Use this for initialization
     void Start () {
-
         // Set player
         player = GameManager.gm.player;
 
@@ -104,13 +102,6 @@ public class CharacterPanel : MonoBehaviour {
             GameObject.Find("CritDamage").GetComponentInChildren<Text>().text = "Crit Damage: " + player.critDamage.ToString() + "%";
             GameObject.Find("TalentButton").GetComponentInChildren<Text>().text = "TALENTS: " + player.talentPoints.ToString();
         }
-    }
-
-    // Save player data to save file
-    public void Save()
-    {
-        GameManager.gm.Save();
-        Debug.Log("Game saved");
     }
 
 }

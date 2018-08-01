@@ -1,15 +1,13 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.SceneManagement;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
+// NewCharacter scene, this code attached to Canvas
 public class NewCharacter : MonoBehaviour
 {
 
+    private Player player;
     private readonly Weapon weapon = new Weapon();
     private readonly Armor armor = new Armor();
-    private Player player;
 
     // Use this for initialization
     void Start()

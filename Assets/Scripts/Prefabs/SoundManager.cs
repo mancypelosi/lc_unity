@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 
+// This code attached to the SoundManager prefab object
 public class SoundManager : MonoBehaviour {
 
     // Public properties
@@ -27,13 +28,11 @@ public class SoundManager : MonoBehaviour {
         {
             Destroy(gameObject);
         }
-
     }
 
     // Play sound effect once
     public void PlaySoundFX(AudioClip clip)
     {
-        //Debug.Log("Sfx Volume: " + sfxVolume);
         float pitch = 1;
         extraSource.pitch = pitch;
         extraSource.volume = sfxVolume;
@@ -44,7 +43,6 @@ public class SoundManager : MonoBehaviour {
     // Play sound effect for attacks with pitch adjustments
     public void PlaySoundFX(AudioClip clip, bool weak, bool resist, bool crit)
     {
-        //Debug.Log("Pitch: " + fxSource.pitch);
         // Set pitch based on type of attack
         float pitch = 1;
         if (crit)
@@ -63,7 +61,6 @@ public class SoundManager : MonoBehaviour {
     // Play looping music
     public void PlayMusic(AudioClip clip)
     {
-        //Debug.Log("Music Volume: " + musicVolume);
         musicSource.volume = musicVolume;
         musicSource.clip = clip;
         musicSource.Play();

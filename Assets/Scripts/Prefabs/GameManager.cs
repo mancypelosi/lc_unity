@@ -4,6 +4,7 @@ using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
 using UnityEngine.SceneManagement;
 
+// This code attached to the GameManager prefab object
 public class GameManager : MonoBehaviour {
 
     public static GameManager gm;
@@ -13,7 +14,7 @@ public class GameManager : MonoBehaviour {
     public Enemy enemy;
     public World world;
     public string previousScene = "";
-    public static string version = "0.0.1j";
+    public static string version = "0.0.1k";
 
     // Use this for initialization
     void Start()
@@ -33,8 +34,7 @@ public class GameManager : MonoBehaviour {
         } else if (gm != this)
         {
             Destroy(gameObject);
-        }
-        
+        }  
 	}
 
     // Save data to Unity application data file

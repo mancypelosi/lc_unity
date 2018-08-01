@@ -38,6 +38,8 @@ public class Modifier : Stats
             if ((Int32.Parse(m.modId.ToString("0000").Substring(0, 1))) == tier)
                 tierList.Add(m);
         }
+        if (tierList.Count == 0)
+            tierList = list;
         return tierList;
     }
 
@@ -1574,7 +1576,6 @@ public class Modifier : Stats
         /***************/
         /*** TIER 2 ***/
         /*************/
-        // Create suffix modifier
         modifier = new Modifier
         {
             modId = 2201,
@@ -2474,6 +2475,7 @@ public class Modifier : Stats
             armorPen = 0
         };
         modifierList.Add(modifier);
+
         return modifierList;
     }
 }

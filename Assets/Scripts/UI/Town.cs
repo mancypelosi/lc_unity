@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
+// Town scene, this code attached to Canvas
 public class Town : MonoBehaviour {
 
     // Use this for initialization
@@ -19,10 +17,10 @@ public class Town : MonoBehaviour {
     {
         SoundManager.sm.StopMusic();
         // Load scene 'MainMenu'
-        SceneManager.LoadScene("MainMenu");
+        GameManager.gm.LoadScene("MainMenu");
     }
 
-    public void Previous()
+    public void PreviousScene()
     {
         GameManager.gm.LoadScene(GameManager.gm.previousScene);
     }
@@ -60,7 +58,7 @@ public class Town : MonoBehaviour {
         GameManager.gm.world = GameManager.gm.world.GetWorldByName(GameManager.gm.world.WorldList(), inputWorld.text);
 
         // Load scene 'Main'
-        SceneManager.LoadScene("Battle");
+        GameManager.gm.LoadScene("Battle");
     }
 
 }

@@ -128,6 +128,8 @@ public class Weapon : Item
             if ((Int32.Parse(w.itemId.ToString("000000").Substring(0, 2))) == tier)
                 tierList.Add(w);
         }
+        if (tierList.Count == 0)
+            tierList = list;
         return tierList;
     }
 

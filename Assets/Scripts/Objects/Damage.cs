@@ -95,7 +95,7 @@ public class Damage {
         }
         //Debug.Log("Crit damage : " + damage);
 
-        // Attacks per click applied to damage
+        // Attacks per click applied to damage 
         //damage = damage * player.equippedWeapon.apc;
         //Debug.Log("APC damage : " + damage);
 

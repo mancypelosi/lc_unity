@@ -5,9 +5,9 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
+// Battle scene, this code attached to Canvas
 public class Battle : MonoBehaviour
 {
-
     public GameObject floatingTextPrefab;
     public GameObject ItemPanel;
     private Player player;
@@ -39,7 +39,7 @@ public class Battle : MonoBehaviour
         int listCount = world.enemyList.Count;
         int rng = UnityEngine.Random.Range(0, listCount);
         int id = world.enemyList[rng].enemyId;
-        enemy = enemy.GetEnemyById(enemy.EnemyList(), id).Scale(world);
+        enemy = enemy.GetEnemyById(enemy.EnemyList(), id).ScaleDifficulty(world);
 
         // Enemy Info
         GameObject.Find("EnemyNameLabel").GetComponent<Text>().text = enemy.enemyName;
@@ -259,10 +259,10 @@ public class Battle : MonoBehaviour
 
         // Spawn new enemy
         if (world.currentStage == 50)
-            enemy = world.miniBoss.Scale(world);
+            enemy = world.miniBoss.ScaleDifficulty(world);
         else if (world.currentStage == 100)
         {
-            enemy = world.boss.Scale(world);
+            enemy = world.boss.ScaleDifficulty(world);
             timer = true;
         }
         else
@@ -270,7 +270,7 @@ public class Battle : MonoBehaviour
             int listCount = world.enemyList.Count;
             int rng = UnityEngine.Random.Range(0, listCount);
             int id = world.enemyList[rng].enemyId;
-            enemy = enemy.GetEnemyById(enemy.EnemyList(), id).Scale(world);
+            enemy = enemy.GetEnemyById(enemy.EnemyList(), id).ScaleDifficulty(world);
         }
 
         // If boss is beat go to town
