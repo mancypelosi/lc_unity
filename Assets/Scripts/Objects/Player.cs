@@ -5,14 +5,19 @@ using System;
 public class Player : Stats {
 
     // Properties
-    public string playerName = "Hero";
-    public string playerClass = "None";
+    public string name = "Hero";
+    public string @class = "None";
     public string spritePath = "charmander";
-    public int playerLevel = 1;
+    public int level = 1;
     public int currentXP = 0;
     public int xpTNL = 50;
     public int talentPoints = 0;
-    public int playerGold = 0;
+    public int gold = 0;
+    public int comboCount = 0;
+
+    public int modifiedStrength = 0;
+    public int modifiedDexterity = 0;
+    public int modifiedIntelligence = 0;
 
     // World Gates
     public bool world1 = true;
@@ -60,6 +65,10 @@ public class Player : Stats {
         bonusGold += item.bonusGold;
         bonusExp += item.bonusExp;
 
+        modifiedStrength += item.strength;
+        modifiedDexterity += item.dexterity;
+        modifiedIntelligence += item.intelligence;
+
         return item;
     }
 
@@ -81,6 +90,10 @@ public class Player : Stats {
         bonusGold -= item.bonusGold;
         bonusExp -= item.bonusExp;
 
+        modifiedStrength -= item.strength;
+        modifiedDexterity -= item.dexterity;
+        modifiedIntelligence -= item.intelligence;
+
         return item;
     }
 
@@ -94,10 +107,10 @@ public class Player : Stats {
     public void LevelUp()
     {
         // Give player talent point
-        playerLevel++;
+        level++;
         talentPoints++;
         // Reset xp tnl
-        xpTNL = playerLevel * 50;
+        xpTNL = level * 50;
     }
 
 }

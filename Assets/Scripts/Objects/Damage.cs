@@ -95,6 +95,21 @@ public class Damage {
         }
         //Debug.Log("Crit damage : " + damage);
 
+        // Check for combo count
+        if (weak)
+        {
+            player.comboCount++;
+            if (player.comboCount > 5)
+            {
+                player.bonusPhysical += player.comboCount;
+                player.bonusMagical += player.comboCount;
+            }
+        }
+        else
+        {
+            player.comboCount = 0;
+        }
+
         // Attacks per click applied to damage 
         //damage = damage * player.equippedWeapon.apc;
         //Debug.Log("APC damage : " + damage);

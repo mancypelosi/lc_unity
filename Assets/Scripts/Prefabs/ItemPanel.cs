@@ -72,12 +72,12 @@ public class ItemPanel : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
         // Store
         if (startObject.GetComponent<ItemPanel>().type == "Store")
         {
-            if (GameManager.gm.player.playerGold > startItem.buyValue)
+            if (GameManager.gm.player.gold > startItem.buyValue)
             {
                 Debug.Log("Dragged from Store");
                 GameManager.gm.player.inventory.Add(startItem);
                 RemoveItem(startObject);
-                GameManager.gm.player.playerGold -= startItem.buyValue;
+                GameManager.gm.player.gold -= startItem.buyValue;
                 // Inventory (Set item border color to match rarity)
                 for (int i = 0; i < GameManager.gm.player.inventory.Count; i++)
                 {
@@ -122,51 +122,26 @@ public class ItemPanel : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
     // Equip item
     void Equip()
     {
-        // Check if weapon
-        if (weaponTypes.Contains(gameObject.name) && startItem is Weapon)
+        // Required level and attributes check
+        if (GameManager.gm.player.level >= startItem.requiredLevel &&
+            GameManager.gm.player.strength >= startItem.requiredStr &&
+            GameManager.gm.player.dexterity >= startItem.requiredDex &&
+            GameManager.gm.player.intelligence >= startItem.requiredInt)
         {
-            if (weaponTypes.Contains(startObject.name) && weaponTypes.Contains(gameObject.name))
+            // Check if weapon
+            if (weaponTypes.Contains(gameObject.name) && startItem is Weapon)
             {
-                Debug.Log("Swap Equipped Weapons");
-                startObject.transform.SetParent(startParent);
-                // Set the items
-                SetItem(startObject, item);
-                SetItem(gameObject, startItem);
-            }
-            else if (startItem != null && item != null)
-            {
-                Debug.Log("Weapon Swap");
-                startObject.transform.SetParent(startParent);
-                // Update inventory
-                GameManager.gm.player.inventory.Remove(startItem);
-                GameManager.gm.player.inventory.Add(item);
-                // Unequip swapped item
-                GameManager.gm.player.Unequip(item);
-                // Set the items
-                SetItem(startObject, item);
-                SetItem(gameObject, startItem);
-            }
-            else if (startItem != null && item == null)
-            {
-                Debug.Log("Weapon No Swap");
-                // Update invetory
-                GameManager.gm.player.inventory.Remove(startItem);
-                // Update ui object
-                RemoveItem(startObject);
-                // Set the item
-                SetItem(gameObject, startItem);
-            }
-        }
-
-        // Check if armor
-        if (armorTypes.Contains(gameObject.name) && startItem is Armor)
-        {
-            Armor armor = (Armor)startItem;
-            if (gameObject.name.Contains(armor.armorType.ToString()))
-            {
-                if (startItem != null && item != null)
+                if (weaponTypes.Contains(startObject.name) && weaponTypes.Contains(gameObject.name))
                 {
-                    Debug.Log("Armor Swap");
+                    Debug.Log("Swap Equipped Weapons");
+                    startObject.transform.SetParent(startParent);
+                    // Set the items
+                    SetItem(startObject, item);
+                    SetItem(gameObject, startItem);
+                }
+                else if (startItem != null && item != null)
+                {
+                    Debug.Log("Weapon Swap");
                     startObject.transform.SetParent(startParent);
                     // Update inventory
                     GameManager.gm.player.inventory.Remove(startItem);
@@ -177,10 +152,9 @@ public class ItemPanel : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
                     SetItem(startObject, item);
                     SetItem(gameObject, startItem);
                 }
-
-                if (startItem != null && item == null)
+                else if (startItem != null && item == null)
                 {
-                    Debug.Log("Armor No Swap");
+                    Debug.Log("Weapon No Swap");
                     // Update invetory
                     GameManager.gm.player.inventory.Remove(startItem);
                     // Update ui object
@@ -189,8 +163,45 @@ public class ItemPanel : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
                     SetItem(gameObject, startItem);
                 }
             }
-        }
 
+            // Check if armor
+            if (armorTypes.Contains(gameObject.name) && startItem is Armor)
+            {
+                Armor armor = (Armor)startItem;
+                if (gameObject.name.Contains(armor.armorType.ToString()))
+                {
+                    if (startItem != null && item != null)
+                    {
+                        Debug.Log("Armor Swap");
+                        startObject.transform.SetParent(startParent);
+                        // Update inventory
+                        GameManager.gm.player.inventory.Remove(startItem);
+                        GameManager.gm.player.inventory.Add(item);
+                        // Unequip swapped item
+                        GameManager.gm.player.Unequip(item);
+                        // Set the items
+                        SetItem(startObject, item);
+                        SetItem(gameObject, startItem);
+                    }
+
+                    if (startItem != null && item == null)
+                    {
+                        Debug.Log("Armor No Swap");
+                        // Update invetory
+                        GameManager.gm.player.inventory.Remove(startItem);
+                        // Update ui object
+                        RemoveItem(startObject);
+                        // Set the item
+                        SetItem(gameObject, startItem);
+                    }
+                }
+            }
+        }
+        // Player does not meet requirements to equip
+        else
+        {
+            SoundManager.sm.PlaySoundFX(Resources.Load<AudioClip>("Sfx/failsfx"));
+        }
 
     }
 
@@ -391,7 +402,7 @@ public class ItemPanel : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
         GameObject.Find("MagicPen").GetComponentInChildren<Text>().text = "Magic Pen: " + GameManager.gm.player.magicPen.ToString();
         GameObject.Find("CritChance").GetComponentInChildren<Text>().text = "Crit Chance: " + GameManager.gm.player.critChance.ToString() + "%";
         GameObject.Find("CritDamage").GetComponentInChildren<Text>().text = "Crit Damage: " + GameManager.gm.player.critDamage.ToString() + "%";
-        GameObject.Find("Gold").GetComponentInChildren<Text>().text = "Gold: " + GameManager.gm.player.playerGold.ToString();
+        GameObject.Find("Gold").GetComponentInChildren<Text>().text = "Gold: " + GameManager.gm.player.gold.ToString();
     }
 
     // Remove item from ui component and set to default

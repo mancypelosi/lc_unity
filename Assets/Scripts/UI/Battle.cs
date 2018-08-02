@@ -132,6 +132,20 @@ public class Battle : MonoBehaviour
                 GameObject.Find("EnemyHealthBar").GetComponent<Slider>().value = enemy.health;
             }
 
+            // Check for combo
+            if (player.comboCount > 5)
+            {
+                GameObject.Find("ComboLabel").GetComponent<Text>().text = player.comboCount.ToString() + " HITS";
+            }
+            else
+            {
+                GameObject.Find("ComboLabel").GetComponent<Text>().text = "";
+            }
+            if (player.comboCount == 15)
+            {
+                SoundManager.sm.PlaySoundFX(Resources.Load<AudioClip>("Sfx/ultracombosfx"));
+            }
+
             // DoT check
             if (player.equippedWeapon.isDot)
             {
@@ -254,8 +268,8 @@ public class Battle : MonoBehaviour
         // Update player with killed enemy values
         player.xpTNL -= Convert.ToInt32(enemy.xpToGive * (player.bonusExp / 100));
         GameObject.Find("TNL").GetComponentInChildren<Text>().text = "XP TNL: " + player.xpTNL.ToString();
-        player.playerGold += Convert.ToInt32(enemy.goldToGive * (player.bonusGold / 100));
-        GameObject.Find("Gold").GetComponentInChildren<Text>().text = "Gold: " + player.playerGold.ToString();
+        player.gold += Convert.ToInt32(enemy.goldToGive * (player.bonusGold / 100));
+        GameObject.Find("Gold").GetComponentInChildren<Text>().text = "Gold: " + player.gold.ToString();
         // Increment the stage
         GameManager.gm.world.currentStage++;
         GameObject.Find("StageLabel").GetComponentInChildren<Text>().text = "Stage: " + GameManager.gm.world.currentStage.ToString();
@@ -326,7 +340,7 @@ public class Battle : MonoBehaviour
         // Play sound
         SoundManager.sm.PlaySoundFX(Resources.Load<AudioClip>("Sfx/coinsfx"));
         // Update the gui
-        GameObject.Find("Level").GetComponentInChildren<Text>().text = "Level: " + player.playerLevel.ToString();
+        GameObject.Find("Level").GetComponentInChildren<Text>().text = "Level: " + player.level.ToString();
         GameObject.Find("TNL").GetComponentInChildren<Text>().text = "XP TNL: " + player.xpTNL.ToString();
         GameObject.Find("TalentButton").GetComponentInChildren<Text>().text = "TALENTS: " + player.talentPoints;
     }

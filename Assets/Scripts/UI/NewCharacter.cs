@@ -24,8 +24,8 @@ public class NewCharacter : MonoBehaviour
         if (name == "")
             name = "Hero";
         // Base character
-        player.playerName = name;
-        player.playerClass = "Warrior";
+        player.name = name;
+        player.@class = "Warrior";
         player.strength = 10;
         player.dexterity = 1;
         player.intelligence = 1;
@@ -50,8 +50,8 @@ public class NewCharacter : MonoBehaviour
         player.boots = (Armor)player.Equip(armor.GetArmorById(armor.ArmorList(), 0005));
         // Inventory
         Modifier mod = new Modifier();
-        player.inventory.Add(weapon.GetWeaponById(weapon.WeaponList(), 019303).AddModifier(mod.PrefixList()[0]));
-        player.inventory.Add(weapon.GetWeaponById(weapon.WeaponList(), 010001).AddModifier(mod.PrefixList()[0]));
+        player.inventory.Add(weapon.GetWeaponById(weapon.WeaponList(), 010003).AddModifier(mod.PrefixList()[0]));
+        player.inventory.Add(weapon.GetWeaponById(weapon.WeaponList(), 021312).AddModifier(mod.PrefixList()[0]));
 
         // Load Main scene
         GameManager.gm.LoadScene("Town");
@@ -65,8 +65,8 @@ public class NewCharacter : MonoBehaviour
         string name = inputName.text;
         if (name == "")
             name = "Hero";
-        player.playerName = name;
-        player.playerClass = "Rogue";
+        player.name = name;
+        player.@class = "Rogue";
         player.strength = 1;
         player.dexterity = 10;
         player.intelligence = 1;
@@ -103,8 +103,8 @@ public class NewCharacter : MonoBehaviour
         string name = inputName.text;
         if (name == "")
             name = "Hero";
-        player.playerName = name;
-        player.playerClass = "Mage";
+        player.name = name;
+        player.@class = "Mage";
         player.strength = 1;
         player.dexterity = 1;
         player.intelligence = 10;
