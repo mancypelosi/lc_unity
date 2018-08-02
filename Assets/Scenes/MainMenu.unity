@@ -189,7 +189,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 402131820}
+      - m_Target: {fileID: 1386005613}
         m_MethodName: DeleteSave
         m_Mode: 1
         m_Arguments:
@@ -1899,6 +1899,12 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1284912343}
   m_CullTransparentMesh: 0
+--- !u!114 &1386005613 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114579880337502040, guid: 278e540b7693b9d4a8d4ac682a4074e8,
+    type: 2}
+  m_PrefabInternal: {fileID: 29418051}
+  m_Script: {fileID: 11500000, guid: d91fc00627e210645a85056ca5a01ed0, type: 3}
 --- !u!1001 &1394197144
 Prefab:
   m_ObjectHideFlags: 0

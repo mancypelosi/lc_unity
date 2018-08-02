@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour {
 
     public Preferences prefs;
     public Player player;
+    public Player[] playerList;
     public Enemy enemy;
     public World world;
     public string previousScene = "";
@@ -21,6 +22,7 @@ public class GameManager : MonoBehaviour {
     {
         prefs = new Preferences();
         player = new Player();
+        playerList = new Player[3];
         enemy = new Enemy();
         world = new World();
     }
@@ -45,7 +47,12 @@ public class GameManager : MonoBehaviour {
 
         // Data to save to the file
         PlayerData data = new PlayerData();
-        data.player = this.player;
+        data.player = this.playerList;
+
+        if (playerList[0] != null)
+        {
+            Debug.Log("Save playerList[0]: " + playerList[0].name);
+        }
 
         // Serialize the data and close the file
         bf.Serialize(file, data);
@@ -63,7 +70,18 @@ public class GameManager : MonoBehaviour {
             file.Close();
 
             // Data to load from the file
-            this.player= data.player;
+            this.playerList = data.player;
+        }
+    }
+
+    // Delete local save data file
+    public void DeleteSave()
+    {
+        if (File.Exists(Application.persistentDataPath + "/playerData.dat"))
+        {
+            File.Delete(Application.persistentDataPath + "/playerData.dat");
+            GameManager.gm.playerList = new Player[3];
+            Debug.Log("Deleted Save Data");
         }
     }
 
@@ -85,5 +103,5 @@ public class GameManager : MonoBehaviour {
 [Serializable]
 class PlayerData
 {
-    public Player player;
+    public Player[] player;
 }

@@ -25,7 +25,7 @@ public class NewCharacter : MonoBehaviour
             name = "Hero";
         // Base character
         player.name = name;
-        player.@class = "Warrior";
+        player.playerClass = "Warrior";
         player.strength = 10;
         player.dexterity = 1;
         player.intelligence = 1;
@@ -66,7 +66,7 @@ public class NewCharacter : MonoBehaviour
         if (name == "")
             name = "Hero";
         player.name = name;
-        player.@class = "Rogue";
+        player.playerClass = "Rogue";
         player.strength = 1;
         player.dexterity = 10;
         player.intelligence = 1;
@@ -104,7 +104,7 @@ public class NewCharacter : MonoBehaviour
         if (name == "")
             name = "Hero";
         player.name = name;
-        player.@class = "Mage";
+        player.playerClass = "Mage";
         player.strength = 1;
         player.dexterity = 1;
         player.intelligence = 10;

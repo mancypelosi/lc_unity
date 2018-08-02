@@ -13,7 +13,7 @@ public class CharacterPanel : MonoBehaviour {
 
         // Character sheet
         GameObject.Find("Name").GetComponentInChildren<Text>().text = "Name: " + player.name;
-        GameObject.Find("Class").GetComponentInChildren<Text>().text = "Class: " + player.@class;
+        GameObject.Find("Class").GetComponentInChildren<Text>().text = "Class: " + player.playerClass;
         GameObject.Find("Level").GetComponentInChildren<Text>().text = "Level: " + player.level.ToString();
         GameObject.Find("TNL").GetComponentInChildren<Text>().text = "XP TNL: " + player.xpTNL.ToString();
         GameObject.Find("Strength").GetComponentInChildren<Text>().text = "Strength: " + player.strength.ToString() + " (" + player.modifiedStrength.ToString() + ")";

@@ -6,7 +6,7 @@ public class Player : Stats {
 
     // Properties
     public string name = "Hero";
-    public string @class = "None";
+    public string playerClass = "None";
     public string spritePath = "charmander";
     public int level = 1;
     public int currentXP = 0;

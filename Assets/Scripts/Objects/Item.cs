@@ -20,6 +20,7 @@ public abstract class Item : Stats
     public int itemId = 0;
     public string name = "Garbage";
     public string spritePath = "Icons/garbage";
+    public int tier = 0;
     public Rarity rarity = Rarity.Common;
     public string flavorText = "";
     public int buyValue = 0;
@@ -117,8 +118,8 @@ public abstract class Item : Stats
             bonusExp += Math.Round(UnityEngine.Random.Range(.2f, 1f) * mod.bonusExp);
 
             // Increase gold values on the item
-            buyValue += mod.buyValue;
-            sellValue += mod.sellValue;
+            buyValue *= mod.buyValue;
+            sellValue *= mod.sellValue;
 
             // Add mod to item modList
             modList.Add(mod);
@@ -155,6 +156,10 @@ public abstract class Item : Stats
         magicFind -= mod.magicFind;
         bonusGold -= mod.bonusGold;
         bonusExp -= mod.bonusExp;
+
+        // Remove gold values on the item
+        buyValue /= mod.buyValue;
+        sellValue /= mod.sellValue;
 
         // Remove mod from item modList
         modList.Remove(mod);

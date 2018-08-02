@@ -529,7 +529,7 @@ public class Battle : MonoBehaviour
     private void GoToTown()
     {
         SoundManager.sm.StopMusic();
-        SceneManager.LoadScene("Town");
+        GameManager.gm.LoadScene("Town");
     }
 
 }

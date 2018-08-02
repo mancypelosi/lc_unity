@@ -56,14 +56,4 @@ public class SettingsMenu : MonoBehaviour {
         }
     }
 
-    // Delete local save data file
-    public void DeleteSave()
-    {
-        if (File.Exists(Application.persistentDataPath + "/playerData.dat"))
-        {
-            File.Delete(Application.persistentDataPath + "/playerData.dat");
-            GameManager.gm.player = new Player();
-            Debug.Log("Deleted Save Data");
-        }
-    }
 }
