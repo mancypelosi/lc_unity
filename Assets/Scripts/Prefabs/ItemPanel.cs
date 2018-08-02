@@ -16,7 +16,7 @@ public class ItemPanel : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
     public GameObject tooltipPrefab;
     // Pointer variables
     private GameObject tooltip;
-    private Vector3 offset = new Vector3(-100, -154, 0);
+    private Vector3 offset = new Vector3(-120, -154, 0);
     // Drag static variables
     private static Item startItem;
     private static GameObject startObject;

@@ -80,7 +80,6 @@ public class Town : MonoBehaviour {
     public Item SpawnItem()
     {
         World world = GameManager.gm.world;
-        Debug.Log("World: " + world.worldName);
         if (world.worldName == "")
         {
             world = world.WorldList()[0];
@@ -98,7 +97,7 @@ public class Town : MonoBehaviour {
             List<Weapon> wl = new List<Weapon>();
             // Rarity weighting
             int rarityRng = Random.Range(0, 100);
-            Debug.Log("Weapon rarity: " + rarityRng);
+            //Debug.Log("Weapon rarity: " + rarityRng);
             if (rarityRng > 95)
                 wl = weapon.GetListByRarity(world.weaponList, Item.Rarity.Set);
             else if (rarityRng > 90)
@@ -119,7 +118,7 @@ public class Town : MonoBehaviour {
             List<Armor> al = world.armorList;
             // Rarity weighting
             int rarityRng = Random.Range(0, 100);
-            Debug.Log("Armor rarity: " + rarityRng);
+            //Debug.Log("Armor rarity: " + rarityRng);
             if (rarityRng > 95)
                 al = armor.GetListByRarity(world.armorList, Item.Rarity.Set);
             else if (rarityRng > 90)
