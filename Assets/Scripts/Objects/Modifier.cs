@@ -127,8 +127,8 @@ public class Modifier : Stats
             modId = 1101,
             type = ModifierType.Prefix,
             name = "Warrior",
-            buyValue = 20,
-            sellValue = 10,
+            buyValue = 400,
+            sellValue = 100,
             strength = 3,
             dexterity = 0,
             intelligence = 0,
@@ -150,8 +150,8 @@ public class Modifier : Stats
             modId = 1102,
             type = ModifierType.Prefix,
             name = "Rogue",
-            buyValue = 20,
-            sellValue = 10,
+            buyValue = 400,
+            sellValue = 100,
             strength = 0,
             dexterity = 1,
             intelligence = 0,
@@ -165,8 +165,8 @@ public class Modifier : Stats
             modId = 1103,
             type = ModifierType.Prefix,
             name = "Mage",
-            buyValue = 20,
-            sellValue = 10,
+            buyValue = 400,
+            sellValue = 100,
             strength = 0,
             dexterity = 0,
             intelligence = 2,
@@ -180,8 +180,8 @@ public class Modifier : Stats
             modId = 1104,
             type = ModifierType.Prefix,
             name = "Critical",
-            buyValue = 20,
-            sellValue = 10,
+            buyValue = 400,
+            sellValue = 100,
             strength = 0,
             dexterity = 0,
             intelligence = 0,
@@ -195,8 +195,8 @@ public class Modifier : Stats
             modId = 1105,
             type = ModifierType.Prefix,
             name = "Greedy",
-            buyValue = 20,
-            sellValue = 10,
+            buyValue = 400,
+            sellValue = 100,
             strength = 0,
             dexterity = 0,
             intelligence = 0,
@@ -216,8 +216,8 @@ public class Modifier : Stats
             modId = 1106,
             type = ModifierType.Prefix,
             name = "Lucky",
-            buyValue = 20,
-            sellValue = 10,
+            buyValue = 400,
+            sellValue = 100,
             strength = 0,
             dexterity = 0,
             intelligence = 0,
@@ -237,8 +237,8 @@ public class Modifier : Stats
             modId = 1107,
             type = ModifierType.Prefix,
             name = "Berserker",
-            buyValue = 20,
-            sellValue = 10,
+            buyValue = 400,
+            sellValue = 100,
             strength = 3,
             dexterity = 0,
             intelligence = 0,
@@ -259,8 +259,8 @@ public class Modifier : Stats
             modId = 1108,
             type = ModifierType.Prefix,
             name = "Assassin",
-            buyValue = 20,
-            sellValue = 10,
+            buyValue = 400,
+            sellValue = 100,
             strength = 0,
             dexterity = 1,
             intelligence = 0,
@@ -281,8 +281,8 @@ public class Modifier : Stats
             modId = 1109,
             type = ModifierType.Prefix,
             name = "Warlock",
-            buyValue = 20,
-            sellValue = 10,
+            buyValue = 400,
+            sellValue = 100,
             strength = 0,
             dexterity = 0,
             intelligence = 2,
@@ -304,8 +304,8 @@ public class Modifier : Stats
             modId = 1110,
             type = ModifierType.Prefix,
             name = ":Thinking",
-            buyValue = 20,
-            sellValue = 10,
+            buyValue = 400,
+            sellValue = 100,
             strength = 0,
             dexterity = 0,
             intelligence = 2,
@@ -326,8 +326,8 @@ public class Modifier : Stats
             modId = 1111,
             type = ModifierType.Prefix,
             name = "Savant",
-            buyValue = 20,
-            sellValue = 10,
+            buyValue = 400,
+            sellValue = 100,
             strength = 1,
             dexterity = 1,
             intelligence = 1,
@@ -348,8 +348,8 @@ public class Modifier : Stats
             modId = 1112,
             type = ModifierType.Prefix,
             name = "Chad",
-            buyValue = 20,
-            sellValue = 10,
+            buyValue = 400,
+            sellValue = 100,
             strength = 3,
             dexterity = 0,
             intelligence = 0,
@@ -370,8 +370,8 @@ public class Modifier : Stats
             modId = 1113,
             type = ModifierType.Prefix,
             name = "Sneaky",
-            buyValue = 20,
-            sellValue = 10,
+            buyValue = 400,
+            sellValue = 100,
             strength = 0,
             dexterity = 3,
             intelligence = 0,
@@ -395,8 +395,8 @@ public class Modifier : Stats
             modId = 2101,
             type = ModifierType.Prefix,
             name = "Warrior",
-            buyValue = 40,
-            sellValue = 20,
+            buyValue = 1000,
+            sellValue = 250,
             strength = 5,
             dexterity = 0,
             intelligence = 0,
@@ -418,8 +418,8 @@ public class Modifier : Stats
             modId = 2102,
             type = ModifierType.Prefix,
             name = "Rogue",
-            buyValue = 40,
-            sellValue = 20,
+            buyValue = 1000,
+            sellValue = 250,
             strength = 0,
             dexterity = 2,
             intelligence = 0,
@@ -433,8 +433,8 @@ public class Modifier : Stats
             modId = 2103,
             type = ModifierType.Prefix,
             name = "Mage",
-            buyValue = 40,
-            sellValue = 20,
+            buyValue = 1000,
+            sellValue = 250,
             strength = 0,
             dexterity = 0,
             intelligence = 3,
@@ -448,8 +448,8 @@ public class Modifier : Stats
             modId = 2104,
             type = ModifierType.Prefix,
             name = "Critical",
-            buyValue = 40,
-            sellValue = 20,
+            buyValue = 1000,
+            sellValue = 250,
             strength = 0,
             dexterity = 0,
             intelligence = 0,
@@ -463,8 +463,8 @@ public class Modifier : Stats
             modId = 2105,
             type = ModifierType.Prefix,
             name = "Greedy",
-            buyValue = 40,
-            sellValue = 20,
+            buyValue = 1000,
+            sellValue = 250,
             strength = 0,
             dexterity = 0,
             intelligence = 0,
@@ -484,8 +484,8 @@ public class Modifier : Stats
             modId = 2106,
             type = ModifierType.Prefix,
             name = "Lucky",
-            buyValue = 40,
-            sellValue = 20,
+            buyValue = 1000,
+            sellValue = 250,
             strength = 0,
             dexterity = 0,
             intelligence = 0,
@@ -505,8 +505,8 @@ public class Modifier : Stats
             modId = 2107,
             type = ModifierType.Prefix,
             name = "Berserker",
-            buyValue = 40,
-            sellValue = 20,
+            buyValue = 1000,
+            sellValue = 250,
             strength = 5,
             dexterity = 0,
             intelligence = 0,
@@ -527,13 +527,13 @@ public class Modifier : Stats
             modId = 2108,
             type = ModifierType.Prefix,
             name = "Assassin",
-            buyValue = 40,
-            sellValue = 20,
+            buyValue = 1000,
+            sellValue = 250,
             strength = 0,
             dexterity = 2,
             intelligence = 0,
             critChance = 0,
-            critDamage = 20,
+            critDamage = 15,
             bonusPhysical = 0,
             bonusMagical = 0,
             itemFind = 0,
@@ -549,8 +549,8 @@ public class Modifier : Stats
             modId = 2109,
             type = ModifierType.Prefix,
             name = "Warlock",
-            buyValue = 40,
-            sellValue = 20,
+            buyValue = 1000,
+            sellValue = 250,
             strength = 0,
             dexterity = 0,
             intelligence = 3,
@@ -572,8 +572,8 @@ public class Modifier : Stats
             modId = 2110,
             type = ModifierType.Prefix,
             name = ":Thinking",
-            buyValue = 40,
-            sellValue = 20,
+            buyValue = 1000,
+            sellValue = 250,
             strength = 0,
             dexterity = 0,
             intelligence = 3,
@@ -594,8 +594,8 @@ public class Modifier : Stats
             modId = 2111,
             type = ModifierType.Prefix,
             name = "Savant",
-            buyValue = 40,
-            sellValue = 20,
+            buyValue = 1000,
+            sellValue = 250,
             strength = 2,
             dexterity = 2,
             intelligence = 2,
@@ -616,8 +616,8 @@ public class Modifier : Stats
             modId = 2112,
             type = ModifierType.Prefix,
             name = "Chad",
-            buyValue = 40,
-            sellValue = 20,
+            buyValue = 1000,
+            sellValue = 250,
             strength = 5,
             dexterity = 0,
             intelligence = 0,
@@ -638,8 +638,8 @@ public class Modifier : Stats
             modId = 2113,
             type = ModifierType.Prefix,
             name = "Sneaky",
-            buyValue = 40,
-            sellValue = 20,
+            buyValue = 1000,
+            sellValue = 250,
             strength = 0,
             dexterity = 3,
             intelligence = 0,
@@ -663,8 +663,8 @@ public class Modifier : Stats
             modId = 3101,
             type = ModifierType.Prefix,
             name = "Warrior",
-            buyValue = 60,
-            sellValue = 30,
+            buyValue = 2500,
+            sellValue = 650,
             strength = 7,
             dexterity = 0,
             intelligence = 0,
@@ -686,13 +686,13 @@ public class Modifier : Stats
             modId = 3102,
             type = ModifierType.Prefix,
             name = "Rogue",
-            buyValue = 60,
-            sellValue = 30,
+            buyValue = 2500,
+            sellValue = 650,
             strength = 0,
             dexterity = 3,
             intelligence = 0,
             critChance = 3,
-            critDamage = 20
+            critDamage = 15
         };
         modifierList.Add(modifier);
 
@@ -701,12 +701,12 @@ public class Modifier : Stats
             modId = 3103,
             type = ModifierType.Prefix,
             name = "Mage",
-            buyValue = 60,
-            sellValue = 30,
+            buyValue = 2500,
+            sellValue = 650,
             strength = 0,
             dexterity = 0,
             intelligence = 5,
-            critChance = 5,
+            critChance = 3,
             critDamage = 8
         };
         modifierList.Add(modifier);
@@ -716,12 +716,12 @@ public class Modifier : Stats
             modId = 3104,
             type = ModifierType.Prefix,
             name = "Critical",
-            buyValue = 60,
-            sellValue = 30,
+            buyValue = 2500,
+            sellValue = 650,
             strength = 0,
             dexterity = 0,
             intelligence = 0,
-            critChance = 3,
+            critChance = 5,
             critDamage = 20
         };
         modifierList.Add(modifier);
@@ -731,8 +731,8 @@ public class Modifier : Stats
             modId = 3105,
             type = ModifierType.Prefix,
             name = "Greedy",
-            buyValue = 60,
-            sellValue = 30,
+            buyValue = 2500,
+            sellValue = 650,
             strength = 0,
             dexterity = 0,
             intelligence = 0,
@@ -752,8 +752,8 @@ public class Modifier : Stats
             modId = 3106,
             type = ModifierType.Prefix,
             name = "Lucky",
-            buyValue = 60,
-            sellValue = 30,
+            buyValue = 2500,
+            sellValue = 650,
             strength = 0,
             dexterity = 0,
             intelligence = 0,
@@ -773,8 +773,8 @@ public class Modifier : Stats
             modId = 3107,
             type = ModifierType.Prefix,
             name = "Berserker",
-            buyValue = 60,
-            sellValue = 30,
+            buyValue = 2500,
+            sellValue = 650,
             strength = 7,
             dexterity = 0,
             intelligence = 0,
@@ -795,13 +795,13 @@ public class Modifier : Stats
             modId = 3108,
             type = ModifierType.Prefix,
             name = "Assassin",
-            buyValue = 60,
-            sellValue = 30,
+            buyValue = 2500,
+            sellValue = 650,
             strength = 0,
             dexterity = 3,
             intelligence = 0,
             critChance = 0,
-            critDamage = 30,
+            critDamage = 25,
             bonusPhysical = 0,
             bonusMagical = 0,
             itemFind = 0,
@@ -817,8 +817,8 @@ public class Modifier : Stats
             modId = 3109,
             type = ModifierType.Prefix,
             name = "Warlock",
-            buyValue = 60,
-            sellValue = 30,
+            buyValue = 2500,
+            sellValue = 650,
             strength = 0,
             dexterity = 0,
             intelligence = 5,
@@ -840,8 +840,8 @@ public class Modifier : Stats
             modId = 3110,
             type = ModifierType.Prefix,
             name = ":Thinking",
-            buyValue = 60,
-            sellValue = 30,
+            buyValue = 2500,
+            sellValue = 650,
             strength = 0,
             dexterity = 0,
             intelligence = 5,
@@ -862,8 +862,8 @@ public class Modifier : Stats
             modId = 3111,
             type = ModifierType.Prefix,
             name = "Savant",
-            buyValue = 60,
-            sellValue = 30,
+            buyValue = 2500,
+            sellValue = 650,
             strength = 3,
             dexterity = 3,
             intelligence = 3,
@@ -884,8 +884,8 @@ public class Modifier : Stats
             modId = 3112,
             type = ModifierType.Prefix,
             name = "Chad",
-            buyValue = 60,
-            sellValue = 30,
+            buyValue = 2500,
+            sellValue = 650,
             strength = 7,
             dexterity = 0,
             intelligence = 0,
@@ -906,8 +906,8 @@ public class Modifier : Stats
             modId = 3113,
             type = ModifierType.Prefix,
             name = "Sneaky",
-            buyValue = 60,
-            sellValue = 30,
+            buyValue = 2500,
+            sellValue = 650,
             strength = 0,
             dexterity = 5,
             intelligence = 0,
@@ -931,8 +931,8 @@ public class Modifier : Stats
             modId = 4101,
             type = ModifierType.Prefix,
             name = "Warrior",
-            buyValue = 120,
-            sellValue = 60,
+            buyValue = 7500,
+            sellValue = 1500,
             strength = 12,
             dexterity = 0,
             intelligence = 0,
@@ -954,12 +954,12 @@ public class Modifier : Stats
             modId = 4102,
             type = ModifierType.Prefix,
             name = "Rogue",
-            buyValue = 120,
-            sellValue = 60,
+            buyValue = 7500,
+            sellValue = 1500,
             strength = 0,
             dexterity = 5,
             intelligence = 0,
-            critChance = 8,
+            critChance = 5,
             critDamage = 25
         };
         modifierList.Add(modifier);
@@ -969,8 +969,8 @@ public class Modifier : Stats
             modId = 4103,
             type = ModifierType.Prefix,
             name = "Mage",
-            buyValue = 120,
-            sellValue = 60,
+            buyValue = 7500,
+            sellValue = 1500,
             strength = 0,
             dexterity = 0,
             intelligence = 10,
@@ -984,12 +984,12 @@ public class Modifier : Stats
             modId = 4104,
             type = ModifierType.Prefix,
             name = "Critical",
-            buyValue = 120,
-            sellValue = 60,
+            buyValue = 7500,
+            sellValue = 1500,
             strength = 0,
             dexterity = 0,
             intelligence = 0,
-            critChance = 5,
+            critChance = 8,
             critDamage = 30
         };
         modifierList.Add(modifier);
@@ -999,8 +999,8 @@ public class Modifier : Stats
             modId = 4105,
             type = ModifierType.Prefix,
             name = "Greedy",
-            buyValue = 120,
-            sellValue = 60,
+            buyValue = 7500,
+            sellValue = 1500,
             strength = 0,
             dexterity = 0,
             intelligence = 0,
@@ -1020,8 +1020,8 @@ public class Modifier : Stats
             modId = 4106,
             type = ModifierType.Prefix,
             name = "Lucky",
-            buyValue = 120,
-            sellValue = 60,
+            buyValue = 7500,
+            sellValue = 1500,
             strength = 0,
             dexterity = 0,
             intelligence = 0,
@@ -1041,8 +1041,8 @@ public class Modifier : Stats
             modId = 4107,
             type = ModifierType.Prefix,
             name = "Berserker",
-            buyValue = 120,
-            sellValue = 60,
+            buyValue = 7500,
+            sellValue = 1500,
             strength = 10,
             dexterity = 0,
             intelligence = 0,
@@ -1063,13 +1063,13 @@ public class Modifier : Stats
             modId = 4108,
             type = ModifierType.Prefix,
             name = "Assassin",
-            buyValue = 120,
-            sellValue = 60,
+            buyValue = 7500,
+            sellValue = 1500,
             strength = 0,
             dexterity = 5,
             intelligence = 0,
             critChance = 0,
-            critDamage = 45,
+            critDamage = 35,
             bonusPhysical = 0,
             bonusMagical = 0,
             itemFind = 0,
@@ -1085,8 +1085,8 @@ public class Modifier : Stats
             modId = 4109,
             type = ModifierType.Prefix,
             name = "Warlock",
-            buyValue = 120,
-            sellValue = 60,
+            buyValue = 7500,
+            sellValue = 1500,
             strength = 0,
             dexterity = 0,
             intelligence = 8,
@@ -1108,8 +1108,8 @@ public class Modifier : Stats
             modId = 4110,
             type = ModifierType.Prefix,
             name = ":Thinking",
-            buyValue = 120,
-            sellValue = 60,
+            buyValue = 7500,
+            sellValue = 1500,
             strength = 0,
             dexterity = 0,
             intelligence = 8,
@@ -1130,8 +1130,8 @@ public class Modifier : Stats
             modId = 4111,
             type = ModifierType.Prefix,
             name = "Savant",
-            buyValue = 120,
-            sellValue = 60,
+            buyValue = 7500,
+            sellValue = 1500,
             strength = 4,
             dexterity = 4,
             intelligence = 4,
@@ -1152,8 +1152,8 @@ public class Modifier : Stats
             modId = 4112,
             type = ModifierType.Prefix,
             name = "Chad",
-            buyValue = 120,
-            sellValue = 60,
+            buyValue = 7500,
+            sellValue = 1500,
             strength = 10,
             dexterity = 0,
             intelligence = 0,
@@ -1174,8 +1174,8 @@ public class Modifier : Stats
             modId = 4113,
             type = ModifierType.Prefix,
             name = "Sneaky",
-            buyValue = 120,
-            sellValue = 60,
+            buyValue = 7500,
+            sellValue = 1500,
             strength = 0,
             dexterity = 8,
             intelligence = 0,
@@ -1190,6 +1190,275 @@ public class Modifier : Stats
             armorPen = 0
         };
         modifierList.Add(modifier);
+        
+        /***************/
+        /*** TIER 5 ***/
+        /*************/
+        modifier = new Modifier
+        {
+            modId = 5101,
+            type = ModifierType.Prefix,
+            name = "Warrior",
+            buyValue = 25000,
+            sellValue = 5000,
+            strength = 18,
+            dexterity = 0,
+            intelligence = 0,
+            critChance = 7,
+            critDamage = 0,
+            bonusPhysical = 0,
+            bonusMagical = 0,
+            itemFind = 0,
+            magicFind = 0,
+            bonusGold = 0,
+            bonusExp = 0,
+            armorPen = 0,
+            magicPen = 0
+        };
+        modifierList.Add(modifier);
+
+        modifier = new Modifier
+        {
+            modId = 5102,
+            type = ModifierType.Prefix,
+            name = "Rogue",
+            buyValue = 25000,
+            sellValue = 5000,
+            strength = 0,
+            dexterity = 7,
+            intelligence = 0,
+            critChance = 8,
+            critDamage = 25
+        };
+        modifierList.Add(modifier);
+
+        modifier = new Modifier
+        {
+            modId = 5103,
+            type = ModifierType.Prefix,
+            name = "Mage",
+            buyValue = 25000,
+            sellValue = 5000,
+            strength = 0,
+            dexterity = 0,
+            intelligence = 10,
+            critChance = 5,
+            critDamage = 15
+        };
+        modifierList.Add(modifier);
+
+        modifier = new Modifier
+        {
+            modId = 5104,
+            type = ModifierType.Prefix,
+            name = "Critical",
+            buyValue = 25000,
+            sellValue = 5000,
+            strength = 0,
+            dexterity = 0,
+            intelligence = 0,
+            critChance = 5,
+            critDamage = 30
+        };
+        modifierList.Add(modifier);
+
+        modifier = new Modifier
+        {
+            modId = 5105,
+            type = ModifierType.Prefix,
+            name = "Greedy",
+            buyValue = 25000,
+            sellValue = 5000,
+            strength = 0,
+            dexterity = 0,
+            intelligence = 0,
+            critChance = 0,
+            critDamage = 0,
+            bonusPhysical = 0,
+            bonusMagical = 0,
+            itemFind = 6,
+            magicFind = 6,
+            bonusGold = 25,
+            bonusExp = 0
+        };
+        modifierList.Add(modifier);
+
+        modifier = new Modifier
+        {
+            modId = 5106,
+            type = ModifierType.Prefix,
+            name = "Lucky",
+            buyValue = 25000,
+            sellValue = 5000,
+            strength = 0,
+            dexterity = 0,
+            intelligence = 0,
+            critChance = 12,
+            critDamage = 0,
+            bonusPhysical = 0,
+            bonusMagical = 0,
+            itemFind = 6,
+            magicFind = 6,
+            bonusGold = 0,
+            bonusExp = 0
+        };
+        modifierList.Add(modifier);
+
+        modifier = new Modifier
+        {
+            modId = 5107,
+            type = ModifierType.Prefix,
+            name = "Berserker",
+            buyValue = 25000,
+            sellValue = 5000,
+            strength = 15,
+            dexterity = 0,
+            intelligence = 0,
+            critChance = 0,
+            critDamage = 0,
+            bonusPhysical = 0,
+            bonusMagical = 0,
+            itemFind = 0,
+            magicFind = 0,
+            bonusGold = 0,
+            bonusExp = 0,
+            armorPen = 15
+        };
+        modifierList.Add(modifier);
+
+        modifier = new Modifier
+        {
+            modId = 5108,
+            type = ModifierType.Prefix,
+            name = "Assassin",
+            buyValue = 25000,
+            sellValue = 5000,
+            strength = 0,
+            dexterity = 7,
+            intelligence = 0,
+            critChance = 0,
+            critDamage = 50,
+            bonusPhysical = 0,
+            bonusMagical = 0,
+            itemFind = 0,
+            magicFind = 0,
+            bonusGold = 0,
+            bonusExp = 0,
+            armorPen = 15
+        };
+        modifierList.Add(modifier);
+
+        modifier = new Modifier
+        {
+            modId = 5109,
+            type = ModifierType.Prefix,
+            name = "Warlock",
+            buyValue = 25000,
+            sellValue = 5000,
+            strength = 0,
+            dexterity = 0,
+            intelligence = 12,
+            critChance = 0,
+            critDamage = 0,
+            bonusPhysical = 0,
+            bonusMagical = 0,
+            itemFind = 0,
+            magicFind = 0,
+            bonusGold = 0,
+            bonusExp = 0,
+            magicPen = 25,
+            armorPen = 0
+        };
+        modifierList.Add(modifier);
+
+        modifier = new Modifier
+        {
+            modId = 5110,
+            type = ModifierType.Prefix,
+            name = ":Thinking",
+            buyValue = 25000,
+            sellValue = 5000,
+            strength = 0,
+            dexterity = 0,
+            intelligence = 12,
+            critChance = 0,
+            critDamage = 0,
+            bonusPhysical = 0,
+            bonusMagical = 0,
+            itemFind = 0,
+            magicFind = 0,
+            bonusGold = 0,
+            bonusExp = 24,
+            armorPen = 0
+        };
+        modifierList.Add(modifier);
+
+        modifier = new Modifier
+        {
+            modId = 5111,
+            type = ModifierType.Prefix,
+            name = "Savant",
+            buyValue = 25000,
+            sellValue = 5000,
+            strength = 6,
+            dexterity = 6,
+            intelligence = 6,
+            critChance = 0,
+            critDamage = 0,
+            bonusPhysical = 0,
+            bonusMagical = 0,
+            itemFind = 0,
+            magicFind = 0,
+            bonusGold = 0,
+            bonusExp = 40,
+            armorPen = 0
+        };
+        modifierList.Add(modifier);
+
+        modifier = new Modifier
+        {
+            modId = 5112,
+            type = ModifierType.Prefix,
+            name = "Chad",
+            buyValue = 25000,
+            sellValue = 5000,
+            strength = 15,
+            dexterity = 0,
+            intelligence = 0,
+            critChance = 0,
+            critDamage = 0,
+            bonusPhysical = 0,
+            bonusMagical = 0,
+            itemFind = 0,
+            magicFind = 0,
+            bonusGold = 24,
+            bonusExp = 0,
+            armorPen = 0
+        };
+        modifierList.Add(modifier);
+
+        modifier = new Modifier
+        {
+            modId = 5113,
+            type = ModifierType.Prefix,
+            name = "Sneaky",
+            buyValue = 25000,
+            sellValue = 5000,
+            strength = 0,
+            dexterity = 12,
+            intelligence = 0,
+            critChance = 0,
+            critDamage = 0,
+            bonusPhysical = 0,
+            bonusMagical = 0,
+            itemFind = 6,
+            magicFind = 0,
+            bonusGold = 0,
+            bonusExp = 0,
+            armorPen = 0
+        };
+        modifierList.Add(modifier);
+        
         return modifierList;
     }
 
@@ -1279,8 +1548,8 @@ public class Modifier : Stats
             modId = 1201,
             type = ModifierType.Suffix,
             name = "of the Bear",
-            buyValue = 20,
-            sellValue = 10,
+            buyValue = 400,
+            sellValue = 100,
             strength = 5,
             dexterity = 0,
             intelligence = 0,
@@ -1302,8 +1571,8 @@ public class Modifier : Stats
             modId = 1202,
             type = ModifierType.Suffix,
             name = "of the Snake",
-            buyValue = 20,
-            sellValue = 10,
+            buyValue = 400,
+            sellValue = 100,
             strength = 0,
             dexterity = 5,
             intelligence = 0,
@@ -1317,8 +1586,8 @@ public class Modifier : Stats
             modId = 1203,
             type = ModifierType.Suffix,
             name = "of the Owl",
-            buyValue = 20,
-            sellValue = 10,
+            buyValue = 400,
+            sellValue = 100,
             strength = 0,
             dexterity = 0,
             intelligence = 5,
@@ -1332,12 +1601,12 @@ public class Modifier : Stats
             modId = 1204,
             type = ModifierType.Suffix,
             name = "of Crittingham",
-            buyValue = 20,
-            sellValue = 0,
+            buyValue = 400,
+            sellValue = 100,
             strength = 0,
             dexterity = 0,
             intelligence = 0,
-            critChance = 5,
+            critChance = 3,
             critDamage = 0
         };
         modifierList.Add(modifier);
@@ -1347,8 +1616,8 @@ public class Modifier : Stats
             modId = 1205,
             type = ModifierType.Suffix,
             name = "of the Thief",
-            buyValue = 20,
-            sellValue = 10,
+            buyValue = 400,
+            sellValue = 100,
             strength = 0,
             dexterity = 3,
             intelligence = 0,
@@ -1370,8 +1639,8 @@ public class Modifier : Stats
             modId = 1206,
             type = ModifierType.Suffix,
             name = "of the Mercenary",
-            buyValue = 20,
-            sellValue = 10,
+            buyValue = 400,
+            sellValue = 100,
             strength = 3,
             dexterity = 0,
             intelligence = 0,
@@ -1393,8 +1662,8 @@ public class Modifier : Stats
             modId = 1207,
             type = ModifierType.Suffix,
             name = "of the Nerd",
-            buyValue = 20,
-            sellValue = 10,
+            buyValue = 400,
+            sellValue = 100,
             strength = 0,
             dexterity = 0,
             intelligence = 3,
@@ -1416,8 +1685,8 @@ public class Modifier : Stats
             modId = 1208,
             type = ModifierType.Suffix,
             name = "of the Dabbler",
-            buyValue = 20,
-            sellValue = 10,
+            buyValue = 400,
+            sellValue = 100,
             strength = 1,
             dexterity = 1,
             intelligence = 1,
@@ -1439,12 +1708,35 @@ public class Modifier : Stats
             modId = 1209,
             type = ModifierType.Suffix,
             name = "of the Boar",
-            buyValue = 20,
-            sellValue = 10,
+            buyValue = 400,
+            sellValue = 100,
             strength = 3,
             dexterity = 0,
             intelligence = 0,
             critChance = 0,
+            critDamage = 0,
+            bonusPhysical = 0,
+            bonusMagical = 0,
+            itemFind = 0,
+            magicFind = 0,
+            bonusGold = 0,
+            bonusExp = 0,
+            magicPen = 0,
+            armorPen = 5
+        };
+        modifierList.Add(modifier);
+
+        modifier = new Modifier
+        {
+            modId = 1210,
+            type = ModifierType.Suffix,
+            name = "of the Duelist",
+            buyValue = 400,
+            sellValue = 100,
+            strength = 0,
+            dexterity = 2,
+            intelligence = 0,
+            critChance = 2,
             critDamage = 0,
             bonusPhysical = 0,
             bonusMagical = 0,
@@ -1459,34 +1751,11 @@ public class Modifier : Stats
 
         modifier = new Modifier
         {
-            modId = 1210,
-            type = ModifierType.Suffix,
-            name = "of the Duelist",
-            buyValue = 20,
-            sellValue = 10,
-            strength = 0,
-            dexterity = 2,
-            intelligence = 0,
-            critChance = 2,
-            critDamage = 0,
-            bonusPhysical = 0,
-            bonusMagical = 0,
-            itemFind = 0,
-            magicFind = 0,
-            bonusGold = 0,
-            bonusExp = 0,
-            magicPen = 0,
-            armorPen = 2
-        };
-        modifierList.Add(modifier);
-
-        modifier = new Modifier
-        {
             modId = 1211,
             type = ModifierType.Suffix,
             name = "of the Negator",
-            buyValue = 20,
-            sellValue = 10,
+            buyValue = 400,
+            sellValue = 100,
             strength = 0,
             dexterity = 0,
             intelligence = 0,
@@ -1498,7 +1767,7 @@ public class Modifier : Stats
             magicFind = 0,
             bonusGold = 0,
             bonusExp = 0,
-            magicPen = 5,
+            magicPen = 7,
             armorPen = 0
         };
         modifierList.Add(modifier);
@@ -1508,8 +1777,8 @@ public class Modifier : Stats
             modId = 1212,
             type = ModifierType.Suffix,
             name = "of the Lich",
-            buyValue = 20,
-            sellValue = 10,
+            buyValue = 400,
+            sellValue = 100,
             strength = 0,
             dexterity = 0,
             intelligence = 2,
@@ -1522,7 +1791,7 @@ public class Modifier : Stats
             bonusGold = 0,
             bonusExp = 0,
             magicPen = 0,
-            armorPen = 2
+            armorPen = 3
         };
         modifierList.Add(modifier);
 
@@ -1531,8 +1800,8 @@ public class Modifier : Stats
             modId = 1213,
             type = ModifierType.Suffix,
             name = "of the Spellsword",
-            buyValue = 20,
-            sellValue = 10,
+            buyValue = 400,
+            sellValue = 100,
             strength = 2,
             dexterity = 0,
             intelligence = 0,
@@ -1544,7 +1813,7 @@ public class Modifier : Stats
             magicFind = 0,
             bonusGold = 0,
             bonusExp = 0,
-            magicPen = 2,
+            magicPen = 3,
             armorPen = 0
         };
         modifierList.Add(modifier);
@@ -1554,8 +1823,8 @@ public class Modifier : Stats
             modId = 1214,
             type = ModifierType.Suffix,
             name = "of the Illusionist",
-            buyValue = 20,
-            sellValue = 10,
+            buyValue = 400,
+            sellValue = 100,
             strength = 0,
             dexterity = 2,
             intelligence = 0,
@@ -1567,7 +1836,7 @@ public class Modifier : Stats
             magicFind = 0,
             bonusGold = 0,
             bonusExp = 0,
-            magicPen = 2,
+            magicPen = 3,
             armorPen = 0
         };
         modifierList.Add(modifier);
@@ -1581,8 +1850,8 @@ public class Modifier : Stats
             modId = 2201,
             type = ModifierType.Suffix,
             name = "of the Bear",
-            buyValue = 40,
-            sellValue = 20,
+            buyValue = 1000,
+            sellValue = 250,
             strength = 8,
             dexterity = 0,
             intelligence = 0,
@@ -1604,8 +1873,8 @@ public class Modifier : Stats
             modId = 2202,
             type = ModifierType.Suffix,
             name = "of the Snake",
-            buyValue = 40,
-            sellValue = 20,
+            buyValue = 1000,
+            sellValue = 250,
             strength = 0,
             dexterity = 8,
             intelligence = 0,
@@ -1619,8 +1888,8 @@ public class Modifier : Stats
             modId = 2203,
             type = ModifierType.Suffix,
             name = "of the Owl",
-            buyValue = 40,
-            sellValue = 20,
+            buyValue = 1000,
+            sellValue = 250,
             strength = 0,
             dexterity = 0,
             intelligence = 8,
@@ -1634,12 +1903,12 @@ public class Modifier : Stats
             modId = 2204,
             type = ModifierType.Suffix,
             name = "of Crittingham",
-            buyValue = 40,
-            sellValue = 20,
+            buyValue = 1000,
+            sellValue = 250,
             strength = 0,
             dexterity = 0,
             intelligence = 0,
-            critChance = 7,
+            critChance = 5,
             critDamage = 0
         };
         modifierList.Add(modifier);
@@ -1649,8 +1918,8 @@ public class Modifier : Stats
             modId = 2205,
             type = ModifierType.Suffix,
             name = "of the Thief",
-            buyValue = 40,
-            sellValue = 20,
+            buyValue = 1000,
+            sellValue = 250,
             strength = 0,
             dexterity = 5,
             intelligence = 0,
@@ -1672,8 +1941,8 @@ public class Modifier : Stats
             modId = 2206,
             type = ModifierType.Suffix,
             name = "of the Mercenary",
-            buyValue = 40,
-            sellValue = 20,
+            buyValue = 1000,
+            sellValue = 250,
             strength = 5,
             dexterity = 0,
             intelligence = 0,
@@ -1695,8 +1964,8 @@ public class Modifier : Stats
             modId = 2207,
             type = ModifierType.Suffix,
             name = "of the Nerd",
-            buyValue = 40,
-            sellValue = 20,
+            buyValue = 1000,
+            sellValue = 250,
             strength = 0,
             dexterity = 0,
             intelligence = 5,
@@ -1718,8 +1987,8 @@ public class Modifier : Stats
             modId = 2208,
             type = ModifierType.Suffix,
             name = "of the Dabbler",
-            buyValue = 40,
-            sellValue = 20,
+            buyValue = 1000,
+            sellValue = 250,
             strength = 2,
             dexterity = 2,
             intelligence = 2,
@@ -1741,12 +2010,35 @@ public class Modifier : Stats
             modId = 2209,
             type = ModifierType.Suffix,
             name = "of the Boar",
-            buyValue = 40,
-            sellValue = 20,
+            buyValue = 1000,
+            sellValue = 250,
             strength = 5,
             dexterity = 0,
             intelligence = 0,
             critChance = 0,
+            critDamage = 0,
+            bonusPhysical = 0,
+            bonusMagical = 0,
+            itemFind = 0,
+            magicFind = 0,
+            bonusGold = 0,
+            bonusExp = 0,
+            magicPen = 0,
+            armorPen = 7
+        };
+        modifierList.Add(modifier);
+
+        modifier = new Modifier
+        {
+            modId = 2210,
+            type = ModifierType.Suffix,
+            name = "of the Duelist",
+            buyValue = 1000,
+            sellValue = 250,
+            strength = 0,
+            dexterity = 3,
+            intelligence = 0,
+            critChance = 3,
             critDamage = 0,
             bonusPhysical = 0,
             bonusMagical = 0,
@@ -1761,34 +2053,11 @@ public class Modifier : Stats
 
         modifier = new Modifier
         {
-            modId = 2210,
-            type = ModifierType.Suffix,
-            name = "of the Duelist",
-            buyValue = 40,
-            sellValue = 20,
-            strength = 0,
-            dexterity = 3,
-            intelligence = 0,
-            critChance = 3,
-            critDamage = 0,
-            bonusPhysical = 0,
-            bonusMagical = 0,
-            itemFind = 0,
-            magicFind = 0,
-            bonusGold = 0,
-            bonusExp = 0,
-            magicPen = 0,
-            armorPen = 3
-        };
-        modifierList.Add(modifier);
-
-        modifier = new Modifier
-        {
             modId = 2211,
             type = ModifierType.Suffix,
             name = "of the Negator",
-            buyValue = 40,
-            sellValue = 20,
+            buyValue = 1000,
+            sellValue = 250,
             strength = 0,
             dexterity = 0,
             intelligence = 0,
@@ -1800,7 +2069,7 @@ public class Modifier : Stats
             magicFind = 0,
             bonusGold = 0,
             bonusExp = 0,
-            magicPen = 8,
+            magicPen = 11,
             armorPen = 0
         };
         modifierList.Add(modifier);
@@ -1810,8 +2079,8 @@ public class Modifier : Stats
             modId = 2212,
             type = ModifierType.Suffix,
             name = "of the Lich",
-            buyValue = 40,
-            sellValue = 20,
+            buyValue = 1000,
+            sellValue = 250,
             strength = 0,
             dexterity = 0,
             intelligence = 3,
@@ -1824,7 +2093,7 @@ public class Modifier : Stats
             bonusGold = 0,
             bonusExp = 0,
             magicPen = 0,
-            armorPen = 3
+            armorPen = 5
         };
         modifierList.Add(modifier);
 
@@ -1833,8 +2102,8 @@ public class Modifier : Stats
             modId = 2213,
             type = ModifierType.Suffix,
             name = "of the Spellsword",
-            buyValue = 40,
-            sellValue = 20,
+            buyValue = 1000,
+            sellValue = 250,
             strength = 3,
             dexterity = 0,
             intelligence = 0,
@@ -1846,7 +2115,7 @@ public class Modifier : Stats
             magicFind = 0,
             bonusGold = 0,
             bonusExp = 0,
-            magicPen = 3,
+            magicPen = 5,
             armorPen = 0
         };
         modifierList.Add(modifier);
@@ -1856,8 +2125,8 @@ public class Modifier : Stats
             modId = 2214,
             type = ModifierType.Suffix,
             name = "of the Illusionist",
-            buyValue = 40,
-            sellValue = 20,
+            buyValue = 1000,
+            sellValue = 250,
             strength = 0,
             dexterity = 3,
             intelligence = 0,
@@ -1869,7 +2138,7 @@ public class Modifier : Stats
             magicFind = 0,
             bonusGold = 0,
             bonusExp = 0,
-            magicPen = 3,
+            magicPen = 5,
             armorPen = 0
         };
         modifierList.Add(modifier);
@@ -1881,8 +2150,8 @@ public class Modifier : Stats
             modId = 3201,
             type = ModifierType.Suffix,
             name = "of the Bear",
-            buyValue = 60,
-            sellValue = 30,
+            buyValue = 2500,
+            sellValue = 650,
             strength = 12,
             dexterity = 0,
             intelligence = 0,
@@ -1904,8 +2173,8 @@ public class Modifier : Stats
             modId = 3202,
             type = ModifierType.Suffix,
             name = "of the Snake",
-            buyValue = 60,
-            sellValue = 30,
+            buyValue = 2500,
+            sellValue = 650,
             strength = 0,
             dexterity = 12,
             intelligence = 0,
@@ -1919,8 +2188,8 @@ public class Modifier : Stats
             modId = 3203,
             type = ModifierType.Suffix,
             name = "of the Owl",
-            buyValue = 60,
-            sellValue = 30,
+            buyValue = 2500,
+            sellValue = 650,
             strength = 0,
             dexterity = 0,
             intelligence = 12,
@@ -1934,12 +2203,12 @@ public class Modifier : Stats
             modId = 3204,
             type = ModifierType.Suffix,
             name = "of Crittingham",
-            buyValue = 60,
-            sellValue = 30,
+            buyValue = 2500,
+            sellValue = 650,
             strength = 0,
             dexterity = 0,
             intelligence = 0,
-            critChance = 10,
+            critChance = 8,
             critDamage = 0
         };
         modifierList.Add(modifier);
@@ -1949,8 +2218,8 @@ public class Modifier : Stats
             modId = 3205,
             type = ModifierType.Suffix,
             name = "of the Thief",
-            buyValue = 60,
-            sellValue = 30,
+            buyValue = 2500,
+            sellValue = 650,
             strength = 0,
             dexterity = 7,
             intelligence = 0,
@@ -1972,8 +2241,8 @@ public class Modifier : Stats
             modId = 3206,
             type = ModifierType.Suffix,
             name = "of the Mercenary",
-            buyValue = 60,
-            sellValue = 30,
+            buyValue = 2500,
+            sellValue = 650,
             strength = 7,
             dexterity = 0,
             intelligence = 0,
@@ -1995,8 +2264,8 @@ public class Modifier : Stats
             modId = 3207,
             type = ModifierType.Suffix,
             name = "of the Nerd",
-            buyValue = 60,
-            sellValue = 30,
+            buyValue = 2500,
+            sellValue = 650,
             strength = 0,
             dexterity = 0,
             intelligence = 7,
@@ -2018,8 +2287,8 @@ public class Modifier : Stats
             modId = 3208,
             type = ModifierType.Suffix,
             name = "of the Dabbler",
-            buyValue = 60,
-            sellValue = 30,
+            buyValue = 2500,
+            sellValue = 650,
             strength = 3,
             dexterity = 3,
             intelligence = 3,
@@ -2041,8 +2310,8 @@ public class Modifier : Stats
             modId = 3209,
             type = ModifierType.Suffix,
             name = "of the Boar",
-            buyValue = 60,
-            sellValue = 30,
+            buyValue = 2500,
+            sellValue = 650,
             strength = 8,
             dexterity = 0,
             intelligence = 0,
@@ -2055,7 +2324,7 @@ public class Modifier : Stats
             bonusGold = 0,
             bonusExp = 0,
             magicPen = 0,
-            armorPen = 8
+            armorPen = 10
         };
         modifierList.Add(modifier);
 
@@ -2064,12 +2333,12 @@ public class Modifier : Stats
             modId = 3210,
             type = ModifierType.Suffix,
             name = "of the Duelist",
-            buyValue = 60,
-            sellValue = 30,
+            buyValue = 2500,
+            sellValue = 650,
             strength = 0,
             dexterity = 5,
             intelligence = 0,
-            critChance = 5,
+            critChance = 4,
             critDamage = 0,
             bonusPhysical = 0,
             bonusMagical = 0,
@@ -2078,7 +2347,7 @@ public class Modifier : Stats
             bonusGold = 0,
             bonusExp = 0,
             magicPen = 0,
-            armorPen = 5
+            armorPen = 7
         };
         modifierList.Add(modifier);
 
@@ -2087,8 +2356,8 @@ public class Modifier : Stats
             modId = 3211,
             type = ModifierType.Suffix,
             name = "of the Negator",
-            buyValue = 60,
-            sellValue = 30,
+            buyValue = 2500,
+            sellValue = 650,
             strength = 0,
             dexterity = 0,
             intelligence = 0,
@@ -2100,7 +2369,7 @@ public class Modifier : Stats
             magicFind = 0,
             bonusGold = 0,
             bonusExp = 0,
-            magicPen = 12,
+            magicPen = 17,
             armorPen = 0
         };
         modifierList.Add(modifier);
@@ -2110,8 +2379,8 @@ public class Modifier : Stats
             modId = 3212,
             type = ModifierType.Suffix,
             name = "of the Lich",
-            buyValue = 60,
-            sellValue = 30,
+            buyValue = 2500,
+            sellValue = 650,
             strength = 0,
             dexterity = 0,
             intelligence = 5,
@@ -2124,7 +2393,7 @@ public class Modifier : Stats
             bonusGold = 0,
             bonusExp = 0,
             magicPen = 0,
-            armorPen = 5
+            armorPen = 7
         };
         modifierList.Add(modifier);
 
@@ -2133,8 +2402,8 @@ public class Modifier : Stats
             modId = 3213,
             type = ModifierType.Suffix,
             name = "of the Spellsword",
-            buyValue = 60,
-            sellValue = 30,
+            buyValue = 2500,
+            sellValue = 650,
             strength = 5,
             dexterity = 0,
             intelligence = 0,
@@ -2146,7 +2415,7 @@ public class Modifier : Stats
             magicFind = 0,
             bonusGold = 0,
             bonusExp = 0,
-            magicPen = 5,
+            magicPen = 7,
             armorPen = 0
         };
         modifierList.Add(modifier);
@@ -2156,8 +2425,8 @@ public class Modifier : Stats
             modId = 3214,
             type = ModifierType.Suffix,
             name = "of the Illusionist",
-            buyValue = 60,
-            sellValue = 30,
+            buyValue = 2500,
+            sellValue = 650,
             strength = 0,
             dexterity = 5,
             intelligence = 0,
@@ -2169,7 +2438,7 @@ public class Modifier : Stats
             magicFind = 0,
             bonusGold = 0,
             bonusExp = 0,
-            magicPen = 5,
+            magicPen = 7,
             armorPen = 0
         };
         modifierList.Add(modifier);
@@ -2183,8 +2452,8 @@ public class Modifier : Stats
             modId = 4201,
             type = ModifierType.Suffix,
             name = "of the Bear",
-            buyValue = 120,
-            sellValue = 60,
+            buyValue = 7500,
+            sellValue = 1500,
             strength = 18,
             dexterity = 0,
             intelligence = 0,
@@ -2206,8 +2475,8 @@ public class Modifier : Stats
             modId = 4202,
             type = ModifierType.Suffix,
             name = "of the Snake",
-            buyValue = 120,
-            sellValue = 60,
+            buyValue = 7500,
+            sellValue = 1500,
             strength = 0,
             dexterity = 18,
             intelligence = 0,
@@ -2221,8 +2490,8 @@ public class Modifier : Stats
             modId = 4203,
             type = ModifierType.Suffix,
             name = "of the Owl",
-            buyValue = 120,
-            sellValue = 60,
+            buyValue = 7500,
+            sellValue = 1500,
             strength = 0,
             dexterity = 0,
             intelligence = 18,
@@ -2241,7 +2510,7 @@ public class Modifier : Stats
             strength = 0,
             dexterity = 0,
             intelligence = 0,
-            critChance = 15,
+            critChance = 13,
             critDamage = 0
         };
         modifierList.Add(modifier);
@@ -2251,8 +2520,8 @@ public class Modifier : Stats
             modId = 4205,
             type = ModifierType.Suffix,
             name = "of the Thief",
-            buyValue = 120,
-            sellValue = 60,
+            buyValue = 7500,
+            sellValue = 1500,
             strength = 0,
             dexterity = 10,
             intelligence = 0,
@@ -2274,8 +2543,8 @@ public class Modifier : Stats
             modId = 4206,
             type = ModifierType.Suffix,
             name = "of the Mercenary",
-            buyValue = 120,
-            sellValue = 60,
+            buyValue = 7500,
+            sellValue = 1500,
             strength = 10,
             dexterity = 0,
             intelligence = 0,
@@ -2297,8 +2566,8 @@ public class Modifier : Stats
             modId = 4207,
             type = ModifierType.Suffix,
             name = "of the Nerd",
-            buyValue = 120,
-            sellValue = 60,
+            buyValue = 7500,
+            sellValue = 1500,
             strength = 0,
             dexterity = 0,
             intelligence = 10,
@@ -2320,8 +2589,8 @@ public class Modifier : Stats
             modId = 4208,
             type = ModifierType.Suffix,
             name = "of the Dabbler",
-            buyValue = 120,
-            sellValue = 60,
+            buyValue = 7500,
+            sellValue = 1500,
             strength = 4,
             dexterity = 4,
             intelligence = 4,
@@ -2343,8 +2612,8 @@ public class Modifier : Stats
             modId = 4209,
             type = ModifierType.Suffix,
             name = "of the Boar",
-            buyValue = 120,
-            sellValue = 60,
+            buyValue = 7500,
+            sellValue = 1500,
             strength = 12,
             dexterity = 0,
             intelligence = 0,
@@ -2357,7 +2626,7 @@ public class Modifier : Stats
             bonusGold = 0,
             bonusExp = 0,
             magicPen = 0,
-            armorPen = 12
+            armorPen = 15
         };
         modifierList.Add(modifier);
 
@@ -2366,12 +2635,12 @@ public class Modifier : Stats
             modId = 4210,
             type = ModifierType.Suffix,
             name = "of the Duelist",
-            buyValue = 120,
-            sellValue = 60,
+            buyValue = 7500,
+            sellValue = 1500,
             strength = 0,
             dexterity = 7,
             intelligence = 0,
-            critChance = 7,
+            critChance = 6,
             critDamage = 0,
             bonusPhysical = 0,
             bonusMagical = 0,
@@ -2380,7 +2649,7 @@ public class Modifier : Stats
             bonusGold = 0,
             bonusExp = 0,
             magicPen = 0,
-            armorPen = 7
+            armorPen = 10
         };
         modifierList.Add(modifier);
 
@@ -2389,8 +2658,8 @@ public class Modifier : Stats
             modId = 4211,
             type = ModifierType.Suffix,
             name = "of the Negator",
-            buyValue = 120,
-            sellValue = 60,
+            buyValue = 7500,
+            sellValue = 1500,
             strength = 0,
             dexterity = 0,
             intelligence = 0,
@@ -2402,7 +2671,7 @@ public class Modifier : Stats
             magicFind = 0,
             bonusGold = 0,
             bonusExp = 0,
-            magicPen = 17,
+            magicPen = 25,
             armorPen = 0
         };
         modifierList.Add(modifier);
@@ -2412,8 +2681,8 @@ public class Modifier : Stats
             modId = 4212,
             type = ModifierType.Suffix,
             name = "of the Lich",
-            buyValue = 120,
-            sellValue = 60,
+            buyValue = 7500,
+            sellValue = 1500,
             strength = 0,
             dexterity = 0,
             intelligence = 7,
@@ -2426,7 +2695,7 @@ public class Modifier : Stats
             bonusGold = 0,
             bonusExp = 0,
             magicPen = 0,
-            armorPen = 7
+            armorPen = 10
         };
         modifierList.Add(modifier);
 
@@ -2435,8 +2704,8 @@ public class Modifier : Stats
             modId = 4213,
             type = ModifierType.Suffix,
             name = "of the Spellsword",
-            buyValue = 120,
-            sellValue = 60,
+            buyValue = 7500,
+            sellValue = 1500,
             strength = 7,
             dexterity = 0,
             intelligence = 0,
@@ -2448,7 +2717,7 @@ public class Modifier : Stats
             magicFind = 0,
             bonusGold = 0,
             bonusExp = 0,
-            magicPen = 7,
+            magicPen = 10,
             armorPen = 0
         };
         modifierList.Add(modifier);
@@ -2458,8 +2727,8 @@ public class Modifier : Stats
             modId = 4214,
             type = ModifierType.Suffix,
             name = "of the Illusionist",
-            buyValue = 120,
-            sellValue = 60,
+            buyValue = 7500,
+            sellValue = 1500,
             strength = 0,
             dexterity = 7,
             intelligence = 0,
@@ -2471,7 +2740,309 @@ public class Modifier : Stats
             magicFind = 0,
             bonusGold = 0,
             bonusExp = 0,
-            magicPen = 7,
+            magicPen = 10,
+            armorPen = 0
+        };
+        modifierList.Add(modifier);
+        
+        
+        /************/
+        /***TIER 5***/
+        /************/
+        modifier = new Modifier
+        {
+            modId = 5201,
+            type = ModifierType.Suffix,
+            name = "of the Bear",
+            buyValue = 25000,
+            sellValue = 5000,
+            strength = 27,
+            dexterity = 0,
+            intelligence = 0,
+            critChance = 0,
+            critDamage = 0,
+            bonusPhysical = 0,
+            bonusMagical = 0,
+            itemFind = 0,
+            magicFind = 0,
+            bonusGold = 0,
+            bonusExp = 0,
+            magicPen = 0,
+            armorPen = 0
+        };
+        modifierList.Add(modifier);
+
+        modifier = new Modifier
+        {
+            modId = 5202,
+            type = ModifierType.Suffix,
+            name = "of the Snake",
+            buyValue = 25000,
+            sellValue = 5000,
+            strength = 0,
+            dexterity = 27,
+            intelligence = 0,
+            critChance = 0,
+            critDamage = 0
+        };
+        modifierList.Add(modifier);
+
+        modifier = new Modifier
+        {
+            modId = 5203,
+            type = ModifierType.Suffix,
+            name = "of the Owl",
+            buyValue = 25000,
+            sellValue = 5000,
+            strength = 0,
+            dexterity = 0,
+            intelligence = 27,
+            critChance = 0,
+            critDamage = 0
+        };
+        modifierList.Add(modifier);
+
+        modifier = new Modifier
+        {
+            modId = 5204,
+            type = ModifierType.Suffix,
+            name = "of Crittingham",
+            buyValue = 25000,
+            sellValue = 5000,
+            strength = 0,
+            dexterity = 0,
+            intelligence = 0,
+            critChance = 16,
+            critDamage = 0
+        };
+        modifierList.Add(modifier);
+
+        modifier = new Modifier
+        {
+            modId = 5205,
+            type = ModifierType.Suffix,
+            name = "of the Thief",
+            buyValue = 25000,
+            sellValue = 5000,
+            strength = 0,
+            dexterity = 15,
+            intelligence = 0,
+            critChance = 0,
+            critDamage = 0,
+            bonusPhysical = 0,
+            bonusMagical = 0,
+            itemFind = 6,
+            magicFind = 0,
+            bonusGold = 24,
+            bonusExp = 0,
+            magicPen = 0,
+            armorPen = 0
+        };
+        modifierList.Add(modifier);
+
+        modifier = new Modifier
+        {
+            modId = 5206,
+            type = ModifierType.Suffix,
+            name = "of the Mercenary",
+            buyValue = 25000,
+            sellValue = 5000,
+            strength = 15,
+            dexterity = 0,
+            intelligence = 0,
+            critChance = 0,
+            critDamage = 0,
+            bonusPhysical = 0,
+            bonusMagical = 0,
+            itemFind = 0,
+            magicFind = 0,
+            bonusGold = 45,
+            bonusExp = 0,
+            magicPen = 0,
+            armorPen = 0
+        };
+        modifierList.Add(modifier);
+
+        modifier = new Modifier
+        {
+            modId = 5207,
+            type = ModifierType.Suffix,
+            name = "of the Nerd",
+            buyValue = 25000,
+            sellValue = 5000,
+            strength = 0,
+            dexterity = 0,
+            intelligence = 15,
+            critChance = 0,
+            critDamage = 0,
+            bonusPhysical = 0,
+            bonusMagical = 0,
+            itemFind = 0,
+            magicFind = 0,
+            bonusGold = 0,
+            bonusExp = 40,
+            magicPen = 0,
+            armorPen = 0
+        };
+        modifierList.Add(modifier);
+
+        modifier = new Modifier
+        {
+            modId = 5208,
+            type = ModifierType.Suffix,
+            name = "of the Dabbler",
+            buyValue = 25000,
+            sellValue = 5000,
+            strength = 5,
+            dexterity = 5,
+            intelligence = 5,
+            critChance = 5,
+            critDamage = 5,
+            bonusPhysical = 5,
+            bonusMagical = 5,
+            itemFind = 5,
+            magicFind = 5,
+            bonusGold = 5,
+            bonusExp = 5,
+            magicPen = 5,
+            armorPen = 5,
+        };
+        modifierList.Add(modifier);
+
+        modifier = new Modifier
+        {
+            modId = 5209,
+            type = ModifierType.Suffix,
+            name = "of the Boar",
+            buyValue = 25000,
+            sellValue = 5000,
+            strength = 20,
+            dexterity = 0,
+            intelligence = 0,
+            critChance = 0,
+            critDamage = 0,
+            bonusPhysical = 0,
+            bonusMagical = 0,
+            itemFind = 0,
+            magicFind = 0,
+            bonusGold = 0,
+            bonusExp = 0,
+            magicPen = 0,
+            armorPen = 22
+        };
+        modifierList.Add(modifier);
+
+        modifier = new Modifier
+        {
+            modId = 5210,
+            type = ModifierType.Suffix,
+            name = "of the Duelist",
+            buyValue = 25000,
+            sellValue = 5000,
+            strength = 0,
+            dexterity = 10,
+            intelligence = 0,
+            critChance = 8,
+            critDamage = 0,
+            bonusPhysical = 0,
+            bonusMagical = 0,
+            itemFind = 0,
+            magicFind = 0,
+            bonusGold = 0,
+            bonusExp = 0,
+            magicPen = 0,
+            armorPen = 15
+        };
+        modifierList.Add(modifier);
+
+        modifier = new Modifier
+        {
+            modId = 5211,
+            type = ModifierType.Suffix,
+            name = "of the Negator",
+            buyValue = 25000,
+            sellValue = 5000,
+            strength = 0,
+            dexterity = 0,
+            intelligence = 0,
+            critChance = 0,
+            critDamage = 0,
+            bonusPhysical = 0,
+            bonusMagical = 0,
+            itemFind = 0,
+            magicFind = 0,
+            bonusGold = 0,
+            bonusExp = 0,
+            magicPen = 35,
+            armorPen = 0
+        };
+        modifierList.Add(modifier);
+
+        modifier = new Modifier
+        {
+            modId = 5212,
+            type = ModifierType.Suffix,
+            name = "of the Lich",
+            buyValue = 25000,
+            sellValue = 5000,
+            strength = 0,
+            dexterity = 0,
+            intelligence = 10,
+            critChance = 0,
+            critDamage = 0,
+            bonusPhysical = 10,
+            bonusMagical = 0,
+            itemFind = 0,
+            magicFind = 0,
+            bonusGold = 0,
+            bonusExp = 0,
+            magicPen = 0,
+            armorPen = 15
+        };
+        modifierList.Add(modifier);
+
+        modifier = new Modifier
+        {
+            modId = 5213,
+            type = ModifierType.Suffix,
+            name = "of the Spellsword",
+            buyValue = 25000,
+            sellValue = 5000,
+            strength = 10,
+            dexterity = 0,
+            intelligence = 0,
+            critChance = 0,
+            critDamage = 0,
+            bonusPhysical = 0,
+            bonusMagical = 10,
+            itemFind = 0,
+            magicFind = 0,
+            bonusGold = 0,
+            bonusExp = 0,
+            magicPen = 15,
+            armorPen = 0
+        };
+        modifierList.Add(modifier);
+
+        modifier = new Modifier
+        {
+            modId = 5214,
+            type = ModifierType.Suffix,
+            name = "of the Illusionist",
+            buyValue = 25000,
+            sellValue = 5000,
+            strength = 0,
+            dexterity = 10,
+            intelligence = 0,
+            critChance = 0,
+            critDamage = 0,
+            bonusPhysical = 0,
+            bonusMagical = 10,
+            itemFind = 0,
+            magicFind = 0,
+            bonusGold = 0,
+            bonusExp = 0,
+            magicPen = 15,
             armorPen = 0
         };
         modifierList.Add(modifier);
