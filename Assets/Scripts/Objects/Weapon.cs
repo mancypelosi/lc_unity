@@ -1069,7 +1069,7 @@ public class Weapon : Item
         // Create rifle
         weapon = new Weapon
         {
-            itemId = 020104,
+            itemId = 022104,
             name = "Steel Boulder Launcher",
             flavorText = "Beats throwing them",
             spritePath = "Icons/rifle",
@@ -1908,7 +1908,7 @@ public class Weapon : Item
         // Create Earth staff weapon
         weapon = new Weapon
         {
-            itemId = 034309,
+            itemId = 032309,
             name = "Earthen Maple Staff",
             spritePath = "Icons/staff",
             soundPath = "Sfx/bamboosfx",
@@ -1952,7 +1952,7 @@ public class Weapon : Item
         // Create rifle
         weapon = new Weapon
         {
-            itemId = 030104,
+            itemId = 032104,
             name = "Silver Boulder Launcher",
             flavorText = "Beats throwing them",
             spritePath = "Icons/rifle",
@@ -2830,7 +2830,7 @@ public class Weapon : Item
         // Create Earth staff weapon
         weapon = new Weapon
         {
-            itemId = 044309,
+            itemId = 047309,
             name = "Shocking Birch Staff",
             spritePath = "Icons/staff",
             soundPath = "Sfx/bamboosfx",
@@ -2874,7 +2874,7 @@ public class Weapon : Item
         // Create rifle
         weapon = new Weapon
         {
-            itemId = 040104,
+            itemId = 042104,
             name = "Mithril Boulder Launcher",
             flavorText = "Beats throwing them",
             spritePath = "Icons/rifle",
@@ -3757,7 +3757,7 @@ public class Weapon : Item
         // Create Earth staff weapon
         weapon = new Weapon
         {
-            itemId = 054309,
+            itemId = 056309,
             name = "Windy Rosewood Staff",
             spritePath = "Icons/staff",
             soundPath = "Sfx/bamboosfx",
@@ -3801,7 +3801,7 @@ public class Weapon : Item
         // Create rifle
         weapon = new Weapon
         {
-            itemId = 050104,
+            itemId = 052104,
             name = "Darksteel Boulder Launcher",
             flavorText = "Beats throwing them",
             spritePath = "Icons/rifle",
