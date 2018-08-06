@@ -203,8 +203,8 @@ public class Armor : Item {
             name = "Iron Head",
             spritePath = "Icons/helm",
             rarity = Rarity.Uncommon,
-            buyValue = 20,
-            sellValue = 10,
+            buyValue = 400,
+            sellValue = 100,
             requiredLevel = 1,
             armorType = ArmorType.Head,
             strength = 3,
@@ -212,7 +212,7 @@ public class Armor : Item {
             intelligence = 1,
             critChance = 0,
             critDamage = 0,
-            bonusPhysical = 1,
+
 
         };
         armorList.Add(armor);
@@ -223,8 +223,8 @@ public class Armor : Item {
             name = "Iron Breastplate",
             spritePath = "Icons/chest",
             rarity = Rarity.Uncommon,
-            buyValue = 20,
-            sellValue = 10,
+            buyValue = 400,
+            sellValue = 100,
             requiredLevel = 1,
             armorType = ArmorType.Chest,
             strength = 3,
@@ -232,7 +232,7 @@ public class Armor : Item {
             intelligence = 1,
             critChance = 0,
             critDamage = 0,
-            bonusPhysical = 1,
+  
 
         };
         armorList.Add(armor);
@@ -243,8 +243,8 @@ public class Armor : Item {
             name = "Iron Gauntlets",
             spritePath = "Icons/gloves2",
             rarity = Rarity.Uncommon,
-            buyValue = 20,
-            sellValue = 10,
+            buyValue = 400,
+            sellValue = 100,
             requiredLevel = 1,
             armorType = ArmorType.Gloves,
             strength = 3,
@@ -252,7 +252,7 @@ public class Armor : Item {
             intelligence = 1,
             critChance = 0,
             critDamage = 0,
-            bonusPhysical = 1,
+     
 
         };
         armorList.Add(armor);
@@ -263,8 +263,8 @@ public class Armor : Item {
             name = "Iron Greaves",
             spritePath = "Icons/legs",
             rarity = Rarity.Uncommon,
-            buyValue = 20,
-            sellValue = 10,
+            buyValue = 400,
+            sellValue = 100,
             requiredLevel = 1,
             armorType = ArmorType.Legs,
             strength = 3,
@@ -272,7 +272,7 @@ public class Armor : Item {
             intelligence = 1,
             critChance = 0,
             critDamage = 0,
-            bonusPhysical = 1,
+     
 
         };
         armorList.Add(armor);
@@ -283,8 +283,8 @@ public class Armor : Item {
             name = "Iron Boots",
             spritePath = "Icons/boots2",
             rarity = Rarity.Uncommon,
-            buyValue = 20,
-            sellValue = 10,
+            buyValue = 400,
+            sellValue = 100,
             requiredLevel = 1,
             armorType = ArmorType.Boots,
             strength = 3,
@@ -292,7 +292,7 @@ public class Armor : Item {
             intelligence = 1,
             critChance = 0,
             critDamage = 0,
-            bonusPhysical = 1,
+      
 
         };
         armorList.Add(armor);
@@ -303,15 +303,15 @@ public class Armor : Item {
             name = "Leather Cap",
             spritePath = "Icons/helm",
             rarity = Rarity.Uncommon,
-            buyValue = 20,
-            sellValue = 10,
+            buyValue = 400,
+            sellValue = 100,
             requiredLevel = 1,
             armorType = ArmorType.Head,
             strength = 1,
             dexterity = 3,
             intelligence = 1,
             critChance = 0,
-            critDamage = 5,
+    
 
         };
         armorList.Add(armor);
@@ -322,15 +322,15 @@ public class Armor : Item {
             name = "Leather Chest",
             spritePath = "Icons/chest",
             rarity = Rarity.Uncommon,
-            buyValue = 20,
-            sellValue = 10,
+            buyValue = 400,
+            sellValue = 100,
             requiredLevel = 1,
             armorType = ArmorType.Chest,
             strength = 1,
             dexterity = 3,
             intelligence = 1,
             critChance = 0,
-            critDamage = 5,
+
 
         };
         armorList.Add(armor);
@@ -341,15 +341,15 @@ public class Armor : Item {
             name = "Leather Gloves",
             spritePath = "Icons/gloves2",
             rarity = Rarity.Uncommon,
-            buyValue = 20,
-            sellValue = 10,
+            buyValue = 400,
+            sellValue = 100,
             requiredLevel = 1,
             armorType = ArmorType.Gloves,
             strength = 1,
             dexterity = 3,
             intelligence = 1,
             critChance = 0,
-            critDamage = 5,
+ 
 
         };
         armorList.Add(armor);
@@ -360,15 +360,15 @@ public class Armor : Item {
             name = "Leather Legs",
             spritePath = "Icons/legs",
             rarity = Rarity.Uncommon,
-            buyValue = 20,
-            sellValue = 10,
+            buyValue = 400,
+            sellValue = 100,
             requiredLevel = 1,
             armorType = ArmorType.Legs,
             strength = 1,
             dexterity = 3,
             intelligence = 1,
             critChance = 0,
-            critDamage = 5,
+
 
         };
         armorList.Add(armor);
@@ -379,15 +379,14 @@ public class Armor : Item {
             name = "Leather Boots",
             spritePath = "Icons/boots2",
             rarity = Rarity.Uncommon,
-            buyValue = 20,
-            sellValue = 10,
+            buyValue = 400,
+            sellValue = 100,
             requiredLevel = 1,
             armorType = ArmorType.Boots,
             strength = 1,
             dexterity = 3,
             intelligence = 1,
             critChance = 0,
-            critDamage = 5,
 
         };
         armorList.Add(armor);
@@ -398,8 +397,8 @@ public class Armor : Item {
             name = "Cloth Hood",
             spritePath = "Icons/helm",
             rarity = Rarity.Uncommon,
-            buyValue = 20,
-            sellValue = 10,
+            buyValue = 400,
+            sellValue = 100,
             requiredLevel = 1,
             armorType = ArmorType.Head,
             strength = 1,
@@ -407,7 +406,7 @@ public class Armor : Item {
             intelligence = 3,
             critChance = 0,
             critDamage = 0,
-            bonusMagical = 1,
+
 
         };
         armorList.Add(armor);
@@ -418,8 +417,8 @@ public class Armor : Item {
             name = "Cloth Robes",
             spritePath = "Icons/chest",
             rarity = Rarity.Uncommon,
-            buyValue = 20,
-            sellValue = 10,
+            buyValue = 400,
+            sellValue = 100,
             requiredLevel = 1,
             armorType = ArmorType.Chest,
             strength = 1,
@@ -427,7 +426,7 @@ public class Armor : Item {
             intelligence = 3,
             critChance = 0,
             critDamage = 0,
-            bonusMagical = 1,
+
 
         };
         armorList.Add(armor);
@@ -438,8 +437,8 @@ public class Armor : Item {
             name = "Cloth Gloves",
             spritePath = "Icons/gloves2",
             rarity = Rarity.Uncommon,
-            buyValue = 20,
-            sellValue = 10,
+            buyValue = 400,
+            sellValue = 100,
             requiredLevel = 1,
             armorType = ArmorType.Gloves,
             strength = 1,
@@ -447,7 +446,7 @@ public class Armor : Item {
             intelligence = 3,
             critChance = 0,
             critDamage = 0,
-            bonusMagical = 1,
+
 
         };
         armorList.Add(armor);
@@ -458,8 +457,8 @@ public class Armor : Item {
             name = "Cloth Legs",
             spritePath = "Icons/legs",
             rarity = Rarity.Uncommon,
-            buyValue = 20,
-            sellValue = 10,
+            buyValue = 400,
+            sellValue = 100,
             requiredLevel = 1,
             armorType = ArmorType.Legs,
             strength = 1,
@@ -467,7 +466,7 @@ public class Armor : Item {
             intelligence = 3,
             critChance = 0,
             critDamage = 0,
-            bonusMagical = 1,
+
 
         };
         armorList.Add(armor);
@@ -478,8 +477,8 @@ public class Armor : Item {
             name = "Cloth Shoes",
             spritePath = "Icons/boots2",
             rarity = Rarity.Uncommon,
-            buyValue = 20,
-            sellValue = 10,
+            buyValue = 400,
+            sellValue = 100,
             requiredLevel = 1,
             armorType = ArmorType.Boots,
             strength = 1,
@@ -487,7 +486,7 @@ public class Armor : Item {
             intelligence = 3,
             critChance = 0,
             critDamage = 0,
-            bonusMagical = 1,
+
 
         };
         armorList.Add(armor);
@@ -502,18 +501,18 @@ public class Armor : Item {
             spritePath = "Icons/helm",
             flavorText = "Safety first, kids",
             rarity = Rarity.Legendary,
-            buyValue = 100,
-            sellValue = 50,
+            buyValue = 2500,
+            sellValue = 500,
             requiredLevel = 1,
             armorType = ArmorType.Head,
-            strength = 3,
+            strength = 5,
             dexterity = 1,
             intelligence = 1,
             critChance = 0,
             critDamage = 0,
             bonusPhysical = 1,
-            itemFind = 5,
-            magicFind = 5,
+            itemFind = 2,
+            magicFind = 2,
 
         };
         armorList.Add(armor);
@@ -523,13 +522,13 @@ public class Armor : Item {
             itemId = 1213,
             name = "Duelist Gloves",
             spritePath = "Icons/gloves2",
-            rarity = Rarity.Legendary,
-            buyValue = 100,
-            sellValue = 50,
+            rarity = Rarity.Set,
+            buyValue = 2500,
+            sellValue = 500,
             requiredLevel = 1,
             armorType = ArmorType.Gloves,
             strength = 1,
-            dexterity = 1,
+            dexterity = 3,
             intelligence = 1,
             critChance = 3,
             critDamage = 10,
@@ -542,13 +541,13 @@ public class Armor : Item {
             itemId = 1212,
             name = "Duelist Cuirass",
             spritePath = "Icons/chest",
-            rarity = Rarity.Legendary,
-            buyValue = 100,
-            sellValue = 50,
+            rarity = Rarity.Set,
+            buyValue = 2500,
+            sellValue = 500,
             requiredLevel = 1,
             armorType = ArmorType.Chest,
             strength = 1,
-            dexterity = 1,
+            dexterity = 3,
             intelligence = 1,
             critChance = 3,
             critDamage = 10,
@@ -561,13 +560,13 @@ public class Armor : Item {
             itemId = 1215,
             name = "Duelist Boots",
             spritePath = "Icons/boots2",
-            rarity = Rarity.Legendary,
-            buyValue = 100,
-            sellValue = 50,
+            rarity = Rarity.Set,
+            buyValue = 2500,
+            sellValue = 500,
             requiredLevel = 1,
             armorType = ArmorType.Boots,
             strength = 1,
-            dexterity = 1,
+            dexterity = 3,
             intelligence = 1,
             critChance = 3,
             critDamage = 10,
@@ -579,11 +578,11 @@ public class Armor : Item {
         {
             itemId = 1313,
             name = "Skeletal Gloves",
-            flavorText = "Wait, how are the gloves skeletal?",
+            flavorText = "Clammy",
             spritePath = "Icons/gloves2",
             rarity = Rarity.Uncommon,
-            buyValue = 100,
-            sellValue = 50,
+            buyValue = 2500,
+            sellValue = 500,
             requiredLevel = 1,
             armorType = ArmorType.Gloves,
             strength = 1,
@@ -605,8 +604,8 @@ public class Armor : Item {
             name = "Steel Helm",
             spritePath = "Icons/helm",
             rarity = Rarity.Uncommon,
-            buyValue = 40,
-            sellValue = 20,
+            buyValue = 1000,
+            sellValue = 250,
             requiredLevel = 5,
             requiredStr = 10,
             armorType = ArmorType.Head,
@@ -615,7 +614,7 @@ public class Armor : Item {
             intelligence = 2,
             critChance = 0,
             critDamage = 0,
-            bonusPhysical = 2,
+ 
 
         };
         armorList.Add(armor);
@@ -626,8 +625,8 @@ public class Armor : Item {
             name = "Steel Breastplate",
             spritePath = "Icons/chest",
             rarity = Rarity.Uncommon,
-            buyValue = 40,
-            sellValue = 20,
+            buyValue = 1000,
+            sellValue = 250,
             requiredLevel = 5,
             requiredStr = 10,
             armorType = ArmorType.Chest,
@@ -636,7 +635,7 @@ public class Armor : Item {
             intelligence = 2,
             critChance = 0,
             critDamage = 0,
-            bonusPhysical = 2,
+    
 
         };
         armorList.Add(armor);
@@ -647,8 +646,8 @@ public class Armor : Item {
             name = "Steel Gauntlets",
             spritePath = "Icons/gloves2",
             rarity = Rarity.Uncommon,
-            buyValue = 40,
-            sellValue = 20,
+            buyValue = 1000,
+            sellValue = 250,
             requiredLevel = 5,
             requiredStr = 10,
             armorType = ArmorType.Gloves,
@@ -657,7 +656,7 @@ public class Armor : Item {
             intelligence = 2,
             critChance = 0,
             critDamage = 0,
-            armorPen = 2,
+ 
 
         };
         armorList.Add(armor);
@@ -668,8 +667,8 @@ public class Armor : Item {
             name = "Steel Greaves",
             spritePath = "Icons/legs",
             rarity = Rarity.Uncommon,
-            buyValue = 40,
-            sellValue = 20,
+            buyValue = 1000,
+            sellValue = 250,
             requiredLevel = 5,
             requiredStr = 10,
             armorType = ArmorType.Legs,
@@ -678,7 +677,7 @@ public class Armor : Item {
             intelligence = 2,
             critChance = 0,
             critDamage = 0,
-            bonusPhysical = 2,
+  
 
         };
         armorList.Add(armor);
@@ -689,8 +688,8 @@ public class Armor : Item {
             name = "Steel Boots",
             spritePath = "Icons/boots2",
             rarity = Rarity.Uncommon,
-            buyValue = 40,
-            sellValue = 20,
+            buyValue = 1000,
+            sellValue = 250,
             requiredLevel = 5,
             requiredStr = 10,
             armorType = ArmorType.Boots,
@@ -699,7 +698,7 @@ public class Armor : Item {
             intelligence = 2,
             critChance = 0,
             critDamage = 0,
-            bonusPhysical = 2,
+ 
 
         };
         armorList.Add(armor);
@@ -710,8 +709,8 @@ public class Armor : Item {
             name = "Studded Leather Cap",
             spritePath = "Icons/helm",
             rarity = Rarity.Uncommon,
-            buyValue = 40,
-            sellValue = 20,
+            buyValue = 1000,
+            sellValue = 250,
             requiredLevel = 5,
             requiredDex = 10,
             armorType = ArmorType.Head,
@@ -719,7 +718,7 @@ public class Armor : Item {
             dexterity = 5,
             intelligence = 2,
             critChance = 0,
-            critDamage = 10,
+
 
         };
         armorList.Add(armor);
@@ -730,8 +729,8 @@ public class Armor : Item {
             name = "Studded Leather Chest",
             spritePath = "Icons/chest",
             rarity = Rarity.Uncommon,
-            buyValue = 40,
-            sellValue = 20,
+            buyValue = 1000,
+            sellValue = 250,
             requiredLevel = 5,
             requiredDex = 10,
             armorType = ArmorType.Chest,
@@ -739,7 +738,7 @@ public class Armor : Item {
             dexterity = 5,
             intelligence = 2,
             critChance = 0,
-            critDamage = 10,
+
 
         };
         armorList.Add(armor);
@@ -750,8 +749,8 @@ public class Armor : Item {
             name = "Studded Leather Gloves",
             spritePath = "Icons/gloves2",
             rarity = Rarity.Uncommon,
-            buyValue = 40,
-            sellValue = 20,
+            buyValue = 1000,
+            sellValue = 250,
             requiredLevel = 5,
             requiredDex = 10,
             armorType = ArmorType.Gloves,
@@ -759,7 +758,7 @@ public class Armor : Item {
             dexterity = 5,
             intelligence = 2,
             critChance = 0,
-            critDamage = 10,
+
 
         };
         armorList.Add(armor);
@@ -770,8 +769,8 @@ public class Armor : Item {
             name = "Studded Leather Legs",
             spritePath = "Icons/legs",
             rarity = Rarity.Uncommon,
-            buyValue = 40,
-            sellValue = 20,
+            buyValue = 1000,
+            sellValue = 250,
             requiredLevel = 5,
             requiredDex = 10,
             armorType = ArmorType.Legs,
@@ -779,7 +778,7 @@ public class Armor : Item {
             dexterity = 5,
             intelligence = 2,
             critChance = 0,
-            critDamage = 10,
+
 
         };
         armorList.Add(armor);
@@ -790,8 +789,8 @@ public class Armor : Item {
             name = "Studded Leather Boots",
             spritePath = "Icons/boots2",
             rarity = Rarity.Uncommon,
-            buyValue = 40,
-            sellValue = 20,
+            buyValue = 1000,
+            sellValue = 250,
             requiredLevel = 5,
             requiredDex = 10,
             armorType = ArmorType.Boots,
@@ -799,7 +798,7 @@ public class Armor : Item {
             dexterity = 5,
             intelligence = 2,
             critChance = 0,
-            critDamage = 10,
+
 
         };
         armorList.Add(armor);
@@ -810,8 +809,8 @@ public class Armor : Item {
             name = "Fine Cloth Hood",
             spritePath = "Icons/helm",
             rarity = Rarity.Uncommon,
-            buyValue = 40,
-            sellValue = 20,
+            buyValue = 1000,
+            sellValue = 250,
             requiredLevel = 5,
             requiredInt = 10,
             armorType = ArmorType.Head,
@@ -820,7 +819,7 @@ public class Armor : Item {
             intelligence = 5,
             critChance = 0,
             critDamage = 0,
-            bonusMagical = 2,
+
 
         };
         armorList.Add(armor);
@@ -831,8 +830,8 @@ public class Armor : Item {
             name = "Fine Cloth Robes",
             spritePath = "Icons/chest",
             rarity = Rarity.Uncommon,
-            buyValue = 40,
-            sellValue = 20,
+            buyValue = 1000,
+            sellValue = 250,
             requiredLevel = 5,
             requiredInt = 10,
             armorType = ArmorType.Chest,
@@ -841,7 +840,7 @@ public class Armor : Item {
             intelligence = 5,
             critChance = 0,
             critDamage = 0,
-            bonusMagical = 2,
+
 
         };
         armorList.Add(armor);
@@ -852,8 +851,8 @@ public class Armor : Item {
             name = "Fine Cloth Gloves",
             spritePath = "Icons/gloves2",
             rarity = Rarity.Uncommon,
-            buyValue = 40,
-            sellValue = 20,
+            buyValue = 1000,
+            sellValue = 250,
             requiredLevel = 5,
             requiredInt = 10,
             armorType = ArmorType.Gloves,
@@ -862,7 +861,7 @@ public class Armor : Item {
             intelligence = 5,
             critChance = 0,
             critDamage = 0,
-            bonusMagical = 2,
+
 
         };
         armorList.Add(armor);
@@ -873,8 +872,8 @@ public class Armor : Item {
             name = "Fine Cloth Legs",
             spritePath = "Icons/legs",
             rarity = Rarity.Uncommon,
-            buyValue = 40,
-            sellValue = 20,
+            buyValue = 1000,
+            sellValue = 250,
             requiredLevel = 5,
             requiredInt = 10,
             armorType = ArmorType.Legs,
@@ -883,7 +882,7 @@ public class Armor : Item {
             intelligence = 5,
             critChance = 0,
             critDamage = 0,
-            bonusMagical = 2,
+
 
         };
         armorList.Add(armor);
@@ -894,8 +893,8 @@ public class Armor : Item {
             name = "Fine Cloth Shoes",
             spritePath = "Icons/boots2",
             rarity = Rarity.Uncommon,
-            buyValue = 40,
-            sellValue = 20,
+            buyValue = 1000,
+            sellValue = 250,
             requiredLevel = 5,
             requiredInt = 10,
             armorType = ArmorType.Boots,
@@ -904,7 +903,7 @@ public class Armor : Item {
             intelligence = 5,
             critChance = 0,
             critDamage = 0,
-            bonusMagical = 2,
+
 
         };
         armorList.Add(armor);
@@ -916,9 +915,9 @@ public class Armor : Item {
             itemId = 2311,
             name = "Necromancer Hood",
             spritePath = "Icons/helm",
-            rarity = Rarity.Legendary,
-            buyValue = 1000,
-            sellValue = 100,
+            rarity = Rarity.Set,
+            buyValue = 5000,
+            sellValue = 1250,
             requiredLevel = 5,
             requiredInt = 10,
             armorType = ArmorType.Head,
@@ -929,7 +928,7 @@ public class Armor : Item {
             critDamage = 0,
             bonusPhysical = 5,
             bonusMagical = -3,
-            armorPen = 5,
+            armorPen = 8,
 
         };
         armorList.Add(armor);
@@ -939,9 +938,9 @@ public class Armor : Item {
             itemId = 2312,
             name = "Necromancer Robes",
             spritePath = "Icons/chest",
-            rarity = Rarity.Legendary,
-            buyValue = 1000,
-            sellValue = 100,
+            rarity = Rarity.Set,
+            buyValue = 5000,
+            sellValue = 1250,
             requiredLevel = 5,
             requiredInt = 10,
             armorType = ArmorType.Chest,
@@ -952,7 +951,7 @@ public class Armor : Item {
             critDamage = 0,
             bonusPhysical = 5,
             bonusMagical = -3,
-            armorPen = 5,
+            armorPen = 8,
 
         };
         armorList.Add(armor);
@@ -963,8 +962,8 @@ public class Armor : Item {
             name = "Pickpocket's Gloves",
             spritePath = "Icons/gloves2",
             rarity = Rarity.Legendary,
-            buyValue = 1000,
-            sellValue = 100,
+            buyValue = 5000,
+            sellValue = 1250,
             requiredLevel = 5,
             requiredDex = 10,
             armorType = ArmorType.Gloves,
@@ -984,9 +983,9 @@ public class Armor : Item {
             name = "Kiddie Gloves",
             spritePath = "Icons/gloves2",
             flavorText = "You'll be a big kid someday",
-            rarity = Rarity.Legendary,
-            buyValue = 1000,
-            sellValue = 100,
+            rarity = Rarity.Set,
+            buyValue = 5000,
+            sellValue = 1250,
             requiredLevel = 5,
             armorType = ArmorType.Gloves,
             strength = 1,
@@ -1001,9 +1000,9 @@ public class Armor : Item {
             itemId = 2111,
             name = "Dunce Cap",
             spritePath = "Icons/helm",
-            rarity = Rarity.Legendary,
-            buyValue = 1000,
-            sellValue = 100,
+            rarity = Rarity.Set,
+            buyValue = 5000,
+            sellValue = 1250,
             requiredLevel = 5,
             requiredStr = 30,
             armorType = ArmorType.Head,
@@ -1025,8 +1024,8 @@ public class Armor : Item {
             spritePath = "Icons/chest",
             flavorText = "It's a tight fit, but comes with a comfy beard-holster",
             rarity = Rarity.Legendary,
-            buyValue = 1000,
-            sellValue = 100,
+            buyValue = 5000,
+            sellValue = 1250,
             requiredLevel = 5,
             requiredStr = 30,
             armorType = ArmorType.Chest,
@@ -1036,7 +1035,7 @@ public class Armor : Item {
             critChance = 0,
             critDamage = 0,
             bonusPhysical = 0,
-            armorPen = 5,
+            armorPen = 8,
 
         };
         armorList.Add(armor);
@@ -1049,8 +1048,8 @@ public class Armor : Item {
             name = "Silver Helm",
             spritePath = "Icons/helm",
             rarity = Rarity.Uncommon,
-            buyValue = 80,
-            sellValue = 40,
+            buyValue = 2500,
+            sellValue = 650,
             requiredLevel = 15,
             requiredStr = 50,
             armorType = ArmorType.Head,
@@ -1059,7 +1058,7 @@ public class Armor : Item {
             intelligence = 3,
             critChance = 0,
             critDamage = 0,
-            bonusPhysical = 3,
+
 
         };
         armorList.Add(armor);
@@ -1070,8 +1069,8 @@ public class Armor : Item {
             name = "Silver Breastplate",
             spritePath = "Icons/chest",
             rarity = Rarity.Uncommon,
-            buyValue = 80,
-            sellValue = 40,
+            buyValue = 2500,
+            sellValue = 650,
             requiredLevel = 15,
             requiredStr = 50,
             armorType = ArmorType.Chest,
@@ -1080,7 +1079,7 @@ public class Armor : Item {
             intelligence = 3,
             critChance = 0,
             critDamage = 0,
-            bonusPhysical = 3,
+
 
         };
         armorList.Add(armor);
@@ -1091,8 +1090,8 @@ public class Armor : Item {
             name = "Silver Gauntlets",
             spritePath = "Icons/gloves2",
             rarity = Rarity.Uncommon,
-            buyValue = 80,
-            sellValue = 40,
+            buyValue = 2500,
+            sellValue = 650,
             requiredLevel = 15,
             requiredStr = 50,
             armorType = ArmorType.Gloves,
@@ -1101,7 +1100,7 @@ public class Armor : Item {
             intelligence = 3,
             critChance = 0,
             critDamage = 0,
-            bonusPhysical = 3,
+
         };
         armorList.Add(armor);
 
@@ -1111,8 +1110,8 @@ public class Armor : Item {
             name = "Silver Greaves",
             spritePath = "Icons/legs",
             rarity = Rarity.Uncommon,
-            buyValue = 80,
-            sellValue = 40,
+            buyValue = 2500,
+            sellValue = 650,
             requiredLevel = 15,
             requiredStr = 50,
             armorType = ArmorType.Legs,
@@ -1121,7 +1120,7 @@ public class Armor : Item {
             intelligence = 3,
             critChance = 0,
             critDamage = 0,
-            bonusPhysical = 3,
+
 
         };
         armorList.Add(armor);
@@ -1132,8 +1131,8 @@ public class Armor : Item {
             name = "Silver Boots",
             spritePath = "Icons/boots2",
             rarity = Rarity.Uncommon,
-            buyValue = 80,
-            sellValue = 40,
+            buyValue = 2500,
+            sellValue = 650,
             requiredLevel = 15,
             requiredStr = 50,
             armorType = ArmorType.Boots,
@@ -1142,18 +1141,18 @@ public class Armor : Item {
             intelligence = 3,
             critChance = 0,
             critDamage = 0,
-            bonusPhysical = 3,
+
         };
         armorList.Add(armor);
 
         armor = new Armor
         {
             itemId = 3201,
-            name = "Raptorhide Cap",
+            name = "Snakeskin Cap",
             spritePath = "Icons/helm",
             rarity = Rarity.Uncommon,
-            buyValue = 80,
-            sellValue = 40,
+            buyValue = 2500,
+            sellValue = 650,
             requiredLevel = 15,
             requiredDex = 50,
             armorType = ArmorType.Head,
@@ -1161,7 +1160,7 @@ public class Armor : Item {
             dexterity = 7,
             intelligence = 3,
             critChance = 0,
-            critDamage = 15,
+
 
         };
         armorList.Add(armor);
@@ -1169,11 +1168,11 @@ public class Armor : Item {
         armor = new Armor
         {
             itemId = 3202,
-            name = "Raptorhide Chest",
+            name = "Snakeskin Chest",
             spritePath = "Icons/chest",
             rarity = Rarity.Uncommon,
-            buyValue = 80,
-            sellValue = 40,
+            buyValue = 2500,
+            sellValue = 650,
             requiredLevel = 15,
             requiredDex = 50,
             armorType = ArmorType.Chest,
@@ -1181,7 +1180,7 @@ public class Armor : Item {
             dexterity = 7,
             intelligence = 3,
             critChance = 0,
-            critDamage = 15,
+
 
         };
         armorList.Add(armor);
@@ -1189,11 +1188,11 @@ public class Armor : Item {
         armor = new Armor
         {
             itemId = 3203,
-            name = "Raptorhide Gloves",
+            name = "Snakeskin Gloves",
             spritePath = "Icons/gloves2",
             rarity = Rarity.Uncommon,
-            buyValue = 80,
-            sellValue = 40,
+            buyValue = 2500,
+            sellValue = 650,
             requiredLevel = 15,
             requiredDex = 50,
             armorType = ArmorType.Gloves,
@@ -1201,7 +1200,7 @@ public class Armor : Item {
             dexterity = 7,
             intelligence = 3,
             critChance = 0,
-            critDamage = 15,
+
 
         };
         armorList.Add(armor);
@@ -1209,11 +1208,11 @@ public class Armor : Item {
         armor = new Armor
         {
             itemId = 3204,
-            name = "Raptorhide Legs",
+            name = "Snakeskin Legs",
             spritePath = "Icons/legs",
             rarity = Rarity.Uncommon,
-            buyValue = 80,
-            sellValue = 40,
+            buyValue = 2500,
+            sellValue = 650,
             requiredLevel = 15,
             requiredDex = 50,
             armorType = ArmorType.Legs,
@@ -1221,7 +1220,7 @@ public class Armor : Item {
             dexterity = 7,
             intelligence = 3,
             critChance = 0,
-            critDamage = 15,
+
 
         };
         armorList.Add(armor);
@@ -1229,11 +1228,11 @@ public class Armor : Item {
         armor = new Armor
         {
             itemId = 3205,
-            name = "Raptorhide Boots",
+            name = "Snakeskin Boots",
             spritePath = "Icons/boots2",
             rarity = Rarity.Uncommon,
-            buyValue = 80,
-            sellValue = 40,
+            buyValue = 2500,
+            sellValue = 650,
             requiredLevel = 15,
             requiredDex = 50,
             armorType = ArmorType.Boots,
@@ -1241,7 +1240,7 @@ public class Armor : Item {
             dexterity = 7,
             intelligence = 3,
             critChance = 0,
-            critDamage = 15,
+ 
 
         };
         armorList.Add(armor);
@@ -1249,11 +1248,11 @@ public class Armor : Item {
         armor = new Armor
         {
             itemId = 3301,
-            name = "Mageweave Hood",
+            name = "Spidersilk Hood",
             spritePath = "Icons/helm",
             rarity = Rarity.Uncommon,
-            buyValue = 80,
-            sellValue = 40,
+            buyValue = 2500,
+            sellValue = 650,
             requiredLevel = 15,
             requiredInt = 50,
             armorType = ArmorType.Head,
@@ -1262,7 +1261,7 @@ public class Armor : Item {
             intelligence = 7,
             critChance = 0,
             critDamage = 0,
-            bonusMagical = 3,
+
 
         };
         armorList.Add(armor);
@@ -1270,11 +1269,11 @@ public class Armor : Item {
         armor = new Armor
         {
             itemId = 3302,
-            name = "Mageweave Robes",
+            name = "Spidersilk Robes",
             spritePath = "Icons/chest",
             rarity = Rarity.Uncommon,
-            buyValue = 80,
-            sellValue = 40,
+            buyValue = 2500,
+            sellValue = 650,
             requiredLevel = 15,
             requiredInt = 50,
             armorType = ArmorType.Chest,
@@ -1283,7 +1282,7 @@ public class Armor : Item {
             intelligence = 7,
             critChance = 0,
             critDamage = 0,
-            bonusMagical = 3,
+
 
         };
         armorList.Add(armor);
@@ -1291,11 +1290,11 @@ public class Armor : Item {
         armor = new Armor
         {
             itemId = 3303,
-            name = "Mageweave Gloves",
+            name = "Spidersilk Gloves",
             spritePath = "Icons/gloves2",
             rarity = Rarity.Uncommon,
-            buyValue = 80,
-            sellValue = 40,
+            buyValue = 2500,
+            sellValue = 650,
             requiredLevel = 15,
             requiredInt = 50,
             armorType = ArmorType.Gloves,
@@ -1304,7 +1303,7 @@ public class Armor : Item {
             intelligence = 7,
             critChance = 0,
             critDamage = 0,
-            bonusMagical = 3,
+
 
         };
         armorList.Add(armor);
@@ -1312,11 +1311,11 @@ public class Armor : Item {
         armor = new Armor
         {
             itemId = 3304,
-            name = "Mageweave Legs",
+            name = "Spidersilk Legs",
             spritePath = "Icons/legs",
             rarity = Rarity.Uncommon,
-            buyValue = 80,
-            sellValue = 40,
+            buyValue = 2500,
+            sellValue = 650,
             requiredLevel = 15,
             requiredInt = 50,
             armorType = ArmorType.Legs,
@@ -1325,7 +1324,7 @@ public class Armor : Item {
             intelligence = 7,
             critChance = 0,
             critDamage = 0,
-            bonusMagical = 3,
+
 
         };
         armorList.Add(armor);
@@ -1333,11 +1332,11 @@ public class Armor : Item {
         armor = new Armor
         {
             itemId = 3305,
-            name = "Mageweave Shoes",
+            name = "Spidersilk Shoes",
             spritePath = "Icons/boots2",
             rarity = Rarity.Uncommon,
-            buyValue = 80,
-            sellValue = 40,
+            buyValue = 2500,
+            sellValue = 650,
             requiredLevel = 15,
             requiredInt = 50,
             armorType = ArmorType.Boots,
@@ -1346,7 +1345,7 @@ public class Armor : Item {
             intelligence = 7,
             critChance = 0,
             critDamage = 0,
-            bonusMagical = 3,
+
 
         };
         armorList.Add(armor);
@@ -1359,9 +1358,9 @@ public class Armor : Item {
             itemId = 3111,
             name = "Paladin Helm",
             spritePath = "Icons/helm",
-            rarity = Rarity.Legendary,
-            buyValue = 100000,
-            sellValue = 1000,
+            rarity = Rarity.Set,
+            buyValue = 15000,
+            sellValue = 2000,
             requiredLevel = 15,
             requiredStr = 50,
             armorType = ArmorType.Head,
@@ -1381,9 +1380,9 @@ public class Armor : Item {
             itemId = 3112,
             name = "Paladin Plate",
             spritePath = "Icons/chest",
-            rarity = Rarity.Legendary,
-            buyValue = 100000,
-            sellValue = 1000,
+            rarity = Rarity.Set,
+            buyValue = 15000,
+            sellValue = 2000,
             requiredLevel = 15,
             requiredStr = 50,
             armorType = ArmorType.Chest,
@@ -1403,9 +1402,9 @@ public class Armor : Item {
             itemId = 3114,
             name = "Paladin Greaves",
             spritePath = "Icons/legs",
-            rarity = Rarity.Legendary,
-            buyValue = 100000,
-            sellValue = 1000,
+            rarity = Rarity.Set,
+            buyValue = 15000,
+            sellValue = 2000,
             requiredLevel = 15,
             requiredStr = 50,
             armorType = ArmorType.Legs,
@@ -1427,8 +1426,8 @@ public class Armor : Item {
             spritePath = "Icons/boots2",
             flavorText = "Requires 2 AA batteries",
             rarity = Rarity.Legendary,
-            buyValue = 100000,
-            sellValue = 1000,
+            buyValue = 15000,
+            sellValue = 2000,
             requiredLevel = 15,
             requiredInt = 50,
             armorType = ArmorType.Boots,
@@ -1437,7 +1436,8 @@ public class Armor : Item {
             intelligence = 7,
             critChance = 0,
             critDamage = 0,
-            bonusMagical = 5,
+            bonusMagical = 10,
+            bonusPhysical = -5,
 
         };
         armorList.Add(armor);
@@ -1448,8 +1448,8 @@ public class Armor : Item {
             name = "Assassin's Leggings",
             spritePath = "Icons/legs",
             rarity = Rarity.Legendary,
-            buyValue = 100000,
-            sellValue = 1000,
+            buyValue = 15000,
+            sellValue = 2000,
             requiredLevel = 15,
             requiredDex = 50,
             armorType = ArmorType.Legs,
@@ -1457,7 +1457,7 @@ public class Armor : Item {
             dexterity = 5,
             intelligence = 3,
             critChance = 1,
-            critDamage = 50,
+            critDamage = 35,
 
         };
         armorList.Add(armor);
@@ -1469,8 +1469,8 @@ public class Armor : Item {
             spritePath = "Icons/boots2",
             flavorText = "I walk in the valley of the shadow of death",
             rarity = Rarity.Legendary,
-            buyValue = 100000,
-            sellValue = 1000,
+            buyValue = 15000,
+            sellValue = 2000,
             requiredLevel = 15,
             requiredDex = 50,
             armorType = ArmorType.Boots,
@@ -1491,8 +1491,8 @@ public class Armor : Item {
             name = "Mithril Helm",
             spritePath = "Icons/helm",
             rarity = Rarity.Uncommon,
-            buyValue = 160,
-            sellValue = 80,
+            buyValue = 7500,
+            sellValue = 1500,
             requiredLevel = 20,
             requiredStr = 75,
             armorType = ArmorType.Head,
@@ -1501,7 +1501,7 @@ public class Armor : Item {
             intelligence = 5,
             critChance = 0,
             critDamage = 0,
-            bonusPhysical = 5,
+
 
         };
         armorList.Add(armor);
@@ -1512,8 +1512,8 @@ public class Armor : Item {
             name = "Mithril Breastplate",
             spritePath = "Icons/chest",
             rarity = Rarity.Uncommon,
-            buyValue = 160,
-            sellValue = 80,
+            buyValue = 7500,
+            sellValue = 1500,
             requiredLevel = 20,
             requiredStr = 75,
             armorType = ArmorType.Chest,
@@ -1522,7 +1522,7 @@ public class Armor : Item {
             intelligence = 5,
             critChance = 0,
             critDamage = 0,
-            bonusPhysical = 5,
+
 
         };
         armorList.Add(armor);
@@ -1533,8 +1533,8 @@ public class Armor : Item {
             name = "Mithril Gauntlets",
             spritePath = "Icons/gloves2",
             rarity = Rarity.Uncommon,
-            buyValue = 160,
-            sellValue = 80,
+            buyValue = 7500,
+            sellValue = 1500,
             requiredLevel = 20,
             requiredStr = 75,
             armorType = ArmorType.Gloves,
@@ -1543,7 +1543,7 @@ public class Armor : Item {
             intelligence = 5,
             critChance = 0,
             critDamage = 0,
-            bonusPhysical = 5,
+
         };
         armorList.Add(armor);
 
@@ -1553,8 +1553,8 @@ public class Armor : Item {
             name = "Mithril Greaves",
             spritePath = "Icons/legs",
             rarity = Rarity.Uncommon,
-            buyValue = 160,
-            sellValue = 80,
+            buyValue = 7500,
+            sellValue = 1500,
             requiredLevel = 20,
             requiredStr = 75,
             armorType = ArmorType.Legs,
@@ -1563,7 +1563,7 @@ public class Armor : Item {
             intelligence = 5,
             critChance = 0,
             critDamage = 0,
-            bonusPhysical = 5,
+
 
         };
         armorList.Add(armor);
@@ -1574,8 +1574,8 @@ public class Armor : Item {
             name = "Mithril Boots",
             spritePath = "Icons/boots2",
             rarity = Rarity.Uncommon,
-            buyValue = 160,
-            sellValue = 80,
+            buyValue = 7500,
+            sellValue = 1500,
             requiredLevel = 20,
             requiredStr = 75,
             armorType = ArmorType.Boots,
@@ -1584,18 +1584,18 @@ public class Armor : Item {
             intelligence = 5,
             critChance = 0,
             critDamage = 0,
-            bonusPhysical = 5,
+
         };
         armorList.Add(armor);
 
         armor = new Armor
         {
             itemId = 4201,
-            name = "Drakehide Cap",
+            name = "Raptorhide Cap",
             spritePath = "Icons/helm",
             rarity = Rarity.Uncommon,
-            buyValue = 120,
-            sellValue = 80,
+            buyValue = 7500,
+            sellValue = 1500,
             requiredLevel = 20,
             requiredDex = 75,
             armorType = ArmorType.Head,
@@ -1603,18 +1603,18 @@ public class Armor : Item {
             dexterity = 10,
             intelligence = 5,
             critChance = 0,
-            critDamage = 20,
+
         };
         armorList.Add(armor);
 
         armor = new Armor
         {
             itemId = 4202,
-            name = "Drakehide Chest",
+            name = "Raptorhide Chest",
             spritePath = "Icons/chest",
             rarity = Rarity.Uncommon,
-            buyValue = 120,
-            sellValue = 80,
+            buyValue = 7500,
+            sellValue = 1500,
             requiredLevel = 20,
             requiredDex = 75,
             armorType = ArmorType.Chest,
@@ -1622,18 +1622,18 @@ public class Armor : Item {
             dexterity = 10,
             intelligence = 5,
             critChance = 0,
-            critDamage = 20,
+
         };
         armorList.Add(armor);
 
         armor = new Armor
         {
             itemId = 4203,
-            name = "Drakehide Gloves",
+            name = "Raptorhide Gloves",
             spritePath = "Icons/gloves2",
             rarity = Rarity.Uncommon,
-            buyValue = 120,
-            sellValue = 80,
+            buyValue = 7500,
+            sellValue = 1500,
             requiredLevel = 20,
             requiredDex = 75,
             armorType = ArmorType.Gloves,
@@ -1641,18 +1641,18 @@ public class Armor : Item {
             dexterity = 10,
             intelligence = 5,
             critChance = 0,
-            critDamage = 20,
+
         };
         armorList.Add(armor);
 
         armor = new Armor
         {
             itemId = 4204,
-            name = "Drakehide Legs",
+            name = "Raptorhide Legs",
             spritePath = "Icons/legs",
             rarity = Rarity.Uncommon,
-            buyValue = 120,
-            sellValue = 80,
+            buyValue = 7500,
+            sellValue = 1500,
             requiredLevel = 20,
             requiredDex = 75,
             armorType = ArmorType.Legs,
@@ -1660,18 +1660,18 @@ public class Armor : Item {
             dexterity = 10,
             intelligence = 5,
             critChance = 0,
-            critDamage = 20,
+
         };
         armorList.Add(armor);
 
         armor = new Armor
         {
             itemId = 4205,
-            name = "Drakehide Boots",
+            name = "Raptorhide Boots",
             spritePath = "Icons/boots2",
             rarity = Rarity.Uncommon,
-            buyValue = 120,
-            sellValue = 80,
+            buyValue = 7500,
+            sellValue = 1500,
             requiredLevel = 20,
             requiredDex = 75,
             armorType = ArmorType.Boots,
@@ -1679,18 +1679,18 @@ public class Armor : Item {
             dexterity = 10,
             intelligence = 5,
             critChance = 0,
-            critDamage = 20,
+
         };
         armorList.Add(armor);
 
         armor = new Armor
         {
             itemId = 4301,
-            name = "Sagesilk Hood",
+            name = "Mageweave Hood",
             spritePath = "Icons/helm",
             rarity = Rarity.Uncommon,
-            buyValue = 160,
-            sellValue = 80,
+            buyValue = 7500,
+            sellValue = 1500,
             requiredLevel = 20,
             requiredInt = 75,
             armorType = ArmorType.Head,
@@ -1699,18 +1699,18 @@ public class Armor : Item {
             intelligence = 10,
             critChance = 0,
             critDamage = 0,
-            bonusMagical = 5,
+
         };
         armorList.Add(armor);
 
         armor = new Armor
         {
             itemId = 4302,
-            name = "Sagesilk Robes",
+            name = "Mageweave Robes",
             spritePath = "Icons/chest",
             rarity = Rarity.Uncommon,
-            buyValue = 160,
-            sellValue = 80,
+            buyValue = 7500,
+            sellValue = 1500,
             requiredLevel = 20,
             requiredInt = 75,
             armorType = ArmorType.Chest,
@@ -1719,18 +1719,18 @@ public class Armor : Item {
             intelligence = 10,
             critChance = 0,
             critDamage = 0,
-            bonusMagical = 5,
+
         };
         armorList.Add(armor);
 
         armor = new Armor
         {
             itemId = 4303,
-            name = "Sagesilk Gloves",
+            name = "Mageweave Gloves",
             spritePath = "Icons/gloves2",
             rarity = Rarity.Uncommon,
-            buyValue = 160,
-            sellValue = 80,
+            buyValue = 7500,
+            sellValue = 1500,
             requiredLevel = 20,
             requiredInt = 75,
             armorType = ArmorType.Gloves,
@@ -1739,18 +1739,18 @@ public class Armor : Item {
             intelligence = 10,
             critChance = 0,
             critDamage = 0,
-            bonusMagical = 5,
+
         };
         armorList.Add(armor);
 
         armor = new Armor
         {
             itemId = 4304,
-            name = "Sagesilk Legs",
+            name = "Mageweave Legs",
             spritePath = "Icons/legs",
             rarity = Rarity.Uncommon,
-            buyValue = 160,
-            sellValue = 80,
+            buyValue = 7500,
+            sellValue = 1500,
             requiredLevel = 20,
             requiredInt = 75,
             armorType = ArmorType.Legs,
@@ -1759,18 +1759,18 @@ public class Armor : Item {
             intelligence = 10,
             critChance = 0,
             critDamage = 0,
-            bonusMagical = 5,
+
         };
         armorList.Add(armor);
 
         armor = new Armor
         {
             itemId = 4305,
-            name = "Sagesilk Shoes",
+            name = "Mageweave Shoes",
             spritePath = "Icons/boots2",
             rarity = Rarity.Uncommon,
-            buyValue = 160,
-            sellValue = 80,
+            buyValue = 7500,
+            sellValue = 1500,
             requiredLevel = 20,
             requiredInt = 75,
             armorType = ArmorType.Boots,
@@ -1779,7 +1779,7 @@ public class Armor : Item {
             intelligence = 10,
             critChance = 0,
             critDamage = 0,
-            bonusMagical = 5,
+
         };
         armorList.Add(armor);
         
@@ -1791,9 +1791,9 @@ public class Armor : Item {
             itemId = 4315,
             name = "Nightmage Shoes",
             spritePath = "Icons/boots2",
-            rarity = Rarity.Legendary,
-            buyValue = 200000,
-            sellValue = 300,
+            rarity = Rarity.Set,
+            buyValue = 60000,
+            sellValue = 3500,
             requiredLevel = 20,
             requiredInt = 75,
             armorType = ArmorType.Boots,
@@ -1811,9 +1811,9 @@ public class Armor : Item {
             itemId = 4312,
             name = "Nightmage Robes",
             spritePath = "Icons/chest",
-            rarity = Rarity.Legendary,
-            buyValue = 200000,
-            sellValue = 300,
+            rarity = Rarity.Set,
+            buyValue = 60000,
+            sellValue = 3500,
             requiredLevel = 20,
             requiredInt = 75,
             armorType = ArmorType.Chest,
@@ -1831,9 +1831,9 @@ public class Armor : Item {
             itemId = 4311,
             name = "Nightmage Hood",
             spritePath = "Icons/helm",
-            rarity = Rarity.Legendary,
-            buyValue = 200000,
-            sellValue = 300,
+            rarity = Rarity.Set,
+            buyValue = 60000,
+            sellValue = 3500,
             requiredLevel = 20,
             requiredInt = 75,
             armorType = ArmorType.Head,
@@ -1853,8 +1853,8 @@ public class Armor : Item {
             spritePath = "Icons/gloves2",
             flavorText = "You totally look cool",
             rarity = Rarity.Legendary,
-            buyValue = 200000,
-            sellValue = 300,
+            buyValue = 60000,
+            sellValue = 3500,
             requiredLevel = 20,
             requiredDex = 75,
             armorType = ArmorType.Gloves,
@@ -1873,8 +1873,8 @@ public class Armor : Item {
             spritePath = "Icons/legs",
             flavorText = "Dick cleavage",
             rarity = Rarity.Legendary,
-            buyValue = 200000,
-            sellValue = 300,
+            buyValue = 60000,
+            sellValue = 3500,
             requiredLevel = 20,
             requiredStr = 75,
             armorType = ArmorType.Legs,
@@ -1883,6 +1883,414 @@ public class Armor : Item {
             intelligence = 5,
             armorPen = 25,
             bonusPhysical = 0,
+        };
+        armorList.Add(armor);
+        
+        /********************/
+        /***   TIER 5    ***/
+        /******************/
+        armor = new Armor
+        {
+            itemId = 5101,
+            name = "Darksteel Helm",
+            spritePath = "Icons/helm",
+            rarity = Rarity.Uncommon,
+            buyValue = 25000,
+            sellValue = 4000,
+            requiredLevel = 25,
+            requiredStr = 100,
+            armorType = ArmorType.Head,
+            strength = 15,
+            dexterity = 7,
+            intelligence = 7,
+            critChance = 0,
+            critDamage = 0,
+
+
+        };
+        armorList.Add(armor);
+
+        armor = new Armor
+        {
+            itemId = 5102,
+            name = "Darksteel Breastplate",
+            spritePath = "Icons/chest",
+            rarity = Rarity.Uncommon,
+            buyValue = 25000,
+            sellValue = 4000,
+            requiredLevel = 25,
+            requiredStr = 100,
+            armorType = ArmorType.Head,
+            strength = 15,
+            dexterity = 7,
+            intelligence = 7,
+            critChance = 0,
+            critDamage = 0,
+
+
+        };
+        armorList.Add(armor);
+
+        armor = new Armor
+        {
+            itemId = 5103,
+            name = "Darksteel Gauntlets",
+            spritePath = "Icons/gloves2",
+            rarity = Rarity.Uncommon,
+            buyValue = 25000,
+            sellValue = 4000,
+            requiredLevel = 25,
+            requiredStr = 100,
+            armorType = ArmorType.Head,
+            strength = 15,
+            dexterity = 7,
+            intelligence = 7,
+            critChance = 0,
+            critDamage = 0,
+
+        };
+        armorList.Add(armor);
+
+        armor = new Armor
+        {
+            itemId = 5104,
+            name = "Darksteel Greaves",
+            spritePath = "Icons/legs",
+            rarity = Rarity.Uncommon,
+            buyValue = 25000,
+            sellValue = 4000,
+            requiredLevel = 25,
+            requiredStr = 100,
+            armorType = ArmorType.Head,
+            strength = 15,
+            dexterity = 7,
+            intelligence = 7,
+            critChance = 0,
+            critDamage = 0,
+
+
+        };
+        armorList.Add(armor);
+
+        armor = new Armor
+        {
+            itemId = 5105,
+            name = "Darksteel Boots",
+            spritePath = "Icons/boots2",
+            rarity = Rarity.Uncommon,
+            buyValue = 25000,
+            sellValue = 4000,
+            requiredLevel = 25,
+            requiredStr = 100,
+            armorType = ArmorType.Head,
+            strength = 15,
+            dexterity = 7,
+            intelligence = 7,
+            critChance = 0,
+            critDamage = 0,
+
+        };
+        armorList.Add(armor);
+
+        armor = new Armor
+        {
+            itemId = 5201,
+            name = "Drakehide Cap",
+            spritePath = "Icons/helm",
+            rarity = Rarity.Uncommon,
+            buyValue = 25000,
+            sellValue = 4000,
+            requiredLevel = 25,
+            requiredDex = 100,
+            armorType = ArmorType.Head,
+            strength = 7,
+            dexterity = 15,
+            intelligence = 7,
+            critChance = 0,
+
+        };
+        armorList.Add(armor);
+
+        armor = new Armor
+        {
+            itemId = 5202,
+            name = "Drakehide Chest",
+            spritePath = "Icons/chest",
+            rarity = Rarity.Uncommon,
+            buyValue = 25000,
+            sellValue = 4000,
+            requiredLevel = 25,
+            requiredDex = 100,
+            armorType = ArmorType.Head,
+            strength = 7,
+            dexterity = 15,
+            intelligence = 7,
+            critChance = 0,
+
+        };
+        armorList.Add(armor);
+
+        armor = new Armor
+        {
+            itemId = 5203,
+            name = "Drakehide Gloves",
+            spritePath = "Icons/gloves2",
+            rarity = Rarity.Uncommon,
+            buyValue = 25000,
+            sellValue = 4000,
+            requiredLevel = 25,
+            requiredDex = 100,
+            armorType = ArmorType.Head,
+            strength = 7,
+            dexterity = 15,
+            intelligence = 7,
+            critChance = 0,
+
+        };
+        armorList.Add(armor);
+
+        armor = new Armor
+        {
+            itemId = 5204,
+            name = "Drakehide Legs",
+            spritePath = "Icons/legs",
+            rarity = Rarity.Uncommon,
+            buyValue = 25000,
+            sellValue = 4000,
+            requiredLevel = 25,
+            requiredDex = 100,
+            armorType = ArmorType.Head,
+            strength = 7,
+            dexterity = 15,
+            intelligence = 7,
+            critChance = 0,
+
+        };
+        armorList.Add(armor);
+
+        armor = new Armor
+        {
+            itemId = 5205,
+            name = "Drakehide Boots",
+            spritePath = "Icons/boots2",
+            rarity = Rarity.Uncommon,
+            buyValue = 25000,
+            sellValue = 4000,
+            requiredLevel = 25,
+            requiredDex = 100,
+            armorType = ArmorType.Head,
+            strength = 7,
+            dexterity = 15,
+            intelligence = 7,
+            critChance = 0,
+
+        };
+        armorList.Add(armor);
+
+        armor = new Armor
+        {
+            itemId = 5301,
+            name = "Sagesilk Hood",
+            spritePath = "Icons/helm",
+            rarity = Rarity.Uncommon,
+            buyValue = 25000,
+            sellValue = 4000,
+            requiredLevel = 25,
+            requiredInt = 100,
+            armorType = ArmorType.Head,
+            strength = 7,
+            dexterity = 7,
+            intelligence = 15,
+            critChance = 0,
+            critDamage = 0,
+
+        };
+        armorList.Add(armor);
+
+        armor = new Armor
+        {
+            itemId = 5302,
+            name = "Sagesilk Robes",
+            spritePath = "Icons/chest",
+            rarity = Rarity.Uncommon,
+            buyValue = 25000,
+            sellValue = 4000,
+            requiredLevel = 25,
+            requiredInt = 100,
+            armorType = ArmorType.Head,
+            strength = 7,
+            dexterity = 7,
+            intelligence = 15,
+            critChance = 0,
+            critDamage = 0,
+
+        };
+        armorList.Add(armor);
+
+        armor = new Armor
+        {
+            itemId = 5303,
+            name = "Sagesilk Gloves",
+            spritePath = "Icons/gloves2",
+            rarity = Rarity.Uncommon,
+            buyValue = 25000,
+            sellValue = 4000,
+            requiredLevel = 25,
+            requiredInt = 100,
+            armorType = ArmorType.Head,
+            strength = 7,
+            dexterity = 7,
+            intelligence = 15,
+            critChance = 0,
+            critDamage = 0,
+
+        };
+        armorList.Add(armor);
+
+        armor = new Armor
+        {
+            itemId = 5304,
+            name = "Sagesilk Legs",
+            spritePath = "Icons/legs",
+            rarity = Rarity.Uncommon,
+           buyValue = 25000,
+            sellValue = 4000,
+            requiredLevel = 25,
+            requiredInt = 100,
+            armorType = ArmorType.Head,
+            strength = 7,
+            dexterity = 7,
+            intelligence = 15,
+            critChance = 0,
+            critDamage = 0,
+
+        };
+        armorList.Add(armor);
+
+        armor = new Armor
+        {
+            itemId = 5305,
+            name = "Sagesilk Shoes",
+            spritePath = "Icons/boots2",
+            rarity = Rarity.Uncommon,
+            buyValue = 25000,
+            sellValue = 4000,
+            requiredLevel = 25,
+            requiredInt = 100,
+            armorType = ArmorType.Head,
+            strength = 7,
+            dexterity = 7,
+            intelligence = 15,
+            critChance = 0,
+            critDamage = 0,
+
+        };
+        armorList.Add(armor);
+        
+        /****************/
+        /****LEYENDOS****/
+        /****************/
+        armor = new Armor
+        {
+            itemId = 5112,
+            name = "Comfy T-shirt",
+            spritePath = "Icons/chest",
+            flavorText = "Just came out of the dryer",
+            rarity = Rarity.Set,
+            buyValue = 150000,
+            sellValue = 10000,
+            requiredLevel = 30,
+            armorType = ArmorType.Chest,
+            strength = 20,
+            dexterity = 20,
+            intelligence = 20,
+            critChance = 0,
+            critDamage = 0,
+            bonusMagical = 3,
+            bonusPhysical = 3,
+        };
+        armorList.Add(armor);
+        
+        armor = new Armor
+        {
+            itemId = 5214,
+            name = "Jeans",
+            spritePath = "Icons/chest",
+            flavorText = "The tanned leather of the Denimdragon provides excellent protection",
+            rarity = Rarity.Set,
+            buyValue = 150000,
+            sellValue = 10000,
+            requiredLevel = 30,
+            armorType = ArmorType.Chest,
+            strength = 20,
+            dexterity = 20,
+            intelligence = 20,
+            critChance = 0,
+            critDamage = 0,
+            bonusMagical = 3,
+            bonusPhysical = 3,
+        };
+        armorList.Add(armor);
+        
+        armor = new Armor
+        {
+            itemId = 5311,
+            name = "Baseball Cap",
+            spritePath = "Icons/helm",
+            rarity = Rarity.Set,
+            buyValue = 150000,
+            sellValue = 10000,
+            requiredLevel = 30,
+            armorType = ArmorType.Chest,
+            strength = 20,
+            dexterity = 20,
+            intelligence = 20,
+            critChance = 0,
+            critDamage = 0,
+            bonusMagical = 3,
+            bonusPhysical = 3,
+        };
+        armorList.Add(armor);
+        
+        armor = new Armor
+        {
+            itemId = 5213,
+            name = "No Gloves",
+            spritePath = "Icons/gloves2",
+            flavorText = "Wearing gloves is lame tbh",
+            rarity = Rarity.Legendary,
+            buyValue = 150000,
+            sellValue = 10000,
+            requiredLevel = 30,
+            armorType = ArmorType.Chest,
+            strength = 20,
+            dexterity = 20,
+            intelligence = 20,
+            critChance = 0,
+            critDamage = 0,
+            bonusMagical = 3,
+            bonusPhysical = 3,
+        };
+        armorList.Add(armor);
+        
+        armor = new Armor
+        {
+            itemId = 5115,
+            name = "Light-up Skechers",
+            spritePath = "Icons/legs",
+            flavorText = "Hell yeah",
+            rarity = Rarity.Legendary,
+            buyValue = 150000,
+            sellValue = 10000,
+            requiredLevel = 30,
+            armorType = ArmorType.Chest,
+            strength = 20,
+            dexterity = 20,
+            intelligence = 20,
+            critChance = 0,
+            critDamage = 0,
+            bonusMagical = 3,
+            bonusPhysical = 3,
         };
         armorList.Add(armor);
         
