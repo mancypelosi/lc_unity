@@ -31,7 +31,11 @@ public class Damage {
             //Debug.Log("Physical attack");
             int armorCalc = enemy.armor - player.armorPen > 0 ? (enemy.armor - player.armorPen) : 0;
             damage = damage * 100 / (armorCalc + 100);
-            damage = damage * (player.bonusPhysical / 100);
+            // Bonus damage
+            double bonus = player.bonusPhysical;
+            if (player.comboCount > 5)
+                bonus += player.comboCount;
+            damage = damage * (bonus / 100);
         }
         // Check if magical weapon for magic resist calc
         if (player.equippedWeapon.damageType == Weapon.DamageType.Magical)
@@ -39,7 +43,11 @@ public class Damage {
             //Debug.Log("Magical attack");
             int magicCalc = enemy.magicResist - player.magicPen > 0 ? (enemy.magicResist - player.magicPen) : 0;
             damage = damage * 100 / (magicCalc + 100);
-            damage = damage * (player.bonusMagical / 100);
+            // Bonus damage
+            double bonus = player.bonusMagical;
+            if (player.comboCount > 5)
+                bonus += player.comboCount;
+            damage = damage * (bonus / 100);
         }
         //Debug.Log("Phys/Mag damage : " + damage);
 
@@ -88,7 +96,7 @@ public class Damage {
             damage = 1;
 
         // Check for crit
-        if (UnityEngine.Random.Range(0, 100) < player.critChance)
+        if (UnityEngine.Random.Range(0, 101) < player.critChance)
         {
             damage = damage * (player.critDamage / 100);
             crit = true;
@@ -97,18 +105,9 @@ public class Damage {
 
         // Check for combo count
         if (weak)
-        {
             player.comboCount++;
-            if (player.comboCount > 5)
-            {
-                player.bonusPhysical += player.comboCount;
-                player.bonusMagical += player.comboCount;
-            }
-        }
         else
-        {
             player.comboCount = 0;
-        }
 
         // Attacks per click applied to damage 
         //damage = damage * player.equippedWeapon.apc;
