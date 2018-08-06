@@ -212,7 +212,7 @@ public class Armor : Item {
             intelligence = 1,
             critChance = 0,
             critDamage = 0,
-            bonusPhysical = 1,
+
 
         };
         armorList.Add(armor);
@@ -232,7 +232,7 @@ public class Armor : Item {
             intelligence = 1,
             critChance = 0,
             critDamage = 0,
-            bonusPhysical = 1,
+  
 
         };
         armorList.Add(armor);
@@ -252,7 +252,7 @@ public class Armor : Item {
             intelligence = 1,
             critChance = 0,
             critDamage = 0,
-            bonusPhysical = 1,
+     
 
         };
         armorList.Add(armor);
@@ -272,7 +272,7 @@ public class Armor : Item {
             intelligence = 1,
             critChance = 0,
             critDamage = 0,
-            bonusPhysical = 1,
+     
 
         };
         armorList.Add(armor);
@@ -292,7 +292,7 @@ public class Armor : Item {
             intelligence = 1,
             critChance = 0,
             critDamage = 0,
-            bonusPhysical = 1,
+      
 
         };
         armorList.Add(armor);
@@ -311,7 +311,7 @@ public class Armor : Item {
             dexterity = 3,
             intelligence = 1,
             critChance = 0,
-            critDamage = 5,
+    
 
         };
         armorList.Add(armor);
@@ -330,7 +330,7 @@ public class Armor : Item {
             dexterity = 3,
             intelligence = 1,
             critChance = 0,
-            critDamage = 5,
+
 
         };
         armorList.Add(armor);
@@ -349,7 +349,7 @@ public class Armor : Item {
             dexterity = 3,
             intelligence = 1,
             critChance = 0,
-            critDamage = 5,
+ 
 
         };
         armorList.Add(armor);
@@ -368,7 +368,7 @@ public class Armor : Item {
             dexterity = 3,
             intelligence = 1,
             critChance = 0,
-            critDamage = 5,
+
 
         };
         armorList.Add(armor);
@@ -387,7 +387,6 @@ public class Armor : Item {
             dexterity = 3,
             intelligence = 1,
             critChance = 0,
-            critDamage = 5,
 
         };
         armorList.Add(armor);
@@ -407,7 +406,7 @@ public class Armor : Item {
             intelligence = 3,
             critChance = 0,
             critDamage = 0,
-            bonusMagical = 1,
+
 
         };
         armorList.Add(armor);
@@ -427,7 +426,7 @@ public class Armor : Item {
             intelligence = 3,
             critChance = 0,
             critDamage = 0,
-            bonusMagical = 1,
+
 
         };
         armorList.Add(armor);
@@ -447,7 +446,7 @@ public class Armor : Item {
             intelligence = 3,
             critChance = 0,
             critDamage = 0,
-            bonusMagical = 1,
+
 
         };
         armorList.Add(armor);
@@ -467,7 +466,7 @@ public class Armor : Item {
             intelligence = 3,
             critChance = 0,
             critDamage = 0,
-            bonusMagical = 1,
+
 
         };
         armorList.Add(armor);
@@ -487,7 +486,7 @@ public class Armor : Item {
             intelligence = 3,
             critChance = 0,
             critDamage = 0,
-            bonusMagical = 1,
+
 
         };
         armorList.Add(armor);
@@ -615,7 +614,7 @@ public class Armor : Item {
             intelligence = 2,
             critChance = 0,
             critDamage = 0,
-            bonusPhysical = 2,
+ 
 
         };
         armorList.Add(armor);
@@ -636,7 +635,7 @@ public class Armor : Item {
             intelligence = 2,
             critChance = 0,
             critDamage = 0,
-            bonusPhysical = 2,
+    
 
         };
         armorList.Add(armor);
@@ -657,7 +656,7 @@ public class Armor : Item {
             intelligence = 2,
             critChance = 0,
             critDamage = 0,
-            armorPen = 2,
+ 
 
         };
         armorList.Add(armor);
@@ -678,7 +677,7 @@ public class Armor : Item {
             intelligence = 2,
             critChance = 0,
             critDamage = 0,
-            bonusPhysical = 2,
+  
 
         };
         armorList.Add(armor);
@@ -699,7 +698,7 @@ public class Armor : Item {
             intelligence = 2,
             critChance = 0,
             critDamage = 0,
-            bonusPhysical = 2,
+ 
 
         };
         armorList.Add(armor);
@@ -719,7 +718,7 @@ public class Armor : Item {
             dexterity = 5,
             intelligence = 2,
             critChance = 0,
-            critDamage = 10,
+
 
         };
         armorList.Add(armor);
@@ -739,7 +738,7 @@ public class Armor : Item {
             dexterity = 5,
             intelligence = 2,
             critChance = 0,
-            critDamage = 10,
+
 
         };
         armorList.Add(armor);
@@ -759,7 +758,7 @@ public class Armor : Item {
             dexterity = 5,
             intelligence = 2,
             critChance = 0,
-            critDamage = 10,
+
 
         };
         armorList.Add(armor);
@@ -779,7 +778,7 @@ public class Armor : Item {
             dexterity = 5,
             intelligence = 2,
             critChance = 0,
-            critDamage = 10,
+
 
         };
         armorList.Add(armor);
@@ -799,7 +798,7 @@ public class Armor : Item {
             dexterity = 5,
             intelligence = 2,
             critChance = 0,
-            critDamage = 10,
+
 
         };
         armorList.Add(armor);
@@ -820,7 +819,7 @@ public class Armor : Item {
             intelligence = 5,
             critChance = 0,
             critDamage = 0,
-            bonusMagical = 2,
+
 
         };
         armorList.Add(armor);
@@ -841,7 +840,7 @@ public class Armor : Item {
             intelligence = 5,
             critChance = 0,
             critDamage = 0,
-            bonusMagical = 2,
+
 
         };
         armorList.Add(armor);
@@ -862,7 +861,7 @@ public class Armor : Item {
             intelligence = 5,
             critChance = 0,
             critDamage = 0,
-            bonusMagical = 2,
+
 
         };
         armorList.Add(armor);
@@ -883,7 +882,7 @@ public class Armor : Item {
             intelligence = 5,
             critChance = 0,
             critDamage = 0,
-            bonusMagical = 2,
+
 
         };
         armorList.Add(armor);
@@ -904,7 +903,7 @@ public class Armor : Item {
             intelligence = 5,
             critChance = 0,
             critDamage = 0,
-            bonusMagical = 2,
+
 
         };
         armorList.Add(armor);
@@ -1059,7 +1058,7 @@ public class Armor : Item {
             intelligence = 3,
             critChance = 0,
             critDamage = 0,
-            bonusPhysical = 3,
+
 
         };
         armorList.Add(armor);
@@ -1080,7 +1079,7 @@ public class Armor : Item {
             intelligence = 3,
             critChance = 0,
             critDamage = 0,
-            bonusPhysical = 3,
+
 
         };
         armorList.Add(armor);
@@ -1101,7 +1100,7 @@ public class Armor : Item {
             intelligence = 3,
             critChance = 0,
             critDamage = 0,
-            bonusPhysical = 3,
+
         };
         armorList.Add(armor);
 
@@ -1121,7 +1120,7 @@ public class Armor : Item {
             intelligence = 3,
             critChance = 0,
             critDamage = 0,
-            bonusPhysical = 3,
+
 
         };
         armorList.Add(armor);
@@ -1142,7 +1141,7 @@ public class Armor : Item {
             intelligence = 3,
             critChance = 0,
             critDamage = 0,
-            bonusPhysical = 3,
+
         };
         armorList.Add(armor);
 
@@ -1161,7 +1160,7 @@ public class Armor : Item {
             dexterity = 7,
             intelligence = 3,
             critChance = 0,
-            critDamage = 15,
+
 
         };
         armorList.Add(armor);
@@ -1181,7 +1180,7 @@ public class Armor : Item {
             dexterity = 7,
             intelligence = 3,
             critChance = 0,
-            critDamage = 15,
+
 
         };
         armorList.Add(armor);
@@ -1201,7 +1200,7 @@ public class Armor : Item {
             dexterity = 7,
             intelligence = 3,
             critChance = 0,
-            critDamage = 15,
+
 
         };
         armorList.Add(armor);
@@ -1221,7 +1220,7 @@ public class Armor : Item {
             dexterity = 7,
             intelligence = 3,
             critChance = 0,
-            critDamage = 15,
+
 
         };
         armorList.Add(armor);
@@ -1241,7 +1240,7 @@ public class Armor : Item {
             dexterity = 7,
             intelligence = 3,
             critChance = 0,
-            critDamage = 15,
+ 
 
         };
         armorList.Add(armor);
@@ -1262,7 +1261,7 @@ public class Armor : Item {
             intelligence = 7,
             critChance = 0,
             critDamage = 0,
-            bonusMagical = 3,
+
 
         };
         armorList.Add(armor);
@@ -1283,7 +1282,7 @@ public class Armor : Item {
             intelligence = 7,
             critChance = 0,
             critDamage = 0,
-            bonusMagical = 3,
+
 
         };
         armorList.Add(armor);
@@ -1304,7 +1303,7 @@ public class Armor : Item {
             intelligence = 7,
             critChance = 0,
             critDamage = 0,
-            bonusMagical = 3,
+
 
         };
         armorList.Add(armor);
@@ -1325,7 +1324,7 @@ public class Armor : Item {
             intelligence = 7,
             critChance = 0,
             critDamage = 0,
-            bonusMagical = 3,
+
 
         };
         armorList.Add(armor);
@@ -1346,7 +1345,7 @@ public class Armor : Item {
             intelligence = 7,
             critChance = 0,
             critDamage = 0,
-            bonusMagical = 3,
+
 
         };
         armorList.Add(armor);
@@ -1502,7 +1501,7 @@ public class Armor : Item {
             intelligence = 5,
             critChance = 0,
             critDamage = 0,
-            bonusPhysical = 5,
+
 
         };
         armorList.Add(armor);
@@ -1523,7 +1522,7 @@ public class Armor : Item {
             intelligence = 5,
             critChance = 0,
             critDamage = 0,
-            bonusPhysical = 5,
+
 
         };
         armorList.Add(armor);
@@ -1544,7 +1543,7 @@ public class Armor : Item {
             intelligence = 5,
             critChance = 0,
             critDamage = 0,
-            bonusPhysical = 5,
+
         };
         armorList.Add(armor);
 
@@ -1564,7 +1563,7 @@ public class Armor : Item {
             intelligence = 5,
             critChance = 0,
             critDamage = 0,
-            bonusPhysical = 5,
+
 
         };
         armorList.Add(armor);
@@ -1585,7 +1584,7 @@ public class Armor : Item {
             intelligence = 5,
             critChance = 0,
             critDamage = 0,
-            bonusPhysical = 5,
+
         };
         armorList.Add(armor);
 
@@ -1604,7 +1603,7 @@ public class Armor : Item {
             dexterity = 10,
             intelligence = 5,
             critChance = 0,
-            critDamage = 20,
+
         };
         armorList.Add(armor);
 
@@ -1623,7 +1622,7 @@ public class Armor : Item {
             dexterity = 10,
             intelligence = 5,
             critChance = 0,
-            critDamage = 20,
+
         };
         armorList.Add(armor);
 
@@ -1642,7 +1641,7 @@ public class Armor : Item {
             dexterity = 10,
             intelligence = 5,
             critChance = 0,
-            critDamage = 20,
+
         };
         armorList.Add(armor);
 
@@ -1661,7 +1660,7 @@ public class Armor : Item {
             dexterity = 10,
             intelligence = 5,
             critChance = 0,
-            critDamage = 20,
+
         };
         armorList.Add(armor);
 
@@ -1680,7 +1679,7 @@ public class Armor : Item {
             dexterity = 10,
             intelligence = 5,
             critChance = 0,
-            critDamage = 20,
+
         };
         armorList.Add(armor);
 
@@ -1700,7 +1699,7 @@ public class Armor : Item {
             intelligence = 10,
             critChance = 0,
             critDamage = 0,
-            bonusMagical = 5,
+
         };
         armorList.Add(armor);
 
@@ -1720,7 +1719,7 @@ public class Armor : Item {
             intelligence = 10,
             critChance = 0,
             critDamage = 0,
-            bonusMagical = 5,
+
         };
         armorList.Add(armor);
 
@@ -1740,7 +1739,7 @@ public class Armor : Item {
             intelligence = 10,
             critChance = 0,
             critDamage = 0,
-            bonusMagical = 5,
+
         };
         armorList.Add(armor);
 
@@ -1760,7 +1759,7 @@ public class Armor : Item {
             intelligence = 10,
             critChance = 0,
             critDamage = 0,
-            bonusMagical = 5,
+
         };
         armorList.Add(armor);
 
@@ -1780,7 +1779,7 @@ public class Armor : Item {
             intelligence = 10,
             critChance = 0,
             critDamage = 0,
-            bonusMagical = 5,
+
         };
         armorList.Add(armor);
         
@@ -1906,7 +1905,7 @@ public class Armor : Item {
             intelligence = 7,
             critChance = 0,
             critDamage = 0,
-            bonusPhysical = 7,
+
 
         };
         armorList.Add(armor);
@@ -1927,28 +1926,28 @@ public class Armor : Item {
             intelligence = 7,
             critChance = 0,
             critDamage = 0,
-            bonusPhysical = 7,
+
 
         };
         armorList.Add(armor);
 
         armor = new Armor
         {
-            itemId = 4103,
-            name = "Mithril Gauntlets",
+            itemId = 5103,
+            name = "Darksteel Gauntlets",
             spritePath = "Icons/gloves2",
             rarity = Rarity.Uncommon,
-            buyValue = 7500,
-            sellValue = 1500,
+            buyValue = 25000,
+            sellValue = 4000,
             requiredLevel = 25,
-            requiredStr = 75,
-            armorType = ArmorType.Gloves,
-            strength = 10,
-            dexterity = 5,
-            intelligence = 5,
+            requiredStr = 100,
+            armorType = ArmorType.Head,
+            strength = 15,
+            dexterity = 7,
+            intelligence = 7,
             critChance = 0,
             critDamage = 0,
-            bonusPhysical = 5,
+
         };
         armorList.Add(armor);
 
@@ -1968,7 +1967,7 @@ public class Armor : Item {
             intelligence = 7,
             critChance = 0,
             critDamage = 0,
-            bonusPhysical = 7,
+
 
         };
         armorList.Add(armor);
@@ -1989,7 +1988,7 @@ public class Armor : Item {
             intelligence = 7,
             critChance = 0,
             critDamage = 0,
-            bonusPhysical = 7,
+
         };
         armorList.Add(armor);
 
@@ -2008,7 +2007,7 @@ public class Armor : Item {
             dexterity = 15,
             intelligence = 7,
             critChance = 0,
-            critDamage = 25,
+
         };
         armorList.Add(armor);
 
@@ -2027,7 +2026,7 @@ public class Armor : Item {
             dexterity = 15,
             intelligence = 7,
             critChance = 0,
-            critDamage = 25,
+
         };
         armorList.Add(armor);
 
@@ -2046,7 +2045,7 @@ public class Armor : Item {
             dexterity = 15,
             intelligence = 7,
             critChance = 0,
-            critDamage = 25,
+
         };
         armorList.Add(armor);
 
@@ -2065,7 +2064,7 @@ public class Armor : Item {
             dexterity = 15,
             intelligence = 7,
             critChance = 0,
-            critDamage = 25,
+
         };
         armorList.Add(armor);
 
@@ -2084,7 +2083,7 @@ public class Armor : Item {
             dexterity = 15,
             intelligence = 7,
             critChance = 0,
-            critDamage = 25,
+
         };
         armorList.Add(armor);
 
@@ -2104,7 +2103,7 @@ public class Armor : Item {
             intelligence = 15,
             critChance = 0,
             critDamage = 0,
-            bonusMagical = 7,
+
         };
         armorList.Add(armor);
 
@@ -2124,7 +2123,7 @@ public class Armor : Item {
             intelligence = 15,
             critChance = 0,
             critDamage = 0,
-            bonusMagical = 7,
+
         };
         armorList.Add(armor);
 
@@ -2144,7 +2143,7 @@ public class Armor : Item {
             intelligence = 15,
             critChance = 0,
             critDamage = 0,
-            bonusMagical = 7,
+
         };
         armorList.Add(armor);
 
@@ -2164,7 +2163,7 @@ public class Armor : Item {
             intelligence = 15,
             critChance = 0,
             critDamage = 0,
-            bonusMagical = 7,
+
         };
         armorList.Add(armor);
 
@@ -2184,7 +2183,7 @@ public class Armor : Item {
             intelligence = 15,
             critChance = 0,
             critDamage = 0,
-            bonusMagical = 7,
+
         };
         armorList.Add(armor);
         
