@@ -346,8 +346,8 @@ public class Enemy {
             magicResist = 15,
             xpToGive = 3,
             goldToGive = 3,
-            weaknesses = { "Poison", "Water" },
-            resistances = { "Mace", "Fire"}
+            weaknesses = { "Poison", "Water", "Spear" },
+            resistances = { "Mace", "Fire", "Dark"}
         };
         enemyList.Add(enemy);
         
