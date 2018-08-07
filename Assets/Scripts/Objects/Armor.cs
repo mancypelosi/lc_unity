@@ -580,7 +580,7 @@ public class Armor : Item {
             name = "Skeletal Gloves",
             flavorText = "Clammy",
             spritePath = "Icons/gloves2",
-            rarity = Rarity.Uncommon,
+            rarity = Rarity.Set,
             buyValue = 2500,
             sellValue = 500,
             requiredLevel = 1,
