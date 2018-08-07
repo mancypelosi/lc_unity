@@ -1534,9 +1534,10 @@ public class Weapon : Item
         weapon = new Weapon
         {
             itemId = 020005,
-            name = "Fan of Knives",
-            spritePath = "Icons/3dagger",
-            soundPath = "Sfx/3stabsfx",
+            name = "Knife of Psychological Warfare",
+            spritePath = "Icons/dagger",
+            flavorText = "You're just asking them over and over if they'll ever be happy",
+            soundPath = "Sfx/stabsfx",
             rarity = Rarity.Legendary,
             buyValue = 5000,
             sellValue = 1250,
@@ -1544,7 +1545,7 @@ public class Weapon : Item
             requiredDex = 10,
             weaponType = WeaponType.Dagger,
             elementType = ElementType.None,
-            damageType = DamageType.Physical,
+            damageType = DamageType.Magical,
             statMod = StatModifier.Dexterity,
             apc = 3,
             minDamage = 3,
@@ -2390,23 +2391,26 @@ public class Weapon : Item
         weapon = new Weapon
         {
             itemId = 003001,
-            name = "Steam Burst",
-            spritePath = "Icons/spell",
-            soundPath = "Sfx/steamsfx",
+            name = "Bachelor's Degree",
+            spritePath = "Icons/shield",
+            flavorText = "Literally a worthless piece of paper",
+            soundPath = "Sfx/donksfx",
             rarity = Rarity.Legendary,
             buyValue = 15000,
             sellValue = 2000,
             requiredLevel = 15,
             requiredInt = 50,
-            weaponType = WeaponType.Spell,
-            elementType = ElementType.Air,
+            weaponType = WeaponType.Shield,
+            elementType = ElementType.None,
             damageType = DamageType.Magical,
             statMod = StatModifier.Intelligence,
             apc = 1,
             isDot = true,
-            minDamage = 12,
-            maxDamage = 22,
-            isNegating = true
+            minDamage = 1,
+            maxDamage = 1,
+            isNegating = true,
+            intelligence = 18,
+
         };
         weaponList.Add(weapon);
 
@@ -2461,8 +2465,9 @@ public class Weapon : Item
         weapon = new Weapon
         {
             itemId = 003003,
-            name = "Steam Claws",
+            name = "The Swiper",
             spritePath = "Icons/claws",
+            flavorText = "Pray they do not ask you to stop swiping",
             soundPath = "Sfx/clawsfx",
             rarity = Rarity.Legendary,
             buyValue = 15000,
@@ -2470,8 +2475,8 @@ public class Weapon : Item
             requiredLevel = 15,
             requiredDex = 50,
             weaponType = WeaponType.Claw,
-            elementType = ElementType.Air,
-            damageType = DamageType.Magical,
+            elementType = ElementType.None,
+            damageType = DamageType.Physical,
             statMod = StatModifier.Dexterity,
             apc = 2,
             minDamage = 5,
@@ -2532,8 +2537,9 @@ public class Weapon : Item
         weapon = new Weapon
         {
             itemId = 003006,
-            name = "Acid Wand",
+            name = "The Common Cold",
             spritePath = "Icons/spell",
+            flavorText = "You cast a snowball, and hope they die of exposure. Eventually.",
             soundPath = "Sfx/gassfx",
             rarity = Rarity.Legendary,
             buyValue = 15000,
@@ -3324,7 +3330,7 @@ public class Weapon : Item
             statMod = StatModifier.Intelligence,
             apc = 1,
             minDamage = 1,
-            maxDamage = 65,
+            maxDamage = 59,
             isNegating = true,
             magicPen = 30,
         };
@@ -3349,8 +3355,8 @@ public class Weapon : Item
             statMod = StatModifier.Strength,
             apc = 1,
             isDot = true,
-            minDamage = 18,
-            maxDamage = 38,
+            minDamage = 16,
+            maxDamage = 35,
         };
         weaponList.Add(weapon);
         
@@ -3371,8 +3377,8 @@ public class Weapon : Item
             damageType = DamageType.Magical,
             statMod = StatModifier.Dexterity,
             apc = 1,
-            minDamage = 12,
-            maxDamage = 52,
+            minDamage = 11,
+            maxDamage = 47,
             magicPen = 25,
             isNegating = true,
             critDamage = 25,
@@ -3397,8 +3403,8 @@ public class Weapon : Item
             damageType = DamageType.Physical,
             statMod = StatModifier.Intelligence,
             apc = 1,
-            minDamage = 27,
-            maxDamage = 50,
+            minDamage = 25,
+            maxDamage = 45,
             isSundering = true,
         };
         weaponList.Add(weapon);
@@ -3421,8 +3427,8 @@ public class Weapon : Item
             damageType = DamageType.Physical,
             statMod = StatModifier.Strength,
             apc = 1,
-            minDamage = 44,
-            maxDamage = 44,
+            minDamage = 40,
+            maxDamage = 40,
             armorPen = 15,
             isSundering = true,
             critChance = -10,
@@ -3447,7 +3453,7 @@ public class Weapon : Item
             statMod = StatModifier.Dexterity,
             apc = 5,
             minDamage = 1,
-            maxDamage = 15,
+            maxDamage = 13,
             critChance = 5,
             critDamage = 15,
         };
@@ -4355,21 +4361,22 @@ public class Weapon : Item
         weapon = new Weapon
         {
             itemId = 005004,
-            name = "Bag of the Four Winds",
+            name = "Staff of Corporation",
             spritePath = "Icons/spell",
-            soundPath = "Sfx/windbladesfx",
+            flavorText = "SYNERGY",
+            soundPath = "Sfx/staffsfx",
             rarity = Rarity.Legendary,
             buyValue = 150000,
             sellValue = 10000,
             requiredLevel = 30,
             requiredInt = 100,
             weaponType = WeaponType.Spell,
-            elementType = ElementType.Light,
+            elementType = ElementType.None,
             damageType = DamageType.Physical,
             statMod = StatModifier.Intelligence,
-            apc = 4,
+            apc = 1,
             minDamage = 1,
-            maxDamage = 25,
+            maxDamage = 99,
         };
         weaponList.Add(weapon);
         
@@ -4379,7 +4386,7 @@ public class Weapon : Item
             itemId = 005005,
             name = "Weeb Kunai",
             spritePath = "Icons/dagger",
-            flavorText = "Nani?",
+            flavorText = "*Naruto Theme Music*",
             soundPath = "Sfx/daggersfx",
             rarity = Rarity.Legendary,
             buyValue = 150000,
@@ -4392,7 +4399,7 @@ public class Weapon : Item
             statMod = StatModifier.Dexterity,
             apc = 3,
             minDamage = 12,
-            maxDamage = 27,
+            maxDamage = 25,
             isSundering = true,
             critChance = 5,
         };
@@ -4418,7 +4425,7 @@ public class Weapon : Item
             minDamage = 1,
             maxDamage = 15,
             critChance = 5,
-            critDamage = 50,
+            critDamage = 45,
             dexterity = 25,
         };
         weaponList.Add(weapon);
