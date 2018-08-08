@@ -1511,7 +1511,7 @@ public class Weapon : Item
             itemId = 020004,
             name = "The Moonbow",
             spritePath = "Icons/bow",
-            soundPath = "Sfx/moonlightsfx",
+            soundPath = "Sfx/holysfx",
             rarity = Rarity.Legendary,
             buyValue = 5000,
             sellValue = 1250,
