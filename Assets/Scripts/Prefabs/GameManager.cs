@@ -88,7 +88,7 @@ public class GameManager : MonoBehaviour {
     public void LoadScene(string scene)
     {
         // Save the game on scene transition
-        //Save();
+        Save();
         // Get currentScene
         string currentScene = SceneManager.GetActiveScene().name;
         // Load scene

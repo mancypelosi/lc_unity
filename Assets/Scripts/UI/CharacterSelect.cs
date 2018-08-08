@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.UI;
 
 // CharacterSelect scene, this code attached to Canvas
@@ -6,6 +7,10 @@ public class CharacterSelect : MonoBehaviour {
 
     // Use this for initialization
     void Start() {
+        if (GameManager.gm.playerList.Count == 0)
+        {
+            GameManager.gm.playerList = new List<Player> { new Player(), new Player(), new Player() };
+        }
         UpdateGui();
     }
 
@@ -35,6 +40,7 @@ public class CharacterSelect : MonoBehaviour {
 
     private void UpdateGui()
     {
+        Debug.Log("Count: " + GameManager.gm.playerList.Count);
         if (GameManager.gm.playerList[0].playerClass == "None")
             GameObject.Find("CharacterSlot1").GetComponentInChildren<Text>().text = "NEW CHARACTER";
         else

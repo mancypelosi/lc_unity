@@ -306,12 +306,16 @@ public class Battle : MonoBehaviour
                     timer = false;
 
                     // Update next world gate for player
-                    if (world.worldName == "Forest")
+                    if (world.worldName == "Plains")
                         player.world2 = true;
-                    if (world.worldName == "Cave")
+                    if (world.worldName == "Forest")
                         player.world3 = true;
-                    if (world.worldName == "River")
+                    if (world.worldName == "Cave")
                         player.world4 = true;
+                    if (world.worldName == "River")
+                        player.world5 = true;
+                    if (world.worldName == "Swamp")
+                        player.world6 = true;
 
                     // Stop music and play the victory sound!
                     SoundManager.sm.StopMusic();
@@ -480,6 +484,7 @@ public class Battle : MonoBehaviour
             {
                 clickLimit = true;
                 player.name = "Cheater";
+                GameObject.Find("Name").GetComponentInChildren<Text>().text = "Name: " + player.name;
             }
         }
         // Reset anti-cheat variables after 1 second
