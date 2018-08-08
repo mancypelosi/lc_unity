@@ -8,15 +8,15 @@ Prefab:
     m_TransformParent: {fileID: 0}
     m_Modifications: []
     m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 0}
+  m_SourcePrefab: {fileID: 0}
   m_RootGameObject: {fileID: 1698882450308186}
-  m_IsPrefabParent: 1
+  m_IsPrefabAsset: 1
 --- !u!1 &1698882450308186
 GameObject:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
+  serializedVersion: 6
   m_Component:
   - component: {fileID: 4404649964116038}
   - component: {fileID: 114579880337502040}
@@ -30,11 +30,11 @@ GameObject:
 --- !u!4 &4404649964116038
 Transform:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1698882450308186}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 564.8296, y: 274.288, z: -6.125}
+  m_LocalPosition: {x: 459, y: 203, z: -6.125}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -43,7 +43,7 @@ Transform:
 --- !u!114 &114579880337502040
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1698882450308186}
   m_Enabled: 1
@@ -52,29 +52,67 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player:
-    playerName: Hero
-    playerClass: None
-    playerLevel: 1
-    currentXP: 0
-    xpTNL: 50
-    talentPoints: 0
-    playerGold: 0
     strength: 1
     dexterity: 1
     intelligence: 1
-    apc: 0
     armorPen: 0
     magicPen: 0
     critChance: 10
     critDamage: 150
+    bonusPhysical: 0
+    bonusMagical: 0
+    itemFind: 0
+    magicFind: 0
+    bonusGold: 0
+    bonusExp: 0
+    name: Hero
+    playerClass: None
+    spritePath: charmander
+    level: 1
+    currentXP: 0
+    xpTNL: 50
+    talentPoints: 0
+    gold: 0
+    comboCount: 0
+    modifiedStrength: 0
+    modifiedDexterity: 0
+    modifiedIntelligence: 0
+    world1: 1
+    world2: 0
+    world3: 0
+    world4: 0
+    world5: 0
+    world6: 0
+    world7: 0
+    world8: 0
     equippedWeapon:
+      strength: 0
+      dexterity: 0
+      intelligence: 0
+      armorPen: 0
+      magicPen: 0
+      critChance: 0
+      critDamage: 0
+      bonusPhysical: 0
+      bonusMagical: 0
+      itemFind: 0
+      magicFind: 0
+      bonusGold: 0
+      bonusExp: 0
       itemId: 0
       name: Garbage
       spritePath: 
-      soundPath: 
+      tier: 0
       rarity: 0
+      flavorText: 
       buyValue: 0
       sellValue: 0
+      requiredStr: 0
+      requiredDex: 0
+      requiredInt: 0
+      requiredLevel: 0
+      modList: []
+      soundPath: 
       weaponType: 0
       elementType: 0
       damageType: 0
@@ -82,14 +120,37 @@ MonoBehaviour:
       apc: 1
       minDamage: 1
       maxDamage: 1
+      isDot: 0
+      isSundering: 0
+      isNegating: 0
     weapon1:
+      strength: 0
+      dexterity: 0
+      intelligence: 0
+      armorPen: 0
+      magicPen: 0
+      critChance: 0
+      critDamage: 0
+      bonusPhysical: 0
+      bonusMagical: 0
+      itemFind: 0
+      magicFind: 0
+      bonusGold: 0
+      bonusExp: 0
       itemId: 0
       name: Garbage
       spritePath: 
-      soundPath: 
+      tier: 0
       rarity: 0
+      flavorText: 
       buyValue: 0
       sellValue: 0
+      requiredStr: 0
+      requiredDex: 0
+      requiredInt: 0
+      requiredLevel: 0
+      modList: []
+      soundPath: 
       weaponType: 0
       elementType: 0
       damageType: 0
@@ -97,14 +158,37 @@ MonoBehaviour:
       apc: 1
       minDamage: 1
       maxDamage: 1
+      isDot: 0
+      isSundering: 0
+      isNegating: 0
     weapon2:
+      strength: 0
+      dexterity: 0
+      intelligence: 0
+      armorPen: 0
+      magicPen: 0
+      critChance: 0
+      critDamage: 0
+      bonusPhysical: 0
+      bonusMagical: 0
+      itemFind: 0
+      magicFind: 0
+      bonusGold: 0
+      bonusExp: 0
       itemId: 0
       name: Garbage
       spritePath: 
-      soundPath: 
+      tier: 0
       rarity: 0
+      flavorText: 
       buyValue: 0
       sellValue: 0
+      requiredStr: 0
+      requiredDex: 0
+      requiredInt: 0
+      requiredLevel: 0
+      modList: []
+      soundPath: 
       weaponType: 0
       elementType: 0
       damageType: 0
@@ -112,14 +196,37 @@ MonoBehaviour:
       apc: 1
       minDamage: 1
       maxDamage: 1
+      isDot: 0
+      isSundering: 0
+      isNegating: 0
     weapon3:
+      strength: 0
+      dexterity: 0
+      intelligence: 0
+      armorPen: 0
+      magicPen: 0
+      critChance: 0
+      critDamage: 0
+      bonusPhysical: 0
+      bonusMagical: 0
+      itemFind: 0
+      magicFind: 0
+      bonusGold: 0
+      bonusExp: 0
       itemId: 0
       name: Garbage
       spritePath: 
-      soundPath: 
+      tier: 0
       rarity: 0
+      flavorText: 
       buyValue: 0
       sellValue: 0
+      requiredStr: 0
+      requiredDex: 0
+      requiredInt: 0
+      requiredLevel: 0
+      modList: []
+      soundPath: 
       weaponType: 0
       elementType: 0
       damageType: 0
@@ -127,44 +234,176 @@ MonoBehaviour:
       apc: 1
       minDamage: 1
       maxDamage: 1
+      isDot: 0
+      isSundering: 0
+      isNegating: 0
     head:
+      strength: 0
+      dexterity: 0
+      intelligence: 0
+      armorPen: 0
+      magicPen: 0
+      critChance: 0
+      critDamage: 0
+      bonusPhysical: 0
+      bonusMagical: 0
+      itemFind: 0
+      magicFind: 0
+      bonusGold: 0
+      bonusExp: 0
       itemId: 0
       name: Garbage
       spritePath: 
-      soundPath: 
+      tier: 0
       rarity: 0
+      flavorText: 
       buyValue: 0
       sellValue: 0
+      requiredStr: 0
+      requiredDex: 0
+      requiredInt: 0
+      requiredLevel: 0
+      modList: []
+      armorType: 0
     chest:
+      strength: 0
+      dexterity: 0
+      intelligence: 0
+      armorPen: 0
+      magicPen: 0
+      critChance: 0
+      critDamage: 0
+      bonusPhysical: 0
+      bonusMagical: 0
+      itemFind: 0
+      magicFind: 0
+      bonusGold: 0
+      bonusExp: 0
       itemId: 0
       name: Garbage
       spritePath: 
-      soundPath: 
+      tier: 0
       rarity: 0
+      flavorText: 
       buyValue: 0
       sellValue: 0
+      requiredStr: 0
+      requiredDex: 0
+      requiredInt: 0
+      requiredLevel: 0
+      modList: []
+      armorType: 0
     legs:
+      strength: 0
+      dexterity: 0
+      intelligence: 0
+      armorPen: 0
+      magicPen: 0
+      critChance: 0
+      critDamage: 0
+      bonusPhysical: 0
+      bonusMagical: 0
+      itemFind: 0
+      magicFind: 0
+      bonusGold: 0
+      bonusExp: 0
       itemId: 0
       name: Garbage
       spritePath: 
-      soundPath: 
+      tier: 0
       rarity: 0
+      flavorText: 
       buyValue: 0
       sellValue: 0
+      requiredStr: 0
+      requiredDex: 0
+      requiredInt: 0
+      requiredLevel: 0
+      modList: []
+      armorType: 0
     gloves:
+      strength: 0
+      dexterity: 0
+      intelligence: 0
+      armorPen: 0
+      magicPen: 0
+      critChance: 0
+      critDamage: 0
+      bonusPhysical: 0
+      bonusMagical: 0
+      itemFind: 0
+      magicFind: 0
+      bonusGold: 0
+      bonusExp: 0
       itemId: 0
       name: Garbage
       spritePath: 
-      soundPath: 
+      tier: 0
       rarity: 0
+      flavorText: 
       buyValue: 0
       sellValue: 0
+      requiredStr: 0
+      requiredDex: 0
+      requiredInt: 0
+      requiredLevel: 0
+      modList: []
+      armorType: 0
     boots:
+      strength: 0
+      dexterity: 0
+      intelligence: 0
+      armorPen: 0
+      magicPen: 0
+      critChance: 0
+      critDamage: 0
+      bonusPhysical: 0
+      bonusMagical: 0
+      itemFind: 0
+      magicFind: 0
+      bonusGold: 0
+      bonusExp: 0
       itemId: 0
       name: Garbage
       spritePath: 
-      soundPath: 
+      tier: 0
       rarity: 0
+      flavorText: 
       buyValue: 0
       sellValue: 0
-  version: 0.0.1c
+      requiredStr: 0
+      requiredDex: 0
+      requiredInt: 0
+      requiredLevel: 0
+      modList: []
+      armorType: 0
+    amulet:
+      strength: 0
+      dexterity: 0
+      intelligence: 0
+      armorPen: 0
+      magicPen: 0
+      critChance: 0
+      critDamage: 0
+      bonusPhysical: 0
+      bonusMagical: 0
+      itemFind: 0
+      magicFind: 0
+      bonusGold: 0
+      bonusExp: 0
+      itemId: 0
+      name: Garbage
+      spritePath: Icons/garbage
+      tier: 0
+      rarity: 0
+      flavorText: 
+      buyValue: 0
+      sellValue: 0
+      requiredStr: 0
+      requiredDex: 0
+      requiredInt: 0
+      requiredLevel: 0
+      modList: []
+      armorType: 0
+  playerList: []
+  previousScene: 

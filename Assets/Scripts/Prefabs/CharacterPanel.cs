@@ -27,6 +27,11 @@ public class CharacterPanel : MonoBehaviour {
         GameObject.Find("TalentButton").GetComponentInChildren<Text>().text = "TALENTS: " + player.talentPoints.ToString();
     }
 
+    public void Save()
+    {
+        GameManager.gm.Save();
+    }
+
     public void UpgradeStrength()
     {
         if (player.talentPoints > 0)

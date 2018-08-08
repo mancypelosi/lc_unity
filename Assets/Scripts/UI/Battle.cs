@@ -479,6 +479,7 @@ public class Battle : MonoBehaviour
             if (clickCount > 15)
             {
                 clickLimit = true;
+                player.name = "Cheater";
             }
         }
         // Reset anti-cheat variables after 1 second

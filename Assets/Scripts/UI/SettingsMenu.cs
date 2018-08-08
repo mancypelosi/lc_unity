@@ -15,23 +15,40 @@ public class SettingsMenu : MonoBehaviour {
 
         // Set sound
         Toggle soundToggle = GameObject.Find("SoundToggle").GetComponent<Toggle>();
-        soundToggle.isOn = GameManager.gm.prefs.sound;
+        soundToggle.isOn = GameManager.gm.prefs.sfx;
+
+        Toggle musicToggle = GameObject.Find("MusicToggle").GetComponent<Toggle>();
+        musicToggle.isOn = GameManager.gm.prefs.music;
     }
 
     // Set sound to on or off
-    public void SetVolume(bool sound)
+    public void SetSfx(bool sound)
     {
-        GameManager.gm.prefs.sound = sound;
+        GameManager.gm.prefs.sfx = sound;
         Debug.Log("Sound: " + sound);
         if (sound)
         {
             SoundManager.sm.sfxVolume = 0.2f;
-            SoundManager.sm.musicVolume = 0.1f;
 
         }
         else
         {
             SoundManager.sm.sfxVolume = 0f;
+        }
+    }
+
+    // Set sound to on or off
+    public void SetMusic(bool sound)
+    {
+        GameManager.gm.prefs.music = sound;
+        Debug.Log("Sound: " + sound);
+        if (sound)
+        {
+            SoundManager.sm.musicVolume = 0.1f;
+
+        }
+        else
+        {
             SoundManager.sm.musicVolume = 0f;
         }
     }

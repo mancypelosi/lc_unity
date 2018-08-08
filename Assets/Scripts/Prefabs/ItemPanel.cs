@@ -14,9 +14,6 @@ public class ItemPanel : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
     public Item item;
     public string type;
     public GameObject tooltipPrefab;
-    // Pointer variables
-    private GameObject tooltip;
-    private Vector3 offset = new Vector3(-120, -154, 0);
     // Drag static variables
     private static Item startItem;
     private static GameObject startObject;
@@ -414,15 +411,20 @@ public class ItemPanel : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
         gameObject.GetComponentInParent<Outline>().effectColor = Color.black;
     }
 
+    // Pointer variables
+    private GameObject tooltip;
+    private Vector3 offset = new Vector3(0, 0, 0);
+    // tooltip 160 x 270
+
     // Event for mouseover on item panel
     public void OnPointerEnter(PointerEventData eventData)
     {
-        //Debug.Log("Mouse enter");
+        RectTransform rt = (RectTransform)tooltipPrefab.transform;
+        offset.x = -1 * rt.rect.width / 2 - (Screen.width * 0.05F);
+        offset.y = -1 * rt.rect.height / 2 - (Screen.height * 0.1F);
         // Create offsets so the tooltip doesn't go off the screen
-        if (Input.mousePosition.y < 240)
-            offset.y = 140;
-        else
-            offset.y = -154;
+        if (Input.mousePosition.y < Screen.height / 2)
+            offset.y = 1 * rt.rect.height / 2 + (Screen.height * 0.1F);
 
         // Set the tooltip values from the item
         if (item != null)
@@ -431,6 +433,7 @@ public class ItemPanel : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
             tooltip = Instantiate(tooltipPrefab, Input.mousePosition + offset, Quaternion.identity, transform);
             // Set parent to InventoryPanel so it isn't placed behind item panels
             tooltip.transform.SetParent(GameObject.Find("InventoryPanel").transform);
+            //tooltip.transform.localScale = new Vector3(1.5F, 1.5F, 0);
             // Rarities
             GameObject.Find("TooltipName").GetComponent<Text>().color = item.GetRarityColor();
             // Set the tooltipo name and tooltip text
@@ -456,10 +459,12 @@ public class ItemPanel : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
         if (tooltip)
         {
             // Create offsets so the tooltip doesn't go off the screen
-            if (Input.mousePosition.y < 240)
-                offset.y = 140;
+            // Create offsets so the tooltip doesn't go off the screen
+            RectTransform rt = (RectTransform)tooltip.transform;
+            if (Input.mousePosition.y < Screen.height / 2)
+                offset.y = 1 * rt.rect.height / 2 + (Screen.height * 0.1F);
             else
-                offset.y = -154;
+                offset.y = -1 * rt.rect.height / 2 - (Screen.height * 0.1F);
 
             // Update the tooltip position as the mouse moves inside
             tooltip.transform.position = Input.mousePosition + offset;

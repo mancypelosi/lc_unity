@@ -3,6 +3,7 @@ using System;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
 using UnityEngine.SceneManagement;
+using System.Collections.Generic;
 
 // This code attached to the GameManager prefab object
 public class GameManager : MonoBehaviour {
@@ -11,18 +12,17 @@ public class GameManager : MonoBehaviour {
 
     public Preferences prefs;
     public Player player;
-    public Player[] playerList;
+    public List<Player> playerList = new List<Player> { new Player(), new Player(), new Player() };
     public Enemy enemy;
     public World world;
     public string previousScene = "";
-    public static string version = "0.0.1k";
+    public static string version = "0.0.1l";
 
     // Use this for initialization
     void Start()
     {
         prefs = new Preferences();
         player = new Player();
-        playerList = new Player[3];
         enemy = new Enemy();
         world = new World();
     }
@@ -49,14 +49,11 @@ public class GameManager : MonoBehaviour {
         PlayerData data = new PlayerData();
         data.player = this.playerList;
 
-        if (playerList[0] != null)
-        {
-            Debug.Log("Save playerList[0]: " + playerList[0].name);
-        }
-
         // Serialize the data and close the file
         bf.Serialize(file, data);
         file.Close();
+
+        Debug.Log("Save game");
     }
 
     // Load data to Unity from application data file
@@ -71,6 +68,8 @@ public class GameManager : MonoBehaviour {
 
             // Data to load from the file
             this.playerList = data.player;
+
+            Debug.Log("Load game");
         }
     }
 
@@ -80,7 +79,7 @@ public class GameManager : MonoBehaviour {
         if (File.Exists(Application.persistentDataPath + "/playerData.dat"))
         {
             File.Delete(Application.persistentDataPath + "/playerData.dat");
-            GameManager.gm.playerList = new Player[3];
+            playerList = new List<Player> { new Player(), new Player(), new Player() };
             Debug.Log("Deleted Save Data");
         }
     }
@@ -89,7 +88,7 @@ public class GameManager : MonoBehaviour {
     public void LoadScene(string scene)
     {
         // Save the game on scene transition
-        Save();
+        //Save();
         // Get currentScene
         string currentScene = SceneManager.GetActiveScene().name;
         // Load scene
@@ -103,5 +102,5 @@ public class GameManager : MonoBehaviour {
 [Serializable]
 class PlayerData
 {
-    public Player[] player;
+    public List<Player> player;
 }

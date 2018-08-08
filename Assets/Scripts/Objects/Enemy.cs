@@ -47,7 +47,7 @@ public class Enemy {
 
         Enemy enemy;
 
-      /*  // Bulbasaur
+        // Bulbasaur
         enemy = new Enemy
         {
             enemyId = 001,
@@ -61,25 +61,9 @@ public class Enemy {
             weaknesses = { "Fire", "Axe", "Claws", "Ice" },
             resistances = { "Earth", "Lightning" , "Poison"}
         };
-        enemyList.Add(enemy);*/
-
-        // Nomad Archer
-        enemy = new Enemy
-        {
-            enemyId = 001,
-            enemyName = "Nomad Archer",
-            spritePath = "Enemy/ponyta",
-            health = 35,
-            armor = 15,
-            magicResist = 5,
-            xpToGive = 5,
-            goldToGive = 5,
-            weaknesses = { "Spear", "Dagger", "Claws", "Sword" },
-            resistances = { "Gun", "Bow", "Chakram", "Water"}
-        };
         enemyList.Add(enemy);
         
-       /* // Ivysaur
+        // Ivysaur
         enemy = new Enemy
         {
             enemyId = 002,
@@ -93,25 +77,9 @@ public class Enemy {
             weaknesses = { "Fire", "Axe", "Claws", "Ice"},
             resistances = { "Earth", "Lightning", "Poison", "Dagger" }
         };
-        enemyList.Add(enemy);*/
-        
-        // Cowboy
-        enemy = new Enemy
-        {
-            enemyId = 002,
-            enemyName = "Living Cowboy",
-            spritePath = "Enemy/mewtwo",
-            health = 200,
-            armor = 35,
-            magicResist = 35,
-            xpToGive = 10,
-            goldToGive = 10,
-            weaknesses = { "Dagger", "Sword", "Claws", "Poison", "Bow", "Chakram"},
-            resistances = { "Spear", "Water", "Dark", "Gun", "Mace"}
-        };
         enemyList.Add(enemy);
 
-      /*  // Venusaur
+        // Venusaur
         enemy = new Enemy
         {
             enemyId = 003,
@@ -125,24 +93,8 @@ public class Enemy {
             weaknesses = { "Fire", "Axe", "Claws", "Ice" },
             resistances = { "Earth", "Lightning" , "Poison", "Dagger"}
         };
-        enemyList.Add(enemy);*/
-
-        
-        // Ilkhan
-        enemy = new Enemy
-        {
-            enemyId = 003,
-            enemyName = "Ilkhan",
-            spritePath = "Enemy/kangaskhan",
-            health = 500,
-            armor = 50,
-            magicResist = 50,
-            xpToGive = 20,
-            goldToGive = 20,
-            weaknesses = { "Lightning", "Mace", "Dagger", "Poison", "Ice", "Water", "Gun" },
-            resistances = { "Axe", "Sword" , "Fire", "Earth", "Claws", "Axe", "Bow", "Chakram"}
-        };
         enemyList.Add(enemy);
+
         // Charmander
         enemy = new Enemy
         {
@@ -239,7 +191,7 @@ public class Enemy {
         };
         enemyList.Add(enemy);
 
-       /* // Caterpie
+        // Caterpie
         enemy = new Enemy
         {
             enemyId = 010,
@@ -253,25 +205,9 @@ public class Enemy {
             weaknesses = { "Fire", "Dagger" },
             resistances = { "Dark" }
         };
-        enemyList.Add(enemy);*/
-
-        // Skeletal Cowboy
-        enemy = new Enemy
-        {
-            enemyId = 010,
-            enemyName = "Skeletal Cowboy",
-            spritePath = "Enemy/meowth",
-            health = 25,
-            armor = 20,
-            magicResist = 20,
-            xpToGive = 3,
-            goldToGive = 3,
-            weaknesses = { "Fire", "Mace", "Light", "Wand", "Shield" },
-            resistances = { "Dark", "Poison", "Sword", "Dagger", "Bow", "Gun", "Spear" }
-        };
         enemyList.Add(enemy);
         
-       /* // Metapod
+        // Metapod
         enemy = new Enemy
         {
             enemyId = 011,
@@ -284,22 +220,6 @@ public class Enemy {
             goldToGive = 10,
             weaknesses = { "Fire", "Mace", "Ice" },
             resistances = { "Dark", "Sword", "Claw", "Spear", "Axe" }
-        };
-        enemyList.Add(enemy); */
-
-        // Buffalo Spirit
-        enemy = new Enemy
-        {
-            enemyId = 011,
-            enemyName = "Buffalo Spirit",
-            spritePath = "Enemy/taurus",
-            health = 55,
-            armor = 110,
-            magicResist = 0,
-            xpToGive = 10,
-            goldToGive = 10,
-            weaknesses = { "Fire", "Air", "Light", },
-            resistances = { "Dark", "Poison", "Staff" }
         };
         enemyList.Add(enemy);
         
@@ -319,7 +239,7 @@ public class Enemy {
         };
         enemyList.Add(enemy);
 
-        /* // Weedle
+        // Weedle
         enemy = new Enemy
         {
             enemyId = 013,
@@ -333,25 +253,9 @@ public class Enemy {
             weaknesses = { "Fire", "Dagger" },
             resistances = { "Dark", "Poison"}
         };
-        enemyList.Add(enemy);*/
-
-        // Praire Dog Swarm
-        enemy = new Enemy
-        {
-            enemyId = 013,
-            enemyName = "Praire Dog Swarm",
-            spritePath = "Enemy/Dugtrio",
-            health = 25,
-            armor = 15,
-            magicResist = 15,
-            xpToGive = 3,
-            goldToGive = 3,
-            weaknesses = { "Poison", "Water", "Spear" },
-            resistances = { "Mace", "Fire", "Dark"}
-        };
         enemyList.Add(enemy);
-        
-        /* // Kakuna
+
+        // Kakuna
         enemy = new Enemy
         {
             enemyId = 014,
@@ -364,22 +268,6 @@ public class Enemy {
             goldToGive = 10,
             weaknesses = { "Fire", "Mace", "Ice" },
             resistances = { "Dark", "Sword", "Claw", "Spear", "Axe" }
-        };
-        enemyList.Add(enemy);*/
-
-        // Nomad Warlock
-        enemy = new Enemy
-        {
-            enemyId = 014,
-            enemyName = "Nomad Warlock",
-            spritePath = "Enemy/Rapidash",
-            health = 55,
-            armor = 0,
-            magicResist = 120,
-            xpToGive = 10,
-            goldToGive = 10,
-            weaknesses = { "Sword", "Claw", "Dagger", "Staff" },
-            resistances = { "Dark", "Light", "Wand", "Water" }
         };
         enemyList.Add(enemy);
         
@@ -399,39 +287,23 @@ public class Enemy {
         };
         enemyList.Add(enemy);
 
-       /* // Pidgey
-        enemy = new Enemy
-        {
-            enemyId = 016,
-            enemyName = "Pidgey",
-            spritePath = "Enemy/pidgey",
-            health = 25,
-            armor = 1,
-            magicResist = 1,
-            xpToGive = 3,
-            goldToGive = 3,
-            weaknesses = { "Air", "Bow", "Gun", "Chakram" },
-            resistances = { "Dagger", "Earth" }
-        };
-        enemyList.Add(enemy);*/
+         // Pidgey
+         enemy = new Enemy
+         {
+             enemyId = 016,
+             enemyName = "Pidgey",
+             spritePath = "Enemy/pidgey",
+             health = 25,
+             armor = 1,
+             magicResist = 1,
+             xpToGive = 3,
+             goldToGive = 3,
+             weaknesses = { "Air", "Bow", "Gun", "Chakram" },
+             resistances = { "Dagger", "Earth" }
+         };
+         enemyList.Add(enemy);
 
-        // Eagle Demon
-        enemy = new Enemy
-        {
-            enemyId = 016,
-            enemyName = "Eagle-Demon",
-            spritePath = "Enemy/pidgey",
-            health = 35,
-            armor = 1,
-            magicResist = 1,
-            xpToGive = 3,
-            goldToGive = 3,
-            weaknesses = { "Air", "Bow", "Gun", "Chakram", "Lightning" },
-            resistances = { "Dagger", "Earth", "Sword", "Staff" }
-        };
-        enemyList.Add(enemy);
-        
-      /*  // Pidgeotto
+        // Pidgeotto
         enemy = new Enemy
         {
             enemyId = 017,
@@ -444,22 +316,6 @@ public class Enemy {
             goldToGive = 3,
             weaknesses = { "Air", "Bow", "Gun", "Chakram", "Lightning" },
             resistances = { "Dagger", "Earth", "Sword", "Axe", "Mace", "Staff", "Claws"}
-        };
-        enemyList.Add(enemy); */
-
-        // Possessed Wagon
-        enemy = new Enemy
-        {
-            enemyId = 017,
-            enemyName = "Possessed Wagon",
-            spritePath = "Enemy/pidgeotto",
-            health = 60,
-            armor = 40,
-            magicResist = 40,
-            xpToGive = 3,
-            goldToGive = 3,
-            weaknesses = { "Fire", "Axe", "Air", "Light", "Spear" },
-            resistances = { "Dark", "Sword", "Claw", "Spell", "Wand" }
         };
         enemyList.Add(enemy);
         
@@ -818,7 +674,7 @@ public class Enemy {
         // Nomad packmaster
         enemy = new Enemy
         {
-            enemyId = 052,
+            enemyId = 152,
             enemyName = "Nomad Chief",
             spritePath = "Enemy/rhydon",
             health = 65,
@@ -834,7 +690,7 @@ public class Enemy {
         // Giant Rattlesnake
         enemy = new Enemy
         {
-            enemyId = 053,
+            enemyId = 153,
             enemyName = "Giant Rattlesnake",
             spritePath = "Enemy/ekans",
             health = 25,
@@ -846,12 +702,11 @@ public class Enemy {
             resistances = { "Spear", "Dagger", "Mace", "Bow", "Gun", "Chakram"}
         };
         enemyList.Add(enemy);
- 
         
         // Snow Leopard
         enemy = new Enemy
         {
-            enemyId = 054,
+            enemyId = 154,
             enemyName = "Snow Leopard",
             spritePath = "Enemy/persian",
             health = 75,
@@ -863,11 +718,155 @@ public class Enemy {
             resistances = {"Ice", "Light", "Poison" }
         };
         enemyList.Add(enemy);
-        
+
+        // Nomad Archer
+        enemy = new Enemy
+        {
+            enemyId = 155,
+            enemyName = "Nomad Archer",
+            spritePath = "Enemy/ponyta",
+            health = 35,
+            armor = 15,
+            magicResist = 5,
+            xpToGive = 5,
+            goldToGive = 5,
+            weaknesses = { "Spear", "Dagger", "Claws", "Sword" },
+            resistances = { "Gun", "Bow", "Chakram", "Water" }
+        };
+        enemyList.Add(enemy);
+
+        // Skeletal Cowboy
+        enemy = new Enemy
+        {
+            enemyId = 156,
+            enemyName = "Skeletal Cowboy",
+            spritePath = "Enemy/meowth",
+            health = 25,
+            armor = 20,
+            magicResist = 20,
+            xpToGive = 3,
+            goldToGive = 3,
+            weaknesses = { "Fire", "Mace", "Light", "Wand", "Shield" },
+            resistances = { "Dark", "Poison", "Sword", "Dagger", "Bow", "Gun", "Spear" }
+        };
+        enemyList.Add(enemy);
+
+        // Buffalo Spirit
+        enemy = new Enemy
+        {
+            enemyId = 157,
+            enemyName = "Buffalo Spirit",
+            spritePath = "Enemy/tauros",
+            health = 55,
+            armor = 110,
+            magicResist = 0,
+            xpToGive = 10,
+            goldToGive = 10,
+            weaknesses = { "Fire", "Air", "Light", },
+            resistances = { "Dark", "Poison", "Staff" }
+        };
+        enemyList.Add(enemy);
+
+        // Praire Dog Swarm
+        enemy = new Enemy
+        {
+            enemyId = 158,
+            enemyName = "Praire Dog Swarm",
+            spritePath = "Enemy/Dugtrio",
+            health = 25,
+            armor = 15,
+            magicResist = 15,
+            xpToGive = 3,
+            goldToGive = 3,
+            weaknesses = { "Poison", "Water", "Spear" },
+            resistances = { "Mace", "Fire", "Dark" }
+        };
+        enemyList.Add(enemy);
+
+        // Nomad Warlock
+        enemy = new Enemy
+        {
+            enemyId = 159,
+            enemyName = "Nomad Warlock",
+            spritePath = "Enemy/Rapidash",
+            health = 55,
+            armor = 0,
+            magicResist = 120,
+            xpToGive = 10,
+            goldToGive = 10,
+            weaknesses = { "Sword", "Claw", "Dagger", "Staff" },
+            resistances = { "Dark", "Light", "Wand", "Water" }
+        };
+        enemyList.Add(enemy);
+
+        // Eagle Demon
+        enemy = new Enemy
+        {
+            enemyId = 160,
+            enemyName = "Eagle-Demon",
+            spritePath = "Enemy/pidgeot",
+            health = 35,
+            armor = 1,
+            magicResist = 1,
+            xpToGive = 3,
+            goldToGive = 3,
+            weaknesses = { "Air", "Bow", "Gun", "Chakram", "Lightning" },
+            resistances = { "Dagger", "Earth", "Sword", "Staff" }
+        };
+        enemyList.Add(enemy);
+
+        // Possessed Wagon
+        enemy = new Enemy
+        {
+            enemyId = 161,
+            enemyName = "Possessed Wagon",
+            spritePath = "Enemy/snorlax",
+            health = 60,
+            armor = 40,
+            magicResist = 40,
+            xpToGive = 3,
+            goldToGive = 3,
+            weaknesses = { "Fire", "Axe", "Air", "Light", "Spear" },
+            resistances = { "Dark", "Sword", "Claw", "Spell", "Wand" }
+        };
+        enemyList.Add(enemy);
+
+        // Cowboy
+        enemy = new Enemy
+        {
+            enemyId = 162,
+            enemyName = "Living Cowboy",
+            spritePath = "Enemy/mewtwo",
+            health = 200,
+            armor = 35,
+            magicResist = 35,
+            xpToGive = 10,
+            goldToGive = 10,
+            weaknesses = { "Dagger", "Sword", "Claws", "Poison", "Bow", "Chakram" },
+            resistances = { "Spear", "Water", "Dark", "Gun", "Mace" }
+        };
+        enemyList.Add(enemy);
+
+        // Ilkhan
+        enemy = new Enemy
+        {
+            enemyId = 163,
+            enemyName = "Ilkhan",
+            spritePath = "Enemy/kangaskhan",
+            health = 500,
+            armor = 50,
+            magicResist = 50,
+            xpToGive = 20,
+            goldToGive = 20,
+            weaknesses = { "Lightning", "Mace", "Dagger", "Poison", "Ice", "Water", "Gun" },
+            resistances = { "Axe", "Sword", "Fire", "Earth", "Claws", "Axe", "Bow", "Chakram" }
+        };
+        enemyList.Add(enemy);
+
         /********************/
         /*** LEGENDARIES ***/
         /******************/
- 
+
         // Abby
         enemy = new Enemy
         {

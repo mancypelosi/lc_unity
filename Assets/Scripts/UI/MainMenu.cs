@@ -1,10 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.Audio;
+﻿using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
-using System.IO;
 
 public class MainMenu : MonoBehaviour
 {
@@ -18,12 +13,17 @@ public class MainMenu : MonoBehaviour
 
         // Set version label
         GameObject.Find("VersionText").GetComponentInChildren<Text>().text = "version: " + GameManager.version;
+
+        if (GameManager.gm.player.playerClass != "None")
+        {
+            GameObject.Find("UpdatePanel").SetActive(false);
+        }
     }
 
     // Load the CharacterSelect scene
     public void LoadCharacterSelect()
     {
-        SceneManager.LoadScene("CharacterSelect");
+        GameManager.gm.LoadScene("CharacterSelect");
     }
 
     // Exit the game
