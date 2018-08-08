@@ -113,4 +113,9 @@ public class Player : Stats {
         xpTNL = level * 50;
     }
 
+    public int GetBaseStat(int total, int modified)
+    {
+        return total - modified;
+    }
+
 }

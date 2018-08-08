@@ -16,9 +16,9 @@ public class CharacterPanel : MonoBehaviour {
         GameObject.Find("Class").GetComponentInChildren<Text>().text = "Class: " + player.playerClass;
         GameObject.Find("Level").GetComponentInChildren<Text>().text = "Level: " + player.level.ToString();
         GameObject.Find("TNL").GetComponentInChildren<Text>().text = "XP TNL: " + player.xpTNL.ToString();
-        GameObject.Find("Strength").GetComponentInChildren<Text>().text = "Strength: " + player.strength.ToString() + " (" + player.modifiedStrength.ToString() + ")";
-        GameObject.Find("Dexterity").GetComponentInChildren<Text>().text = "Dexterity: " + player.dexterity.ToString() + " (" + player.modifiedDexterity.ToString() + ")";
-        GameObject.Find("Intelligence").GetComponentInChildren<Text>().text = "Intelligence: " + player.intelligence.ToString() + " (" + player.modifiedIntelligence.ToString() + ")";
+        GameObject.Find("Strength").GetComponentInChildren<Text>().text = "Strength: " + player.strength.ToString() + " (" + player.GetBaseStat(player.strength, player.modifiedStrength) + ")";
+        GameObject.Find("Dexterity").GetComponentInChildren<Text>().text = "Dexterity: " + player.dexterity.ToString() + " (" + player.GetBaseStat(player.dexterity, player.modifiedDexterity) + ")";
+        GameObject.Find("Intelligence").GetComponentInChildren<Text>().text = "Intelligence: " + player.intelligence.ToString() + " (" + player.GetBaseStat(player.intelligence, player.modifiedIntelligence) + ")";
         GameObject.Find("ArmorPen").GetComponentInChildren<Text>().text = "Armor Pen: " + player.armorPen.ToString();
         GameObject.Find("MagicPen").GetComponentInChildren<Text>().text = "Magic Pen: " + player.magicPen.ToString();
         GameObject.Find("CritChance").GetComponentInChildren<Text>().text = "Crit Chance: " + player.critChance.ToString() + "%";
@@ -38,7 +38,7 @@ public class CharacterPanel : MonoBehaviour {
         {
             player.strength += 5;
             player.talentPoints--;
-            GameObject.Find("Strength").GetComponentInChildren<Text>().text = "Strength: " + player.strength.ToString() + " (" + player.modifiedStrength.ToString() + ")";
+            GameObject.Find("Strength").GetComponentInChildren<Text>().text = "Strength: " + player.strength.ToString() + " (" + player.GetBaseStat(player.strength, player.modifiedStrength) + ")";
             GameObject.Find("TalentButton").GetComponentInChildren<Text>().text = "TALENTS: " + player.talentPoints.ToString();
         }
     }
@@ -49,7 +49,7 @@ public class CharacterPanel : MonoBehaviour {
         {
             player.dexterity += 5;
             player.talentPoints--;
-            GameObject.Find("Dexterity").GetComponentInChildren<Text>().text = "Dexterity: " + player.dexterity.ToString() + " (" + player.modifiedDexterity.ToString() + ")";
+            GameObject.Find("Dexterity").GetComponentInChildren<Text>().text = "Dexterity: " + player.dexterity.ToString() + " (" + player.GetBaseStat(player.dexterity, player.modifiedDexterity) + ")";
             GameObject.Find("TalentButton").GetComponentInChildren<Text>().text = "TALENTS: " + player.talentPoints.ToString();
         }
     }
@@ -60,7 +60,7 @@ public class CharacterPanel : MonoBehaviour {
         {
             player.intelligence += 5;
             player.talentPoints--;
-            GameObject.Find("Intelligence").GetComponentInChildren<Text>().text = "Intelligence: " + player.intelligence.ToString() + " (" + player.modifiedIntelligence.ToString() + ")";
+            GameObject.Find("Intelligence").GetComponentInChildren<Text>().text = "Intelligence: " + player.intelligence.ToString() + " (" + player.GetBaseStat(player.intelligence, player.modifiedIntelligence) + ")";
             GameObject.Find("TalentButton").GetComponentInChildren<Text>().text = "TALENTS: " + player.talentPoints.ToString();
         }
     }

@@ -134,17 +134,11 @@ public class Battle : MonoBehaviour
 
             // Check for combo
             if (player.comboCount > 5)
-            {
                 GameObject.Find("ComboLabel").GetComponent<Text>().text = player.comboCount.ToString() + " HITS";
-            }
             else
-            {
                 GameObject.Find("ComboLabel").GetComponent<Text>().text = "";
-            }
             if (player.comboCount == 15)
-            {
                 SoundManager.sm.PlaySoundFX(Resources.Load<AudioClip>("Sfx/ultracombosfx"));
-            }
 
             // DoT check
             if (player.equippedWeapon.isDot)
@@ -342,7 +336,7 @@ public class Battle : MonoBehaviour
         // Player level up
         player.LevelUp();
         // Play sound
-        SoundManager.sm.PlaySoundFX(Resources.Load<AudioClip>("Sfx/coinsfx"));
+        SoundManager.sm.PlaySoundFX(Resources.Load<AudioClip>("Sfx/levelupsfx"));
         // Update the gui
         GameObject.Find("Level").GetComponentInChildren<Text>().text = "Level: " + player.level.ToString();
         GameObject.Find("TNL").GetComponentInChildren<Text>().text = "XP TNL: " + player.xpTNL.ToString();

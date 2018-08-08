@@ -1253,6 +1253,8 @@ MonoBehaviour:
   type: Boots
   tooltipPrefab: {fileID: 1997477878928528, guid: 6bd6968059bc51743875ed92b3c79761,
     type: 2}
+  floatingTextPrefab: {fileID: 1025291103011096, guid: ee3886833bec9bb4497c25bb703f7f2e,
+    type: 2}
 --- !u!114 &114070957789562804
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1481,6 +1483,8 @@ MonoBehaviour:
   type: Inventory
   tooltipPrefab: {fileID: 1997477878928528, guid: 6bd6968059bc51743875ed92b3c79761,
     type: 2}
+  floatingTextPrefab: {fileID: 1025291103011096, guid: ee3886833bec9bb4497c25bb703f7f2e,
+    type: 2}
 --- !u!114 &114134958832635314
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1589,6 +1593,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: Inventory
   tooltipPrefab: {fileID: 1997477878928528, guid: 6bd6968059bc51743875ed92b3c79761,
+    type: 2}
+  floatingTextPrefab: {fileID: 1025291103011096, guid: ee3886833bec9bb4497c25bb703f7f2e,
     type: 2}
 --- !u!114 &114171497050938634
 MonoBehaviour:
@@ -1818,6 +1824,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: Head
   tooltipPrefab: {fileID: 1997477878928528, guid: 6bd6968059bc51743875ed92b3c79761,
+    type: 2}
+  floatingTextPrefab: {fileID: 1025291103011096, guid: ee3886833bec9bb4497c25bb703f7f2e,
     type: 2}
 --- !u!114 &114248994279329196
 MonoBehaviour:
@@ -2097,6 +2105,8 @@ MonoBehaviour:
   type: Inventory
   tooltipPrefab: {fileID: 1997477878928528, guid: 6bd6968059bc51743875ed92b3c79761,
     type: 2}
+  floatingTextPrefab: {fileID: 1025291103011096, guid: ee3886833bec9bb4497c25bb703f7f2e,
+    type: 2}
 --- !u!114 &114354665018498116
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2137,6 +2147,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: Inventory
   tooltipPrefab: {fileID: 1997477878928528, guid: 6bd6968059bc51743875ed92b3c79761,
+    type: 2}
+  floatingTextPrefab: {fileID: 1025291103011096, guid: ee3886833bec9bb4497c25bb703f7f2e,
     type: 2}
 --- !u!114 &114380562742462150
 MonoBehaviour:
@@ -2475,6 +2487,7 @@ MonoBehaviour:
   type: Trash
   tooltipPrefab: {fileID: 1408769441087400, guid: 8411cebb50605324996073c1b2b2cc06,
     type: 2}
+  floatingTextPrefab: {fileID: 0}
 --- !u!114 &114470455756580106
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2616,6 +2629,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: Inventory
   tooltipPrefab: {fileID: 1997477878928528, guid: 6bd6968059bc51743875ed92b3c79761,
+    type: 2}
+  floatingTextPrefab: {fileID: 1025291103011096, guid: ee3886833bec9bb4497c25bb703f7f2e,
     type: 2}
 --- !u!114 &114518979638434876
 MonoBehaviour:
@@ -2823,6 +2838,8 @@ MonoBehaviour:
   type: Inventory
   tooltipPrefab: {fileID: 1997477878928528, guid: 6bd6968059bc51743875ed92b3c79761,
     type: 2}
+  floatingTextPrefab: {fileID: 1025291103011096, guid: ee3886833bec9bb4497c25bb703f7f2e,
+    type: 2}
 --- !u!114 &114567109926312148
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2890,6 +2907,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: Legs
   tooltipPrefab: {fileID: 1997477878928528, guid: 6bd6968059bc51743875ed92b3c79761,
+    type: 2}
+  floatingTextPrefab: {fileID: 1025291103011096, guid: ee3886833bec9bb4497c25bb703f7f2e,
     type: 2}
 --- !u!114 &114591371168629942
 MonoBehaviour:
@@ -2995,6 +3014,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: Weapon1
   tooltipPrefab: {fileID: 1997477878928528, guid: 6bd6968059bc51743875ed92b3c79761,
+    type: 2}
+  floatingTextPrefab: {fileID: 1025291103011096, guid: ee3886833bec9bb4497c25bb703f7f2e,
     type: 2}
 --- !u!114 &114622952118998200
 MonoBehaviour:
@@ -3418,6 +3439,8 @@ MonoBehaviour:
   type: Inventory
   tooltipPrefab: {fileID: 1997477878928528, guid: 6bd6968059bc51743875ed92b3c79761,
     type: 2}
+  floatingTextPrefab: {fileID: 1025291103011096, guid: ee3886833bec9bb4497c25bb703f7f2e,
+    type: 2}
 --- !u!114 &114730368279141430
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3431,6 +3454,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: Inventory
   tooltipPrefab: {fileID: 1997477878928528, guid: 6bd6968059bc51743875ed92b3c79761,
+    type: 2}
+  floatingTextPrefab: {fileID: 1025291103011096, guid: ee3886833bec9bb4497c25bb703f7f2e,
     type: 2}
 --- !u!114 &114733756540510780
 MonoBehaviour:
@@ -3499,6 +3524,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: Inventory
   tooltipPrefab: {fileID: 1997477878928528, guid: 6bd6968059bc51743875ed92b3c79761,
+    type: 2}
+  floatingTextPrefab: {fileID: 1025291103011096, guid: ee3886833bec9bb4497c25bb703f7f2e,
     type: 2}
 --- !u!114 &114741598793600982
 MonoBehaviour:
@@ -3614,6 +3641,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: Inventory
   tooltipPrefab: {fileID: 1997477878928528, guid: 6bd6968059bc51743875ed92b3c79761,
+    type: 2}
+  floatingTextPrefab: {fileID: 1025291103011096, guid: ee3886833bec9bb4497c25bb703f7f2e,
     type: 2}
 --- !u!114 &114768306330992440
 MonoBehaviour:
@@ -3785,6 +3814,8 @@ MonoBehaviour:
   type: Inventory
   tooltipPrefab: {fileID: 1997477878928528, guid: 6bd6968059bc51743875ed92b3c79761,
     type: 2}
+  floatingTextPrefab: {fileID: 1025291103011096, guid: ee3886833bec9bb4497c25bb703f7f2e,
+    type: 2}
 --- !u!114 &114831469723942690
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3798,6 +3829,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: Gloves
   tooltipPrefab: {fileID: 1997477878928528, guid: 6bd6968059bc51743875ed92b3c79761,
+    type: 2}
+  floatingTextPrefab: {fileID: 1025291103011096, guid: ee3886833bec9bb4497c25bb703f7f2e,
     type: 2}
 --- !u!114 &114848634343199462
 MonoBehaviour:
@@ -3896,6 +3929,8 @@ MonoBehaviour:
   type: Weapon2
   tooltipPrefab: {fileID: 1997477878928528, guid: 6bd6968059bc51743875ed92b3c79761,
     type: 2}
+  floatingTextPrefab: {fileID: 1025291103011096, guid: ee3886833bec9bb4497c25bb703f7f2e,
+    type: 2}
 --- !u!114 &114887749114683028
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3956,6 +3991,8 @@ MonoBehaviour:
   type: Inventory
   tooltipPrefab: {fileID: 1997477878928528, guid: 6bd6968059bc51743875ed92b3c79761,
     type: 2}
+  floatingTextPrefab: {fileID: 1025291103011096, guid: ee3886833bec9bb4497c25bb703f7f2e,
+    type: 2}
 --- !u!114 &114922227390644428
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3992,6 +4029,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: Inventory
   tooltipPrefab: {fileID: 1997477878928528, guid: 6bd6968059bc51743875ed92b3c79761,
+    type: 2}
+  floatingTextPrefab: {fileID: 1025291103011096, guid: ee3886833bec9bb4497c25bb703f7f2e,
     type: 2}
 --- !u!114 &114933609408262638
 MonoBehaviour:
@@ -4071,6 +4110,8 @@ MonoBehaviour:
   type: Inventory
   tooltipPrefab: {fileID: 1997477878928528, guid: 6bd6968059bc51743875ed92b3c79761,
     type: 2}
+  floatingTextPrefab: {fileID: 1025291103011096, guid: ee3886833bec9bb4497c25bb703f7f2e,
+    type: 2}
 --- !u!114 &114949678375599246
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4108,6 +4149,8 @@ MonoBehaviour:
   type: Inventory
   tooltipPrefab: {fileID: 1997477878928528, guid: 6bd6968059bc51743875ed92b3c79761,
     type: 2}
+  floatingTextPrefab: {fileID: 1025291103011096, guid: ee3886833bec9bb4497c25bb703f7f2e,
+    type: 2}
 --- !u!114 &114962007008429510
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4121,6 +4164,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: Chest
   tooltipPrefab: {fileID: 1997477878928528, guid: 6bd6968059bc51743875ed92b3c79761,
+    type: 2}
+  floatingTextPrefab: {fileID: 1025291103011096, guid: ee3886833bec9bb4497c25bb703f7f2e,
     type: 2}
 --- !u!114 &114962210190283630
 MonoBehaviour:
@@ -4243,6 +4288,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: Weapon3
   tooltipPrefab: {fileID: 1997477878928528, guid: 6bd6968059bc51743875ed92b3c79761,
+    type: 2}
+  floatingTextPrefab: {fileID: 1025291103011096, guid: ee3886833bec9bb4497c25bb703f7f2e,
     type: 2}
 --- !u!114 &114982861630130564
 MonoBehaviour:

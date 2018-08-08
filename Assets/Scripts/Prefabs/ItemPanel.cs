@@ -14,15 +14,23 @@ public class ItemPanel : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
     public Item item;
     public string type;
     public GameObject tooltipPrefab;
+    public GameObject floatingTextPrefab;
     // Drag static variables
     private static Item startItem;
     private static GameObject startObject;
     private static Vector3 startPosition;
     private static Transform startParent;
     // Private variables
+    private Player player;
     private List<string> weaponTypes = new List<string> { "Weapon1Item", "Weapon2Item", "Weapon3Item" };
     private List<string> armorTypes = new List<string> { "HeadItem", "ChestItem", "LegsItem", "GlovesItem", "BootsItem" };
     private List<string> equipTypes = new List<string> { "Weapon1Item", "Weapon2Item", "Weapon3Item", "HeadItem", "ChestItem", "LegsItem", "GlovesItem", "BootsItem" };
+
+    void Start()
+    {
+        // Set player
+        player = GameManager.gm.player;
+    }
 
     // Event for item begin drag
     public void OnBeginDrag(PointerEventData eventData)
@@ -37,9 +45,10 @@ public class ItemPanel : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
             startPosition = transform.position;
             startParent = transform.parent;
             // Set parent to the panel so the item is in front of the other items
-            transform.SetParent(GameObject.Find("InventoryPanel").transform);
+            transform.SetParent(GameObject.Find("ItemsPanel").transform);
             GetComponent<CanvasGroup>().blocksRaycasts = false;
         }
+        // If not an item, cancel drag
         else
         {
             eventData.pointerDrag = null;
@@ -67,28 +76,72 @@ public class ItemPanel : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
         Debug.Log("On drop");
         Debug.Log("Type: " + startObject.GetComponent<ItemPanel>().type);
         // Store
-        if (startObject.GetComponent<ItemPanel>().type == "Store")
+        if (startObject.GetComponent<ItemPanel>().type == "Store" && gameObject.GetComponent<ItemPanel>().type == "Inventory")
         {
-            if (GameManager.gm.player.gold > startItem.buyValue)
+            if (player.gold > startItem.buyValue)
             {
                 Debug.Log("Dragged from Store");
-                GameManager.gm.player.inventory.Add(startItem);
+                player.inventory.Add(startItem);
                 RemoveItem(startObject);
-                GameManager.gm.player.gold -= startItem.buyValue;
+                player.gold -= startItem.buyValue;
+                SoundManager.sm.PlaySoundFX(Resources.Load<AudioClip>("Sfx/pickupitemsfx"));
                 // Inventory (Set item border color to match rarity)
-                for (int i = 0; i < GameManager.gm.player.inventory.Count; i++)
+                // Update inventory
+                for (int i = 0; i < 15; i++)
                 {
-                    SetItem(GameObject.Find("Item" + i), GameManager.gm.player.inventory[i]);
+                    GameObject.Find("Item" + i).GetComponent<ItemPanel>().item = null;
+                    GameObject.Find("Item" + i).GetComponentInChildren<Image>().sprite = Resources.Load<Sprite>("None");
+                    GameObject.Find("Item" + i).GetComponentInParent<Outline>().effectColor = Color.black;
                 }
-            } else
+                for (int i = 0; i < player.inventory.Count; i++)
+                {
+                    SetItem(GameObject.Find("Item" + i), player.inventory[i]);
+                }
+            }
+            else
             {
                 SoundManager.sm.PlaySoundFX(Resources.Load<AudioClip>("Sfx/failsfx"));
+                ShowFloatingText("Not enough gold");
             }
         }
+        // Item dragged to store 
         else if (gameObject.GetComponent<ItemPanel>().type == "Store")
         {
             Debug.Log("Dragged to Store");
             // Do nothing
+        }
+        // Item dragged to store 
+        else if (startObject.GetComponent<ItemPanel>().type == "Store" && gameObject.GetComponent<ItemPanel>().type == "Sell")
+        {
+            Debug.Log("Dragged to sell from store");
+            // Do nothing
+        }
+        // Trying to sell from non inventory
+        else if (gameObject.GetComponent<ItemPanel>().type == "Sell" && startObject.GetComponent<ItemPanel>().type != "Inventory")
+        {
+            Debug.Log("Cannot sell equipment");
+            ShowFloatingText("Unequip first");
+        }
+        // Sell item to store from inventory
+        else if (gameObject.GetComponent<ItemPanel>().type == "Sell" && startObject.GetComponent<ItemPanel>().type == "Inventory")
+        {
+            Debug.Log("Sell item to store");
+            player.inventory.Remove(startItem);
+            RemoveItem(startObject);
+            player.gold += startItem.sellValue;
+            GameObject.Find("Gold").GetComponentInChildren<Text>().text = "Gold: " + player.gold.ToString();
+            SoundManager.sm.PlaySoundFX(Resources.Load<AudioClip>("Sfx/coinsfx"));
+            // Update inventory
+            for (int i = 0; i < 15; i++)
+            {
+                GameObject.Find("Item" + i).GetComponent<ItemPanel>().item = null;
+                GameObject.Find("Item" + i).GetComponentInChildren<Image>().sprite = Resources.Load<Sprite>("None");
+                GameObject.Find("Item" + i).GetComponentInParent<Outline>().effectColor = Color.black;
+            }
+            for (int i = 0; i < player.inventory.Count; i++)
+            {
+                SetItem(GameObject.Find("Item" + i), player.inventory[i]);
+            }
         }
         // Equip
         else if (!equipTypes.Contains(startObject.name) && equipTypes.Contains(gameObject.name))
@@ -108,10 +161,14 @@ public class ItemPanel : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
             Unequip();
         }
         // Sort Inventory
-        else
+        else if (startObject.GetComponent<ItemPanel>().type == "Inventory" && gameObject.GetComponent<ItemPanel>().type == "Inventory")
         {
             Debug.Log("Sort Inventory");
             SortInventory();
+        }
+        else
+        {
+            Debug.Log("Drag and Drop action not accounted for");
         }
 
     }
@@ -120,10 +177,10 @@ public class ItemPanel : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
     void Equip()
     {
         // Required level and attributes check
-        if (GameManager.gm.player.level >= startItem.requiredLevel &&
-            GameManager.gm.player.strength >= startItem.requiredStr &&
-            GameManager.gm.player.dexterity >= startItem.requiredDex &&
-            GameManager.gm.player.intelligence >= startItem.requiredInt)
+        if (player.level >= startItem.requiredLevel &&
+            player.strength >= startItem.requiredStr &&
+            player.dexterity >= startItem.requiredDex &&
+            player.intelligence >= startItem.requiredInt)
         {
             // Check if weapon
             if (weaponTypes.Contains(gameObject.name) && startItem is Weapon)
@@ -141,10 +198,10 @@ public class ItemPanel : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
                     Debug.Log("Weapon Swap");
                     startObject.transform.SetParent(startParent);
                     // Update inventory
-                    GameManager.gm.player.inventory.Remove(startItem);
-                    GameManager.gm.player.inventory.Add(item);
+                    player.inventory.Remove(startItem);
+                    player.inventory.Add(item);
                     // Unequip swapped item
-                    GameManager.gm.player.Unequip(item);
+                    player.Unequip(item);
                     // Set the items
                     SetItem(startObject, item);
                     SetItem(gameObject, startItem);
@@ -153,7 +210,7 @@ public class ItemPanel : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
                 {
                     Debug.Log("Weapon No Swap");
                     // Update invetory
-                    GameManager.gm.player.inventory.Remove(startItem);
+                    player.inventory.Remove(startItem);
                     // Update ui object
                     RemoveItem(startObject);
                     // Set the item
@@ -172,10 +229,10 @@ public class ItemPanel : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
                         Debug.Log("Armor Swap");
                         startObject.transform.SetParent(startParent);
                         // Update inventory
-                        GameManager.gm.player.inventory.Remove(startItem);
-                        GameManager.gm.player.inventory.Add(item);
+                        player.inventory.Remove(startItem);
+                        player.inventory.Add(item);
                         // Unequip swapped item
-                        GameManager.gm.player.Unequip(item);
+                        player.Unequip(item);
                         // Set the items
                         SetItem(startObject, item);
                         SetItem(gameObject, startItem);
@@ -185,7 +242,7 @@ public class ItemPanel : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
                     {
                         Debug.Log("Armor No Swap");
                         // Update invetory
-                        GameManager.gm.player.inventory.Remove(startItem);
+                        player.inventory.Remove(startItem);
                         // Update ui object
                         RemoveItem(startObject);
                         // Set the item
@@ -198,6 +255,7 @@ public class ItemPanel : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
         else
         {
             SoundManager.sm.PlaySoundFX(Resources.Load<AudioClip>("Sfx/failsfx"));
+            ShowFloatingText("Requirements not met");
         }
 
     }
@@ -212,10 +270,10 @@ public class ItemPanel : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
             if (startItem != null && item != null)
             {
                 Debug.Log("Swap");
-                GameManager.gm.player.inventory.Add(startItem);
-                GameManager.gm.player.inventory.Remove(item);
+                player.inventory.Add(startItem);
+                player.inventory.Remove(item);
                 startObject.transform.SetParent(startParent);
-                GameManager.gm.player.Unequip(startItem);
+                player.Unequip(startItem);
                 SetItem(startObject, item);
                 SetItem(gameObject, startItem);
             }
@@ -223,9 +281,9 @@ public class ItemPanel : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
             if (startItem != null && item == null)
             {
                 Debug.Log("No Swap");
-                GameManager.gm.player.inventory.Add(startItem);
+                player.inventory.Add(startItem);
                 RemoveItem(startObject);
-                GameManager.gm.player.Unequip(startItem);
+                player.Unequip(startItem);
                 // Set Item
                 if (!gameObject.name.Equals("Trash"))
                 {
@@ -235,7 +293,7 @@ public class ItemPanel : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
                 else
                 {
                     Debug.Log("Trash");
-                    GameManager.gm.player.inventory.Remove(startItem);
+                    player.inventory.Remove(startItem);
                     UpdateEquipment();
                     SoundManager.sm.PlaySoundFX(Resources.Load<AudioClip>("Sfx/dropsfx"));
                 }
@@ -271,7 +329,7 @@ public class ItemPanel : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
                 else
                 {
                     Debug.Log("Trash");
-                    GameManager.gm.player.inventory.Remove(startItem);
+                    player.inventory.Remove(startItem);
                     UpdateEquipment();
                     SoundManager.sm.PlaySoundFX(Resources.Load<AudioClip>("Sfx/dropsfx"));
                 }
@@ -287,43 +345,42 @@ public class ItemPanel : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
         gameObject.GetComponent<ItemPanel>().item = item;
         // Sprite
         gameObject.GetComponentInChildren<Image>().sprite = Resources.Load<Sprite>(item.spritePath);
+        // Rarities
+        gameObject.GetComponentInParent<Outline>().effectColor = item.GetRarityColor();
 
         // Equip item
         if (gameObject.GetComponent<ItemPanel>().type == "Head")
         {
-            GameManager.gm.player.head = (Armor)GameManager.gm.player.Equip(item);
+            player.head = (Armor)player.Equip(item);
         }
         else if (gameObject.GetComponent<ItemPanel>().type == "Chest")
         {
-            GameManager.gm.player.chest = (Armor)GameManager.gm.player.Equip(item);
+            player.chest = (Armor)player.Equip(item);
         }
         else if (gameObject.GetComponent<ItemPanel>().type == "Gloves")
         {
-            GameManager.gm.player.gloves = (Armor)GameManager.gm.player.Equip(item);
+            player.gloves = (Armor)player.Equip(item);
         }
         else if (gameObject.GetComponent<ItemPanel>().type == "Boots")
         {
-            GameManager.gm.player.boots = (Armor)GameManager.gm.player.Equip(item);
+            player.boots = (Armor)player.Equip(item);
         }
         else if (gameObject.GetComponent<ItemPanel>().type == "Legs")
         {
-            GameManager.gm.player.legs = (Armor)GameManager.gm.player.Equip(item);
+            player.legs = (Armor)player.Equip(item);
         }
         else if (gameObject.GetComponent<ItemPanel>().type == "Weapon1")
         {
-            GameManager.gm.player.weapon1 = (Weapon)GameManager.gm.player.Equip(item);
+            player.weapon1 = (Weapon)player.Equip(item);
         }
         else if (gameObject.GetComponent<ItemPanel>().type == "Weapon2")
         {
-            GameManager.gm.player.weapon2 = (Weapon)GameManager.gm.player.Equip(item);
+            player.weapon2 = (Weapon)player.Equip(item);
         }
         else if (gameObject.GetComponent<ItemPanel>().type == "Weapon3")
         {
-            GameManager.gm.player.weapon3 = (Weapon)GameManager.gm.player.Equip(item);
+            player.weapon3 = (Weapon)player.Equip(item);
         }
-
-        // Rarities
-        gameObject.GetComponentInParent<Outline>().effectColor = item.GetRarityColor();
 
         UpdateEquipment();
 
@@ -334,72 +391,66 @@ public class ItemPanel : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
     {
         // Set Equipped Armor
         if ((Armor)GameObject.Find("HeadItem").GetComponent<ItemPanel>().item != null)
-            GameManager.gm.player.head = (Armor)(GameObject.Find("HeadItem").GetComponent<ItemPanel>().item);
+            player.head = (Armor)(GameObject.Find("HeadItem").GetComponent<ItemPanel>().item);
         else
-            GameManager.gm.player.head = null;
+            player.head = null;
         if ((Armor)GameObject.Find("ChestItem").GetComponent<ItemPanel>().item != null)
-            GameManager.gm.player.chest = (Armor)(GameObject.Find("ChestItem").GetComponent<ItemPanel>().item);
+            player.chest = (Armor)(GameObject.Find("ChestItem").GetComponent<ItemPanel>().item);
         else
-            GameManager.gm.player.chest = null;
+            player.chest = null;
         if ((Armor)GameObject.Find("GlovesItem").GetComponent<ItemPanel>().item != null)
-            GameManager.gm.player.gloves = (Armor)(GameObject.Find("GlovesItem").GetComponent<ItemPanel>().item);
+            player.gloves = (Armor)(GameObject.Find("GlovesItem").GetComponent<ItemPanel>().item);
         else
-            GameManager.gm.player.gloves = null;
+            player.gloves = null;
         if ((Armor)GameObject.Find("BootsItem").GetComponent<ItemPanel>().item != null)
-            GameManager.gm.player.boots = (Armor)(GameObject.Find("BootsItem").GetComponent<ItemPanel>().item);
+            player.boots = (Armor)(GameObject.Find("BootsItem").GetComponent<ItemPanel>().item);
         else
-            GameManager.gm.player.boots = null;
+            player.boots = null;
         if ((Armor)GameObject.Find("LegsItem").GetComponent<ItemPanel>().item != null)
-            GameManager.gm.player.legs = (Armor)(GameObject.Find("LegsItem").GetComponent<ItemPanel>().item);
+            player.legs = (Armor)(GameObject.Find("LegsItem").GetComponent<ItemPanel>().item);
         else
-            GameManager.gm.player.legs = null;
+            player.legs = null;
         // Set Equipped Weapons
         if ((Weapon)GameObject.Find("Weapon1Item").GetComponent<ItemPanel>().item != null)
-            GameManager.gm.player.weapon1 = (Weapon)(GameObject.Find("Weapon1Item").GetComponent<ItemPanel>().item);
+            player.weapon1 = (Weapon)(GameObject.Find("Weapon1Item").GetComponent<ItemPanel>().item);
         else
-            GameManager.gm.player.weapon1 = new Weapon();
+            player.weapon1 = new Weapon();
         if ((Weapon)GameObject.Find("Weapon2Item").GetComponent<ItemPanel>().item != null)
-            GameManager.gm.player.weapon2 = (Weapon)(GameObject.Find("Weapon2Item").GetComponent<ItemPanel>().item);
+            player.weapon2 = (Weapon)(GameObject.Find("Weapon2Item").GetComponent<ItemPanel>().item);
         else
-            GameManager.gm.player.weapon2 = new Weapon();
+            player.weapon2 = new Weapon();
         if ((Weapon)GameObject.Find("Weapon3Item").GetComponent<ItemPanel>().item != null)
-            GameManager.gm.player.weapon3 = (Weapon)(GameObject.Find("Weapon3Item").GetComponent<ItemPanel>().item);
+            player.weapon3 = (Weapon)(GameObject.Find("Weapon3Item").GetComponent<ItemPanel>().item);
         else
-            GameManager.gm.player.weapon3 = new Weapon();
+            player.weapon3 = new Weapon();
 
         // Update Weapon Buttons
         if (SceneManager.GetActiveScene().name == "Battle")
         {
-            GameObject.Find("Slot1Button").GetComponentInChildren<Text>().text = GameManager.gm.player.weapon1.name;
-            GameObject.Find("Slot1Button").GetComponentInChildren<Text>().color = GameManager.gm.player.weapon1.GetRarityColor();
-            GameObject.Find("Slot2Button").GetComponentInChildren<Text>().text = GameManager.gm.player.weapon2.name;
-            GameObject.Find("Slot2Button").GetComponentInChildren<Text>().color = GameManager.gm.player.weapon2.GetRarityColor();
-            GameObject.Find("Slot3Button").GetComponentInChildren<Text>().text = GameManager.gm.player.weapon3.name;
-            GameObject.Find("Slot3Button").GetComponentInChildren<Text>().color = GameManager.gm.player.weapon3.GetRarityColor();
+            GameObject.Find("Slot1Button").GetComponentInChildren<Text>().text = player.weapon1.name;
+            GameObject.Find("Slot1Button").GetComponentInChildren<Text>().color = player.weapon1.GetRarityColor();
+            GameObject.Find("Slot2Button").GetComponentInChildren<Text>().text = player.weapon2.name;
+            GameObject.Find("Slot2Button").GetComponentInChildren<Text>().color = player.weapon2.GetRarityColor();
+            GameObject.Find("Slot3Button").GetComponentInChildren<Text>().text = player.weapon3.name;
+            GameObject.Find("Slot3Button").GetComponentInChildren<Text>().color = player.weapon3.GetRarityColor();
             if (GameObject.Find("Slot1Button").GetComponentInChildren<Outline>().effectColor == Color.white)
-            {
-                GameManager.gm.player.equippedWeapon = GameManager.gm.player.weapon1;
-
-            }
+                player.equippedWeapon = player.weapon1;
             else if (GameObject.Find("Slot2Button").GetComponentInChildren<Outline>().effectColor == Color.white)
-            {
-                GameManager.gm.player.equippedWeapon = GameManager.gm.player.weapon2;
-            }
+                player.equippedWeapon = player.weapon2;
             else if (GameObject.Find("Slot3Button").GetComponentInChildren<Outline>().effectColor == Color.white)
-            {
-                GameManager.gm.player.equippedWeapon = GameManager.gm.player.weapon3;
-            }
+                player.equippedWeapon = player.weapon3;
         }
 
         // Update Character sheet
-        GameObject.Find("Strength").GetComponentInChildren<Text>().text = "Strength: " + GameManager.gm.player.strength.ToString();
-        GameObject.Find("Dexterity").GetComponentInChildren<Text>().text = "Dexterity: " + GameManager.gm.player.dexterity.ToString();
-        GameObject.Find("Intelligence").GetComponentInChildren<Text>().text = "Intelligence: " + GameManager.gm.player.intelligence.ToString();
-        GameObject.Find("ArmorPen").GetComponentInChildren<Text>().text = "Armor Pen: " + GameManager.gm.player.armorPen.ToString();
-        GameObject.Find("MagicPen").GetComponentInChildren<Text>().text = "Magic Pen: " + GameManager.gm.player.magicPen.ToString();
-        GameObject.Find("CritChance").GetComponentInChildren<Text>().text = "Crit Chance: " + GameManager.gm.player.critChance.ToString() + "%";
-        GameObject.Find("CritDamage").GetComponentInChildren<Text>().text = "Crit Damage: " + GameManager.gm.player.critDamage.ToString() + "%";
-        GameObject.Find("Gold").GetComponentInChildren<Text>().text = "Gold: " + GameManager.gm.player.gold.ToString();
+        GameObject.Find("TNL").GetComponentInChildren<Text>().text = "XP TNL: " + player.xpTNL.ToString();
+        GameObject.Find("Strength").GetComponentInChildren<Text>().text = "Strength: " + player.strength.ToString() + " (" + player.GetBaseStat(player.strength, player.modifiedStrength) + ")";
+        GameObject.Find("Dexterity").GetComponentInChildren<Text>().text = "Dexterity: " + player.dexterity.ToString() + " (" + player.GetBaseStat(player.dexterity, player.modifiedDexterity) + ")";
+        GameObject.Find("Intelligence").GetComponentInChildren<Text>().text = "Intelligence: " + player.intelligence.ToString() + " (" + player.GetBaseStat(player.intelligence, player.modifiedIntelligence) + ")";
+        GameObject.Find("ArmorPen").GetComponentInChildren<Text>().text = "Armor Pen: " + player.armorPen.ToString();
+        GameObject.Find("MagicPen").GetComponentInChildren<Text>().text = "Magic Pen: " + player.magicPen.ToString();
+        GameObject.Find("CritChance").GetComponentInChildren<Text>().text = "Crit Chance: " + player.critChance.ToString() + "%";
+        GameObject.Find("CritDamage").GetComponentInChildren<Text>().text = "Crit Damage: " + player.critDamage.ToString() + "%";
+        GameObject.Find("Gold").GetComponentInChildren<Text>().text = "Gold: " + player.gold.ToString();
     }
 
     // Remove item from ui component and set to default
@@ -474,5 +525,15 @@ public class ItemPanel : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
             GameObject.Find("TooltipName").GetComponentInChildren<Text>().text = item.name;
             GameObject.Find("Tooltip").GetComponentInChildren<Text>().text = item.GetToolTip();
         }
+    }
+
+    private void ShowFloatingText(string text)
+    {
+        GameObject floatingText = Instantiate(floatingTextPrefab, Input.mousePosition + new Vector3(-150, 0, 0), Quaternion.identity, transform);
+        floatingText.transform.SetParent(GameObject.Find("ItemsPanel").transform);
+        floatingText.transform.localScale = new Vector3(2, 2, 0);
+        floatingText.GetComponentInChildren<Text>().fontStyle = FontStyle.Bold;
+        floatingText.GetComponentInChildren<Text>().fontSize = 20;
+        floatingText.GetComponentInChildren<Text>().text = text;
     }
 }
