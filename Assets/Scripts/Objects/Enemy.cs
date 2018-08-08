@@ -671,7 +671,7 @@ public class Enemy {
         };
         enemyList.Add(enemy);
         
-        // Nomad packmaster
+        // Nomad Chief
         enemy = new Enemy
         {
             enemyId = 152,
@@ -712,8 +712,8 @@ public class Enemy {
             health = 75,
             armor = 45,
             magicResist = 45,
-            xpToGive = 5,
-            goldToGive = 5,
+            xpToGive = 10,
+            goldToGive = 10,
             weaknesses = { "Spear", "Bow", "Fire", "Dark", "Gun", "Chakram", "Wand"},
             resistances = {"Ice", "Light", "Poison" }
         };
@@ -728,8 +728,8 @@ public class Enemy {
             health = 35,
             armor = 15,
             magicResist = 5,
-            xpToGive = 5,
-            goldToGive = 5,
+            xpToGive = 3,
+            goldToGive = 3,
             weaknesses = { "Spear", "Dagger", "Claws", "Sword" },
             resistances = { "Gun", "Bow", "Chakram", "Water" }
         };
@@ -760,8 +760,8 @@ public class Enemy {
             health = 55,
             armor = 110,
             magicResist = 0,
-            xpToGive = 10,
-            goldToGive = 10,
+            xpToGive = 5,
+            goldToGive = 5,
             weaknesses = { "Fire", "Air", "Light", },
             resistances = { "Dark", "Poison", "Staff" }
         };
@@ -792,8 +792,8 @@ public class Enemy {
             health = 55,
             armor = 0,
             magicResist = 120,
-            xpToGive = 10,
-            goldToGive = 10,
+            xpToGive = 5,
+            goldToGive = 5,
             weaknesses = { "Sword", "Claw", "Dagger", "Staff" },
             resistances = { "Dark", "Light", "Wand", "Water" }
         };
@@ -821,11 +821,11 @@ public class Enemy {
             enemyId = 161,
             enemyName = "Possessed Wagon",
             spritePath = "Enemy/snorlax",
-            health = 60,
+            health = 70,
             armor = 40,
             magicResist = 40,
-            xpToGive = 3,
-            goldToGive = 3,
+            xpToGive = 10,
+            goldToGive = 10,
             weaknesses = { "Fire", "Axe", "Air", "Light", "Spear" },
             resistances = { "Dark", "Sword", "Claw", "Spell", "Wand" }
         };
@@ -858,11 +858,204 @@ public class Enemy {
             magicResist = 50,
             xpToGive = 20,
             goldToGive = 20,
-            weaknesses = { "Lightning", "Mace", "Dagger", "Poison", "Ice", "Water", "Gun" },
+            weaknesses = { "Lightning", "Mace", "Dagger", "Poison", "Ice", "Water", "Gun", "Wand" },
             resistances = { "Axe", "Sword", "Fire", "Earth", "Claws", "Axe", "Bow", "Chakram" }
         };
         enemyList.Add(enemy);
 
+        // Monkey Archer
+        enemy = new Enemy
+        {
+            enemyId = 164,
+            enemyName = "Monkey Archer",
+            spritePath = "Enemy/mankey",
+            health = 40,
+            armor = 10,
+            magicResist = 10,
+            xpToGive = 3,
+            goldToGive = 3,
+            weaknesses = { "Spear", "Dagger", "Claws", "Sword", "Dark" },
+            resistances = { "Gun", "Bow", "Chakram", "Light", "Poison" }
+        };
+        enemyList.Add(enemy);
+        
+        // Nomad Chief
+        enemy = new Enemy
+        {
+            enemyId = 165,
+            enemyName = "Rabbit Knight",
+            spritePath = "Enemy/rattata",
+            health = 35,
+            armor = 95,
+            magicResist = 15,
+            xpToGive = 3,
+            goldToGive = 3,
+            weaknesses = { "Mace", "Dark", "Spear", "Poison", "Air", "Lightning"},
+            resistances = {"Sword", "Claws", "Staff", "Gun", "Chakram",  "Bow" }
+        };
+        enemyList.Add(enemy);
+        
+        // Elf bandit
+        enemy = new Enemy
+        {
+            enemyId = 166,
+            enemyName = "Elf Bandit",
+            spritePath = "Enemy/abra",
+            health = 35,
+            armor = 25,
+            magicResist = 25,
+            xpToGive = 3,
+            goldToGive = 3,
+            weaknesses = { "Spear", "Water", "Claws", "Sword" },
+            resistances = { "Axe", "Mace", "Dagger", "Light" }
+        };
+        enemyList.Add(enemy);
+        
+        // Nomad Archer
+        enemy = new Enemy
+        {
+            enemyId = 167,
+            enemyName = "Smokebear",
+            spritePath = "Enemy/ponyta",
+            health = 50,
+            armor = 350,
+            magicResist = 5,
+            xpToGive = 10,
+            goldToGive = 10,
+            weaknesses = { "Spear", "Dagger", "Claws", "Sword" },
+            resistances = { "Gun", "Bow", "Chakram", "Water" }
+        };
+        enemyList.Add(enemy);
+        
+        // Gnoll Farmer
+        enemy = new Enemy
+        {
+            enemyId = 168,
+            enemyName = "Gnoll Farmer",
+            spritePath = "Enemy/pinsir",
+            health = 75,
+            armor = 15,
+            magicResist = 35,
+            xpToGive = 5,
+            goldToGive = 5,
+            weaknesses = { "Gun", "Bow", "Chakram", "Wand", "Air", "Ice" },
+            resistances = { "Spear", "Axe", "Dark", "Water", "Lightning" }
+        };
+        enemyList.Add(enemy);
+        
+        // Dryad
+        enemy = new Enemy
+        {
+            enemyId = 169,
+            enemyName = "Dryad",
+            spritePath = "Enemy/exeggcute",
+            //tfw no sudowudo
+            health = 35,
+            armor = 25,
+            magicResist = 25,
+            xpToGive = 3,
+            goldToGive = 3,
+            weaknesses = { "Axe", "Fire", "Ice", "Air" },
+            resistances = { "Mace", "Water", "Earth", "Dagger" }
+        };
+        enemyList.Add(enemy);
+        
+        // Water Nymph
+        enemy = new Enemy
+        {
+            enemyId = 170,
+            enemyName = "Water Nymph",
+            spritePath = "Enemy/vaporeon",
+            health = 60,
+            armor = 15,
+            magicResist = 250,
+            xpToGive = 10,
+            goldToGive = 10,
+            weaknesses = { "Sword", "Dagger", "Claws", "Lightning", "Earth", "Staff" },
+            resistances = { "Fire", "Poison", "Mace", "Water", "Spear", "Wand", "Ice" }
+        };
+        enemyList.Add(enemy);
+        
+        // Forest Troll
+        enemy = new Enemy
+        {
+            enemyId = 171,
+            enemyName = "Forest Troll",
+            spritePath = "Enemy/hitmonchan",
+            health = 100,
+            armor = 0,
+            magicResist = 0,
+            xpToGive = 5,
+            goldToGive = 5,
+            weaknesses = { "Fire", "Bow", "Gun", "Chakram", "Spear", "Wand", "Water" },
+            resistances = { "Earth", "Poison", "Dark", "Air", "Ice"}
+        };
+        enemyList.Add(enemy);
+        
+        // Druid
+        enemy = new Enemy
+        {
+            enemyId = 172,
+            enemyName = "Nomad Archer",
+            spritePath = "Enemy/ponyta",
+            health = 55,
+            armor = 15,
+            magicResist = 75,
+            xpToGive = 5,
+            goldToGive = 5,
+            weaknesses = { "Gun", "Dagger", "Staff", "Wand", "Bow", "Chakram", "Poison" },
+            resistances = { "Dark", "Light", "Water", "Fire", "Earth", "Air", "Lightning", "Ice"  }
+        };
+        enemyList.Add(enemy);
+        
+        // Defender of the Forest
+        enemy = new Enemy
+        {
+            enemyId = 173,
+            enemyName = "Defender of the Forest",
+            spritePath = "Enemy/Kabutops",
+            health = 80,
+            armor = 25,
+            magicResist = 25,
+            xpToGive = 5,
+            goldToGive = 5,
+            weaknesses = { "Spear", "Fire", "Axe", "Air", "Poison", "Ice" },
+            resistances = { "Dagger", "Sword", "Claws", "Mace", "Earth", "Water" }
+        };
+        enemyList.Add(enemy);
+        
+        // Ent
+        enemy = new Enemy
+        {
+            enemyId = 174,
+            enemyName = "Ent",
+            spritePath = "Enemy/exeggutor",
+            health = 200,
+            armor = 60,
+            magicResist = 20,
+            xpToGive = 10,
+            goldToGive = 10,
+            weaknesses = { "Fire", "Axe", "Dark", "Poison", "Wand", "Bow", "Gun", "Ice"},
+            resistances = { "Mace", "Sword", "Claws", "Dagger", "Earth", "Water" }
+        };
+        enemyList.Add(enemy);
+
+        // Forest Dragon
+        enemy = new Enemy
+        {
+            enemyId = 175,
+            enemyName = "Forest Dragon",
+            spritePath = "Enemy/dragonite",
+            health = 500,
+            armor = 85,
+            magicResist = 85,
+            xpToGive = 20,
+            goldToGive = 20,
+            weaknesses = { "Lightning", "Air", "Ice", "Wand", "Water",},
+            resistances = { "Mace", "Axe", "Fire", "Earth", "Spell"},
+        };
+        enemyList.Add(enemy);
+        
         /********************/
         /*** LEGENDARIES ***/
         /******************/
