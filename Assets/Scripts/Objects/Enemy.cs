@@ -58,7 +58,7 @@ public class Enemy {
             magicResist = 5,
             xpToGive = 5,
             goldToGive = 5,
-            weaknesses = { "Fire", "Axe", "Claws", "Ice" },
+            weaknesses = { "Fire", "Axe", "Claw", "Ice" },
             resistances = { "Earth", "Lightning" , "Poison"}
         };
         enemyList.Add(enemy);
@@ -74,7 +74,7 @@ public class Enemy {
             magicResist = 35,
             xpToGive = 10,
             goldToGive = 10,
-            weaknesses = { "Fire", "Axe", "Claws", "Ice"},
+            weaknesses = { "Fire", "Axe", "Claw", "Ice"},
             resistances = { "Earth", "Lightning", "Poison", "Dagger" }
         };
         enemyList.Add(enemy);
@@ -90,7 +90,7 @@ public class Enemy {
             magicResist = 50,
             xpToGive = 20,
             goldToGive = 20,
-            weaknesses = { "Fire", "Axe", "Claws", "Ice" },
+            weaknesses = { "Fire", "Axe", "Claw", "Ice" },
             resistances = { "Earth", "Lightning" , "Poison", "Dagger"}
         };
         enemyList.Add(enemy);
@@ -315,7 +315,7 @@ public class Enemy {
             xpToGive = 3,
             goldToGive = 3,
             weaknesses = { "Air", "Bow", "Gun", "Chakram", "Lightning" },
-            resistances = { "Dagger", "Earth", "Sword", "Axe", "Mace", "Staff", "Claws"}
+            resistances = { "Dagger", "Earth", "Sword", "Axe", "Mace", "Staff", "Claw"}
         };
         enemyList.Add(enemy);
         
@@ -331,7 +331,7 @@ public class Enemy {
             xpToGive = 10,
             goldToGive = 10,
             weaknesses = { "Air", "Bow", "Gun", "Chakram" , "Lightning"},
-            resistances = { "Dagger", "Earth", "Sword", "Axe", "Mace", "Staff", "Claws"}
+            resistances = { "Dagger", "Earth", "Sword", "Axe", "Mace", "Staff", "Claw"}
         };
         enemyList.Add(enemy);
 
@@ -395,7 +395,7 @@ public class Enemy {
             xpToGive = 8,
             goldToGive = 8,
             weaknesses = { "Air", "Bow", "Gun", "Chakram" },
-            resistances = { "Earth", "Dagger", "Sword", "Axe", "Mace", "Staff", "Claws"}
+            resistances = { "Earth", "Dagger", "Sword", "Axe", "Mace", "Staff", "Claw"}
         };
         enemyList.Add(enemy);
  
@@ -410,7 +410,7 @@ public class Enemy {
             magicResist = 5,
             xpToGive = 3,
             goldToGive = 3,
-            weaknesses = {"Shield", "Fire", "Claws", "Sword", "Light" },
+            weaknesses = {"Shield", "Fire", "Claw", "Sword", "Light" },
             resistances = { "Spear", "Dagger", "Mace"}
         };
         enemyList.Add(enemy);
@@ -426,7 +426,7 @@ public class Enemy {
             magicResist = 15,
             xpToGive = 5,
             goldToGive = 5,
-           weaknesses = {"Shield", "Fire", "Claws", "Sword", "Light" },
+           weaknesses = {"Shield", "Fire", "Claw", "Sword", "Light" },
             resistances = { "Spear", "Dagger", "Mace"}
         };
         enemyList.Add(enemy);
@@ -443,7 +443,7 @@ public class Enemy {
             xpToGive = 3,
             goldToGive = 3,
             weaknesses = { "Earth", "Spear", "Staff", "Dark"},
-            resistances = {"Lightning", "Sword", "Claws"}
+            resistances = {"Lightning", "Sword", "Claw"}
         };
         enemyList.Add(enemy);
  
@@ -459,7 +459,7 @@ public class Enemy {
             xpToGive = 5,
             goldToGive = 5,
             weaknesses = { "Earth", "Spear", "Staff", "Dark"},
-            resistances = { "Lightning", "Sword", "Claws"}
+            resistances = { "Lightning", "Sword", "Claw"}
         };
         enemyList.Add(enemy);
  
@@ -475,7 +475,7 @@ public class Enemy {
             xpToGive = 3,
             goldToGive = 3,
             weaknesses = {"Mace", "Staff", "Poison", "Light" },
-            resistances = { "Dagger", "Sword", "Claws", "Dark"}
+            resistances = { "Dagger", "Sword", "Claw", "Dark"}
         };
         enemyList.Add(enemy);
  
@@ -491,7 +491,7 @@ public class Enemy {
             xpToGive = 8,
             goldToGive = 8,
             weaknesses = {"Mace", "Staff", "Ice", "Light" },
-            resistances = { "Dagger", "Sword", "Claws", "Dark"}
+            resistances = { "Dagger", "Sword", "Claw", "Dark"}
         };
         enemyList.Add(enemy);
  
@@ -523,7 +523,7 @@ public class Enemy {
             xpToGive = 5,
             goldToGive = 5,
             weaknesses = { "Air", "Bow", "Gun", "Chakram" , "Lightning", "Light"},
-            resistances = { "Earth", "Poison", "Dark", "Sword", "Mace", "Dagger", "Axe", "Claws"}
+            resistances = { "Earth", "Poison", "Dark", "Sword", "Mace", "Dagger", "Axe", "Claw"}
         };
         enemyList.Add(enemy);
  
@@ -538,7 +538,7 @@ public class Enemy {
             magicResist = 25,
             xpToGive = 5,
             goldToGive = 5,
-            weaknesses = { "Fire", "Sword", "Axe", "Claws", "Spear" },
+            weaknesses = { "Fire", "Sword", "Axe", "Claw", "Spear" },
             resistances = { "Water", "Dark", "Poison" }
         };
         enemyList.Add(enemy);
@@ -554,7 +554,7 @@ public class Enemy {
             magicResist = 75,
             xpToGive = 10,
             goldToGive = 10,
-            weaknesses = { "Fire", "Sword", "Axe", "Claws", "Spear" },
+            weaknesses = { "Fire", "Sword", "Axe", "Claw", "Spear" },
             resistances = { "Water", "Dark", "Poison" }
         };
         enemyList.Add(enemy);
@@ -570,7 +570,7 @@ public class Enemy {
             magicResist = 150,
             xpToGive = 20,
             goldToGive = 20,
-            weaknesses = { "Fire", "Sword", "Axe", "Claws", "Spear", "Light"},
+            weaknesses = { "Fire", "Sword", "Axe", "Claw", "Spear", "Light"},
             resistances = { "Water", "Dark", "Poison"}
         };
         enemyList.Add(enemy);
@@ -635,7 +635,7 @@ public class Enemy {
             xpToGive = 5,
             goldToGive = 5,
             weaknesses = { "Fire", "Air", "Lightning", "Chakram", "Bow", "Gun", "Light"},
-            resistances = { "Poison", "Earth", "Dagger", "Sword", "Axe", "Mace", "Staff", "Claws"}
+            resistances = { "Poison", "Earth", "Dagger", "Sword", "Axe", "Mace", "Staff", "Claw"}
         };
         enemyList.Add(enemy);
  
@@ -683,7 +683,7 @@ public class Enemy {
             xpToGive = 5,
             goldToGive = 5,
             weaknesses = { "Mace", "Gun", "Spear", "Poison", "Ice", "Lightning"},
-            resistances = {"Sword", "Claws", "Staff", "Fire", "Earth", "Bow" }
+            resistances = {"Sword", "Claw", "Staff", "Fire", "Earth", "Bow" }
         };
         enemyList.Add(enemy);
         
@@ -698,7 +698,7 @@ public class Enemy {
             magicResist = 25,
             xpToGive = 3,
             goldToGive = 3,
-            weaknesses = {"Shield", "Fire", "Claws", "Sword", "Light" },
+            weaknesses = {"Shield", "Fire", "Claw", "Sword", "Light" },
             resistances = { "Spear", "Dagger", "Mace", "Bow", "Gun", "Chakram"}
         };
         enemyList.Add(enemy);
@@ -709,13 +709,13 @@ public class Enemy {
             enemyId = 154,
             enemyName = "Snow Leopard",
             spritePath = "Enemy/persian",
-            health = 75,
+            health = 90,
             armor = 45,
             magicResist = 45,
             xpToGive = 10,
             goldToGive = 10,
             weaknesses = { "Spear", "Bow", "Fire", "Dark", "Gun", "Chakram", "Wand"},
-            resistances = {"Ice", "Light", "Poison" }
+            resistances = {"Ice", "Light", "Poison", "Dagger" }
         };
         enemyList.Add(enemy);
 
@@ -730,7 +730,7 @@ public class Enemy {
             magicResist = 5,
             xpToGive = 3,
             goldToGive = 3,
-            weaknesses = { "Spear", "Dagger", "Claws", "Sword" },
+            weaknesses = { "Spear", "Dagger", "Claw", "Sword" },
             resistances = { "Gun", "Bow", "Chakram", "Water" }
         };
         enemyList.Add(enemy);
@@ -741,12 +741,12 @@ public class Enemy {
             enemyId = 156,
             enemyName = "Skeletal Cowboy",
             spritePath = "Enemy/meowth",
-            health = 25,
+            health = 30,
             armor = 20,
             magicResist = 20,
             xpToGive = 3,
             goldToGive = 3,
-            weaknesses = { "Fire", "Mace", "Light", "Wand", "Shield" },
+            weaknesses = { "Fire", "Mace", "Light", "Wand", "Shield", "Earth" },
             resistances = { "Dark", "Poison", "Sword", "Dagger", "Bow", "Gun", "Spear" }
         };
         enemyList.Add(enemy);
@@ -758,7 +758,7 @@ public class Enemy {
             enemyName = "Buffalo Spirit",
             spritePath = "Enemy/tauros",
             health = 55,
-            armor = 110,
+            armor = 100,
             magicResist = 0,
             xpToGive = 5,
             goldToGive = 5,
@@ -778,8 +778,8 @@ public class Enemy {
             magicResist = 15,
             xpToGive = 3,
             goldToGive = 3,
-            weaknesses = { "Poison", "Water", "Spear" },
-            resistances = { "Mace", "Fire", "Dark" }
+            weaknesses = { "Poison", "Water", "Dark" },
+            resistances = { "Mace", "Fire", "Light" }
         };
         enemyList.Add(enemy);
 
@@ -791,7 +791,7 @@ public class Enemy {
             spritePath = "Enemy/Rapidash",
             health = 55,
             armor = 0,
-            magicResist = 120,
+            magicResist = 100,
             xpToGive = 5,
             goldToGive = 5,
             weaknesses = { "Sword", "Claw", "Dagger", "Staff" },
@@ -822,12 +822,12 @@ public class Enemy {
             enemyName = "Possessed Wagon",
             spritePath = "Enemy/snorlax",
             health = 70,
-            armor = 40,
-            magicResist = 40,
-            xpToGive = 10,
-            goldToGive = 10,
-            weaknesses = { "Fire", "Axe", "Air", "Light", "Spear" },
-            resistances = { "Dark", "Sword", "Claw", "Spell", "Wand" }
+            armor = 55,
+            magicResist = 55,
+            xpToGive = 8,
+            goldToGive = 8,
+            weaknesses = { "Fire", "Axe", "Air", "Light", "Spear", "Lightning" },
+            resistances = { "Dark", "Sword", "Claw", "Spell", "Wand", "Dagger" }
         };
         enemyList.Add(enemy);
 
@@ -842,7 +842,7 @@ public class Enemy {
             magicResist = 35,
             xpToGive = 10,
             goldToGive = 10,
-            weaknesses = { "Dagger", "Sword", "Claws", "Poison", "Bow", "Chakram" },
+            weaknesses = { "Dagger", "Sword", "Claw", "Poison", "Bow", "Chakram" },
             resistances = { "Spear", "Water", "Dark", "Gun", "Mace" }
         };
         enemyList.Add(enemy);
@@ -858,8 +858,8 @@ public class Enemy {
             magicResist = 50,
             xpToGive = 20,
             goldToGive = 20,
-            weaknesses = { "Lightning", "Mace", "Dagger", "Poison", "Ice", "Water", "Gun", "Wand" },
-            resistances = { "Axe", "Sword", "Fire", "Earth", "Claws", "Axe", "Bow", "Chakram" }
+            weaknesses = { "Lightning", "Mace", "Poison", "Ice", "Water", "Gun", "Wand" },
+            resistances = { "Axe", "Sword", "Fire", "Earth", "Claw", "Axe", "Bow", "Chakram" }
         };
         enemyList.Add(enemy);
 
@@ -874,7 +874,7 @@ public class Enemy {
             magicResist = 10,
             xpToGive = 3,
             goldToGive = 3,
-            weaknesses = { "Spear", "Dagger", "Claws", "Sword", "Dark" },
+            weaknesses = { "Water", "Dagger", "Claw", "Sword", "Dark" },
             resistances = { "Gun", "Bow", "Chakram", "Light", "Poison" }
         };
         enemyList.Add(enemy);
@@ -891,7 +891,7 @@ public class Enemy {
             xpToGive = 3,
             goldToGive = 3,
             weaknesses = { "Mace", "Dark", "Spear", "Poison", "Air", "Lightning"},
-            resistances = {"Sword", "Claws", "Staff", "Gun", "Chakram",  "Bow" }
+            resistances = {"Sword", "Claw", "Staff", "Gun", "Chakram",  "Bow" }
         };
         enemyList.Add(enemy);
         
@@ -906,7 +906,7 @@ public class Enemy {
             magicResist = 25,
             xpToGive = 3,
             goldToGive = 3,
-            weaknesses = { "Spear", "Water", "Claws", "Sword" },
+            weaknesses = { "Dark", "Water", "Claw", "Sword" },
             resistances = { "Axe", "Mace", "Dagger", "Light" }
         };
         enemyList.Add(enemy);
@@ -917,12 +917,12 @@ public class Enemy {
             enemyId = 167,
             enemyName = "Smokebear",
             spritePath = "Enemy/drowzee",
-            health = 50,
-            armor = 350,
+            health = 65,
+            armor = 300,
             magicResist = 5,
-            xpToGive = 10,
-            goldToGive = 10,
-            weaknesses = { "Spear", "Dagger", "Claws", "Sword" },
+            xpToGive = 8,
+            goldToGive = 8,
+            weaknesses = { "Spear", "Dagger", "Claw", "Sword" },
             resistances = { "Gun", "Bow", "Chakram", "Water" }
         };
         enemyList.Add(enemy);
@@ -951,8 +951,8 @@ public class Enemy {
             spritePath = "Enemy/exeggcute",
             //tfw no sudowudo
             health = 35,
-            armor = 25,
-            magicResist = 25,
+            armor = 35,
+            magicResist = 35,
             xpToGive = 3,
             goldToGive = 3,
             weaknesses = { "Axe", "Fire", "Ice", "Air" },
@@ -966,12 +966,12 @@ public class Enemy {
             enemyId = 170,
             enemyName = "Water Nymph",
             spritePath = "Enemy/vaporeon",
-            health = 60,
+            health = 70,
             armor = 15,
             magicResist = 250,
-            xpToGive = 10,
-            goldToGive = 10,
-            weaknesses = { "Sword", "Dagger", "Claws", "Lightning", "Earth", "Staff" },
+            xpToGive = 8,
+            goldToGive = 8,
+            weaknesses = { "Sword", "Dagger", "Claw", "Lightning", "Earth", "Staff" },
             resistances = { "Fire", "Poison", "Mace", "Water", "Spear", "Wand", "Ice" }
         };
         enemyList.Add(enemy);
@@ -982,12 +982,12 @@ public class Enemy {
             enemyId = 171,
             enemyName = "Forest Troll",
             spritePath = "Enemy/hitmonchan",
-            health = 100,
+            health = 120,
             armor = 0,
             magicResist = 0,
             xpToGive = 5,
             goldToGive = 5,
-            weaknesses = { "Fire", "Bow", "Gun", "Chakram", "Spear", "Wand", "Water" },
+            weaknesses = { "Fire", "Bow", "Gun", "Chakram", "Spear", "Wand" },
             resistances = { "Earth", "Poison", "Dark", "Air", "Ice"}
         };
         enemyList.Add(enemy);
@@ -997,8 +997,8 @@ public class Enemy {
         {
             enemyId = 172,
             enemyName = "Druid",
-            spritePath = "Enemy/exeggutor",
-            health = 55,
+            spritePath = "Enemy/hypno",
+            health = 70,
             armor = 15,
             magicResist = 75,
             xpToGive = 5,
@@ -1013,14 +1013,14 @@ public class Enemy {
         {
             enemyId = 173,
             enemyName = "Defender of the Forest",
-            spritePath = "Enemy/kabutops",
-            health = 80,
-            armor = 25,
-            magicResist = 25,
-            xpToGive = 5,
-            goldToGive = 5,
+            spritePath = "Enemy/hitmonlee",
+            health = 90,
+            armor = 45,
+            magicResist = 45,
+            xpToGive = 8,
+            goldToGive = 8,
             weaknesses = { "Spear", "Fire", "Axe", "Air", "Poison", "Ice" },
-            resistances = { "Dagger", "Sword", "Claws", "Mace", "Earth", "Water" }
+            resistances = { "Dagger", "Sword", "Claw", "Mace", "Earth", "Water" }
         };
         enemyList.Add(enemy);
         
@@ -1030,13 +1030,13 @@ public class Enemy {
             enemyId = 174,
             enemyName = "Ent",
             spritePath = "Enemy/exeggutor",
-            health = 200,
+            health = 220,
             armor = 60,
-            magicResist = 20,
+            magicResist = 25,
             xpToGive = 10,
             goldToGive = 10,
             weaknesses = { "Fire", "Axe", "Dark", "Poison", "Wand", "Bow", "Gun", "Ice"},
-            resistances = { "Mace", "Sword", "Claws", "Dagger", "Earth", "Water" }
+            resistances = { "Mace", "Sword", "Claw", "Dagger", "Earth", "Water" }
         };
         enemyList.Add(enemy);
 
@@ -1047,8 +1047,8 @@ public class Enemy {
             enemyName = "Forest Dragon",
             spritePath = "Enemy/dragonite",
             health = 500,
-            armor = 85,
-            magicResist = 85,
+            armor = 90,
+            magicResist = 90,
             xpToGive = 20,
             goldToGive = 20,
             weaknesses = { "Lightning", "Air", "Ice", "Wand", "Water",},
