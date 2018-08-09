@@ -317,7 +317,7 @@ public class Armor : Item {
         armor = new Armor
         {
             itemId = 1202,
-            name = "Leather Chest",
+            name = "Leather Vest",
             spritePath = "Icons/chest",
             rarity = Rarity.Uncommon,
             buyValue = 300,
@@ -355,7 +355,7 @@ public class Armor : Item {
         armor = new Armor
         {
             itemId = 1204,
-            name = "Leather Legs",
+            name = "Leather Leggings",
             spritePath = "Icons/legs",
             rarity = Rarity.Uncommon,
             buyValue = 300,
@@ -452,7 +452,7 @@ public class Armor : Item {
         armor = new Armor
         {
             itemId = 1304,
-            name = "Cloth Legs",
+            name = "Cloth Pants",
             spritePath = "Icons/legs",
             rarity = Rarity.Uncommon,
             buyValue = 300,
@@ -724,7 +724,7 @@ public class Armor : Item {
         armor = new Armor
         {
             itemId = 2202,
-            name = "Studded Leather Chest",
+            name = "Studded Leather Vest",
             spritePath = "Icons/chest",
             rarity = Rarity.Uncommon,
             buyValue = 1000,
@@ -764,7 +764,7 @@ public class Armor : Item {
         armor = new Armor
         {
             itemId = 2204,
-            name = "Studded Leather Legs",
+            name = "Studded Leather Leggings",
             spritePath = "Icons/legs",
             rarity = Rarity.Uncommon,
             buyValue = 1000,
@@ -867,7 +867,7 @@ public class Armor : Item {
         armor = new Armor
         {
             itemId = 2304,
-            name = "Fine Cloth Legs",
+            name = "Fine Cloth Pants",
             spritePath = "Icons/legs",
             rarity = Rarity.Uncommon,
             buyValue = 1000,
@@ -1166,7 +1166,7 @@ public class Armor : Item {
         armor = new Armor
         {
             itemId = 3202,
-            name = "Snakeskin Chest",
+            name = "Snakeskin Vest",
             spritePath = "Icons/chest",
             rarity = Rarity.Uncommon,
             buyValue = 2500,
@@ -1206,7 +1206,7 @@ public class Armor : Item {
         armor = new Armor
         {
             itemId = 3204,
-            name = "Snakeskin Legs",
+            name = "Snakeskin Leggings",
             spritePath = "Icons/legs",
             rarity = Rarity.Uncommon,
             buyValue = 2500,
@@ -1309,7 +1309,7 @@ public class Armor : Item {
         armor = new Armor
         {
             itemId = 3304,
-            name = "Spidersilk Legs",
+            name = "Spidersilk Pants",
             spritePath = "Icons/legs",
             rarity = Rarity.Uncommon,
             buyValue = 2500,
@@ -1608,7 +1608,7 @@ public class Armor : Item {
         armor = new Armor
         {
             itemId = 4202,
-            name = "Raptorhide Chest",
+            name = "Raptorhide Vest",
             spritePath = "Icons/chest",
             rarity = Rarity.Uncommon,
             buyValue = 7500,
@@ -1646,7 +1646,7 @@ public class Armor : Item {
         armor = new Armor
         {
             itemId = 4204,
-            name = "Raptorhide Legs",
+            name = "Raptorhide Leggings",
             spritePath = "Icons/legs",
             rarity = Rarity.Uncommon,
             buyValue = 7500,
@@ -1744,7 +1744,7 @@ public class Armor : Item {
         armor = new Armor
         {
             itemId = 4304,
-            name = "Mageweave Legs",
+            name = "Mageweave Pants",
             spritePath = "Icons/legs",
             rarity = Rarity.Uncommon,
             buyValue = 7500,
@@ -2012,7 +2012,7 @@ public class Armor : Item {
         armor = new Armor
         {
             itemId = 5202,
-            name = "Drakehide Chest",
+            name = "Drakehide Vest",
             spritePath = "Icons/chest",
             rarity = Rarity.Uncommon,
             buyValue = 25000,
@@ -2050,7 +2050,7 @@ public class Armor : Item {
         armor = new Armor
         {
             itemId = 5204,
-            name = "Drakehide Legs",
+            name = "Drakehide Leggings",
             spritePath = "Icons/legs",
             rarity = Rarity.Uncommon,
             buyValue = 25000,
@@ -2148,7 +2148,7 @@ public class Armor : Item {
         armor = new Armor
         {
             itemId = 5304,
-            name = "Sagesilk Legs",
+            name = "Sagesilk Pants",
             spritePath = "Icons/legs",
             rarity = Rarity.Uncommon,
            buyValue = 25000,
@@ -2256,7 +2256,7 @@ public class Armor : Item {
             name = "No Gloves",
             spritePath = "Icons/gloves2",
             flavorText = "Wearing gloves is lame tbh",
-            rarity = Rarity.Legendary,
+            rarity = Rarity.Set,
             buyValue = 150000,
             sellValue = 10000,
             requiredLevel = 20,
@@ -2277,7 +2277,7 @@ public class Armor : Item {
             name = "Light-up Skechers",
             spritePath = "Icons/boots2",
             flavorText = "Hell yeah",
-            rarity = Rarity.Legendary,
+            rarity = Rarity.Set,
             buyValue = 150000,
             sellValue = 10000,
             requiredLevel = 20,
@@ -2420,7 +2420,7 @@ public class Armor : Item {
         armor = new Armor
         {
             itemId = 6202,
-            name = "Giantskin Chest",
+            name = "Giantskin Vest",
             spritePath = "Icons/chest",
             rarity = Rarity.Uncommon,
             buyValue = 80000,
@@ -2457,7 +2457,7 @@ public class Armor : Item {
         armor = new Armor
         {
             itemId = 6204,
-            name = "Giantskin Legs",
+            name = "Giantskin Leggings",
             spritePath = "Icons/legs",
             rarity = Rarity.Uncommon,
             buyValue = 80000,
@@ -2555,7 +2555,7 @@ public class Armor : Item {
         armor = new Armor
         {
             itemId = 6304,
-            name = "Arachnesilk Legs",
+            name = "Arachnesilk Pants",
             spritePath = "Icons/legs",
             rarity = Rarity.Uncommon,
             buyValue = 80000,
@@ -2734,7 +2734,7 @@ public class Armor : Item {
             itemId = 6312,
             name = "Robe of the Magi King",
             spritePath = "Icons/chest",
-            flavorText = "Hell yeah",
+            flavorText = "You feel smart enough to win an internet argument",
             rarity = Rarity.Legendary,
             buyValue = 150000,
             sellValue = 10000,
