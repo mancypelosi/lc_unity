@@ -726,7 +726,7 @@ public class Weapon : Item
             name = "Venusaurhide Buckler",
             spritePath = "Icons/shield",
             soundPath = "Sfx/donksfx",
-            rarity = Rarity.Common,
+            rarity = Rarity.Legendary,
             buyValue = 2500,
             sellValue = 500,
             requiredLevel = 5,
@@ -994,7 +994,7 @@ public class Weapon : Item
             apc = 1,
             isDot = true,
             minDamage = 4,
-            maxDamage = 10
+            maxDamage = 9
         };
         weaponList.Add(weapon);
 
@@ -1463,7 +1463,7 @@ public class Weapon : Item
             name = "Berserker Axes",
             spritePath = "Icons/axes",
             soundPath = "Sfx/axesfx",
-            rarity = Rarity.Common,
+            rarity = Rarity.Legendary,
             buyValue = 5000,
             sellValue = 1250,
             requiredLevel = 3,
@@ -1533,8 +1533,8 @@ public class Weapon : Item
         {
             itemId = 020005,
             name = "Fan of Knives",
-            spritePath = "Icons/3dagger",
-            soundPath = "Sfx/3stabsfx",
+            spritePath = "Icons/dagger",
+            soundPath = "Sfx/stabsfx",
             rarity = Rarity.Legendary,
             buyValue = 5000,
             sellValue = 1250,
@@ -1585,7 +1585,7 @@ public class Weapon : Item
             name = "Lava-Hewn Axe",
             spritePath = "Icons/axes",
             soundPath = "Sfx/axesfx",
-            rarity = Rarity.Common,
+            rarity = Rarity.Legendary,
             buyValue = 5000,
             sellValue = 1250,
             requiredLevel = 5,
@@ -1877,7 +1877,7 @@ public class Weapon : Item
             apc = 1,
             isDot = true,
             minDamage = 6,
-            maxDamage = 15
+            maxDamage = 12
         };
         weaponList.Add(weapon);
 
@@ -2213,7 +2213,7 @@ public class Weapon : Item
             apc = 1,
             isDot = true,
             minDamage = 6,
-            maxDamage = 13,
+            maxDamage = 12,
 
         };
         weaponList.Add(weapon);
@@ -2510,7 +2510,7 @@ public class Weapon : Item
             name = "Silverbolt Crossbow",
             spritePath = "Icons/xbow",
             soundPath = "Sfx/bowsfx",
-            rarity = Rarity.Common,
+            rarity = Rarity.Legendary,
             buyValue = 15000,
             sellValue = 2000,
             requiredLevel = 5,
@@ -2799,7 +2799,7 @@ public class Weapon : Item
             apc = 1,
             isDot = true,
             minDamage = 9,
-            maxDamage = 22
+            maxDamage = 18
         };
         weaponList.Add(weapon);
 
@@ -3159,7 +3159,7 @@ public class Weapon : Item
             apc = 1,
             isDot = true,
             minDamage = 9,
-            maxDamage = 19,
+            maxDamage = 18,
 
         };
         weaponList.Add(weapon);
@@ -3347,8 +3347,8 @@ public class Weapon : Item
             statMod = StatModifier.Strength,
             apc = 1,
             isDot = true,
-            minDamage = 18,
-            maxDamage = 38,
+            minDamage = 15,
+            maxDamage = 32,
         };
         weaponList.Add(weapon);
         
@@ -3726,7 +3726,7 @@ public class Weapon : Item
             apc = 1,
             isDot = true,
             minDamage = 13,
-            maxDamage = 33
+            maxDamage = 26
         };
         weaponList.Add(weapon);
 
@@ -4130,7 +4130,7 @@ public class Weapon : Item
             apc = 1,
             isDot = true,
             minDamage = 13,
-            maxDamage = 27,
+            maxDamage = 26,
 
         };
         weaponList.Add(weapon);
@@ -4320,7 +4320,7 @@ public class Weapon : Item
             statMod = StatModifier.Strength,
             apc = 1,
             minDamage = 25,
-            maxDamage = 50,
+            maxDamage = 55,
             armorPen = 100,
             isSundering = true,
         };
@@ -4699,7 +4699,7 @@ public class Weapon : Item
             apc = 1,
             isDot = true,
             minDamage = 20,
-            maxDamage = 50
+            maxDamage = 38
         };
         weaponList.Add(weapon);
 
@@ -5103,7 +5103,7 @@ public class Weapon : Item
             apc = 1,
             isDot = true,
             minDamage = 20,
-            maxDamage = 40,
+            maxDamage = 38,
 
         };
         weaponList.Add(weapon);
@@ -5265,8 +5265,8 @@ public class Weapon : Item
             damageType = DamageType.Physical,
             statMod = StatModifier.Intelligence,
             apc = 1,
-            minDamage = 40,
-            maxDamage = 55,
+            minDamage = 30,
+            maxDamage = 48,
             bonusPhysical = 15,
             isDot = true,
         };
@@ -5315,7 +5315,7 @@ public class Weapon : Item
             statMod = StatModifier.Strength,
             apc = 1,
             minDamage = 55,
-            maxDamage = 90,
+            maxDamage = 93,
             armorPen = -50,
             isSundering = true,
 
@@ -5363,8 +5363,8 @@ public class Weapon : Item
             damageType = DamageType.Physical,
             statMod = StatModifier.Dexterity,
             apc = 2,
-            minDamage = 12,
-            maxDamage = 40,
+            minDamage = 15,
+            maxDamage = 50,
             armorPen = 25,
             isSundering = true,
             critChance = 5,
