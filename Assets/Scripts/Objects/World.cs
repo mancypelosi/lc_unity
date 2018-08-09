@@ -73,8 +73,7 @@ public class World {
             backgroundPath = "Background/forest1",
             soundPath = "Music/forestmusic",
             enemyList = new List<Enemy> { enemy.GetEnemyById(el, 164), enemy.GetEnemyById(el, 165), enemy.GetEnemyById(el, 166), enemy.GetEnemyById(el, 167),
-            enemy.GetEnemyById(el, 168), enemy.GetEnemyById(el, 169), enemy.GetEnemyById(el, 170), enemy.GetEnemyById(el, 171), enemy.GetEnemyById(el, 172)
-            enemy.GetEnemyById(el, 173)},
+            enemy.GetEnemyById(el, 168), enemy.GetEnemyById(el, 169), enemy.GetEnemyById(el, 170), enemy.GetEnemyById(el, 171), enemy.GetEnemyById(el, 172), enemy.GetEnemyById(el, 173)},
             miniBoss = enemy.GetEnemyById(el, 174),
             boss = enemy.GetEnemyById(el, 175),
             weaponList = weapon.GetListByTier(wl, 02),

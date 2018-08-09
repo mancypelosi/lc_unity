@@ -74,8 +74,9 @@ public class ItemPanel : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
     public void OnDrop(PointerEventData eventData)
     {
         Debug.Log("On drop");
-        Debug.Log("Type: " + startObject.GetComponent<ItemPanel>().type);
-        // Store
+        Debug.Log("StartObject: " + startObject.GetComponent<ItemPanel>().type);
+        Debug.Log("gameObject: " + gameObject.GetComponent<ItemPanel>().type);
+        // Store to inventory
         if (startObject.GetComponent<ItemPanel>().type == "Store" && gameObject.GetComponent<ItemPanel>().type == "Inventory")
         {
             if (player.gold > startItem.buyValue)
@@ -103,6 +104,12 @@ public class ItemPanel : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
                 SoundManager.sm.PlaySoundFX(Resources.Load<AudioClip>("Sfx/failsfx"));
                 ShowFloatingText("Not enough gold");
             }
+        }
+        // Store to non inventory
+        else if (startObject.GetComponent<ItemPanel>().type == "Store" && gameObject.GetComponent<ItemPanel>().type != "Inventory")
+        {
+            Debug.Log("Store to non inventory");
+            ShowFloatingText("Drag to inventory");
         }
         // Item dragged to store 
         else if (gameObject.GetComponent<ItemPanel>().type == "Store")
@@ -143,6 +150,52 @@ public class ItemPanel : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
                 SetItem(GameObject.Find("Item" + i), player.inventory[i]);
             }
         }
+        // Traying to stash from non inventory
+        else if (gameObject.GetComponent<ItemPanel>().type == "Stash" && startObject.GetComponent<ItemPanel>().type != "Inventory")
+        {
+            Debug.Log("Cannot stash equipment");
+            ShowFloatingText("Unequip first");
+        }
+        // Sell item to store from inventory
+        else if (gameObject.GetComponent<ItemPanel>().type == "Stash" && startObject.GetComponent<ItemPanel>().type == "Inventory")
+        {
+            player.inventory.Remove(startItem);
+            GameManager.gm.stash.Add(startItem);
+            // Update inventory
+            for (int i = 0; i < 15; i++)
+            {
+                GameObject.Find("Item" + i).GetComponent<ItemPanel>().item = null;
+                GameObject.Find("Item" + i).GetComponentInChildren<Image>().sprite = Resources.Load<Sprite>("None");
+                GameObject.Find("Item" + i).GetComponentInParent<Outline>().effectColor = Color.black;
+            }
+            for (int i = 0; i < player.inventory.Count; i++)
+            {
+                SetItem(GameObject.Find("Item" + i), player.inventory[i]);
+            }
+        }
+        // Trying to remove from stash to non inventory
+        else if (startObject.GetComponent<ItemPanel>().type == "Stash" && gameObject.GetComponent<ItemPanel>().type != "Inventory")
+        {
+            Debug.Log("Cannot equip from stash");
+            ShowFloatingText("Add to inventory first");
+        }
+        // Remove from stash to inventory
+        else if (startObject.GetComponent<ItemPanel>().type == "Stash" && gameObject.GetComponent<ItemPanel>().type == "Inventory")
+        {
+            player.inventory.Add(startItem);
+            GameManager.gm.stash.Remove(startItem);
+            // Update inventory
+            for (int i = 0; i < 15; i++)
+            {
+                GameObject.Find("Item" + i).GetComponent<ItemPanel>().item = null;
+                GameObject.Find("Item" + i).GetComponentInChildren<Image>().sprite = Resources.Load<Sprite>("None");
+                GameObject.Find("Item" + i).GetComponentInParent<Outline>().effectColor = Color.black;
+            }
+            for (int i = 0; i < player.inventory.Count; i++)
+            {
+                SetItem(GameObject.Find("Item" + i), player.inventory[i]);
+            }
+        }
         // Equip
         else if (!equipTypes.Contains(startObject.name) && equipTypes.Contains(gameObject.name))
         {
@@ -153,6 +206,26 @@ public class ItemPanel : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
         {
             Debug.Log("Equip - swap weapon");
             Equip();
+        }
+        // Unequip Trash
+        else if (equipTypes.Contains(startObject.name) && gameObject.GetComponent<ItemPanel>().type == "Trash")
+        {
+            Debug.Log("Unequip Trash");
+            player.inventory.Add(startItem);
+            RemoveItem(startObject);
+            player.Unequip(startItem);
+            player.inventory.Remove(startItem);
+            UpdateEquipment();
+            SoundManager.sm.PlaySoundFX(Resources.Load<AudioClip>("Sfx/dropsfx"));
+        }
+        // Inventory Trash
+        else if (startObject.GetComponent<ItemPanel>().type == "Inventory" && gameObject.GetComponent<ItemPanel>().type == "Trash")
+        {
+            Debug.Log("Inventory Trash");
+            RemoveItem(startObject);
+            player.inventory.Remove(startItem);
+            UpdateEquipment();
+            SoundManager.sm.PlaySoundFX(Resources.Load<AudioClip>("Sfx/dropsfx"));
         }
         // Unequip
         else if (equipTypes.Contains(startObject.name) && !equipTypes.Contains(gameObject.name))
@@ -166,6 +239,7 @@ public class ItemPanel : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
             Debug.Log("Sort Inventory");
             SortInventory();
         }
+        // Not accounted for
         else
         {
             Debug.Log("Drag and Drop action not accounted for");
@@ -285,18 +359,7 @@ public class ItemPanel : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
                 RemoveItem(startObject);
                 player.Unequip(startItem);
                 // Set Item
-                if (!gameObject.name.Equals("Trash"))
-                {
-                    SetItem(gameObject, startItem);
-                }
-                // Trash Item if dragged to Trash
-                else
-                {
-                    Debug.Log("Trash");
-                    player.inventory.Remove(startItem);
-                    UpdateEquipment();
-                    SoundManager.sm.PlaySoundFX(Resources.Load<AudioClip>("Sfx/dropsfx"));
-                }
+                SetItem(gameObject, startItem);
             }
         }
     }
@@ -321,18 +384,7 @@ public class ItemPanel : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
                 Debug.Log("No Swap");
                 RemoveItem(startObject);
                 // Set Item
-                if (!gameObject.name.Equals("Trash"))
-                {
-                    SetItem(gameObject, startItem);
-                }
-                // Trash Item if dragged to Trash
-                else
-                {
-                    Debug.Log("Trash");
-                    player.inventory.Remove(startItem);
-                    UpdateEquipment();
-                    SoundManager.sm.PlaySoundFX(Resources.Load<AudioClip>("Sfx/dropsfx"));
-                }
+                SetItem(gameObject, startItem);
             }
         }
     }

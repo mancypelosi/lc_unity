@@ -86,10 +86,8 @@ public class Weapon : Item
         tooltip += "Damage: [" + minDamage + "-" + maxDamage + "]" + Environment.NewLine;
         tooltip += "APC: " + apc + Environment.NewLine;
         tooltip += "Str: " + strength + " Dex: " + dexterity + " Int: " + intelligence + Environment.NewLine;
-        if (armorPen > 0 || magicPen > 0)
-            tooltip += "A Pen: " + armorPen + " M Pen: " + magicPen + Environment.NewLine;
-        if (critChance > 0 || critDamage > 0)
-            tooltip += "Crit: " + critChance + "% Crit Dmg: " + critDamage + "%" + Environment.NewLine;
+        tooltip += "A Pen: " + armorPen + " M Pen: " + magicPen + Environment.NewLine;
+        tooltip += "Crit: " + critChance + "% Crit Dmg: " + critDamage + "%" + Environment.NewLine;
         if (isDot)
             tooltip += "DoT" + Environment.NewLine;
         if (isSundering)
@@ -748,7 +746,7 @@ public class Weapon : Item
 
         weapon = new Weapon
         {
-            itemId = 04001,
+            itemId = 040100,
             name = "OP Sword of Breath Holding",
             flavorText = "Garrett, hold your breath",
             spritePath = "Icons/sword",
@@ -2389,7 +2387,7 @@ public class Weapon : Item
         // Create spell
         weapon = new Weapon
         {
-            itemId = 003001,
+            itemId = 030001,
             name = "Steam Burst",
             spritePath = "Icons/spell",
             soundPath = "Sfx/steamsfx",
@@ -2436,7 +2434,7 @@ public class Weapon : Item
         // Create ice dagger weapon
         weapon = new Weapon
         {
-            itemId = 003002,
+            itemId = 030002,
             name = "Frozen Shard",
             spritePath = "Icons/dagger",
             soundPath = "Sfx/stabsfx",
@@ -2460,7 +2458,7 @@ public class Weapon : Item
         // Create claw
         weapon = new Weapon
         {
-            itemId = 003003,
+            itemId = 030003,
             name = "Steam Claws",
             spritePath = "Icons/claws",
             soundPath = "Sfx/clawsfx",
@@ -2484,7 +2482,7 @@ public class Weapon : Item
         // Create frying pan
         weapon = new Weapon
         {
-            itemId = 003004,
+            itemId = 030004,
             name = "Frying Pan",
             spritePath = "Icons/fryingpan",
             soundPath = "Sfx/donksfx",
@@ -2508,7 +2506,7 @@ public class Weapon : Item
         // Create bow
         weapon = new Weapon
         {
-            itemId = 003005,
+            itemId = 030005,
             name = "Silverbolt Crossbow",
             spritePath = "Icons/xbow",
             soundPath = "Sfx/bowsfx",
@@ -2531,7 +2529,7 @@ public class Weapon : Item
         // Create spell
         weapon = new Weapon
         {
-            itemId = 003006,
+            itemId = 030006,
             name = "Acid Wand",
             spritePath = "Icons/spell",
             soundPath = "Sfx/gassfx",
@@ -3309,7 +3307,7 @@ public class Weapon : Item
         // Create spell
         weapon = new Weapon
         {
-            itemId = 004001,
+            itemId = 040001,
             name = "Stormbolt",
             spritePath = "Icons/spell",
             soundPath = "Sfx/thundersfx",
@@ -3333,7 +3331,7 @@ public class Weapon : Item
         // Create horn
         weapon = new Weapon
         {
-            itemId = 004002,
+            itemId = 040002,
             name = "Horn of the Goatfather",
             spritePath = "Icons/horn",
             flavorText = "Forged by the mighty Oarn himself, a champion may blow to summon goats to his aid",
@@ -3357,7 +3355,7 @@ public class Weapon : Item
         // Create blackjack
         weapon = new Weapon
         {
-            itemId = 004003,
+            itemId = 040003,
             name = "Crackling Blackjack",
             spritePath = "Icons/blackjack",
             soundPath = "Sfx/thundersfx",
@@ -3382,7 +3380,7 @@ public class Weapon : Item
         // Create mindblade
         weapon = new Weapon
         {
-            itemId = 004004,
+            itemId = 040004,
             name = "Blade of Judgment",
             spritePath = "Icons/mindblade",
             flavorText = "Clean your room, bucko",
@@ -3406,7 +3404,7 @@ public class Weapon : Item
         // Create halberd
         weapon = new Weapon
         {
-            itemId = 004005,
+            itemId = 040005,
             name = "Dread Halberd",
             spritePath = "Icons/halberd",
             flavorText = "Edgy af",
@@ -3432,7 +3430,7 @@ public class Weapon : Item
         // Create blackjack
         weapon = new Weapon
         {
-            itemId = 004006,
+            itemId = 040006,
             name = "Repeater Crossbow",
             spritePath = "Icons/xbow",
             soundPath = "Sfx/bowsfx",
@@ -4280,7 +4278,7 @@ public class Weapon : Item
         // Create spell
         weapon = new Weapon
         {
-            itemId = 005001,
+            itemId = 050001,
             name = "Bachelor's Degree",
             spritePath = "Icons/shield",
             flavorText = "Literally a piece of paper, possibly worthless",
@@ -4306,7 +4304,7 @@ public class Weapon : Item
         // Create hammer
         weapon = new Weapon
         {
-            itemId = 005002,
+            itemId = 050002,
             name = "Hammer",
             spritePath = "Icons/mace",
             flavorText = "I made this hammer. It was so good I called it... Hammer.",
@@ -4331,7 +4329,7 @@ public class Weapon : Item
         // Create master chief sword
         weapon = new Weapon
         {
-            itemId = 005003,
+            itemId = 050003,
             name = "Chieftain's Energy Blade",
             spritePath = "Icons/mindblade",
             soundPath = "Sfx/energyswordsfx",
@@ -4356,10 +4354,10 @@ public class Weapon : Item
         // Create mindblade
         weapon = new Weapon
         {
-            itemId = 005004,
+            itemId = 050004,
             name = "The Common Cold",
             spritePath = "Icons/spell",
-            flavorText = "You cast an ice bolt and wait for them to do of exposure. Eventually."
+            flavorText = "You cast an ice bolt and wait for them to die of exposure. Eventually.",
             soundPath = "Sfx/icesfx",
             rarity = Rarity.Legendary,
             buyValue = 150000,
@@ -4379,7 +4377,7 @@ public class Weapon : Item
         // Create halberd
         weapon = new Weapon
         {
-            itemId = 005005,
+            itemId = 050005,
             name = "Weeb Kunai",
             spritePath = "Icons/dagger",
             flavorText = "Nani?",
@@ -4404,7 +4402,7 @@ public class Weapon : Item
         // Create blackjack
         weapon = new Weapon
         {
-            itemId = 005006,
+            itemId = 050006,
             name = "Liquid Darksteel Buckler",
             spritePath = "Icons/shield",
             soundPath = "Sfx/donksfx",
@@ -5253,7 +5251,7 @@ public class Weapon : Item
         // Create spell
         weapon = new Weapon
         {
-            itemId = 006001,
+            itemId = 060001,
             name = "Summon Angellic Guardian",
             spritePath = "Icons/spell",
             soundPath = "Sfx/holysfx",
@@ -5269,7 +5267,7 @@ public class Weapon : Item
             apc = 1,
             minDamage = 40,
             maxDamage = 55,
-            bonusPhysical 15,
+            bonusPhysical = 15,
             isDot = true,
         };
         weaponList.Add(weapon);
@@ -5277,7 +5275,7 @@ public class Weapon : Item
         // Create saitama
         weapon = new Weapon
         {
-            itemId = 006002,
+            itemId = 060002,
             name = "Fist of the Bald One",
             spritePath = "Icons/fist",
             flavorText = "Mild strength training can propel the spiritually bald to unprecedented heights",
@@ -5301,7 +5299,7 @@ public class Weapon : Item
         // Create baguette
         weapon = new Weapon
         {
-            itemId = 006003,
+            itemId = 060003,
             name = "Le baguette",
             spritePath = "Icons/baguette",
             flavorText = "Forged in the fires of Mt. Le Pew, its power and staleness are incomprehensible",
@@ -5318,7 +5316,7 @@ public class Weapon : Item
             apc = 1,
             minDamage = 55,
             maxDamage = 90,
-            armorPen = -50
+            armorPen = -50,
             isSundering = true,
 
         };
@@ -5327,7 +5325,7 @@ public class Weapon : Item
         // Create spell
         weapon = new Weapon
         {
-            itemId = 006004,
+            itemId = 060004,
             name = "Bag of the Four Winds",
             spritePath = "Icons/spell",
             soundPath = "Sfx/windbladesfx",
@@ -5350,7 +5348,7 @@ public class Weapon : Item
         // Create warglaive
         weapon = new Weapon
         {
-            itemId = 006005,
+            itemId = 060005,
             name = "Clingin' Space-age Warglaive",
             spritePath = "Icons/axe",
             flavorText = "Used by the wharf raiders to cling on to their quarries",
@@ -5376,9 +5374,9 @@ public class Weapon : Item
         // Create blackjack
         weapon = new Weapon
         {
-            itemId = 006006,
+            itemId = 060006,
             name = "Letter of Marque",
-            flavorText "No no see, it's not a crime, some king said I could murder you and take your stuff"
+            flavorText = "No no see, it's not a crime, some king said I could murder you and take your stuff",
             spritePath = "Icons/shield",
             soundPath = "Sfx/donksfx",
             rarity = Rarity.Legendary,

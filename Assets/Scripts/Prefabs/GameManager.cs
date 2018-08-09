@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour {
     public Preferences prefs;
     public Player player;
     public List<Player> playerList = new List<Player> { new Player(), new Player(), new Player() };
+    public List<Item> stash = new List<Item>();
     public Enemy enemy;
     public World world;
     public string previousScene = "";

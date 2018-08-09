@@ -3463,7 +3463,7 @@ MonoBehaviour:
     with all 3 character slots (does not work on web version), can now mute sfx or
     music in the options, T6 items added, notifications text, sell panel added to
     store, character panel now displays base stats next to total stats in (), made
-    backgrounds brighter (need input on if too brite)\n"
+    backgrounds brighter (need input on if too bright)\n"
 --- !u!222 &1949172551
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -32,10 +32,8 @@ public class Armor : Item {
         string tooltip = "";
         tooltip += "Armor Type: " + armorType + Environment.NewLine;
         tooltip += "Str: " + strength + " Dex: " + dexterity + " Int: " + intelligence + Environment.NewLine;
-        if (armorPen > 0 || magicPen > 0)
-            tooltip += "A Pen: " + armorPen + " M Pen: " + magicPen + Environment.NewLine;
-        if (critChance > 0 || critDamage > 0)
-            tooltip += "Crit: " + critChance + "% Crit Dmg: " + critDamage + "%" + Environment.NewLine;
+        tooltip += "A Pen: " + armorPen + " M Pen: " + magicPen + Environment.NewLine;
+        tooltip += "Crit: " + critChance + "% Crit Dmg: " + critDamage + "%" + Environment.NewLine;
         if (requiredLevel > 0)
             tooltip += "Required Level: " + requiredLevel + Environment.NewLine;
         if (requiredStr > 0)
@@ -2425,7 +2423,7 @@ public class Armor : Item {
             name = "Giantskin Chest",
             spritePath = "Icons/chest",
             rarity = Rarity.Uncommon,
-            uyValue = 80000,
+            buyValue = 80000,
             sellValue = 10000,
             requiredLevel = 20,
             requiredDex = 100,
@@ -2443,7 +2441,7 @@ public class Armor : Item {
             itemId = 6203,
             name = "Giantskin Gloves",
             spritePath = "Icons/gloves2",
-            uyValue = 80000,
+            buyValue = 80000,
             sellValue = 10000,
             requiredLevel = 20,
             requiredDex = 100,
@@ -2462,7 +2460,7 @@ public class Armor : Item {
             name = "Giantskin Legs",
             spritePath = "Icons/legs",
             rarity = Rarity.Uncommon,
-            uyValue = 80000,
+            buyValue = 80000,
             sellValue = 10000,
             requiredLevel = 20,
             requiredDex = 100,
@@ -2481,7 +2479,7 @@ public class Armor : Item {
             name = "Giantskin Boots",
             spritePath = "Icons/boots2",
             rarity = Rarity.Uncommon,
-            uyValue = 80000,
+            buyValue = 80000,
             sellValue = 10000,
             requiredLevel = 20,
             requiredDex = 100,

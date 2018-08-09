@@ -45,7 +45,6 @@ public class Player : Stats {
 
     // Inventory
     public List<Item> inventory = new List<Item>();
-    public List<Item> stash = new List<Item>();
 
     // Add item stats to player stats
     public Item Equip(Item item)

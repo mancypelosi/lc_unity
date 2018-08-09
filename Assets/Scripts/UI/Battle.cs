@@ -114,9 +114,6 @@ public class Battle : MonoBehaviour
             // Create new damage object
             Damage damage = new Damage();
 
-            // Trigger sound fx
-            SoundManager.sm.PlaySoundFX(Resources.Load<AudioClip>(player.equippedWeapon.soundPath), damage.weak, damage.resist, damage.crit);
-
             // Deal an instance of damage for number of apc's the weapon has
             for (int i = 0; i < player.equippedWeapon.apc; i++)
             {
@@ -131,6 +128,9 @@ public class Battle : MonoBehaviour
                 GameObject.Find("EnemyHealthLabel").GetComponent<Text>().text = "HP: " + enemy.health.ToString();
                 GameObject.Find("EnemyHealthBar").GetComponent<Slider>().value = enemy.health;
             }
+
+            // Trigger sound fx
+            SoundManager.sm.PlaySoundFX(Resources.Load<AudioClip>(player.equippedWeapon.soundPath), damage.weak, damage.resist, damage.crit);
 
             // Check for combo
             if (player.comboCount > 5)

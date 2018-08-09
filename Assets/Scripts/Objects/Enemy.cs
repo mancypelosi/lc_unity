@@ -916,7 +916,7 @@ public class Enemy {
         {
             enemyId = 167,
             enemyName = "Smokebear",
-            spritePath = "Enemy/ponyta",
+            spritePath = "Enemy/drowzee",
             health = 50,
             armor = 350,
             magicResist = 5,
@@ -996,8 +996,8 @@ public class Enemy {
         enemy = new Enemy
         {
             enemyId = 172,
-            enemyName = "Nomad Archer",
-            spritePath = "Enemy/ponyta",
+            enemyName = "Druid",
+            spritePath = "Enemy/exeggutor",
             health = 55,
             armor = 15,
             magicResist = 75,
@@ -1013,7 +1013,7 @@ public class Enemy {
         {
             enemyId = 173,
             enemyName = "Defender of the Forest",
-            spritePath = "Enemy/Kabutops",
+            spritePath = "Enemy/kabutops",
             health = 80,
             armor = 25,
             magicResist = 25,

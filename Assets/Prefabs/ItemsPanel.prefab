@@ -2331,7 +2331,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.60784316}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2485,9 +2485,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: Trash
-  tooltipPrefab: {fileID: 1408769441087400, guid: 8411cebb50605324996073c1b2b2cc06,
+  tooltipPrefab: {fileID: 1997477878928528, guid: 6bd6968059bc51743875ed92b3c79761,
     type: 2}
-  floatingTextPrefab: {fileID: 0}
+  floatingTextPrefab: {fileID: 1025291103011096, guid: ee3886833bec9bb4497c25bb703f7f2e,
+    type: 2}
 --- !u!114 &114470455756580106
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2852,7 +2853,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.60784316}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -5331,7 +5332,7 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1655860250313714}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -5342,7 +5343,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -131, y: -0.024963}
+  m_AnchoredPosition: {x: -131, y: 0.025009}
   m_SizeDelta: {x: 240.20001, y: 517.85}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224552788798803266
