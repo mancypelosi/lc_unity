@@ -53,7 +53,7 @@ public class World {
             enemyScaling = 1,
             backgroundPath = "Background/plains",
             soundPath = "Music/plains",
-            enemyList = new List<Enemy> { enemy.GetEnemyById(el, 153), enemy.GetEnemyById(el, 154), enemy.GetEnemyById(el, 155), enemy.GetEnemyById(el, 156),
+            enemyList = new List<Enemy> { enemy.GetEnemyById(el, 152), enemy.GetEnemyById(el, 153), enemy.GetEnemyById(el, 154), enemy.GetEnemyById(el, 155), enemy.GetEnemyById(el, 156),
             enemy.GetEnemyById(el, 157), enemy.GetEnemyById(el, 158), enemy.GetEnemyById(el, 159), enemy.GetEnemyById(el, 160), enemy.GetEnemyById(el, 161)},
             miniBoss = enemy.GetEnemyById(el, 162),
             boss = enemy.GetEnemyById(el, 163),

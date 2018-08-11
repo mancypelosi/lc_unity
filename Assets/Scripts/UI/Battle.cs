@@ -11,6 +11,8 @@ public class Battle : MonoBehaviour
     private Player player;
     private Enemy enemy;
     private World world;
+    private int playerFrame = 0;
+    private int enemyFrame = 0;
     private float clickTimer = 0.0f; // Click timer that resets every second
     private int clickCount = 0; // Anti cheat click count
     private bool clickLimit = false; // Check for clickCount > 15
@@ -43,7 +45,7 @@ public class Battle : MonoBehaviour
 
         // Enemy Info
         GameObject.Find("EnemyNameLabel").GetComponent<Text>().text = enemy.enemyName;
-        GameObject.Find("EnemyImage").GetComponent<Image>().sprite = Resources.Load<Sprite>(enemy.spritePath);
+        GameObject.Find("EnemyImage").GetComponent<Image>().sprite = Resources.Load<Sprite>(enemy.spriteList[0]);
         GameObject.Find("EnemyHealthLabel").GetComponent<Text>().text = "HP: " + enemy.health.ToString();
         GameObject.Find("EnemyHealthBar").GetComponent<Slider>().maxValue = enemy.health;
         GameObject.Find("EnemyHealthBar").GetComponent<Slider>().value = enemy.health;
@@ -67,6 +69,8 @@ public class Battle : MonoBehaviour
 
         // Create a repeating check for dot damage
         InvokeRepeating("DotDamage", 0f, 0.5f);
+        InvokeRepeating("AnimateEnemy", 0f, 0.033f);
+        InvokeRepeating("AnimatePlayer", 0f, 0.033f);
     }
 
     // Update is called once per frame
@@ -322,7 +326,7 @@ public class Battle : MonoBehaviour
 
         // Update Enemy Info
         GameObject.Find("EnemyNameLabel").GetComponentInChildren<Text>().text = enemy.enemyName;
-        GameObject.Find("EnemyImage").GetComponentInChildren<Image>().sprite = Resources.Load<Sprite>(enemy.spritePath);
+        GameObject.Find("EnemyImage").GetComponentInChildren<Image>().sprite = Resources.Load<Sprite>(enemy.spriteList[0]);
         GameObject.Find("EnemyHealthLabel").GetComponentInChildren<Text>().text = "HP: " + enemy.health.ToString();
         GameObject.Find("EnemyHealthBar").GetComponent<Slider>().maxValue = enemy.health;
         GameObject.Find("EnemyHealthBar").GetComponent<Slider>().value = enemy.health;
@@ -490,6 +494,23 @@ public class Battle : MonoBehaviour
         }
         // Update click timer time
         clickTimer += Time.deltaTime;
+    }
+
+    private void AnimatePlayer()
+    {
+        List<string> playerList = new List<string>(){ "Player/charmander/charmander (1)", "Player/charmander/charmander (2)", "Player/charmander/charmander (3)", "Player/charmander/charmander (4)", "Player/charmander/charmander (5)", "Player/charmander/charmander (6)", "Player/charmander/charmander (7)", "Player/charmander/charmander (8)", "Player/charmander/charmander (9)", "Player/charmander/charmander (10)", "Player/charmander/charmander (11)", "Player/charmander/charmander (12)", "Player/charmander/charmander (13)", "Player/charmander/charmander (14)", "Player/charmander/charmander (15)", "Player/charmander/charmander (16)", "Player/charmander/charmander (17)", "Player/charmander/charmander (18)", "Player/charmander/charmander (19)", "Player/charmander/charmander (20)", "Player/charmander/charmander (21)", "Player/charmander/charmander (22)", "Player/charmander/charmander (23)", "Player/charmander/charmander (24)", "Player/charmander/charmander (25)", "Player/charmander/charmander (26)", "Player/charmander/charmander (27)", "Player/charmander/charmander (28)", "Player/charmander/charmander (29)", "Player/charmander/charmander (30)", "Player/charmander/charmander (31)", "Player/charmander/charmander (32)", "Player/charmander/charmander (33)", "Player/charmander/charmander (34)", "Player/charmander/charmander (35)", "Player/charmander/charmander (36)", "Player/charmander/charmander (37)", "Player/charmander/charmander (38)" };
+        GameObject.Find("PlayerImage").GetComponentInChildren<Image>().sprite = Resources.Load<Sprite>(playerList[playerFrame]);
+        playerFrame++;
+        if (playerFrame >= playerList.Count)
+            playerFrame = 0;
+    }
+
+    private void AnimateEnemy()
+    {
+        GameObject.Find("EnemyImage").GetComponentInChildren<Image>().sprite = Resources.Load<Sprite>(enemy.spriteList[enemyFrame]);
+        enemyFrame++;
+        if (enemyFrame >= enemy.spriteList.Count)
+            enemyFrame = 0;
     }
 
     // Equip player weapon1
