@@ -1,7 +1,8 @@
-﻿using System;
+﻿using Corale.Colore.Razer.Keyboard;
+using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 // Battle scene, this code attached to Canvas
@@ -66,6 +67,8 @@ public class Battle : MonoBehaviour
             GameObject.Find("Slot2Button").GetComponentInChildren<Outline>().effectColor = Color.white;
         else if (player.equippedWeapon.name == GameObject.Find("Slot3Button").GetComponentInChildren<Text>().text)
             GameObject.Find("Slot3Button").GetComponentInChildren<Outline>().effectColor = Color.white;
+        // ChromaManager
+        ChromaManager.InitializeWeapon();
 
         // Create a repeating check for dot damage
         InvokeRepeating("DotDamage", 0f, 0.5f);
@@ -131,6 +134,10 @@ public class Battle : MonoBehaviour
                 enemy.health -= damage.value;
                 GameObject.Find("EnemyHealthLabel").GetComponent<Text>().text = "HP: " + enemy.health.ToString();
                 GameObject.Find("EnemyHealthBar").GetComponent<Slider>().value = enemy.health;
+                // ChromaManager
+                float maxHealth = GameObject.Find("EnemyHealthBar").GetComponent<Slider>().maxValue;
+                float percent = enemy.health / maxHealth;
+                ChromaManager.UpdateHealthBar(percent);
             }
 
             // Trigger sound fx
@@ -195,7 +202,6 @@ public class Battle : MonoBehaviour
                 enemy.health -= dot.value;
                 GameObject.Find("EnemyHealthLabel").GetComponent<Text>().text = "HP: " + enemy.health.ToString();
                 GameObject.Find("EnemyHealthBar").GetComponent<Slider>().value = enemy.health;
-
 
                 dot.dotTimer--;
                 if (dot.dotTimer < 0)
@@ -325,6 +331,7 @@ public class Battle : MonoBehaviour
         }
 
         // Update Enemy Info
+        enemyFrame = 0;
         GameObject.Find("EnemyNameLabel").GetComponentInChildren<Text>().text = enemy.enemyName;
         GameObject.Find("EnemyImage").GetComponentInChildren<Image>().sprite = Resources.Load<Sprite>(enemy.spriteList[0]);
         GameObject.Find("EnemyHealthLabel").GetComponentInChildren<Text>().text = "HP: " + enemy.health.ToString();
@@ -332,6 +339,8 @@ public class Battle : MonoBehaviour
         GameObject.Find("EnemyHealthBar").GetComponent<Slider>().value = enemy.health;
         GameObject.Find("EnemyArmor").GetComponent<Text>().text = "A: " + enemy.armor + " MR: " + enemy.magicResist;
         GameObject.Find("EnemyResists").GetComponent<Text>().text = "W: " + string.Join(",", enemy.weaknesses.ToArray()) + Environment.NewLine + "R: " + string.Join(",", enemy.resistances.ToArray());
+        // ChromaManager
+        ChromaManager.InitializeHealthBar();
     }
 
     // Level Up!
@@ -516,23 +525,25 @@ public class Battle : MonoBehaviour
     // Equip player weapon1
     private void EquipWeapon1()
     {
-        player.SetEquippedWeapon(player.weapon1);
         // Update outline
         GameObject.Find("Slot1Button").GetComponentInChildren<Outline>().effectColor = Color.white;
         GameObject.Find("Slot2Button").GetComponentInChildren<Outline>().effectColor = Color.black;
         GameObject.Find("Slot3Button").GetComponentInChildren<Outline>().effectColor = Color.black;
         Debug.Log(player.equippedWeapon.name + " equipped!");
+        // ChromaManager
+        ChromaManager.UpdateWeapon();
     }
 
     // Equip player weapon2
     private void EquipWeapon2()
     {
-        player.SetEquippedWeapon(player.weapon2);
         // Update outline
         GameObject.Find("Slot1Button").GetComponentInChildren<Outline>().effectColor = Color.black;
         GameObject.Find("Slot2Button").GetComponentInChildren<Outline>().effectColor = Color.white;
         GameObject.Find("Slot3Button").GetComponentInChildren<Outline>().effectColor = Color.black;
         Debug.Log(player.equippedWeapon.name + " equipped!");
+        // ChromaManager
+        ChromaManager.UpdateWeapon();
     }
 
     // Equip player weapon3
@@ -544,6 +555,8 @@ public class Battle : MonoBehaviour
         GameObject.Find("Slot2Button").GetComponentInChildren<Outline>().effectColor = Color.black;
         GameObject.Find("Slot3Button").GetComponentInChildren<Outline>().effectColor = Color.white;
         Debug.Log(player.equippedWeapon.name + " equipped!");
+        // ChromaManager
+        ChromaManager.UpdateWeapon();
     }
 
     // Load Town scene
