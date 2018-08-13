@@ -17,7 +17,7 @@ public class GameManager : MonoBehaviour {
     public Enemy enemy;
     public World world;
     public string previousScene = "";
-    public static string version = "0.0.1m";
+    public static string version = "0.0.1n";
 
     // Use this for initialization
     void Start()
