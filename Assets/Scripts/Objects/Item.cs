@@ -169,4 +169,73 @@ public abstract class Item : Stats
         return this;
     }
 
+    public static Item SpawnItem(Player player, World world)
+    {
+        //Debug.Log("Spawn item");
+        Item item = null;
+        Modifier mod = new Modifier();
+
+        // Rng weapon or armor
+        int type = UnityEngine.Random.Range(0, 2);
+        // Create weapon
+        if (type == 0)
+        {
+            Weapon weapon = new Weapon();
+            List<Weapon> wl = new List<Weapon>();
+            // Rarity weighting
+            int rarityRng = UnityEngine.Random.Range(0, 100);
+            //Debug.Log("Weapon rarity: " + rarityRng);
+            if (rarityRng > 95)
+                wl = weapon.GetListByRarity(world.weaponList, Item.Rarity.Set);
+            else if (rarityRng > 90)
+                wl = weapon.GetListByRarity(world.weaponList, Item.Rarity.Legendary);
+            else if (rarityRng > 65)
+                wl = weapon.GetListByRarity(world.weaponList, Item.Rarity.Uncommon);
+            else
+                wl = weapon.GetListByRarity(world.weaponList, Item.Rarity.Common);
+            int listCount = wl.Count;
+            int rng = UnityEngine.Random.Range(0, listCount);
+            int id = wl[rng].itemId;
+            item = weapon.GetWeaponById(weapon.WeaponList(), id);
+        }
+        // Create armor
+        else if (type == 1)
+        {
+            Armor armor = new Armor();
+            List<Armor> al = world.armorList;
+            // Rarity weighting
+            int rarityRng = UnityEngine.Random.Range(0, 100);
+            //Debug.Log("Armor rarity: " + rarityRng);
+            if (rarityRng > 95)
+                al = armor.GetListByRarity(world.armorList, Item.Rarity.Set);
+            else if (rarityRng > 90)
+                al = armor.GetListByRarity(world.armorList, Item.Rarity.Legendary);
+            else
+                al = armor.GetListByRarity(world.armorList, Item.Rarity.Uncommon);
+            // Armor does not contain common rarities
+            int listCount = al.Count;
+            int rng = UnityEngine.Random.Range(0, listCount);
+            int id = al[rng].itemId;
+            item = armor.GetArmorById(armor.ArmorList(), id);
+        }
+
+        // Check to add prefix
+        if (UnityEngine.Random.Range(0, 100) < player.magicFind)
+        {
+            int listCount = world.prefixList.Count;
+            int rng = UnityEngine.Random.Range(0, listCount);
+            int id = world.prefixList[rng].modId;
+            item.AddModifier(mod.GetModifierById(mod.PrefixList(), id));
+        }
+        // Check to add suffix
+        if (UnityEngine.Random.Range(0, 100) < player.magicFind)
+        {
+            int listCount = world.suffixList.Count;
+            int rng = UnityEngine.Random.Range(0, listCount);
+            int id = world.suffixList[rng].modId;
+            item.AddModifier(mod.GetModifierById(mod.SuffixList(), id));
+        }
+        return item;
+    }
+
 }

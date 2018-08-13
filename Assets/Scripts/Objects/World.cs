@@ -28,6 +28,20 @@ public class World {
         return w;
     }
 
+    public void UpdateWorldGate(Player player, World world)
+    {
+        if (world.worldName == "Plains")
+            player.world2 = true;
+        if (world.worldName == "Forest")
+            player.world3 = true;
+        if (world.worldName == "Cave")
+            player.world4 = true;
+        if (world.worldName == "River")
+            player.world5 = true;
+        if (world.worldName == "Swamp")
+            player.world6 = true;
+    }
+
     // List of all worlds
     public List<World> WorldList()
     {

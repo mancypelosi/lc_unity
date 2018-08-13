@@ -1,5 +1,4 @@
-﻿using Corale.Colore.Razer.Keyboard;
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,8 +11,8 @@ public class Battle : MonoBehaviour
     private Player player;
     private Enemy enemy;
     private World world;
-    private int playerFrame = 0;
-    private int enemyFrame = 0;
+    private int playerFrame = 0; // Current frame of player animation
+    private int enemyFrame = 0; // Current frame of enemy animation
     private float clickTimer = 0.0f; // Click timer that resets every second
     private int clickCount = 0; // Anti cheat click count
     private bool clickLimit = false; // Check for clickCount > 15
@@ -67,10 +66,8 @@ public class Battle : MonoBehaviour
             GameObject.Find("Slot2Button").GetComponentInChildren<Outline>().effectColor = Color.white;
         else if (player.equippedWeapon.name == GameObject.Find("Slot3Button").GetComponentInChildren<Text>().text)
             GameObject.Find("Slot3Button").GetComponentInChildren<Outline>().effectColor = Color.white;
-        // ChromaManager
-        ChromaManager.InitializeWeapon();
 
-        // Create a repeating check for dot damage
+        // Create a Repeating Check methods
         InvokeRepeating("DotDamage", 0f, 0.5f);
         InvokeRepeating("AnimateEnemy", 0f, 0.033f);
         InvokeRepeating("AnimatePlayer", 0f, 0.033f);
@@ -134,10 +131,6 @@ public class Battle : MonoBehaviour
                 enemy.health -= damage.value;
                 GameObject.Find("EnemyHealthLabel").GetComponent<Text>().text = "HP: " + enemy.health.ToString();
                 GameObject.Find("EnemyHealthBar").GetComponent<Slider>().value = enemy.health;
-                // ChromaManager
-                float maxHealth = GameObject.Find("EnemyHealthBar").GetComponent<Slider>().maxValue;
-                float percent = enemy.health / maxHealth;
-                ChromaManager.UpdateHealthBar(percent);
             }
 
             // Trigger sound fx
@@ -148,6 +141,7 @@ public class Battle : MonoBehaviour
                 GameObject.Find("ComboLabel").GetComponent<Text>().text = player.comboCount.ToString() + " HITS";
             else
                 GameObject.Find("ComboLabel").GetComponent<Text>().text = "";
+            // ULTRAAAAAA COMBOOOOOOOO
             if (player.comboCount == 15)
                 SoundManager.sm.PlaySoundFX(Resources.Load<AudioClip>("Sfx/ultracombosfx"));
 
@@ -162,7 +156,6 @@ public class Battle : MonoBehaviour
                 damage.dotTimer = 3.0f;
                 dotTimers.Add(damage);
             }
-
             // Sunder check
             int sunderValue = 1;
             if (player.equippedWeapon.isSundering)
@@ -172,7 +165,6 @@ public class Battle : MonoBehaviour
                 else
                     enemy.armor = 0;
             }
-
             // Negate check
             int negateValue = 1;
             if (player.equippedWeapon.isNegating)
@@ -187,13 +179,11 @@ public class Battle : MonoBehaviour
 
     private void DotDamage()
     {
-        // DoT Damage Test
+        // DoT Damage 
         if (dotTimers.Count > 0)
         {
             foreach (Damage dot in dotTimers)
             {
-                //float seconds = dot.dotTimer % 60;//Use the euclidean division for the seconds.
-
                 //Debug.Log("Dot damage");
                 // Trigger floating text
                 ShowDamageText(dot);
@@ -209,6 +199,7 @@ public class Battle : MonoBehaviour
             }
         }
 
+        // Remove timers that have expired
         if (deadTimers.Count > 0)
         {
             foreach (Damage deadDot in deadTimers)
@@ -237,7 +228,6 @@ public class Battle : MonoBehaviour
             floatingText.GetComponentInChildren<Text>().fontStyle = FontStyle.Bold;
             floatingText.GetComponentInChildren<Text>().fontSize = 40;
         }
-
         // Change text if weakness
         if (damage.weak)
         {
@@ -245,7 +235,6 @@ public class Battle : MonoBehaviour
             floatingText.GetComponentInChildren<Text>().fontStyle = FontStyle.Bold;
             floatingText.GetComponentInChildren<Text>().fontSize = 40;
         }
-
         // Change text if critical strike
         if (damage.crit)
         {
@@ -253,7 +242,6 @@ public class Battle : MonoBehaviour
             floatingText.GetComponentInChildren<Text>().fontStyle = FontStyle.Bold;
             floatingText.GetComponentInChildren<Text>().fontSize = 40;
         }
-
         // Change text if DoT
         if (damage.dot)
         {
@@ -310,16 +298,7 @@ public class Battle : MonoBehaviour
                     timer = false;
 
                     // Update next world gate for player
-                    if (world.worldName == "Plains")
-                        player.world2 = true;
-                    if (world.worldName == "Forest")
-                        player.world3 = true;
-                    if (world.worldName == "Cave")
-                        player.world4 = true;
-                    if (world.worldName == "River")
-                        player.world5 = true;
-                    if (world.worldName == "Swamp")
-                        player.world6 = true;
+                    world.UpdateWorldGate(player, world);
 
                     // Stop music and play the victory sound!
                     SoundManager.sm.StopMusic();
@@ -339,8 +318,6 @@ public class Battle : MonoBehaviour
         GameObject.Find("EnemyHealthBar").GetComponent<Slider>().value = enemy.health;
         GameObject.Find("EnemyArmor").GetComponent<Text>().text = "A: " + enemy.armor + " MR: " + enemy.magicResist;
         GameObject.Find("EnemyResists").GetComponent<Text>().text = "W: " + string.Join(",", enemy.weaknesses.ToArray()) + Environment.NewLine + "R: " + string.Join(",", enemy.resistances.ToArray());
-        // ChromaManager
-        ChromaManager.InitializeHealthBar();
     }
 
     // Level Up!
@@ -360,69 +337,7 @@ public class Battle : MonoBehaviour
     public void SpawnItem()
     {
         //Debug.Log("Spawn item");
-        Item item = null;
-        Modifier mod = new Modifier();
-
-        // Rng weapon or armor
-        int type = UnityEngine.Random.Range(0, 2);
-        // Create weapon
-        if (type == 0)
-        {
-            Weapon weapon = new Weapon();
-            List<Weapon> wl = new List<Weapon>();
-            // Rarity weighting
-            int rarityRng = UnityEngine.Random.Range(0, 100);
-            //Debug.Log("Weapon rarity: " + rarityRng);
-            if (rarityRng > 95)
-                    wl = weapon.GetListByRarity(world.weaponList, Item.Rarity.Set);
-            else if (rarityRng > 90)
-                wl = weapon.GetListByRarity(world.weaponList, Item.Rarity.Legendary);
-            else if (rarityRng > 65)
-                wl = weapon.GetListByRarity(world.weaponList, Item.Rarity.Uncommon);
-            else
-                wl = weapon.GetListByRarity(world.weaponList, Item.Rarity.Common);
-            int listCount = wl.Count;
-            int rng = UnityEngine.Random.Range(0, listCount);
-            int id = wl[rng].itemId;
-            item = weapon.GetWeaponById(weapon.WeaponList(), id);
-        }
-        // Create armor
-        else if (type == 1)
-        {
-            Armor armor = new Armor();
-            List<Armor> al = world.armorList;
-            // Rarity weighting
-            int rarityRng = UnityEngine.Random.Range(0, 100);
-            //Debug.Log("Armor rarity: " + rarityRng);
-            if (rarityRng > 95)
-                al = armor.GetListByRarity(world.armorList, Item.Rarity.Set);
-            else if (rarityRng > 90)
-                al = armor.GetListByRarity(world.armorList, Item.Rarity.Legendary);
-            else
-                al = armor.GetListByRarity(world.armorList, Item.Rarity.Uncommon);
-            // Armor does not contain common rarities
-            int listCount = al.Count;
-            int rng = UnityEngine.Random.Range(0, listCount);
-            int id = al[rng].itemId;
-            item = armor.GetArmorById(armor.ArmorList(), id);
-        }
-
-        // Check to add prefix
-        if (UnityEngine.Random.Range(0, 100) < player.magicFind)
-        {
-            int listCount = world.prefixList.Count;
-            int rng = UnityEngine.Random.Range(0, listCount);
-            int id = world.prefixList[rng].modId;
-            item.AddModifier(mod.GetModifierById(mod.PrefixList(), id));
-        }
-        // Check to add suffix
-        if (UnityEngine.Random.Range(0, 100) < player.magicFind)
-        {
-            int listCount = world.suffixList.Count;
-            int rng = UnityEngine.Random.Range(0, listCount);
-            int id = world.suffixList[rng].modId;
-            item.AddModifier(mod.GetModifierById(mod.SuffixList(), id));
-        }
+        Item item = Item.SpawnItem(player, world);
 
         // Add item to inventory
         if (player.inventory.Count < 15)
@@ -525,25 +440,23 @@ public class Battle : MonoBehaviour
     // Equip player weapon1
     private void EquipWeapon1()
     {
+        player.SetEquippedWeapon(player.weapon1);
         // Update outline
         GameObject.Find("Slot1Button").GetComponentInChildren<Outline>().effectColor = Color.white;
         GameObject.Find("Slot2Button").GetComponentInChildren<Outline>().effectColor = Color.black;
         GameObject.Find("Slot3Button").GetComponentInChildren<Outline>().effectColor = Color.black;
         Debug.Log(player.equippedWeapon.name + " equipped!");
-        // ChromaManager
-        ChromaManager.UpdateWeapon();
     }
 
     // Equip player weapon2
     private void EquipWeapon2()
     {
+        player.SetEquippedWeapon(player.weapon2);
         // Update outline
         GameObject.Find("Slot1Button").GetComponentInChildren<Outline>().effectColor = Color.black;
         GameObject.Find("Slot2Button").GetComponentInChildren<Outline>().effectColor = Color.white;
         GameObject.Find("Slot3Button").GetComponentInChildren<Outline>().effectColor = Color.black;
         Debug.Log(player.equippedWeapon.name + " equipped!");
-        // ChromaManager
-        ChromaManager.UpdateWeapon();
     }
 
     // Equip player weapon3
@@ -555,8 +468,6 @@ public class Battle : MonoBehaviour
         GameObject.Find("Slot2Button").GetComponentInChildren<Outline>().effectColor = Color.black;
         GameObject.Find("Slot3Button").GetComponentInChildren<Outline>().effectColor = Color.white;
         Debug.Log(player.equippedWeapon.name + " equipped!");
-        // ChromaManager
-        ChromaManager.UpdateWeapon();
     }
 
     // Load Town scene
