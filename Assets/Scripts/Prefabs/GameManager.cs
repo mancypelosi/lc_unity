@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour {
 
     public Preferences prefs;
     public Player player;
-    public List<Player> playerList = new List<Player> { new Player(), new Player(), new Player() };
+    public PlayerData playerData = new PlayerData();
     public List<Item> stash = new List<Item>();
     public Enemy enemy;
     public World world;
@@ -47,8 +47,8 @@ public class GameManager : MonoBehaviour {
         FileStream file = File.Create(Application.persistentDataPath + "/playerData.dat");
 
         // Data to save to the file
-        PlayerData data = new PlayerData();
-        data.player = this.playerList;
+        PlayerSaveData data = new PlayerSaveData();
+        data.playerSaveData = this.playerData;
 
         // Serialize the data and close the file
         bf.Serialize(file, data);
@@ -64,11 +64,11 @@ public class GameManager : MonoBehaviour {
         {
             BinaryFormatter bf = new BinaryFormatter();
             FileStream file = File.Open(Application.persistentDataPath + "/playerData.dat", FileMode.Open);
-            PlayerData data = (PlayerData)bf.Deserialize(file);
+            PlayerSaveData data = (PlayerSaveData)bf.Deserialize(file);
             file.Close();
 
             // Data to load from the file
-            this.playerList = data.player;
+            this.playerData = data.playerSaveData;
 
             Debug.Log("Load game");
         }
@@ -80,7 +80,8 @@ public class GameManager : MonoBehaviour {
         if (File.Exists(Application.persistentDataPath + "/playerData.dat"))
         {
             File.Delete(Application.persistentDataPath + "/playerData.dat");
-            playerList = new List<Player> { new Player(), new Player(), new Player() };
+            playerData.playerList = new List<Player> { new Player(), new Player(), new Player() };
+            playerData.stashList = new List<Item>();
             Debug.Log("Deleted Save Data");
         }
     }
@@ -101,7 +102,7 @@ public class GameManager : MonoBehaviour {
 
 // Create a class to allow us to save data
 [Serializable]
-class PlayerData
+class PlayerSaveData
 {
-    public List<Player> player;
+    public PlayerData playerSaveData;
 }

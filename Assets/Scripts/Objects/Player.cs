@@ -99,7 +99,9 @@ public class Player : Stats {
     // Set Equipped Weapon
     public void SetEquippedWeapon(Weapon weapon)
     {
+        this.Unequip(equippedWeapon);
         equippedWeapon = weapon;
+        this.Equip(equippedWeapon);
     }
 
     // Level player up
@@ -112,6 +114,7 @@ public class Player : Stats {
         xpTNL = level * 50;
     }
 
+    // Get base stat value 
     public int GetBaseStat(int total, int modified)
     {
         return total - modified;

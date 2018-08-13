@@ -188,115 +188,6 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 31950803}
   m_CullTransparentMesh: 0
---- !u!1001 &43326198
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1883419971}
-    m_Modifications:
-    - target: {fileID: 224095309178316844, guid: ee3886833bec9bb4497c25bb703f7f2e,
-        type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224095309178316844, guid: ee3886833bec9bb4497c25bb703f7f2e,
-        type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224095309178316844, guid: ee3886833bec9bb4497c25bb703f7f2e,
-        type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224095309178316844, guid: ee3886833bec9bb4497c25bb703f7f2e,
-        type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224095309178316844, guid: ee3886833bec9bb4497c25bb703f7f2e,
-        type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224095309178316844, guid: ee3886833bec9bb4497c25bb703f7f2e,
-        type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224095309178316844, guid: ee3886833bec9bb4497c25bb703f7f2e,
-        type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 224095309178316844, guid: ee3886833bec9bb4497c25bb703f7f2e,
-        type: 2}
-      propertyPath: m_RootOrder
-      value: 13
-      objectReference: {fileID: 0}
-    - target: {fileID: 224095309178316844, guid: ee3886833bec9bb4497c25bb703f7f2e,
-        type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: 132
-      objectReference: {fileID: 0}
-    - target: {fileID: 224095309178316844, guid: ee3886833bec9bb4497c25bb703f7f2e,
-        type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: 110
-      objectReference: {fileID: 0}
-    - target: {fileID: 224095309178316844, guid: ee3886833bec9bb4497c25bb703f7f2e,
-        type: 2}
-      propertyPath: m_SizeDelta.x
-      value: 200
-      objectReference: {fileID: 0}
-    - target: {fileID: 224095309178316844, guid: ee3886833bec9bb4497c25bb703f7f2e,
-        type: 2}
-      propertyPath: m_SizeDelta.y
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 224095309178316844, guid: ee3886833bec9bb4497c25bb703f7f2e,
-        type: 2}
-      propertyPath: m_AnchorMin.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 224095309178316844, guid: ee3886833bec9bb4497c25bb703f7f2e,
-        type: 2}
-      propertyPath: m_AnchorMin.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 224095309178316844, guid: ee3886833bec9bb4497c25bb703f7f2e,
-        type: 2}
-      propertyPath: m_AnchorMax.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 224095309178316844, guid: ee3886833bec9bb4497c25bb703f7f2e,
-        type: 2}
-      propertyPath: m_AnchorMax.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 224095309178316844, guid: ee3886833bec9bb4497c25bb703f7f2e,
-        type: 2}
-      propertyPath: m_Pivot.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 224095309178316844, guid: ee3886833bec9bb4497c25bb703f7f2e,
-        type: 2}
-      propertyPath: m_Pivot.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1025291103011096, guid: ee3886833bec9bb4497c25bb703f7f2e, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: ee3886833bec9bb4497c25bb703f7f2e, type: 2}
-  m_IsPrefabAsset: 0
---- !u!224 &43326199 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 224095309178316844, guid: ee3886833bec9bb4497c25bb703f7f2e,
-    type: 2}
-  m_PrefabInternal: {fileID: 43326198}
 --- !u!1001 &133933062
 Prefab:
   m_ObjectHideFlags: 0
@@ -342,7 +233,7 @@ Prefab:
     - target: {fileID: 224551851677666130, guid: f4e577063c135554c950a206003d1c10,
         type: 2}
       propertyPath: m_RootOrder
-      value: 11
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 224551851677666130, guid: f4e577063c135554c950a206003d1c10,
         type: 2}
@@ -1972,7 +1863,7 @@ Prefab:
     - target: {fileID: 224303158615006968, guid: 7d34a6fe19536f049a709f17d307d223,
         type: 2}
       propertyPath: m_RootOrder
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 224303158615006968, guid: 7d34a6fe19536f049a709f17d307d223,
         type: 2}
@@ -2562,7 +2453,7 @@ RectTransform:
   m_Children:
   - {fileID: 1193670578}
   m_Father: {fileID: 1883419971}
-  m_RootOrder: 12
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3504,6 +3395,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   floatingTextPrefab: {fileID: 1025291103011096, guid: ee3886833bec9bb4497c25bb703f7f2e,
     type: 2}
+  attackAnimation: {fileID: 1980382597487314, guid: 4f49ab01c64987d4fad462b563b02c95,
+    type: 2}
 --- !u!114 &1883419968
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3581,10 +3474,9 @@ RectTransform:
   - {fileID: 815274499}
   - {fileID: 1603688530}
   - {fileID: 1955687085}
+  - {fileID: 1414010497}
   - {fileID: 169617925}
   - {fileID: 689224911}
-  - {fileID: 1414010497}
-  - {fileID: 43326199}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3603,7 +3495,7 @@ GameObject:
   - component: {fileID: 1930395357}
   - component: {fileID: 1930395359}
   - component: {fileID: 1930395358}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}

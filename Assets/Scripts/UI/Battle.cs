@@ -8,6 +8,7 @@ using UnityEngine.UI;
 public class Battle : MonoBehaviour
 {
     public GameObject floatingTextPrefab;
+    public GameObject attackAnimation;
     private Player player;
     private Enemy enemy;
     private World world;
@@ -131,7 +132,12 @@ public class Battle : MonoBehaviour
                 enemy.health -= damage.value;
                 GameObject.Find("EnemyHealthLabel").GetComponent<Text>().text = "HP: " + enemy.health.ToString();
                 GameObject.Find("EnemyHealthBar").GetComponent<Slider>().value = enemy.health;
-            }
+
+                // Instatiate attack animation
+                GameObject attack = Instantiate(attackAnimation, Input.mousePosition + new Vector3(0, -80, 0), UnityEngine.Random.rotation, transform);
+                attack.transform.SetParent(GameObject.Find("EnemyPanel").transform);
+                attack.transform.localScale = new Vector3(1.5f, 1.5f, 0);
+            }          
 
             // Trigger sound fx
             SoundManager.sm.PlaySoundFX(Resources.Load<AudioClip>(player.equippedWeapon.soundPath), damage.weak, damage.resist, damage.crit);

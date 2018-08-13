@@ -15,6 +15,8 @@ public class Modifier : Stats
     // Properties
     public int modId = 0;
     public string name = "Modifier";
+    public int tier = 0;
+    public int ilvl = 0;
     public ModifierType type = ModifierType.Prefix;
     public int buyValue = 0;
     public int sellValue = 0;

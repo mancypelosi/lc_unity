@@ -21,6 +21,7 @@ public abstract class Item : Stats
     public string name = "Garbage";
     public string spritePath = "Icons/garbage";
     public int tier = 0;
+    public int ilvl = 0;
     public Rarity rarity = Rarity.Common;
     public string flavorText = "";
     public int buyValue = 0;

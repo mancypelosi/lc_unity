@@ -14,10 +14,12 @@ public class MainMenu : MonoBehaviour
         // Set version label
         GameObject.Find("VersionText").GetComponentInChildren<Text>().text = "version: " + GameManager.version;
 
+        /*
         if (GameManager.gm.player.playerClass != "None")
         {
             GameObject.Find("UpdatePanel").SetActive(false);
         }
+        */
     }
 
     // Load the CharacterSelect scene

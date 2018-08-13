@@ -53,11 +53,37 @@ public class ItemPanel : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
         {
             eventData.pointerDrag = null;
         }
+
+        // Highlighting equip slots
+        Color orange = new Color(1.0F, 0.64F, 0.0F);
+        if (startItem is Weapon)
+        {
+            Debug.Log("isWeapon");
+            GameObject.Find("Weapon1Panel").GetComponent<Outline>().effectColor = orange;
+            GameObject.Find("Weapon2Panel").GetComponent<Outline>().effectColor = orange;
+            GameObject.Find("Weapon3Panel").GetComponent<Outline>().effectColor = orange;
+        }
+        if (startItem is Armor)
+        {
+            Debug.Log("isArmor");
+            Armor item = (Armor)startItem;
+            if (item.armorType == Armor.ArmorType.Head)
+                GameObject.Find("HeadPanel").GetComponent<Outline>().effectColor = orange;
+            if (item.armorType == Armor.ArmorType.Chest)
+                GameObject.Find("ChestPanel").GetComponent<Outline>().effectColor = orange;
+            if (item.armorType == Armor.ArmorType.Legs)
+                GameObject.Find("LegsPanel").GetComponent<Outline>().effectColor = orange;
+            if (item.armorType == Armor.ArmorType.Boots)
+                GameObject.Find("BootsPanel").GetComponent<Outline>().effectColor = orange;
+            if (item.armorType == Armor.ArmorType.Gloves)
+                GameObject.Find("GlovesPanel").GetComponent<Outline>().effectColor = orange;
+        }
     }
 
     // Event for item drag
     public void OnDrag(PointerEventData eventData)
     {
+        Debug.Log("On drag");
         // Move item GameObject position with the drag
         transform.position = Input.mousePosition;
     }
@@ -69,6 +95,15 @@ public class ItemPanel : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
         transform.SetParent(startParent);
         transform.position = startPosition;
         GetComponent<CanvasGroup>().blocksRaycasts = true;
+        // Update outlines
+        GameObject.Find("Weapon1Panel").GetComponent<Outline>().effectColor = player.weapon1.GetRarityColor();
+        GameObject.Find("Weapon2Panel").GetComponent<Outline>().effectColor = player.weapon2.GetRarityColor();
+        GameObject.Find("Weapon3Panel").GetComponent<Outline>().effectColor = player.weapon3.GetRarityColor();
+        GameObject.Find("HeadPanel").GetComponent<Outline>().effectColor = player.head.GetRarityColor();
+        GameObject.Find("ChestPanel").GetComponent<Outline>().effectColor = player.chest.GetRarityColor();
+        GameObject.Find("LegsPanel").GetComponent<Outline>().effectColor = player.legs.GetRarityColor();
+        GameObject.Find("BootsPanel").GetComponent<Outline>().effectColor = player.boots.GetRarityColor();
+        GameObject.Find("GlovesPanel").GetComponent<Outline>().effectColor = player.gloves.GetRarityColor();
     }
 
     public void OnDrop(PointerEventData eventData)
@@ -421,21 +456,21 @@ public class ItemPanel : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
         {
             player.legs = (Armor)player.Equip(item);
         }
+        // Do not equip weapon, this is handled in player class
         else if (gameObject.GetComponent<ItemPanel>().type == "Weapon1")
         {
-            player.weapon1 = (Weapon)player.Equip(item);
+            player.weapon1 = (Weapon)item;
         }
         else if (gameObject.GetComponent<ItemPanel>().type == "Weapon2")
         {
-            player.weapon2 = (Weapon)player.Equip(item);
+            player.weapon1 = (Weapon)item;
         }
         else if (gameObject.GetComponent<ItemPanel>().type == "Weapon3")
         {
-            player.weapon3 = (Weapon)player.Equip(item);
+            player.weapon1 = (Weapon)item;
         }
 
         UpdateEquipment();
-
     }
 
     // Update equipped equipment and weapon buttons
@@ -494,7 +529,6 @@ public class ItemPanel : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
         }
 
         // Update Character sheet
-        GameObject.Find("TNL").GetComponentInChildren<Text>().text = "XP TNL: " + player.xpTNL.ToString();
         GameObject.Find("Strength").GetComponentInChildren<Text>().text = "Strength: " + player.strength.ToString() + " (" + player.GetBaseStat(player.strength, player.modifiedStrength) + ")";
         GameObject.Find("Dexterity").GetComponentInChildren<Text>().text = "Dexterity: " + player.dexterity.ToString() + " (" + player.GetBaseStat(player.dexterity, player.modifiedDexterity) + ")";
         GameObject.Find("Intelligence").GetComponentInChildren<Text>().text = "Intelligence: " + player.intelligence.ToString() + " (" + player.GetBaseStat(player.intelligence, player.modifiedIntelligence) + ")";
@@ -502,7 +536,6 @@ public class ItemPanel : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
         GameObject.Find("MagicPen").GetComponentInChildren<Text>().text = "Magic Pen: " + player.magicPen.ToString();
         GameObject.Find("CritChance").GetComponentInChildren<Text>().text = "Crit Chance: " + player.critChance.ToString() + "%";
         GameObject.Find("CritDamage").GetComponentInChildren<Text>().text = "Crit Damage: " + player.critDamage.ToString() + "%";
-        GameObject.Find("Gold").GetComponentInChildren<Text>().text = "Gold: " + player.gold.ToString();
     }
 
     // Remove item from ui component and set to default
