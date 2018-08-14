@@ -245,7 +245,9 @@ public class Weapon : Item
             statMod = StatModifier.Strength,
             apc = 1,
             minDamage = 5,
-            maxDamage = 10
+            maxDamage = 10,
+            ilvl = 5,
+            tier = 1,
         };
         weaponList.Add(weapon);
 
@@ -266,7 +268,9 @@ public class Weapon : Item
             statMod = StatModifier.Strength,
             apc = 1,
             minDamage = 5,
-            maxDamage = 10
+            maxDamage = 10,
+            ilvl = 5,
+            tier = 1,
         };
         weaponList.Add(weapon);
 
@@ -287,7 +291,9 @@ public class Weapon : Item
             statMod = StatModifier.Dexterity,
             apc = 2,
             minDamage = 2,
-            maxDamage = 6
+            maxDamage = 6,
+            ilvl = 5,
+            tier = 1,
         };
         weaponList.Add(weapon);
 
@@ -308,7 +314,9 @@ public class Weapon : Item
             statMod = StatModifier.Dexterity,
             apc = 2,
             minDamage = 2,
-            maxDamage = 6
+            maxDamage = 6,
+            ilvl = 5,
+            tier = 1,
         };
         weaponList.Add(weapon);
 
@@ -330,7 +338,9 @@ public class Weapon : Item
             apc = 1,
             isDot = true,
             minDamage = 2,
-            maxDamage = 6
+            maxDamage = 6,
+            ilvl = 5,
+            tier = 1,
         };
         weaponList.Add(weapon);
 
@@ -351,7 +361,9 @@ public class Weapon : Item
             statMod = StatModifier.Intelligence,
             apc = 1,
             minDamage = 5,
-            maxDamage = 10
+            maxDamage = 10,
+            ilvl = 5,
+            tier = 1,
         };
         weaponList.Add(weapon);
 
@@ -372,7 +384,9 @@ public class Weapon : Item
             statMod = StatModifier.Intelligence,
             apc = 1,
             minDamage = 5,
-            maxDamage = 10
+            maxDamage = 10,
+            ilvl = 5,
+            tier = 1,
         };
         weaponList.Add(weapon);
 
@@ -393,7 +407,9 @@ public class Weapon : Item
             statMod = StatModifier.Strength,
             apc = 1,
             minDamage = 5,
-            maxDamage = 10
+            maxDamage = 10,
+            ilvl = 5,
+            tier = 1,
         };
         weaponList.Add(weapon);
 
@@ -414,7 +430,9 @@ public class Weapon : Item
             statMod = StatModifier.Dexterity,
             apc = 1,
             minDamage = 5,
-            maxDamage = 10
+            maxDamage = 10,
+            ilvl = 5,
+            tier = 1,
         };
         weaponList.Add(weapon);
 
@@ -435,7 +453,9 @@ public class Weapon : Item
             statMod = StatModifier.Dexterity,
             apc = 1,
             minDamage = 5,
-            maxDamage = 10
+            maxDamage = 10,
+            ilvl = 5,
+            tier = 1,
         };
         weaponList.Add(weapon);
 
@@ -456,7 +476,9 @@ public class Weapon : Item
             statMod = StatModifier.Intelligence,
             apc = 1,
             minDamage = 5,
-            maxDamage = 10
+            maxDamage = 10,
+            ilvl = 5,
+            tier = 1,
         };
         weaponList.Add(weapon);
 
@@ -477,7 +499,9 @@ public class Weapon : Item
             statMod = StatModifier.Intelligence,
             apc = 1,
             minDamage = 1,
-            maxDamage = 15
+            maxDamage = 15,
+            ilvl = 5,
+            tier = 1,
         };
         weaponList.Add(weapon);
 
@@ -499,7 +523,9 @@ public class Weapon : Item
             apc = 1,
             minDamage = 7,
             maxDamage = 7,
-            magicPen = 5
+            magicPen = 5,
+            ilvl = 5,
+            tier = 1,
         };
         weaponList.Add(weapon);
 
@@ -522,11 +548,13 @@ public class Weapon : Item
             isDot = true,
             minDamage = 2,
             maxDamage = 6,
+            ilvl = 5,
+            tier = 1,
 
         };
         weaponList.Add(weapon);
 
-        // Create str shield
+       /* // Create str shield
         weapon = new Weapon
         {
             itemId = 010113,
@@ -590,7 +618,7 @@ public class Weapon : Item
             maxDamage = 1,
             intelligence = 5
         };
-        weaponList.Add(weapon);
+        weaponList.Add(weapon);*/
 
         /********************/
         /*** LEGENDARIES ***/
@@ -618,7 +646,9 @@ public class Weapon : Item
             strength = 3,
             critChance = -5,
             critDamage = 15,
-            isSundering = true
+            isSundering = true,
+            ilvl = 10,
+            tier = 1,
         };
         weaponList.Add(weapon);
 
@@ -642,7 +672,9 @@ public class Weapon : Item
             maxDamage = 6,
             dexterity = 3,
             critChance = 10,
-            critDamage = 0
+            critDamage = 0,
+            ilvl = 10,
+            tier = 1,
         };
         weaponList.Add(weapon);
 
@@ -665,7 +697,9 @@ public class Weapon : Item
             minDamage = 1,
             maxDamage = 3,
             intelligence = 3,
-            critChance = 3
+            critChance = 3,
+            ilvl = 10,
+            tier = 1,
         };
         weaponList.Add(weapon);
 
@@ -692,7 +726,9 @@ public class Weapon : Item
             critChance = 0,
             critDamage = 0,
             magicPen = 5,
-            isNegating = true
+            isNegating = true,
+            ilvl = 10,
+            tier = 1,
         };
         weaponList.Add(weapon);
 
@@ -716,9 +752,11 @@ public class Weapon : Item
             maxDamage = 4,
             intelligence = 0,
             armorPen = 15,
+            ilvl = 10,
+            tier = 1,
         };
         weaponList.Add(weapon);
-
+/*
         // Create dex shield
         weapon = new Weapon
         {
@@ -742,7 +780,7 @@ public class Weapon : Item
             critChance = 3,
             critDamage = 10,
         };
-        weaponList.Add(weapon);
+        weaponList.Add(weapon);*/
 
         weapon = new Weapon
         {
@@ -761,7 +799,9 @@ public class Weapon : Item
             statMod = StatModifier.Strength,
             apc = 1,
             minDamage = 100,
-            maxDamage = 100
+            maxDamage = 100,
+            ilvl = 150,
+            tier = 4,
         };
         weaponList.Add(weapon);
 
@@ -787,7 +827,9 @@ public class Weapon : Item
             statMod = StatModifier.Strength,
             apc = 1,
             minDamage = 8,
-            maxDamage = 15
+            maxDamage = 15,
+            ilvl = 25,
+            tier = 2,
         };
         weaponList.Add(weapon);
 
@@ -809,7 +851,9 @@ public class Weapon : Item
             statMod = StatModifier.Strength,
             apc = 1,
             minDamage = 8,
-            maxDamage = 15
+            maxDamage = 15,
+            ilvl = 25,
+            tier = 2,
         };
         weaponList.Add(weapon);
 
@@ -833,7 +877,9 @@ public class Weapon : Item
             apc = 1,
             minDamage = 7,
             maxDamage = 14,
-            critChance = 3
+            critChance = 3,
+            ilvl = 25,
+            tier = 2,
         };
         weaponList.Add(weapon);
 
@@ -857,7 +903,9 @@ public class Weapon : Item
             apc = 1,
             minDamage = 9,
             maxDamage = 17,
-            armorPen = -7
+            armorPen = -7,
+            ilvl = 25,
+            tier = 2,
         };
         weaponList.Add(weapon);
 
@@ -880,7 +928,9 @@ public class Weapon : Item
             apc = 1,
             minDamage = 9,
             maxDamage = 17,
-            magicPen = -7
+            magicPen = -7,
+            ilvl = 25,
+            tier = 2,
         };
         weaponList.Add(weapon);
 
@@ -903,7 +953,9 @@ public class Weapon : Item
             apc = 1,
             minDamage = 7,
             maxDamage = 13,
-            armorPen = 7
+            armorPen = 7,
+            ilvl = 25,
+            tier = 2,
         };
         weaponList.Add(weapon);
 
@@ -926,7 +978,9 @@ public class Weapon : Item
             apc = 1,
             minDamage = 7,
             maxDamage = 13,
-            magicPen = 7
+            magicPen = 7,
+            ilvl = 25,
+            tier = 2,
         };
         weaponList.Add(weapon);
 
@@ -949,7 +1003,9 @@ public class Weapon : Item
             statMod = StatModifier.Dexterity,
             apc = 2,
             minDamage = 3,
-            maxDamage = 9
+            maxDamage = 9,
+            ilvl = 25,
+            tier = 2,
         };
         weaponList.Add(weapon);
 
@@ -971,7 +1027,9 @@ public class Weapon : Item
             statMod = StatModifier.Dexterity,
             apc = 2,
             minDamage = 3,
-            maxDamage = 9
+            maxDamage = 9,
+            ilvl = 25,
+            tier = 2,
         };
         weaponList.Add(weapon);
 
@@ -994,7 +1052,9 @@ public class Weapon : Item
             apc = 1,
             isDot = true,
             minDamage = 4,
-            maxDamage = 9
+            maxDamage = 9,
+            ilvl = 25,
+            tier = 2,
         };
         weaponList.Add(weapon);
 
@@ -1016,7 +1076,9 @@ public class Weapon : Item
             statMod = StatModifier.Intelligence,
             apc = 1,
             minDamage = 8,
-            maxDamage = 15
+            maxDamage = 15,
+            ilvl = 25,
+            tier = 2,
         };
         weaponList.Add(weapon);
 
@@ -1038,7 +1100,9 @@ public class Weapon : Item
             statMod = StatModifier.Intelligence,
             apc = 1,
             minDamage = 8,
-            maxDamage = 15
+            maxDamage = 15,
+            ilvl = 25,
+            tier = 2,
         };
         weaponList.Add(weapon);
 
@@ -1060,7 +1124,9 @@ public class Weapon : Item
             statMod = StatModifier.Strength,
             apc = 1,
             minDamage = 8,
-            maxDamage = 15
+            maxDamage = 15,
+            ilvl = 25,
+            tier = 2,
         };
         weaponList.Add(weapon);
 
@@ -1083,7 +1149,9 @@ public class Weapon : Item
             statMod = StatModifier.Strength,
             apc = 1,
             minDamage = 8,
-            maxDamage = 15
+            maxDamage = 15,
+            ilvl = 25,
+            tier = 2,
         };
         weaponList.Add(weapon);
 
@@ -1106,7 +1174,9 @@ public class Weapon : Item
             statMod = StatModifier.Dexterity,
             apc = 1,
             minDamage = 10,
-            maxDamage = 13
+            maxDamage = 13,
+            ilvl = 25,
+            tier = 2,
         };
         weaponList.Add(weapon);
 
@@ -1129,7 +1199,9 @@ public class Weapon : Item
             statMod = StatModifier.Dexterity,
             apc = 1,
             minDamage = 8,
-            maxDamage = 15
+            maxDamage = 15,
+            ilvl = 25,
+            tier = 2,
         };
         weaponList.Add(weapon);
 
@@ -1151,7 +1223,9 @@ public class Weapon : Item
             statMod = StatModifier.Dexterity,
             apc = 1,
             minDamage = 8,
-            maxDamage = 15
+            maxDamage = 15,
+            ilvl = 25,
+            tier = 2,
         };
         weaponList.Add(weapon);
 
@@ -1174,7 +1248,9 @@ public class Weapon : Item
             apc = 2,
             minDamage = 2,
             maxDamage = 9,
-            critDamage = 15
+            critDamage = 15,
+            ilvl = 25,
+            tier = 2,
         };
         weaponList.Add(weapon);
 
@@ -1197,7 +1273,9 @@ public class Weapon : Item
             apc = 2,
             minDamage = 2,
             maxDamage = 9,
-            critDamage = 15
+            critDamage = 15,
+            ilvl = 25,
+            tier = 2,
         };
         weaponList.Add(weapon);
 
@@ -1219,7 +1297,9 @@ public class Weapon : Item
             statMod = StatModifier.Intelligence,
             apc = 1,
             minDamage = 8,
-            maxDamage = 15
+            maxDamage = 15,
+            ilvl = 25,
+            tier = 2,
         };
         weaponList.Add(weapon);
 
@@ -1241,7 +1321,9 @@ public class Weapon : Item
             statMod = StatModifier.Intelligence,
             apc = 1,
             minDamage = 1,
-            maxDamage = 22
+            maxDamage = 22,
+            ilvl = 25,
+            tier = 2,
         };
         weaponList.Add(weapon);
 
@@ -1263,7 +1345,9 @@ public class Weapon : Item
             statMod = StatModifier.Intelligence,
             apc = 1,
             minDamage = 8,
-            maxDamage = 15
+            maxDamage = 15,
+            ilvl = 25,
+            tier = 2,
         };
         weaponList.Add(weapon);
 
@@ -1286,7 +1370,9 @@ public class Weapon : Item
             apc = 1,
             minDamage = 11,
             maxDamage = 11,
-            magicPen = 8
+            magicPen = 8,
+            ilvl = 25,
+            tier = 2,
         };
         weaponList.Add(weapon);
 
@@ -1310,6 +1396,8 @@ public class Weapon : Item
             isDot = true,
             minDamage = 4,
             maxDamage = 9,
+            ilvl = 25,
+            tier = 2,
 
         };
         weaponList.Add(weapon);
@@ -1333,7 +1421,9 @@ public class Weapon : Item
             apc = 2,
             minDamage = 1,
             maxDamage = 11,
-            critChance = 3
+            critChance = 3,
+            ilvl = 25,
+            tier = 2,
         };
         weaponList.Add(weapon);
 
@@ -1356,12 +1446,14 @@ public class Weapon : Item
             apc = 2,
             minDamage = 1,
             maxDamage = 11,
-            critChance = 3
+            critChance = 3,
+            ilvl = 25,
+            tier = 2,
         };
         weaponList.Add(weapon);
 
 
-        // Create str shield
+        /*// Create str shield
         weapon = new Weapon
         {
             itemId = 020113,
@@ -1428,7 +1520,7 @@ public class Weapon : Item
             maxDamage = 2,
             intelligence = 8
         };
-        weaponList.Add(weapon);
+        weaponList.Add(weapon);*/
         /********************/
         /*** LEGENDARIES ***/
         /******************/
@@ -1452,7 +1544,9 @@ public class Weapon : Item
             isDot = true,
             apc = 1,
             minDamage = 5,
-            maxDamage = 12
+            maxDamage = 12,
+            ilvl = 35,
+            tier = 2,
         };
         weaponList.Add(weapon);
 
@@ -1475,7 +1569,9 @@ public class Weapon : Item
             apc = 2,
             minDamage = 8,
             maxDamage = 15,
-            armorPen = -20
+            armorPen = -20,
+            ilvl = 35,
+            tier = 2,
         };
         weaponList.Add(weapon);
 
@@ -1499,7 +1595,9 @@ public class Weapon : Item
             apc = 1,
             minDamage = 10,
             maxDamage = 20,
-            critDamage = 30
+            critDamage = 30,
+            ilvl = 35,
+            tier = 2,
         };
         weaponList.Add(weapon);
 
@@ -1524,7 +1622,9 @@ public class Weapon : Item
             maxDamage = 18,
             dexterity = 5,
             magicPen = 10,
-            isNegating = true
+            isNegating = true,
+            ilvl = 35,
+            tier = 2,
         };
         weaponList.Add(weapon);
 
@@ -1548,7 +1648,9 @@ public class Weapon : Item
             minDamage = 3,
             maxDamage = 8,
             critChance = 5,
-            critDamage = 10
+            critDamage = 10,
+            ilvl = 35,
+            tier = 2,
         };
         weaponList.Add(weapon);
 
@@ -1574,7 +1676,9 @@ public class Weapon : Item
             bonusExp = 10,
             bonusGold = 20,
             itemFind = 5,
-            magicFind = 3
+            magicFind = 3,
+            ilvl = 35,
+            tier = 2,
         };
         weaponList.Add(weapon);
 
@@ -1597,7 +1701,9 @@ public class Weapon : Item
             apc = 1,
             minDamage = 10,
             maxDamage = 30,
-            armorPen = -20
+            armorPen = -20,
+            ilvl = 35,
+            tier = 2,
         };
         weaponList.Add(weapon);
 
@@ -1621,10 +1727,12 @@ public class Weapon : Item
             minDamage = 13,
             maxDamage = 16,
             critChance = 3,
-            dexterity = 5
+            dexterity = 5,
+            ilvl = 35,
+            tier = 2,
         };
         weaponList.Add(weapon);
-
+/*
         // Create int shield
         weapon = new Weapon
         {
@@ -1647,7 +1755,7 @@ public class Weapon : Item
             intelligence = 8,
             magicPen = 15
         };
-        weaponList.Add(weapon);
+        weaponList.Add(weapon);*/
 
         /***************/
         /*** TIER 3 ***/
@@ -1670,7 +1778,9 @@ public class Weapon : Item
             statMod = StatModifier.Strength,
             apc = 1,
             minDamage = 12,
-            maxDamage = 22
+            maxDamage = 22,
+            ilvl = 50,
+            tier = 3,
         };
         weaponList.Add(weapon);
 
@@ -1692,7 +1802,9 @@ public class Weapon : Item
             statMod = StatModifier.Strength,
             apc = 1,
             minDamage = 12,
-            maxDamage = 22
+            maxDamage = 22,
+            ilvl = 50,
+            tier = 3,
         };
         weaponList.Add(weapon);
 
@@ -1716,7 +1828,9 @@ public class Weapon : Item
             apc = 1,
             minDamage = 11,
             maxDamage = 20,
-            critChance = 3
+            critChance = 3,
+            ilvl = 50,
+            tier = 3,
         };
         weaponList.Add(weapon);
 
@@ -1740,7 +1854,9 @@ public class Weapon : Item
             apc = 1,
             minDamage = 13,
             maxDamage = 25,
-            armorPen = -10
+            armorPen = -10,
+            ilvl = 50,
+            tier = 3,
         };
         weaponList.Add(weapon);
 
@@ -1763,7 +1879,9 @@ public class Weapon : Item
             apc = 1,
             minDamage = 13,
             maxDamage = 25,
-            magicPen = -10
+            magicPen = -10,
+            ilvl = 50,
+            tier = 3,
         };
         weaponList.Add(weapon);
 
@@ -1786,7 +1904,9 @@ public class Weapon : Item
             apc = 1,
             minDamage = 11,
             maxDamage = 19,
-            armorPen = 10
+            armorPen = 10,
+            ilvl = 50,
+            tier = 3,
         };
         weaponList.Add(weapon);
 
@@ -1809,7 +1929,9 @@ public class Weapon : Item
             apc = 1,
             minDamage = 11,
             maxDamage = 19,
-            magicPen = 10
+            magicPen = 10,
+            ilvl = 50,
+            tier = 3,
         };
         weaponList.Add(weapon);
 
@@ -1832,7 +1954,9 @@ public class Weapon : Item
             statMod = StatModifier.Dexterity,
             apc = 2,
             minDamage = 5,
-            maxDamage = 13
+            maxDamage = 13,
+            ilvl = 50,
+            tier = 3,
         };
         weaponList.Add(weapon);
 
@@ -1854,7 +1978,9 @@ public class Weapon : Item
             statMod = StatModifier.Dexterity,
             apc = 2,
             minDamage = 5,
-            maxDamage = 13
+            maxDamage = 13,
+            ilvl = 50,
+            tier = 3,
         };
         weaponList.Add(weapon);
 
@@ -1877,7 +2003,9 @@ public class Weapon : Item
             apc = 1,
             isDot = true,
             minDamage = 6,
-            maxDamage = 12
+            maxDamage = 12,
+            ilvl = 50,
+            tier = 3,
         };
         weaponList.Add(weapon);
 
@@ -1899,7 +2027,9 @@ public class Weapon : Item
             statMod = StatModifier.Intelligence,
             apc = 1,
             minDamage = 12,
-            maxDamage = 22
+            maxDamage = 22,
+            ilvl = 50,
+            tier = 3,
         };
         weaponList.Add(weapon);
 
@@ -1921,7 +2051,9 @@ public class Weapon : Item
             statMod = StatModifier.Intelligence,
             apc = 1,
             minDamage = 12,
-            maxDamage = 22
+            maxDamage = 22,
+            ilvl = 50,
+            tier = 3,
         };
         weaponList.Add(weapon);
 
@@ -1943,7 +2075,9 @@ public class Weapon : Item
             statMod = StatModifier.Strength,
             apc = 1,
             minDamage = 12,
-            maxDamage = 22
+            maxDamage = 22,
+            ilvl = 50,
+            tier = 3,
         };
         weaponList.Add(weapon);
 
@@ -1966,7 +2100,9 @@ public class Weapon : Item
             statMod = StatModifier.Strength,
             apc = 1,
             minDamage = 12,
-            maxDamage = 22
+            maxDamage = 22,
+            ilvl = 50,
+            tier = 3,
         };
         weaponList.Add(weapon);
 
@@ -1989,7 +2125,9 @@ public class Weapon : Item
             statMod = StatModifier.Dexterity,
             apc = 1,
             minDamage = 15,
-            maxDamage = 19
+            maxDamage = 19,
+            ilvl = 50,
+            tier = 3,
         };
         weaponList.Add(weapon);
 
@@ -2011,7 +2149,9 @@ public class Weapon : Item
             statMod = StatModifier.Dexterity,
             apc = 1,
             minDamage = 15,
-            maxDamage = 19
+            maxDamage = 19,
+            ilvl = 50,
+            tier = 3,
         };
         weaponList.Add(weapon);
 
@@ -2033,7 +2173,9 @@ public class Weapon : Item
             statMod = StatModifier.Dexterity,
             apc = 1,
             minDamage = 12,
-            maxDamage = 22
+            maxDamage = 22,
+            ilvl = 50,
+            tier = 3,
         };
         weaponList.Add(weapon);
 
@@ -2055,7 +2197,9 @@ public class Weapon : Item
             statMod = StatModifier.Dexterity,
             apc = 1,
             minDamage = 12,
-            maxDamage = 22
+            maxDamage = 22,
+            ilvl = 50,
+            tier = 3,
         };
         weaponList.Add(weapon);
 
@@ -2078,7 +2222,9 @@ public class Weapon : Item
             apc = 2,
             minDamage = 3,
             maxDamage = 13,
-            critDamage = 20
+            critDamage = 20,
+            ilvl = 50,
+            tier = 3,
         };
         weaponList.Add(weapon);
 
@@ -2101,7 +2247,9 @@ public class Weapon : Item
             apc = 2,
             minDamage = 3,
             maxDamage = 13,
-            critDamage = 20
+            critDamage = 20,
+            ilvl = 50,
+            tier = 3,
         };
         weaponList.Add(weapon);
 
@@ -2123,7 +2271,9 @@ public class Weapon : Item
             statMod = StatModifier.Intelligence,
             apc = 1,
             minDamage = 12,
-            maxDamage = 22
+            maxDamage = 22,
+            ilvl = 50,
+            tier = 3,
         };
         weaponList.Add(weapon);
 
@@ -2145,7 +2295,9 @@ public class Weapon : Item
             statMod = StatModifier.Intelligence,
             apc = 1,
             minDamage = 1,
-            maxDamage = 33
+            maxDamage = 33,
+            ilvl = 50,
+            tier = 3,
         };
         weaponList.Add(weapon);
 
@@ -2167,7 +2319,9 @@ public class Weapon : Item
             statMod = StatModifier.Intelligence,
             apc = 1,
             minDamage = 10,
-            maxDamage = 24
+            maxDamage = 24,
+            ilvl = 50,
+            tier = 3,
         };
         weaponList.Add(weapon);
 
@@ -2190,7 +2344,9 @@ public class Weapon : Item
             apc = 1,
             minDamage = 15,
             maxDamage = 15,
-            magicPen = 12
+            magicPen = 12,
+            ilvl = 50,
+            tier = 3,
         };
         weaponList.Add(weapon);
 
@@ -2214,6 +2370,8 @@ public class Weapon : Item
             isDot = true,
             minDamage = 6,
             maxDamage = 12,
+            ilvl = 50,
+            tier = 3,
 
         };
         weaponList.Add(weapon);
@@ -2237,7 +2395,9 @@ public class Weapon : Item
             apc = 2,
             minDamage = 1,
             maxDamage = 16,
-            critChance = 3
+            critChance = 3,
+            ilvl = 50,
+            tier = 3,
         };
         weaponList.Add(weapon);
 
@@ -2260,11 +2420,13 @@ public class Weapon : Item
             apc = 2,
             minDamage = 1,
             maxDamage = 16,
-            critChance = 3
+            critChance = 3,
+            ilvl = 50,
+            tier = 3,
         };
         weaponList.Add(weapon);
 
-
+/*
         // Create str shield
         weapon = new Weapon
         {
@@ -2284,7 +2446,8 @@ public class Weapon : Item
             apc = 1,
             minDamage = 1,
             maxDamage = 2,
-            strength = 12
+            strength = 12,
+            
         };
         weaponList.Add(weapon);
 
@@ -2332,11 +2495,11 @@ public class Weapon : Item
             maxDamage = 2,
             intelligence = 12
         };
-        weaponList.Add(weapon);
+        weaponList.Add(weapon);*/
         /********************/
         /*** LEGENDARIES ***/
         /******************/
-
+/*
         // Create str shield
         weapon = new Weapon
         {
@@ -2358,7 +2521,7 @@ public class Weapon : Item
             maxDamage = 2,
             strength = 22
         };
-        weaponList.Add(weapon);
+        weaponList.Add(weapon);*/
 
         // Create chakram
         weapon = new Weapon
@@ -2380,7 +2543,9 @@ public class Weapon : Item
             apc = 2,
             minDamage = 1,
             maxDamage = 25,
-            critChance = 5
+            critChance = 5,
+            ilvl = 75,
+            tier = 3,
         };
         weaponList.Add(weapon);
 
@@ -2404,7 +2569,9 @@ public class Weapon : Item
             isDot = true,
             minDamage = 12,
             maxDamage = 22,
-            isNegating = true
+            isNegating = true,
+            ilvl = 75,
+            tier = 3,
         };
         weaponList.Add(weapon);
 
@@ -2427,7 +2594,9 @@ public class Weapon : Item
             statMod = StatModifier.Strength,
             apc = 1,
             minDamage = 18,
-            maxDamage = 33
+            maxDamage = 33,
+            ilvl = 75,
+            tier = 3,
         };
         weaponList.Add(weapon);
 
@@ -2451,7 +2620,9 @@ public class Weapon : Item
             minDamage = 5,
             maxDamage = 18,
             magicPen = 15,
-            isNegating = true
+            isNegating = true,
+            ilvl = 75,
+            tier = 3,
         };
         weaponList.Add(weapon);
 
@@ -2475,7 +2646,9 @@ public class Weapon : Item
             minDamage = 5,
             maxDamage = 13,
             critChance = 10,
-            critDamage = 50
+            critDamage = 50,
+            ilvl = 75,
+            tier = 3,
         };
         weaponList.Add(weapon);
         
@@ -2500,6 +2673,8 @@ public class Weapon : Item
             maxDamage = 25,
             armorPen = 50,
             isSundering = true,
+            ilvl = 75,
+            tier = 3,
         };
         weaponList.Add(weapon);
         
@@ -2523,6 +2698,8 @@ public class Weapon : Item
             minDamage = 15,
             maxDamage = 30,
             critDamage = 15,
+            ilvl = 75,
+            tier = 3,
         };
         weaponList.Add(weapon);
         
@@ -2546,6 +2723,8 @@ public class Weapon : Item
             minDamage = 15,
             maxDamage = 25,
             armorPen = 25,
+            ilvl = 75,
+            tier = 3,
         };
         weaponList.Add(weapon);
         /***************/
@@ -2570,7 +2749,9 @@ public class Weapon : Item
             statMod = StatModifier.Strength,
             apc = 1,
             minDamage = 18,
-            maxDamage = 33
+            maxDamage = 33,
+            ilvl = 100,
+            tier = 4,
         };
         weaponList.Add(weapon);
 
@@ -2592,7 +2773,9 @@ public class Weapon : Item
             statMod = StatModifier.Strength,
             apc = 1,
             minDamage = 18,
-            maxDamage = 33
+            maxDamage = 33,
+            ilvl = 100,
+            tier = 4,
         };
         weaponList.Add(weapon);
 
@@ -2616,7 +2799,9 @@ public class Weapon : Item
             apc = 1,
             minDamage = 16,
             maxDamage = 30,
-            critChance = 5
+            critChance = 5,
+            ilvl = 100,
+            tier = 4,
         };
         weaponList.Add(weapon);
 
@@ -2640,7 +2825,9 @@ public class Weapon : Item
             apc = 1,
             minDamage = 20,
             maxDamage = 37,
-            armorPen = -15
+            armorPen = -15,
+            ilvl = 100,
+            tier = 4,
         };
         weaponList.Add(weapon);
 
@@ -2663,7 +2850,9 @@ public class Weapon : Item
             apc = 1,
             minDamage = 20,
             maxDamage = 37,
-            magicPen = -15
+            magicPen = -15,
+            ilvl = 100,
+            tier = 4,
         };
         weaponList.Add(weapon);
 
@@ -2686,7 +2875,9 @@ public class Weapon : Item
             apc = 1,
             minDamage = 16,
             maxDamage = 27,
-            armorPen = 15
+            armorPen = 15,
+            ilvl = 100,
+            tier = 4,
         };
         weaponList.Add(weapon);
 
@@ -2709,7 +2900,9 @@ public class Weapon : Item
             apc = 1,
             minDamage = 16,
             maxDamage = 27,
-            magicPen = 15
+            magicPen = 15,
+            ilvl = 100,
+            tier = 4,
         };
         weaponList.Add(weapon);
 
@@ -2732,7 +2925,9 @@ public class Weapon : Item
             statMod = StatModifier.Strength,
             apc = 1,
             minDamage = 24,
-            maxDamage = 25
+            maxDamage = 25,
+            ilvl = 100,
+            tier = 4,
         };
         weaponList.Add(weapon);
 
@@ -2754,7 +2949,9 @@ public class Weapon : Item
             statMod = StatModifier.Dexterity,
             apc = 2,
             minDamage = 8,
-            maxDamage = 19
+            maxDamage = 19,
+            ilvl = 100,
+            tier = 4,
         };
         weaponList.Add(weapon);
 
@@ -2776,7 +2973,9 @@ public class Weapon : Item
             statMod = StatModifier.Dexterity,
             apc = 2,
             minDamage = 8,
-            maxDamage = 19
+            maxDamage = 19,
+            ilvl = 100,
+            tier = 4,
         };
         weaponList.Add(weapon);
 
@@ -2799,7 +2998,9 @@ public class Weapon : Item
             apc = 1,
             isDot = true,
             minDamage = 9,
-            maxDamage = 18
+            maxDamage = 18,
+            ilvl = 100,
+            tier = 4,
         };
         weaponList.Add(weapon);
 
@@ -2821,7 +3022,9 @@ public class Weapon : Item
             statMod = StatModifier.Intelligence,
             apc = 1,
             minDamage = 18,
-            maxDamage = 33
+            maxDamage = 33,
+            ilvl = 100,
+            tier = 4,
         };
         weaponList.Add(weapon);
 
@@ -2843,7 +3046,9 @@ public class Weapon : Item
             statMod = StatModifier.Intelligence,
             apc = 1,
             minDamage = 18,
-            maxDamage = 33
+            maxDamage = 33,
+            ilvl = 100,
+            tier = 4,
         };
         weaponList.Add(weapon);
 
@@ -2865,7 +3070,9 @@ public class Weapon : Item
             statMod = StatModifier.Strength,
             apc = 1,
             minDamage = 18,
-            maxDamage = 33
+            maxDamage = 33,
+            ilvl = 100,
+            tier = 4,
         };
         weaponList.Add(weapon);
 
@@ -2888,7 +3095,9 @@ public class Weapon : Item
             statMod = StatModifier.Strength,
             apc = 1,
             minDamage = 18,
-            maxDamage = 33
+            maxDamage = 33,
+            ilvl = 100,
+            tier = 4,
         };
         weaponList.Add(weapon);
 
@@ -2911,7 +3120,9 @@ public class Weapon : Item
             statMod = StatModifier.Dexterity,
             apc = 1,
             minDamage = 22,
-            maxDamage = 27
+            maxDamage = 27,
+            ilvl = 100,
+            tier = 4,
         };
         weaponList.Add(weapon);
 
@@ -2934,7 +3145,9 @@ public class Weapon : Item
             statMod = StatModifier.Dexterity,
             apc = 1,
             minDamage = 22,
-            maxDamage = 27
+            maxDamage = 27,
+            ilvl = 100,
+            tier = 4,
         };
         weaponList.Add(weapon);
 
@@ -2956,7 +3169,9 @@ public class Weapon : Item
             statMod = StatModifier.Dexterity,
             apc = 1,
             minDamage = 18,
-            maxDamage = 33
+            maxDamage = 33,
+            ilvl = 100,
+            tier = 4,
         };
         weaponList.Add(weapon);
 
@@ -2978,7 +3193,9 @@ public class Weapon : Item
             statMod = StatModifier.Dexterity,
             apc = 1,
             minDamage = 18,
-            maxDamage = 33
+            maxDamage = 33,
+            ilvl = 100,
+            tier = 4,
         };
         weaponList.Add(weapon);
 
@@ -3001,7 +3218,9 @@ public class Weapon : Item
             apc = 1,
             minDamage = 15,
             maxDamage = 26,
-            armorPen = 20
+            armorPen = 20,
+            ilvl = 100,
+            tier = 4,
         };
         weaponList.Add(weapon);
 
@@ -3024,7 +3243,9 @@ public class Weapon : Item
             apc = 2,
             minDamage = 5,
             maxDamage = 19,
-            critDamage = 25
+            critDamage = 25,
+            ilvl = 100,
+            tier = 4,
         };
         weaponList.Add(weapon);
 
@@ -3047,7 +3268,9 @@ public class Weapon : Item
             apc = 2,
             minDamage = 5,
             maxDamage = 19,
-            critDamage = 25
+            critDamage = 25,
+            ilvl = 100,
+            tier = 4,
         };
         weaponList.Add(weapon);
 
@@ -3069,7 +3292,9 @@ public class Weapon : Item
             statMod = StatModifier.Intelligence,
             apc = 1,
             minDamage = 18,
-            maxDamage = 33
+            maxDamage = 33,
+            ilvl = 100,
+            tier = 4,
         };
         weaponList.Add(weapon);
 
@@ -3091,7 +3316,9 @@ public class Weapon : Item
             statMod = StatModifier.Intelligence,
             apc = 1,
             minDamage = 1,
-            maxDamage = 50
+            maxDamage = 50,
+            ilvl = 100,
+            tier = 4,
         };
         weaponList.Add(weapon);
 
@@ -3113,7 +3340,9 @@ public class Weapon : Item
             statMod = StatModifier.Intelligence,
             apc = 1,
             minDamage = 15,
-            maxDamage = 36
+            maxDamage = 36,
+            ilvl = 100,
+            tier = 4,
         };
         weaponList.Add(weapon);
 
@@ -3136,7 +3365,9 @@ public class Weapon : Item
             apc = 1,
             minDamage = 22,
             maxDamage = 22,
-            magicPen = 18
+            magicPen = 18,
+            ilvl = 100,
+            tier = 4,
         };
         weaponList.Add(weapon);
 
@@ -3160,6 +3391,8 @@ public class Weapon : Item
             isDot = true,
             minDamage = 9,
             maxDamage = 18,
+            ilvl = 100,
+            tier = 4,
 
         };
         weaponList.Add(weapon);
@@ -3183,7 +3416,9 @@ public class Weapon : Item
             apc = 2,
             minDamage = 1,
             maxDamage = 24,
-            critChance = 4
+            critChance = 4,
+            ilvl = 100,
+            tier = 4,
         };
         weaponList.Add(weapon);
 
@@ -3206,7 +3441,9 @@ public class Weapon : Item
             apc = 2,
             minDamage = 1,
             maxDamage = 24,
-            critChance = 4
+            critChance = 4,
+            ilvl = 100,
+            tier = 4,
         };
         weaponList.Add(weapon);
 
@@ -3228,10 +3465,12 @@ public class Weapon : Item
             statMod = StatModifier.Intelligence,
             apc = 1,
             minDamage = 18,
-            maxDamage = 33
+            maxDamage = 33,
+            ilvl = 100,
+            tier = 4,
         };
         weaponList.Add(weapon);
-
+/*
         // Create str shield
         weapon = new Weapon
         {
@@ -3299,7 +3538,7 @@ public class Weapon : Item
             maxDamage = 3,
             intelligence = 17
         };
-        weaponList.Add(weapon);
+        weaponList.Add(weapon);*/
 
         /********************/
         /*** LEGENDARIES ***/
@@ -3325,6 +3564,8 @@ public class Weapon : Item
             maxDamage = 65,
             isNegating = true,
             magicPen = 30,
+            ilvl = 150,
+            tier = 4,
         };
         weaponList.Add(weapon);
         
@@ -3349,6 +3590,8 @@ public class Weapon : Item
             isDot = true,
             minDamage = 15,
             maxDamage = 32,
+            ilvl = 175,
+            tier = 4,
         };
         weaponList.Add(weapon);
         
@@ -3374,6 +3617,8 @@ public class Weapon : Item
             magicPen = 25,
             isNegating = true,
             critDamage = 25,
+            ilvl = 150,
+            tier = 4,
         };
         weaponList.Add(weapon);
         
@@ -3398,6 +3643,8 @@ public class Weapon : Item
             minDamage = 27,
             maxDamage = 50,
             isSundering = true,
+            ilvl = 150,
+            tier = 4,
         };
         weaponList.Add(weapon);
         
@@ -3424,6 +3671,8 @@ public class Weapon : Item
             armorPen = 15,
             isSundering = true,
             critChance = -10,
+            ilvl = 150,
+            tier = 4,
         };
         weaponList.Add(weapon);
         
@@ -3448,6 +3697,8 @@ public class Weapon : Item
             maxDamage = 15,
             critChance = 5,
             critDamage = 15,
+            ilvl = 150,
+            tier = 4,
         };
         weaponList.Add(weapon);
         
@@ -3473,7 +3724,9 @@ public class Weapon : Item
             statMod = StatModifier.Strength,
             apc = 1,
             minDamage = 27,
-            maxDamage = 49
+            maxDamage = 49,
+            ilvl = 200,
+            tier = 5,
         };
         weaponList.Add(weapon);
 
@@ -3495,7 +3748,9 @@ public class Weapon : Item
             statMod = StatModifier.Strength,
             apc = 1,
             minDamage = 27,
-            maxDamage = 49
+            maxDamage = 49,
+            ilvl = 200,
+            tier = 5,
         };
         weaponList.Add(weapon);
 
@@ -3519,7 +3774,9 @@ public class Weapon : Item
             apc = 1,
             minDamage = 24,
             maxDamage = 45,
-            critChance = 7
+            critChance = 7,
+            ilvl = 200,
+            tier = 5,
         };
         weaponList.Add(weapon);
 
@@ -3543,7 +3800,9 @@ public class Weapon : Item
             apc = 1,
             minDamage = 30,
             maxDamage = 55,
-            armorPen = -25
+            armorPen = -25,
+            ilvl = 200,
+            tier = 5,
         };
         weaponList.Add(weapon);
 
@@ -3566,7 +3825,9 @@ public class Weapon : Item
             apc = 1,
             minDamage = 30,
             maxDamage = 55,
-            magicPen = -25
+            magicPen = -25,
+            ilvl = 200,
+            tier = 5,
         };
         weaponList.Add(weapon);
 
@@ -3590,7 +3851,9 @@ public class Weapon : Item
             isDot = true,
             minDamage = 10,
             maxDamage = 20,
-            armorPen = -25
+            armorPen = -25,
+            ilvl = 200,
+            tier = 5,
         };
         weaponList.Add(weapon);
 
@@ -3613,7 +3876,9 @@ public class Weapon : Item
             apc = 1,
             minDamage = 24,
             maxDamage = 40,
-            armorPen = 25
+            armorPen = 25,
+            ilvl = 200,
+            tier = 5,
         };
         weaponList.Add(weapon);
 
@@ -3636,7 +3901,9 @@ public class Weapon : Item
             apc = 1,
             minDamage = 24,
             maxDamage = 40,
-            magicPen = 25
+            magicPen = 25,
+            ilvl = 200,
+            tier = 5,
         };
         weaponList.Add(weapon);
 
@@ -3659,7 +3926,9 @@ public class Weapon : Item
             statMod = StatModifier.Strength,
             apc = 1,
             minDamage = 36,
-            maxDamage = 37
+            maxDamage = 37,
+            ilvl = 200,
+            tier = 5,
         };
         weaponList.Add(weapon);
 
@@ -3681,7 +3950,9 @@ public class Weapon : Item
             statMod = StatModifier.Dexterity,
             apc = 2,
             minDamage = 12,
-            maxDamage = 27
+            maxDamage = 27,
+            ilvl = 200,
+            tier = 5,
         };
         weaponList.Add(weapon);
 
@@ -3703,7 +3974,9 @@ public class Weapon : Item
             statMod = StatModifier.Dexterity,
             apc = 2,
             minDamage = 12,
-            maxDamage = 27
+            maxDamage = 27,
+            ilvl = 200,
+            tier = 5,
         };
         weaponList.Add(weapon);
 
@@ -3726,7 +3999,9 @@ public class Weapon : Item
             apc = 1,
             isDot = true,
             minDamage = 13,
-            maxDamage = 26
+            maxDamage = 26,
+            ilvl = 200,
+            tier = 5,
         };
         weaponList.Add(weapon);
 
@@ -3748,7 +4023,9 @@ public class Weapon : Item
             statMod = StatModifier.Intelligence,
             apc = 1,
             minDamage = 27,
-            maxDamage = 49
+            maxDamage = 49,
+            ilvl = 200,
+            tier = 5,
         };
         weaponList.Add(weapon);
 
@@ -3770,7 +4047,9 @@ public class Weapon : Item
             statMod = StatModifier.Intelligence,
             apc = 1,
             minDamage = 27,
-            maxDamage = 49
+            maxDamage = 49,
+            ilvl = 200,
+            tier = 5,
         };
         weaponList.Add(weapon);
 
@@ -3792,7 +4071,9 @@ public class Weapon : Item
             statMod = StatModifier.Strength,
             apc = 1,
             minDamage = 27,
-            maxDamage = 49
+            maxDamage = 49,
+            ilvl = 200,
+            tier = 5,
         };
         weaponList.Add(weapon);
 
@@ -3815,7 +4096,9 @@ public class Weapon : Item
             statMod = StatModifier.Strength,
             apc = 1,
             minDamage = 27,
-            maxDamage = 49
+            maxDamage = 49,
+            ilvl = 200,
+            tier = 5,
         };
         weaponList.Add(weapon);
 
@@ -3838,7 +4121,9 @@ public class Weapon : Item
             statMod = StatModifier.Dexterity,
             apc = 1,
             minDamage = 33,
-            maxDamage = 40
+            maxDamage = 40,
+            ilvl = 200,
+            tier = 5,
         };
         weaponList.Add(weapon);
 
@@ -3861,7 +4146,9 @@ public class Weapon : Item
             statMod = StatModifier.Dexterity,
             apc = 1,
             minDamage = 33,
-            maxDamage = 40
+            maxDamage = 40,
+            ilvl = 200,
+            tier = 5,
         };
         weaponList.Add(weapon);
 
@@ -3883,7 +4170,9 @@ public class Weapon : Item
             statMod = StatModifier.Dexterity,
             apc = 1,
             minDamage = 33,
-            maxDamage = 40
+            maxDamage = 40,
+            ilvl = 200,
+            tier = 5,
         };
         weaponList.Add(weapon);
 
@@ -3905,7 +4194,9 @@ public class Weapon : Item
             statMod = StatModifier.Dexterity,
             apc = 1,
             minDamage = 27,
-            maxDamage = 49
+            maxDamage = 49,
+            ilvl = 200,
+            tier = 5,
         };
         weaponList.Add(weapon);
 
@@ -3927,7 +4218,9 @@ public class Weapon : Item
             statMod = StatModifier.Dexterity,
             apc = 1,
             minDamage = 27,
-            maxDamage = 49
+            maxDamage = 49,
+            ilvl = 200,
+            tier = 5,
         };
         weaponList.Add(weapon);
 
@@ -3950,7 +4243,9 @@ public class Weapon : Item
             apc = 1,
             minDamage = 22,
             maxDamage = 40,
-            armorPen = 35
+            armorPen = 35,
+            ilvl = 200,
+            tier = 5,
         };
         weaponList.Add(weapon);
 
@@ -3973,7 +4268,9 @@ public class Weapon : Item
             apc = 2,
             minDamage = 7,
             maxDamage = 28,
-            critDamage = 35
+            critDamage = 35,
+            ilvl = 200,
+            tier = 5,
         };
         weaponList.Add(weapon);
 
@@ -3996,7 +4293,9 @@ public class Weapon : Item
             apc = 2,
             minDamage = 7,
             maxDamage = 28,
-            critDamage = 35
+            critDamage = 35,
+            ilvl = 200,
+            tier = 5,
         };
         weaponList.Add(weapon);
 
@@ -4018,7 +4317,9 @@ public class Weapon : Item
             statMod = StatModifier.Intelligence,
             apc = 1,
             minDamage = 27,
-            maxDamage = 49
+            maxDamage = 49,
+            ilvl = 200,
+            tier = 5,
         };
         weaponList.Add(weapon);
 
@@ -4040,7 +4341,9 @@ public class Weapon : Item
             statMod = StatModifier.Intelligence,
             apc = 1,
             minDamage = 1,
-            maxDamage = 75
+            maxDamage = 75,
+            ilvl = 200,
+            tier = 5,
         };
         weaponList.Add(weapon);
 
@@ -4062,7 +4365,9 @@ public class Weapon : Item
             statMod = StatModifier.Intelligence,
             apc = 3,
             minDamage = 9,
-            maxDamage = 15
+            maxDamage = 15,
+            ilvl = 200,
+            tier = 5,
         };
         weaponList.Add(weapon);
 
@@ -4084,7 +4389,9 @@ public class Weapon : Item
             statMod = StatModifier.Intelligence,
             apc = 1,
             minDamage = 22,
-            maxDamage = 54
+            maxDamage = 54,
+            ilvl = 200,
+            tier = 5,
         };
         weaponList.Add(weapon);
 
@@ -4107,7 +4414,9 @@ public class Weapon : Item
             apc = 1,
             minDamage = 33,
             maxDamage = 33,
-            magicPen = 25
+            magicPen = 25,
+            ilvl = 200,
+            tier = 5,
         };
         weaponList.Add(weapon);
 
@@ -4131,6 +4440,8 @@ public class Weapon : Item
             isDot = true,
             minDamage = 13,
             maxDamage = 26,
+            ilvl = 200,
+            tier = 5,
 
         };
         weaponList.Add(weapon);
@@ -4154,7 +4465,9 @@ public class Weapon : Item
             apc = 2,
             minDamage = 1,
             maxDamage = 36,
-            critChance = 6
+            critChance = 6,
+            ilvl = 200,
+            tier = 5,
         };
         weaponList.Add(weapon);
 
@@ -4177,7 +4490,9 @@ public class Weapon : Item
             apc = 2,
             minDamage = 1,
             maxDamage = 36,
-            critChance = 6
+            critChance = 6,
+            ilvl = 200,
+            tier = 5,
         };
         weaponList.Add(weapon);
 
@@ -4199,10 +4514,12 @@ public class Weapon : Item
             statMod = StatModifier.Intelligence,
             apc = 1,
             minDamage = 27,
-            maxDamage = 49
+            maxDamage = 49,
+            ilvl = 200,
+            tier = 5,
         };
         weaponList.Add(weapon);
-
+/*
         // Create str shield
         weapon = new Weapon
         {
@@ -4270,7 +4587,7 @@ public class Weapon : Item
             maxDamage = 5,
             intelligence = 25
         };
-        weaponList.Add(weapon);
+        weaponList.Add(weapon);*/
 
         /********************/
         /*** LEGENDARIES ***/
@@ -4280,7 +4597,7 @@ public class Weapon : Item
         {
             itemId = 050001,
             name = "Bachelor's Degree",
-            spritePath = "Icons/shield",
+            spritePath = "Icons/spell",
             flavorText = "Literally a piece of paper, possibly worthless",
             soundPath = "Sfx/donksfx",
             rarity = Rarity.Legendary,
@@ -4294,10 +4611,11 @@ public class Weapon : Item
             statMod = StatModifier.Intelligence,
             apc = 1,
             minDamage = 1,
-            maxDamage = 10,
+            maxDamage = 100,
             isNegating = true,
-            isDot = true,
             intelligence = 27,
+            ilvl = 300,
+            tier = 5,
         };
         weaponList.Add(weapon);
         
@@ -4323,6 +4641,8 @@ public class Weapon : Item
             maxDamage = 55,
             armorPen = 100,
             isSundering = true,
+            ilvl = 300,
+            tier = 5,
         };
         weaponList.Add(weapon);
         
@@ -4347,6 +4667,8 @@ public class Weapon : Item
             maxDamage = 65,
             magicPen = 25,
             isNegating = true,
+            ilvl = 300,
+            tier = 5,
 
         };
         weaponList.Add(weapon);
@@ -4369,8 +4691,11 @@ public class Weapon : Item
             damageType = DamageType.Physical,
             statMod = StatModifier.Intelligence,
             apc = 1,
+            isDot = true,
             minDamage = 1,
             maxDamage = 45,
+            ilvl = 300,
+            tier = 5,
         };
         weaponList.Add(weapon);
         
@@ -4396,31 +4721,35 @@ public class Weapon : Item
             maxDamage = 27,
             isSundering = true,
             critChance = 5,
+            ilvl = 300,
+            tier = 5,
         };
         weaponList.Add(weapon);
         
-        // Create blackjack
+        // Create sword
         weapon = new Weapon
         {
             itemId = 050006,
-            name = "Liquid Darksteel Buckler",
+            name = "Liquid Darksteel Rapier",
             spritePath = "Icons/shield",
-            soundPath = "Sfx/donksfx",
+            soundPath = "Sfx/swordsfx",
             rarity = Rarity.Legendary,
             buyValue = 150000,
             sellValue = 10000,
             requiredLevel = 15,
             requiredDex = 75,
-            weaponType = WeaponType.Shield,
+            weaponType = WeaponType.Sword,
             elementType = ElementType.Water,
             damageType = DamageType.Physical,
             statMod = StatModifier.Dexterity,
             apc = 1,
-            minDamage = 1,
-            maxDamage = 15,
+            minDamage = 40,
+            maxDamage = 40,
             critChance = 5,
             critDamage = 50,
             dexterity = 25,
+            ilvl = 300,
+            tier = 5,
         };
         weaponList.Add(weapon);
         
@@ -4446,7 +4775,9 @@ public class Weapon : Item
             statMod = StatModifier.Strength,
             apc = 1,
             minDamage = 40,
-            maxDamage = 75
+            maxDamage = 75,
+            ilvl = 400,
+            tier = 6,
         };
         weaponList.Add(weapon);
 
@@ -4468,7 +4799,9 @@ public class Weapon : Item
             statMod = StatModifier.Strength,
             apc = 1,
             minDamage = 40,
-            maxDamage = 75
+            maxDamage = 75,
+            ilvl = 400,
+            tier = 6,
         };
         weaponList.Add(weapon);
 
@@ -4492,7 +4825,9 @@ public class Weapon : Item
             apc = 1,
             minDamage = 36,
             maxDamage = 67,
-            critChance = 9
+            critChance = 9,
+            ilvl = 400,
+            tier = 6,
         };
         weaponList.Add(weapon);
 
@@ -4516,7 +4851,9 @@ public class Weapon : Item
             apc = 1,
             minDamage = 45,
             maxDamage = 82,
-            armorPen = -35
+            armorPen = -35,
+            ilvl = 400,
+            tier = 6,
         };
         weaponList.Add(weapon);
 
@@ -4539,7 +4876,9 @@ public class Weapon : Item
             apc = 1,
             minDamage = 45,
             maxDamage = 82,
-            magicPen = -35
+            magicPen = -35,
+            ilvl = 400,
+            tier = 6,
         };
         weaponList.Add(weapon);
 
@@ -4563,7 +4902,9 @@ public class Weapon : Item
             isDot = true,
             minDamage = 15,
             maxDamage = 30,
-            armorPen = -35
+            armorPen = -35,
+            ilvl = 400,
+            tier = 6,
         };
         weaponList.Add(weapon);
 
@@ -4586,7 +4927,9 @@ public class Weapon : Item
             apc = 1,
             minDamage = 36,
             maxDamage = 60,
-            armorPen = 35
+            armorPen = 35,
+            ilvl = 400,
+            tier = 6,
         };
         weaponList.Add(weapon);
 
@@ -4609,7 +4952,9 @@ public class Weapon : Item
             apc = 1,
             minDamage = 36,
             maxDamage = 60,
-            magicPen = 35
+            magicPen = 35,
+            ilvl = 400,
+            tier = 6,
         };
         weaponList.Add(weapon);
 
@@ -4632,7 +4977,9 @@ public class Weapon : Item
             statMod = StatModifier.Strength,
             apc = 1,
             minDamage = 54,
-            maxDamage = 55
+            maxDamage = 55,
+            ilvl = 400,
+            tier = 6,
         };
         weaponList.Add(weapon);
 
@@ -4654,7 +5001,9 @@ public class Weapon : Item
             statMod = StatModifier.Dexterity,
             apc = 2,
             minDamage = 18,
-            maxDamage = 40
+            maxDamage = 40,
+            ilvl = 400,
+            tier = 6,
         };
         weaponList.Add(weapon);
 
@@ -4676,7 +5025,9 @@ public class Weapon : Item
             statMod = StatModifier.Dexterity,
             apc = 2,
             minDamage = 18,
-            maxDamage = 40
+            maxDamage = 40,
+            ilvl = 400,
+            tier = 6,
         };
         weaponList.Add(weapon);
 
@@ -4699,7 +5050,9 @@ public class Weapon : Item
             apc = 1,
             isDot = true,
             minDamage = 20,
-            maxDamage = 38
+            maxDamage = 38,
+            ilvl = 400,
+            tier = 6,
         };
         weaponList.Add(weapon);
 
@@ -4721,7 +5074,9 @@ public class Weapon : Item
             statMod = StatModifier.Intelligence,
             apc = 1,
             minDamage = 40,
-            maxDamage = 75
+            maxDamage = 75,
+            ilvl = 400,
+            tier = 6,
         };
         weaponList.Add(weapon);
 
@@ -4743,7 +5098,9 @@ public class Weapon : Item
             statMod = StatModifier.Intelligence,
             apc = 1,
             minDamage = 40,
-            maxDamage = 75
+            maxDamage = 75,
+            ilvl = 400,
+            tier = 6,
         };
         weaponList.Add(weapon);
 
@@ -4765,7 +5122,9 @@ public class Weapon : Item
             statMod = StatModifier.Strength,
             apc = 1,
             minDamage = 40,
-            maxDamage = 75
+            maxDamage = 75,
+            ilvl = 400,
+            tier = 6,
         };
         weaponList.Add(weapon);
 
@@ -4788,7 +5147,9 @@ public class Weapon : Item
             statMod = StatModifier.Strength,
             apc = 1,
             minDamage = 40,
-            maxDamage = 75
+            maxDamage = 75,
+            ilvl = 400,
+            tier = 6,
         };
         weaponList.Add(weapon);
 
@@ -4811,7 +5172,9 @@ public class Weapon : Item
             statMod = StatModifier.Dexterity,
             apc = 1,
             minDamage = 50,
-            maxDamage = 60
+            maxDamage = 60,
+            ilvl = 400,
+            tier = 6,
         };
         weaponList.Add(weapon);
 
@@ -4834,7 +5197,9 @@ public class Weapon : Item
             statMod = StatModifier.Dexterity,
             apc = 1,
             minDamage = 50,
-            maxDamage = 60
+            maxDamage = 60,
+            ilvl = 400,
+            tier = 6,
         };
         weaponList.Add(weapon);
 
@@ -4856,7 +5221,9 @@ public class Weapon : Item
             statMod = StatModifier.Dexterity,
             apc = 1,
             minDamage = 50,
-            maxDamage = 60
+            maxDamage = 60,
+            ilvl = 400,
+            tier = 6,
         };
         weaponList.Add(weapon);
 
@@ -4878,7 +5245,9 @@ public class Weapon : Item
             statMod = StatModifier.Dexterity,
             apc = 1,
             minDamage = 40,
-            maxDamage = 75
+            maxDamage = 75,
+            ilvl = 400,
+            tier = 6,
         };
         weaponList.Add(weapon);
 
@@ -4900,7 +5269,9 @@ public class Weapon : Item
             statMod = StatModifier.Dexterity,
             apc = 1,
             minDamage = 40,
-            maxDamage = 75
+            maxDamage = 75,
+            ilvl = 400,
+            tier = 6,
         };
         weaponList.Add(weapon);
 
@@ -4923,7 +5294,9 @@ public class Weapon : Item
             apc = 1,
             minDamage = 33,
             maxDamage = 60,
-            armorPen = 50
+            armorPen = 50,
+            ilvl = 400,
+            tier = 6,
         };
         weaponList.Add(weapon);
 
@@ -4946,7 +5319,9 @@ public class Weapon : Item
             apc = 2,
             minDamage = 10,
             maxDamage = 42,
-            critDamage = 45
+            critDamage = 45,
+            ilvl = 400,
+            tier = 6,
         };
         weaponList.Add(weapon);
 
@@ -4969,7 +5344,9 @@ public class Weapon : Item
             apc = 2,
             minDamage = 10,
             maxDamage = 42,
-            critDamage = 45
+            critDamage = 45,
+            ilvl = 400,
+            tier = 6,
         };
         weaponList.Add(weapon);
 
@@ -4991,7 +5368,9 @@ public class Weapon : Item
             statMod = StatModifier.Intelligence,
             apc = 1,
             minDamage = 40,
-            maxDamage = 75
+            maxDamage = 75,
+            ilvl = 400,
+            tier = 6,
         };
         weaponList.Add(weapon);
 
@@ -5013,7 +5392,9 @@ public class Weapon : Item
             statMod = StatModifier.Intelligence,
             apc = 1,
             minDamage = 1,
-            maxDamage = 113
+            maxDamage = 113,
+            ilvl = 400,
+            tier = 6,
         };
         weaponList.Add(weapon);
 
@@ -5035,7 +5416,9 @@ public class Weapon : Item
             statMod = StatModifier.Intelligence,
             apc = 3,
             minDamage = 13,
-            maxDamage = 23
+            maxDamage = 23,
+            ilvl = 400,
+            tier = 6,
         };
         weaponList.Add(weapon);
 
@@ -5057,7 +5440,9 @@ public class Weapon : Item
             statMod = StatModifier.Intelligence,
             apc = 1,
             minDamage = 33,
-            maxDamage = 81
+            maxDamage = 81,
+            ilvl = 400,
+            tier = 6,
         };
         weaponList.Add(weapon);
 
@@ -5080,7 +5465,9 @@ public class Weapon : Item
             apc = 1,
             minDamage = 50,
             maxDamage = 50,
-            magicPen = 35
+            magicPen = 35,
+            ilvl = 400,
+            tier = 6,
         };
         weaponList.Add(weapon);
 
@@ -5104,6 +5491,8 @@ public class Weapon : Item
             isDot = true,
             minDamage = 20,
             maxDamage = 38,
+            ilvl = 400,
+            tier = 6,
 
         };
         weaponList.Add(weapon);
@@ -5127,7 +5516,9 @@ public class Weapon : Item
             apc = 2,
             minDamage = 1,
             maxDamage = 54,
-            critChance = 8
+            critChance = 8,
+            ilvl = 400,
+            tier = 6,
         };
         weaponList.Add(weapon);
 
@@ -5150,7 +5541,9 @@ public class Weapon : Item
             apc = 2,
             minDamage = 1,
             maxDamage = 54,
-            critChance = 8
+            critChance = 8,
+            ilvl = 400,
+            tier = 6,
         };
         weaponList.Add(weapon);
 
@@ -5172,10 +5565,12 @@ public class Weapon : Item
             statMod = StatModifier.Intelligence,
             apc = 1,
             minDamage = 40,
-            maxDamage = 75
+            maxDamage = 75,
+            ilvl = 400,
+            tier = 6,
         };
         weaponList.Add(weapon);
-
+/*
         // Create str shield
         weapon = new Weapon
         {
@@ -5195,7 +5590,8 @@ public class Weapon : Item
             apc = 1,
             minDamage = 1,
             maxDamage = 8,
-            strength = 35
+            strength = 35,
+            
         };
         weaponList.Add(weapon);
 
@@ -5243,7 +5639,7 @@ public class Weapon : Item
             maxDamage = 8,
             intelligence = 35
         };
-        weaponList.Add(weapon);
+        weaponList.Add(weapon);*/
 
         /********************/
         /*** LEGENDARIES ***/
@@ -5252,7 +5648,7 @@ public class Weapon : Item
         weapon = new Weapon
         {
             itemId = 060001,
-            name = "Summon Angellic Guardian",
+            name = "Summon Angelic Guardian",
             spritePath = "Icons/spell",
             soundPath = "Sfx/holysfx",
             rarity = Rarity.Legendary,
@@ -5266,9 +5662,11 @@ public class Weapon : Item
             statMod = StatModifier.Intelligence,
             apc = 1,
             minDamage = 30,
-            maxDamage = 48,
+            maxDamage = 50,
             bonusPhysical = 15,
             isDot = true,
+            ilvl = 600,
+            tier = 6,
         };
         weaponList.Add(weapon);
         
@@ -5290,9 +5688,12 @@ public class Weapon : Item
             damageType = DamageType.Physical,
             statMod = StatModifier.Strength,
             apc = 1,
-            minDamage = 75,
-            maxDamage = 75,
+            minDamage = 80,
+            maxDamage = 80,
             critDamage = 100,
+            armorPen = 100,
+            ilvl = 800,
+            tier = 6,
         };
         weaponList.Add(weapon);
         
@@ -5315,9 +5716,11 @@ public class Weapon : Item
             statMod = StatModifier.Strength,
             apc = 1,
             minDamage = 55,
-            maxDamage = 93,
+            maxDamage = 105,
             armorPen = -50,
             isSundering = true,
+            ilvl = 600,
+            tier = 6,
 
         };
         weaponList.Add(weapon);
@@ -5342,6 +5745,8 @@ public class Weapon : Item
             minDamage = 1,
             maxDamage = 37,
             critChance = 10,
+            ilvl = 600,
+            tier = 6,
         };
         weaponList.Add(weapon);
         
@@ -5368,6 +5773,8 @@ public class Weapon : Item
             armorPen = 25,
             isSundering = true,
             critChance = 5,
+            ilvl = 600,
+            tier = 6,
         };
         weaponList.Add(weapon);
         
@@ -5375,26 +5782,26 @@ public class Weapon : Item
         weapon = new Weapon
         {
             itemId = 060006,
-            name = "Letter of Marque",
-            flavorText = "No no see, it's not a crime, some king said I could murder you and take your stuff",
-            spritePath = "Icons/shield",
-            soundPath = "Sfx/donksfx",
+            name = "Scroll of Rogue",
+            flavorText = "Crudely scribbled instructions allow even a simpleton to cast a spell",
+            spritePath = "Icons/spell",
+            soundPath = "Sfx/wandsfx",
             rarity = Rarity.Legendary,
             buyValue = 5000000,
             sellValue = 35000,
             requiredLevel = 20,
             requiredDex = 100,
-            weaponType = WeaponType.Shield,
+            weaponType = WeaponType.Spell,
             elementType = ElementType.None,
-            damageType = DamageType.Physical,
+            damageType = DamageType.Magical,
             statMod = StatModifier.Dexterity,
             apc = 1,
-            minDamage = 1,
-            maxDamage = 35,
-            bonusGold = 100,
-            itemFind = 5,
-            magicFind = 5,
+            minDamage = 30,
+            maxDamage = 100,
+            bonusMagical = 10,
             dexterity = 35,
+            ilvl = 600,
+            tier = 6,
         };
         weaponList.Add(weapon);
         
