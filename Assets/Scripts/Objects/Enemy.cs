@@ -671,11 +671,11 @@ public class Enemy {
         };
         enemyList.Add(enemy);
         
-        // Nomad Chief
+        // Noblin Chief
         enemy = new Enemy
         {
             enemyId = 152,
-            enemyName = "Nomad Chief",
+            enemyName = "Noblin Chief",
             spriteList = { "Enemy/rhydon/rhydon (1)", "Enemy/rhydon/rhydon (2)", "Enemy/rhydon/rhydon (3)", "Enemy/rhydon/rhydon (4)", "Enemy/rhydon/rhydon (5)", "Enemy/rhydon/rhydon (6)", "Enemy/rhydon/rhydon (7)", "Enemy/rhydon/rhydon (8)", "Enemy/rhydon/rhydon (9)", "Enemy/rhydon/rhydon (10)", "Enemy/rhydon/rhydon (11)", "Enemy/rhydon/rhydon (12)", "Enemy/rhydon/rhydon (13)", "Enemy/rhydon/rhydon (14)", "Enemy/rhydon/rhydon (15)", "Enemy/rhydon/rhydon (16)", "Enemy/rhydon/rhydon (17)", "Enemy/rhydon/rhydon (18)", "Enemy/rhydon/rhydon (19)", "Enemy/rhydon/rhydon (20)", "Enemy/rhydon/rhydon (21)", "Enemy/rhydon/rhydon (22)", "Enemy/rhydon/rhydon (23)", "Enemy/rhydon/rhydon (24)", "Enemy/rhydon/rhydon (25)", "Enemy/rhydon/rhydon (26)", "Enemy/rhydon/rhydon (27)", "Enemy/rhydon/rhydon (28)", "Enemy/rhydon/rhydon (29)", "Enemy/rhydon/rhydon (30)", "Enemy/rhydon/rhydon (31)", "Enemy/rhydon/rhydon (32)", "Enemy/rhydon/rhydon (33)", "Enemy/rhydon/rhydon (34)", "Enemy/rhydon/rhydon (35)", "Enemy/rhydon/rhydon (36)", "Enemy/rhydon/rhydon (37)", "Enemy/rhydon/rhydon (38)", "Enemy/rhydon/rhydon (39)", "Enemy/rhydon/rhydon (40)", "Enemy/rhydon/rhydon (41)", "Enemy/rhydon/rhydon (42)", "Enemy/rhydon/rhydon (43)", "Enemy/rhydon/rhydon (44)", "Enemy/rhydon/rhydon (45)", "Enemy/rhydon/rhydon (46)", "Enemy/rhydon/rhydon (47)", "Enemy/rhydon/rhydon (48)", "Enemy/rhydon/rhydon (49)", "Enemy/rhydon/rhydon (50)", "Enemy/rhydon/rhydon (51)", "Enemy/rhydon/rhydon (52)", "Enemy/rhydon/rhydon (53)", "Enemy/rhydon/rhydon (54)", "Enemy/rhydon/rhydon (55)", "Enemy/rhydon/rhydon (56)", "Enemy/rhydon/rhydon (57)", "Enemy/rhydon/rhydon (58)", "Enemy/rhydon/rhydon (59)", "Enemy/rhydon/rhydon (60)", "Enemy/rhydon/rhydon (61)", "Enemy/rhydon/rhydon (62)", "Enemy/rhydon/rhydon (63)", "Enemy/rhydon/rhydon (64)", "Enemy/rhydon/rhydon (65)", "Enemy/rhydon/rhydon (66)", "Enemy/rhydon/rhydon (67)", "Enemy/rhydon/rhydon (68)", "Enemy/rhydon/rhydon (69)", "Enemy/rhydon/rhydon (70)", "Enemy/rhydon/rhydon (71)", "Enemy/rhydon/rhydon (72)", "Enemy/rhydon/rhydon (73)", "Enemy/rhydon/rhydon (74)", "Enemy/rhydon/rhydon (75)", "Enemy/rhydon/rhydon (76)", "Enemy/rhydon/rhydon (77)", "Enemy/rhydon/rhydon (78)", "Enemy/rhydon/rhydon (79)", "Enemy/rhydon/rhydon (80)", "Enemy/rhydon/rhydon (81)", "Enemy/rhydon/rhydon (82)", "Enemy/rhydon/rhydon (83)", "Enemy/rhydon/rhydon (84)", "Enemy/rhydon/rhydon (85)", "Enemy/rhydon/rhydon (86)", "Enemy/rhydon/rhydon (87)", "Enemy/rhydon/rhydon (88)", "Enemy/rhydon/rhydon (89)", "Enemy/rhydon/rhydon (90)", "Enemy/rhydon/rhydon (91)", "Enemy/rhydon/rhydon (92)", "Enemy/rhydon/rhydon (93)", "Enemy/rhydon/rhydon (94)", "Enemy/rhydon/rhydon (95)", "Enemy/rhydon/rhydon (96)", "Enemy/rhydon/rhydon (97)", "Enemy/rhydon/rhydon (98)", "Enemy/rhydon/rhydon (99)", "Enemy/rhydon/rhydon (100)", "Enemy/rhydon/rhydon (101)", "Enemy/rhydon/rhydon (102)", "Enemy/rhydon/rhydon (103)", "Enemy/rhydon/rhydon (104)", "Enemy/rhydon/rhydon (105)", "Enemy/rhydon/rhydon (106)", "Enemy/rhydon/rhydon (107)", "Enemy/rhydon/rhydon (108)", "Enemy/rhydon/rhydon (109)", "Enemy/rhydon/rhydon (110)", "Enemy/rhydon/rhydon (111)", "Enemy/rhydon/rhydon (112)", "Enemy/rhydon/rhydon (113)", "Enemy/rhydon/rhydon (114)", "Enemy/rhydon/rhydon (115)", "Enemy/rhydon/rhydon (116)", "Enemy/rhydon/rhydon (117)", "Enemy/rhydon/rhydon (118)", "Enemy/rhydon/rhydon (119)", "Enemy/rhydon/rhydon (120)", "Enemy/rhydon/rhydon (121)", "Enemy/rhydon/rhydon (122)", "Enemy/rhydon/rhydon (123)", "Enemy/rhydon/rhydon (124)", "Enemy/rhydon/rhydon (125)", "Enemy/rhydon/rhydon (126)", "Enemy/rhydon/rhydon (127)", "Enemy/rhydon/rhydon (128)", "Enemy/rhydon/rhydon (129)", "Enemy/rhydon/rhydon (130)", "Enemy/rhydon/rhydon (131)", "Enemy/rhydon/rhydon (132)", "Enemy/rhydon/rhydon (133)", "Enemy/rhydon/rhydon (134)", "Enemy/rhydon/rhydon (135)", "Enemy/rhydon/rhydon (136)", "Enemy/rhydon/rhydon (137)", "Enemy/rhydon/rhydon (138)", "Enemy/rhydon/rhydon (139)", "Enemy/rhydon/rhydon (140)", "Enemy/rhydon/rhydon (141)", "Enemy/rhydon/rhydon (142)", "Enemy/rhydon/rhydon (143)", "Enemy/rhydon/rhydon (144)", "Enemy/rhydon/rhydon (145)", "Enemy/rhydon/rhydon (146)", "Enemy/rhydon/rhydon (147)", "Enemy/rhydon/rhydon (148)", "Enemy/rhydon/rhydon (149)", "Enemy/rhydon/rhydon (150)", "Enemy/rhydon/rhydon (151)", "Enemy/rhydon/rhydon (152)", "Enemy/rhydon/rhydon (153)", "Enemy/rhydon/rhydon (154)", "Enemy/rhydon/rhydon (155)", "Enemy/rhydon/rhydon (156)", "Enemy/rhydon/rhydon (157)", "Enemy/rhydon/rhydon (158)", "Enemy/rhydon/rhydon (159)", "Enemy/rhydon/rhydon (160)", "Enemy/rhydon/rhydon (161)", "Enemy/rhydon/rhydon (162)", "Enemy/rhydon/rhydon (163)", "Enemy/rhydon/rhydon (164)", "Enemy/rhydon/rhydon (165)", "Enemy/rhydon/rhydon (166)", "Enemy/rhydon/rhydon (167)", "Enemy/rhydon/rhydon (168)", "Enemy/rhydon/rhydon (169)", "Enemy/rhydon/rhydon (170)", "Enemy/rhydon/rhydon (171)", "Enemy/rhydon/rhydon (172)", "Enemy/rhydon/rhydon (173)", "Enemy/rhydon/rhydon (174)", "Enemy/rhydon/rhydon (175)", "Enemy/rhydon/rhydon (176)", "Enemy/rhydon/rhydon (177)", "Enemy/rhydon/rhydon (178)", "Enemy/rhydon/rhydon (179)", "Enemy/rhydon/rhydon (180)", "Enemy/rhydon/rhydon (181)", "Enemy/rhydon/rhydon (182)", "Enemy/rhydon/rhydon (183)", "Enemy/rhydon/rhydon (184)", "Enemy/rhydon/rhydon (185)", "Enemy/rhydon/rhydon (186)", "Enemy/rhydon/rhydon (187)", "Enemy/rhydon/rhydon (188)", "Enemy/rhydon/rhydon (189)", "Enemy/rhydon/rhydon (190)", "Enemy/rhydon/rhydon (191)", "Enemy/rhydon/rhydon (192)" },
             health = 65,
             armor = 55,
@@ -719,11 +719,11 @@ public class Enemy {
         };
         enemyList.Add(enemy);
 
-        // Nomad Archer
+        // Noblin Archer
         enemy = new Enemy
         {
             enemyId = 155,
-            enemyName = "Nomad Archer",
+            enemyName = "Noblin Archer",
             spriteList = { "Enemy/ponyta" },
             health = 35,
             armor = 15,
@@ -739,7 +739,7 @@ public class Enemy {
         enemy = new Enemy
         {
             enemyId = 156,
-            enemyName = "Skeletal Cowboy",
+            enemyName = "Skeletal Orc",
             spriteList = { "Enemy/meowth" },
             health = 30,
             armor = 20,
@@ -783,11 +783,11 @@ public class Enemy {
         };
         enemyList.Add(enemy);
 
-        // Nomad Warlock
+        // Noblin Warlock
         enemy = new Enemy
         {
             enemyId = 159,
-            enemyName = "Nomad Warlock",
+            enemyName = "Noblin Warlock",
             spriteList = { "Enemy/rapidash" },
             health = 55,
             armor = 0,
@@ -835,7 +835,7 @@ public class Enemy {
         enemy = new Enemy
         {
             enemyId = 162,
-            enemyName = "Living Cowboy",
+            enemyName = "Orc Cowboy",
             spriteList = { "Enemy/mewtwo" },
             health = 200,
             armor = 35,
@@ -851,7 +851,7 @@ public class Enemy {
         enemy = new Enemy
         {
             enemyId = 163,
-            enemyName = "Ilkhan",
+            enemyName = "Kanye, King of Orcs",
             spriteList = { "Enemy/kangaskhan" },
             health = 500,
             armor = 50,
@@ -895,23 +895,23 @@ public class Enemy {
         };
         enemyList.Add(enemy);
         
-        // Elf bandit
+        // How do you fight quicksand
         enemy = new Enemy
         {
             enemyId = 166,
-            enemyName = "Elf Bandit",
+            enemyName = "Quicksand",
             spriteList = { "Enemy/abra" },
             health = 35,
             armor = 25,
             magicResist = 25,
             xpToGive = 3,
             goldToGive = 3,
-            weaknesses = { "Dark", "Water", "Claw", "Sword" },
-            resistances = { "Axe", "Mace", "Dagger", "Light" }
+            weaknesses = { "Dark", "Water", "Earth", "Staff" },
+            resistances = { "Axe", "Mace", "Dagger", "Fire" }
         };
         enemyList.Add(enemy);
         
-        // Nomad Archer
+        // Smokey the bear
         enemy = new Enemy
         {
             enemyId = 167,
@@ -996,14 +996,14 @@ public class Enemy {
         enemy = new Enemy
         {
             enemyId = 172,
-            enemyName = "Druid",
+            enemyName = "Dryad Druid",
             spriteList = { "Enemy/hypno" },
             health = 70,
             armor = 15,
             magicResist = 75,
             xpToGive = 5,
             goldToGive = 5,
-            weaknesses = { "Gun", "Dagger", "Staff", "Wand", "Bow", "Chakram", "Poison" },
+            weaknesses = { "Gun", "Dagger", "Staff", "Wand", "Bow", "Chakram", "Poison", "Axe" },
             resistances = { "Dark", "Light", "Water", "Fire", "Earth", "Air", "Lightning", "Ice"  }
         };
         enemyList.Add(enemy);
@@ -1012,7 +1012,7 @@ public class Enemy {
         enemy = new Enemy
         {
             enemyId = 173,
-            enemyName = "Defender of the Forest",
+            enemyName = "Tree-Man",
             spriteList = { "Enemy/hitmonlee" },
             health = 90,
             armor = 45,
@@ -1053,6 +1053,198 @@ public class Enemy {
             goldToGive = 20,
             weaknesses = { "Lightning", "Air", "Ice", "Wand", "Water",},
             resistances = { "Mace", "Axe", "Fire", "Earth", "Spell"},
+        };
+        enemyList.Add(enemy);
+        
+        // Troglodyte
+        enemy = new Enemy
+        {
+            enemyId = 176,
+            enemyName = "Troglodyte",
+            spriteList = { "Enemy/machop" },
+            health = 40,
+            armor = 25,
+            magicResist = 25,
+            xpToGive = 3,
+            goldToGive = 3,
+            weaknesses = { "Light", "Spell", "Spear", "Axe", "Dagger" },
+            resistances = { "Gun", "Mace", "Bow", "Chakram", "Dark", "Poison" }
+        };
+        enemyList.Add(enemy);
+        
+        // Hellbat
+        enemy = new Enemy
+        {
+            enemyId = 177,
+            enemyName = "Hellbat",
+            spriteList = { "Enemy/zubat" },
+            health = 45,
+            armor = 5,
+            magicResist = 45,
+            xpToGive = 3,
+            goldToGive = 3,
+            weaknesses = { "Air", "Gun", "Bow", "Chakram", "Water", "Ice" },
+            resistances = { "Claw", "Axe", "Sword", "Staff", "Fire", "Dagger" }
+        };
+        enemyList.Add(enemy);
+        
+        // Skaven
+        enemy = new Enemy
+        {
+            enemyId = 178,
+            enemyName = "Ratman",
+            spriteList = { "Enemy/rattata" },
+            health = 75,
+            armor = 5,
+            magicResist = 5,
+            xpToGive = 3,
+            goldToGive = 3,
+            weaknesses = { "Dark", "Fire", "Light", "Poison", "Lightning" },
+            resistances = {  }
+        };
+        enemyList.Add(enemy);
+        
+        // Rock
+        enemy = new Enemy
+        {
+            enemyId = 179,
+            enemyName = "Living Rock",
+            spriteList = { "Enemy/geodude" },
+            health = 35,
+            armor = 75,
+            magicResist = 15,
+            xpToGive = 3,
+            goldToGive = 3,
+            weaknesses = { "Water", "Ice", "Mace", "Staff", "Dark", "Air" },
+            resistances = { "Axe", "Dagger", "Sword", "Claw", "Fire", "Earth", "Poison" }
+        };
+        enemyList.Add(enemy);
+        
+        // Cave Troll
+        enemy = new Enemy
+        {
+            enemyId = 180,
+            enemyName = "Cave Troll",
+            spriteList = { "Enemy/electabuzz" },
+            health = 135,
+            armor = 6,
+            magicResist = 6,
+            xpToGive = 5,
+            goldToGive = 5,
+            weaknesses = { "Fire", "Bow", "Gun", "Chakram", "Spear", "Wand", "Light" },
+            resistances = { "Earth", "Poison", "Dark", "Air", "Ice", "Mace"}
+        };
+        enemyList.Add(enemy);
+        
+        // Foot Demon
+        enemy = new Enemy
+        {
+            enemyId = 181,
+            enemyName = "Footzebub",
+            spriteList = { "Enemy/magneton" },
+            health = 85,
+            armor = 15,
+            magicResist = 130,
+            xpToGive = 5,
+            goldToGive = 5,
+            weaknesses = { "Fire", "Axe", "Wand", "Light", "Lightning" },
+            resistances = { "Earth", "Poison", "Dark", "Spell", "Spear"}
+        };
+        enemyList.Add(enemy);
+        
+        // Cave Troll
+        enemy = new Enemy
+        {
+            enemyId = 182,
+            enemyName = "Minotaur",
+            spriteList = { "Enemy/magmar" },
+            health = 75,
+            armor = 75,
+            magicResist = 75,
+            xpToGive = 5,
+            goldToGive = 5,
+            weaknesses = { "Poison", "Bow", "Gun", "Chakram", "Mace", "Lightning", "Water" },
+            resistances = { "Earth", "Poison", "Dark", "Air", "Ice", "Dark", "Sword", "Claw"}
+        };
+        enemyList.Add(enemy);
+        
+        // Skeletal megasloth
+        enemy = new Enemy
+        {
+            enemyId = 183,
+            enemyName = "Skeletal Megasloth",
+            spriteList = { "Enemy/snorlax" },
+            health = 245,
+            armor = 8,
+            magicResist = 8,
+            xpToGive = 8,
+            goldToGive = 8,
+            weaknesses = { "Mace", "Axe", "Claw", "Lightning", "Earth", "Light" },
+            resistances = { "Dagger", "Spear", "Dark", "Bow", "Gun", "Chakram", "Water"}
+        };
+        enemyList.Add(enemy);
+        
+        // Ratman Swarm
+        enemy = new Enemy
+        {
+            enemyId = 184,
+            enemyName = "Ratman Swarm",
+            spriteList = { "Enemy/raticate" },
+            health = 150,
+            armor = 120,
+            magicResist = 35,
+            xpToGive = 8,
+            goldToGive = 8,
+            weaknesses = { "Sword", "Dagger", "Claw", "Gun", "Bow", "Chakram", "Light", "Fire" },
+            resistances = { "Axe", "Mace", "Spear", "Air", "Water", "Poison", "Spell"}
+        };
+        enemyList.Add(enemy);
+        
+        // Darksteel Golem
+        enemy = new Enemy
+        {
+            enemyId = 185,
+            enemyName = "Darksteel Golem",
+            spriteList = { "Enemy/golem" },
+            health = 85,
+            armor = 350,
+            magicResist = 15,
+            xpToGive = 8,
+            goldToGive = 8,
+            weaknesses = { "Lightning", "Mace", "Water", "Air", "Spell", "Ice" },
+            resistances = { "Earth", "Poison", "Axe", "Staff", "Fire", "Spear"}
+        };
+        enemyList.Add(enemy);
+        
+        // Gender representation
+        enemy = new Enemy
+        {
+            enemyId = 186,
+            enemyName = "Ratwoman Prophetess",
+            spriteList = { "Enemy/jynx" },
+            health = 250,
+            armor = 30,
+            magicResist = 180,
+            xpToGive = 10,
+            goldToGive = 10,
+            weaknesses = { "Staff", "Axe", "Sword", "Claw", "Dagger", "Wand", "Dark", "Earth"},
+            resistances = { "Poison", "Bow", "Gun", "Chakram", "Spell", "Light", "Mace" }
+        };
+        enemyList.Add(enemy);
+        
+        // Cyclops
+        enemy = new Enemy
+        {
+            enemyId = 187,
+            enemyName = "Cyclops",
+            spriteList = { "Enemy/machamp" },
+            health = 535,
+            armor = 115,
+            magicResist = 115,
+            xpToGive = 20,
+            goldToGive = 20,
+            weaknesses = { "Dagger", "Staff", "Lightning", "Gun", "Bow", "Chakram", "Axe"},
+            resistances = { "Water", "Axe", "Water", "Earth", "Spell", "Spear", "Mace"},
         };
         enemyList.Add(enemy);
         
