@@ -5,7 +5,7 @@ using UnityEngine;
 public class World {
 
     public string worldName = "";
-    public int enemyScaling = 1;
+    public double enemyScaling = 1;
     public int currentStage = 1;
     public string backgroundPath;
     public string soundPath;
@@ -83,7 +83,7 @@ public class World {
         world = new World
         {
             worldName = "Forest",
-            enemyScaling = 2,
+            enemyScaling = 2.1,
             backgroundPath = "Background/forest1",
             soundPath = "Music/forestmusic",
             enemyList = new List<Enemy> { enemy.GetEnemyById(el, 164), enemy.GetEnemyById(el, 165), enemy.GetEnemyById(el, 166), enemy.GetEnemyById(el, 167),
@@ -102,7 +102,7 @@ public class World {
         world = new World
         {
             worldName = "Cave",
-            enemyScaling = 3,
+            enemyScaling = 3.3,
             backgroundPath = "Background/cave1",
             soundPath = "Music/cavemusic",
             enemyList = new List<Enemy> { enemy.GetEnemyById(el, 176), enemy.GetEnemyById(el, 177), enemy.GetEnemyById(el, 178), enemy.GetEnemyById(el, 179),
@@ -121,7 +121,7 @@ public class World {
         world = new World
         {
             worldName = "River",
-            enemyScaling = 4,
+            enemyScaling = 4.7,
             backgroundPath = "Background/river",
             soundPath = "Music/rivermusic",
             enemyList = new List<Enemy> { enemy.GetEnemyById(el, 007), enemy.GetEnemyById(el, 019), enemy.GetEnemyById(el, 020), enemy.GetEnemyById(el, 021),
@@ -139,7 +139,7 @@ public class World {
         world = new World
         {
             worldName = "Swamp",
-            enemyScaling = 5,
+            enemyScaling = 6.2,
             backgroundPath = "Background/forest2",
             soundPath = "Music/swampmusic",
             enemyList = new List<Enemy> { enemy.GetEnemyById(el, 043), enemy.GetEnemyById(el, 046), enemy.GetEnemyById(el, 047), enemy.GetEnemyById(el, 048),
