@@ -712,8 +712,8 @@ public class Enemy {
             health = 90,
             armor = 45,
             magicResist = 45,
-            xpToGive = 10,
-            goldToGive = 10,
+            xpToGive = 8,
+            goldToGive = 8,
             weaknesses = { "Spear", "Bow", "Fire", "Dark", "Gun", "Chakram", "Wand"},
             resistances = {"Ice", "Light", "Poison", "Dagger" }
         };
@@ -805,7 +805,7 @@ public class Enemy {
             enemyId = 160,
             enemyName = "Eagle-Demon",
             spriteList = { "Enemy/pidgeot" },
-            health = 35,
+            health = 40,
             armor = 1,
             magicResist = 1,
             xpToGive = 3,
@@ -851,7 +851,7 @@ public class Enemy {
         enemy = new Enemy
         {
             enemyId = 163,
-            enemyName = "Kanye, King of Orcs",
+            enemyName = "Kanye, Terror of the West",
             spriteList = { "Enemy/kangaskhan" },
             health = 500,
             armor = 50,
@@ -869,9 +869,9 @@ public class Enemy {
             enemyId = 164,
             enemyName = "Monkey Archer",
             spriteList = { "Enemy/mankey" },
-            health = 40,
-            armor = 10,
-            magicResist = 10,
+            health = 30,
+            armor = 20,
+            magicResist = 20,
             xpToGive = 3,
             goldToGive = 3,
             weaknesses = { "Water", "Dagger", "Claw", "Sword", "Dark" },
@@ -885,9 +885,9 @@ public class Enemy {
             enemyId = 165,
             enemyName = "Rabbit Knight",
             spriteList = { "Enemy/rattata" },
-            health = 35,
-            armor = 95,
-            magicResist = 15,
+            health = 30,
+            armor = 55,
+            magicResist = 5,
             xpToGive = 3,
             goldToGive = 3,
             weaknesses = { "Mace", "Dark", "Spear", "Poison", "Air", "Lightning"},
@@ -901,9 +901,9 @@ public class Enemy {
             enemyId = 166,
             enemyName = "Quicksand",
             spriteList = { "Enemy/abra" },
-            health = 35,
-            armor = 25,
-            magicResist = 25,
+            health = 20,
+            armor = 35,
+            magicResist = 35,
             xpToGive = 3,
             goldToGive = 3,
             weaknesses = { "Dark", "Water", "Earth", "Staff" },
@@ -934,8 +934,8 @@ public class Enemy {
             enemyName = "Gnoll Farmer",
             spriteList = { "Enemy/pinsir" },
             health = 75,
-            armor = 15,
-            magicResist = 35,
+            armor = 25,
+            magicResist = 40,
             xpToGive = 5,
             goldToGive = 5,
             weaknesses = { "Gun", "Bow", "Chakram", "Wand", "Air", "Ice" },
@@ -950,7 +950,7 @@ public class Enemy {
             enemyName = "Dryad",
             spriteList = { "Enemy/exeggcute" },
             //tfw no sudowudo
-            health = 35,
+            health = 30,
             armor = 35,
             magicResist = 35,
             xpToGive = 3,
@@ -982,7 +982,7 @@ public class Enemy {
             enemyId = 171,
             enemyName = "Forest Troll",
             spriteList = { "Enemy/hitmonchan" },
-            health = 120,
+            health = 105,
             armor = 0,
             magicResist = 0,
             xpToGive = 5,
@@ -1000,7 +1000,7 @@ public class Enemy {
             spriteList = { "Enemy/hypno" },
             health = 70,
             armor = 15,
-            magicResist = 75,
+            magicResist = 55,
             xpToGive = 5,
             goldToGive = 5,
             weaknesses = { "Gun", "Dagger", "Staff", "Wand", "Bow", "Chakram", "Poison", "Axe" },
@@ -1024,35 +1024,35 @@ public class Enemy {
         };
         enemyList.Add(enemy);
         
-        // Ent
-        enemy = new Enemy
-        {
-            enemyId = 174,
-            enemyName = "Ent",
-            spriteList = { "Enemy/exeggutor" },
-            health = 220,
-            armor = 60,
-            magicResist = 25,
-            xpToGive = 10,
-            goldToGive = 10,
-            weaknesses = { "Fire", "Axe", "Dark", "Poison", "Wand", "Bow", "Gun", "Ice"},
-            resistances = { "Mace", "Sword", "Claw", "Dagger", "Earth", "Water" }
-        };
-        enemyList.Add(enemy);
-
         // Forest Dragon
         enemy = new Enemy
         {
-            enemyId = 175,
+            enemyId = 174,
             enemyName = "Forest Dragon",
             spriteList = { "Enemy/dragonite" },
-            health = 500,
+            health =180,
+            armor = 45,
+            magicResist = 45,
+            xpToGive = 10,
+            goldToGive = 10,
+            weaknesses = { "Lightning", "Air", "Ice", "Wand", "Water",},
+            resistances = { "Mace", "Axe", "Fire", "Earth", "Spell"},
+        };
+        enemyList.Add(enemy);
+        
+        // Ent
+        enemy = new Enemy
+        {
+            enemyId = 175,
+            enemyName = "Mossbrow",
+            spriteList = { "Enemy/exeggutor" },
+            health = 360,
             armor = 90,
             magicResist = 90,
             xpToGive = 20,
             goldToGive = 20,
-            weaknesses = { "Lightning", "Air", "Ice", "Wand", "Water",},
-            resistances = { "Mace", "Axe", "Fire", "Earth", "Spell"},
+            weaknesses = { "Fire", "Axe", "Dark", "Poison", "Wand", "Bow", "Gun", "Ice"},
+            resistances = { "Mace", "Sword", "Claw", "Dagger", "Earth", "Water" }
         };
         enemyList.Add(enemy);
         
@@ -1062,7 +1062,7 @@ public class Enemy {
             enemyId = 176,
             enemyName = "Troglodyte",
             spriteList = { "Enemy/machop" },
-            health = 40,
+            health = 35,
             armor = 25,
             magicResist = 25,
             xpToGive = 3,
@@ -1078,7 +1078,7 @@ public class Enemy {
             enemyId = 177,
             enemyName = "Hellbat",
             spriteList = { "Enemy/zubat" },
-            health = 45,
+            health = 35,
             armor = 5,
             magicResist = 45,
             xpToGive = 3,
@@ -1094,9 +1094,9 @@ public class Enemy {
             enemyId = 178,
             enemyName = "Ratman",
             spriteList = { "Enemy/rattata" },
-            health = 75,
-            armor = 5,
-            magicResist = 5,
+            health = 20,
+            armor = 40,
+            magicResist = 40,
             xpToGive = 3,
             goldToGive = 3,
             weaknesses = { "Dark", "Fire", "Light", "Poison", "Lightning" },
@@ -1110,7 +1110,7 @@ public class Enemy {
             enemyId = 179,
             enemyName = "Living Rock",
             spriteList = { "Enemy/geodude" },
-            health = 35,
+            health = 20,
             armor = 75,
             magicResist = 15,
             xpToGive = 3,
@@ -1126,7 +1126,7 @@ public class Enemy {
             enemyId = 180,
             enemyName = "Cave Troll",
             spriteList = { "Enemy/electabuzz" },
-            health = 135,
+            health = 100,
             armor = 6,
             magicResist = 6,
             xpToGive = 5,
@@ -1142,9 +1142,9 @@ public class Enemy {
             enemyId = 181,
             enemyName = "Footzebub",
             spriteList = { "Enemy/magneton" },
-            health = 85,
+            health = 55,
             armor = 15,
-            magicResist = 130,
+            magicResist = 100,
             xpToGive = 5,
             goldToGive = 5,
             weaknesses = { "Fire", "Axe", "Wand", "Light", "Lightning" },
@@ -1152,13 +1152,13 @@ public class Enemy {
         };
         enemyList.Add(enemy);
         
-        // Cave Troll
+        // Minotaur
         enemy = new Enemy
         {
             enemyId = 182,
             enemyName = "Minotaur",
             spriteList = { "Enemy/magmar" },
-            health = 75,
+            health = 45,
             armor = 75,
             magicResist = 75,
             xpToGive = 5,
@@ -1174,9 +1174,9 @@ public class Enemy {
             enemyId = 183,
             enemyName = "Skeletal Megasloth",
             spriteList = { "Enemy/snorlax" },
-            health = 245,
-            armor = 8,
-            magicResist = 8,
+            health = 135,
+            armor = 9,
+            magicResist = 9,
             xpToGive = 8,
             goldToGive = 8,
             weaknesses = { "Mace", "Axe", "Claw", "Lightning", "Earth", "Light" },
@@ -1190,9 +1190,9 @@ public class Enemy {
             enemyId = 184,
             enemyName = "Ratman Swarm",
             spriteList = { "Enemy/raticate" },
-            health = 150,
+            health = 105,
             armor = 120,
-            magicResist = 35,
+            magicResist = 25,
             xpToGive = 8,
             goldToGive = 8,
             weaknesses = { "Sword", "Dagger", "Claw", "Gun", "Bow", "Chakram", "Light", "Fire" },
@@ -1222,7 +1222,7 @@ public class Enemy {
             enemyId = 186,
             enemyName = "Ratwoman Prophetess",
             spriteList = { "Enemy/jynx" },
-            health = 250,
+            health = 150,
             armor = 30,
             magicResist = 180,
             xpToGive = 10,
@@ -1238,13 +1238,397 @@ public class Enemy {
             enemyId = 187,
             enemyName = "Cyclops",
             spriteList = { "Enemy/machamp" },
-            health = 535,
-            armor = 115,
-            magicResist = 115,
+            health = 750,
+            armor = 5,
+            magicResist = 5,
             xpToGive = 20,
             goldToGive = 20,
             weaknesses = { "Dagger", "Staff", "Lightning", "Gun", "Bow", "Chakram", "Axe"},
             resistances = { "Water", "Axe", "Water", "Earth", "Spell", "Spear", "Mace"},
+        };
+        enemyList.Add(enemy);
+        
+        // Merman
+        enemy = new Enemy
+        {
+            enemyId = 188,
+            enemyName = "Mer-man",
+            spriteList = { "Enemy/vaporeon" },
+            health = 35,
+            armor = 25,
+            magicResist = 25,
+            xpToGive = 3,
+            goldToGive = 3,
+            weaknesses = { "Lightning", "Sword", "Claw", "Poison", "Dark" },
+            resistances = { "Gun", "Bow", "Chakram", "Light", "Water", "Air" }
+        };
+        enemyList.Add(enemy);
+        
+        // Scary Crab
+        enemy = new Enemy
+        {
+            enemyId = 189,
+            enemyName = "Giant Crab",
+            spriteList = { "Enemy/kingler" },
+            health = 35,
+            armor = 45,
+            magicResist = 5,
+            xpToGive = 3,
+            goldToGive = 3,
+            weaknesses = { "Air", "Dagger", "Mace", "Poison", "Earth", "Ice" },
+            resistances = { "Claw", "Axe", "Sword", "Staff", "Water", "Fire" }
+        };
+        enemyList.Add(enemy);
+        
+        // Capricorn
+        enemy = new Enemy
+        {
+            enemyId = 190,
+            enemyName = "Capricorn",
+            spriteList = { "Enemy/magikarp" },
+            health = 20,
+            armor = 40,
+            magicResist = 40,
+            xpToGive = 3,
+            goldToGive = 3,
+            weaknesses = { "Spear", "Bow", "Gun", "Chakram", "Wand" },
+            resistances = { "Poison", "Light", "Mace", "Dagger", "Staff" }
+        };
+        enemyList.Add(enemy);
+        
+        // Kelpie
+        enemy = new Enemy
+        {
+            enemyId = 191,
+            enemyName = "Kelpie",
+            spriteList = { "Enemy/ponyta" },
+            health = 50,
+            armor = 0,
+            magicResist = 0,
+            xpToGive = 3,
+            goldToGive = 3,
+            weaknesses = { "Lightning", "Ice", "Axe", "Dagger", "Earth", "Air" },
+            resistances = { "Spear", "Fire", "Sword", "Claw", "Staff", "Dark" }
+        };
+        enemyList.Add(enemy);
+        
+        // Kappa
+        enemy = new Enemy
+        {
+            enemyId = 192,
+            enemyName = "Kappa",
+            spriteList = { "Enemy/golduck" },
+            health = 60,
+            armor = 15,
+            magicResist = 90,
+            xpToGive = 5,
+            goldToGive = 5,
+            weaknesses = { "Air", "Bow", "Gun", "Chakram", "Staff", "Ice", "Light" },
+            resistances = { "Fire", "Poison", "Dark", "Earth", "Wand", "Mace", "Claw"}
+        };
+        enemyList.Add(enemy);
+        
+        // Qalupalik this looks like a green hypno with claws that steals eskimo children
+        enemy = new Enemy
+        {
+            enemyId = 193,
+            enemyName = "Qalupalik",
+            spriteList = { "Enemy/hypno" },
+            health = 85,
+            armor = 30,
+            magicResist = 25,
+            xpToGive = 5,
+            goldToGive = 5,
+            weaknesses = { "Fire", "Spear", "Sword", "Claw", "Spell", "Staff" },
+            resistances = { "Water", "Poison", "Dark", "Mace", "Dagger", "Lightning"}
+        };
+        enemyList.Add(enemy);
+        
+        // Zin this is a water spirit from kongolese folklore
+        enemy = new Enemy
+        {
+            enemyId = 194,
+            enemyName = "Zin",
+            spriteList = { "Enemy/gengar" },
+            health = 50,
+            armor = 300,
+            magicResist = 15,
+            xpToGive = 5,
+            goldToGive = 5,
+            weaknesses = { "Spell", "Wand", "Air", "Light", "Dark"},
+            resistances = { "Water", "Fire", "Poison", "Earth", "Ice"}
+        };
+        enemyList.Add(enemy);
+        
+        // Ghost Ship
+        enemy = new Enemy
+        {
+            enemyId = 195,
+            enemyName = "Ghost Ship",
+            spriteList = { "Enemy/snorlax" },
+            health = 115,
+            armor = 245,
+            magicResist = 45,
+            xpToGive = 8,
+            goldToGive = 8,
+            weaknesses = { "Fire", "Axe", "Spell", "Wand", "Water", "Light" },
+            resistances = { "Dark", "Spear", "Dagger", "Bow", "Gun", "Chakram"}
+        };
+        enemyList.Add(enemy);
+        
+        // Uilebheist this just means monster in scottish, but its gonna be a loch ness monster
+        enemy = new Enemy
+        {
+            enemyId = 196,
+            enemyName = "Uilebheist",
+            spriteList = { "Enemy/lapras" },
+            health = 150,
+            armor = 5,
+            magicResist = 5,
+            xpToGive = 8,
+            goldToGive = 8,
+            weaknesses = { "Gun", "Bow", "Chakram", "Poison", "Spear", "Sword"},
+            resistances = { "Axe", "Mace", "Water", "Fire", "Air", "Earth"}
+        };
+        enemyList.Add(enemy);
+        
+        // Tlanusi this is a giant leech and its v scary
+        enemy = new Enemy
+        {
+            enemyId = 197,
+            enemyName = "Tlanusi",
+            spriteList = { "Enemy/gyarodos" },
+            health = 55,
+            armor = 205,
+            magicResist = 205,
+            xpToGive = 8,
+            goldToGive = 8,
+            weaknesses = { "Fire", "Axe", "Claw", "Ice", "Staff", "Earth" },
+            resistances = { "Lightning", "Poison", "Mace", "Spell", "Wand", "Spear"}
+        };
+        enemyList.Add(enemy);
+        
+        // Hentybolus, Reaper of the Waves (not hentai)
+        enemy = new Enemy
+        {
+            enemyId = 198,
+            enemyName = "Hentybolus, Reaper of the Waves",
+            spriteList = { "Enemy/tentacruel" },
+            health = 240,
+            armor = 25,
+            magicResist = 25,
+            xpToGive = 10,
+            goldToGive = 10,
+            weaknesses = {"Gun", "Bow", "Chakram", "Ice", "Lightning", "Earth" },
+            resistances = {"Poison", "Sword", "Staff", "Claw", "Water", "Fire" }
+        };
+        enemyList.Add(enemy);
+        
+        // Ryujin
+        enemy = new Enemy
+        {
+            enemyId = 199,
+            enemyName = "Ryujin the Eastern Flame",
+            spriteList = { "Enemy/dragonair" },
+            health = 450,
+            armor = 65,
+            magicResist = 65,
+            xpToGive = 20,
+            goldToGive = 20,
+            weaknesses = { "Lightning", "Spear", "Mace", "Spell", "Air", "Earth", "Poison"},
+            resistances = { "Fire", "Dark", "Light", "Bow", "Gun", "Chakram", "Water"},
+        };
+        enemyList.Add(enemy);
+        
+        // Rotted Zombie
+        enemy = new Enemy
+        {
+            enemyId = 200,
+            enemyName = "Rotted Zombie",
+            spriteList = { "Enemy/jynx" },
+            health = 45,
+            armor = 10,
+            magicResist = 10,
+            xpToGive = 3,
+            goldToGive = 3,
+            weaknesses = { "Fire", "Axe", "Claw", "Light", "Staff" },
+            resistances = { "Mace", "Staff", "Dagger", "Spear", "Water", "Dark" }
+        };
+        enemyList.Add(enemy);
+        
+        // Skeletal Archer
+        enemy = new Enemy
+        {
+            enemyId = 201,
+            enemyName = "Skeletal Archer",
+            spriteList = { "Enemy/cubone" },
+            health = 35,
+            armor = 50,
+            magicResist = 0,
+            xpToGive = 3,
+            goldToGive = 3,
+            weaknesses = { "Gun", "Bow", "Chakram", "Mace", "Light", "Ice" },
+            resistances = { "Water", "Lightning", "Sword", "Spear", "Claw" }
+        };
+        enemyList.Add(enemy);
+        
+        // Meganeura
+        enemy = new Enemy
+        {
+            enemyId = 202,
+            enemyName = "Meganeura",
+            spriteList = { "Enemy/venonat" },
+            health = 15,
+            armor = 55,
+            magicResist = 55,
+            xpToGive = 3,
+            goldToGive = 3,
+            weaknesses = { "Staff", "Bow", "Gun", "Chakram", "Air" },
+            resistances = { "Poison", "Spell", "Mace", "Dagger", "Wand" }
+        };
+        enemyList.Add(enemy);
+        
+        // Will o' Wisp
+        enemy = new Enemy
+        {
+            enemyId = 203,
+            enemyName = "Will O' Wisp",
+            spriteList = { "Enemy/charmander" },
+            health = 30,
+            armor = 10,
+            magicResist = 30,
+            xpToGive = 3,
+            goldToGive = 3,
+            weaknesses = { "Dark", "Ice", "Water", "Air" },
+            resistances = { "Spell", "Fire", "Staff", "Spear", "Staff", "Light" }
+        };
+        enemyList.Add(enemy);
+        
+        // Bunyip
+        enemy = new Enemy
+        {
+            enemyId = 204,
+            enemyName = "Bunyip",
+            spriteList = { "Enemy/dewgong" },
+            health = 65,
+            armor = 90,
+            magicResist = 10,
+            xpToGive = 5,
+            goldToGive = 5,
+            weaknesses = { "Fire", "Air", "Light"},
+            resistances = {"Dark", "Ice", "Water" }
+        };
+        enemyList.Add(enemy);
+        
+        // Decaying Ogre
+        enemy = new Enemy
+        {
+            enemyId = 205,
+            enemyName = "Decaying Ogre",
+            spriteList = { "Enemy/machamp" },
+            health = 135,
+            armor = 0,
+            magicResist = 0,
+            xpToGive = 5,
+            goldToGive = 5,
+            weaknesses = { "Fire", "Spear", "Sword", "Claw", "Light", "Wand", "Ice" },
+            resistances = { "Dark", "Poison", "Water"}
+        };
+        enemyList.Add(enemy);
+        
+        // Son of Sobek (this is just an alligator)
+        enemy = new Enemy
+        {
+            enemyId = 206,
+            enemyName = "Son of Sobek",
+            spriteList = { "Enemy/dratini" },
+            health = 75,
+            armor = 45,
+            magicResist = 45,
+            xpToGive = 5,
+            goldToGive = 5,
+            weaknesses = { "Dagger", "Bow", "Gun", "Bow", "Staff", "Mace"},
+            resistances = { "Spell", "Water", "Earth", "Air", "Sword", "Claw"}
+        };
+        enemyList.Add(enemy);
+        
+        // Necrotoad
+        enemy = new Enemy
+        {
+            enemyId = 207,
+            enemyName = "Necrotoad",
+            spriteList = { "Enemy/muk" },
+            health = 110,
+            armor = 55,
+            magicResist = 235,
+            xpToGive = 8,
+            goldToGive = 8,
+            weaknesses = { "Dark", "Axe", "Dagger", "Water", "Ice", "Wand" },
+            resistances = { "Light", "Spell", "Mace", "Bow", "Gun", "Chakram"}
+        };
+        enemyList.Add(enemy);
+        
+        // Rusted Automaton
+        enemy = new Enemy
+        {
+            enemyId = 208,
+            enemyName = "Rusted Automaton",
+            spriteList = { "Enemy/onyx" },
+            health = 65,
+            armor = 185,
+            magicResist = 185,
+            xpToGive = 8,
+            goldToGive = 8,
+            weaknesses = { "Lightning", "Ice", "Mace", "Dagger", "Spell", "Water"},
+            resistances = { "Fire", "Axe", "Poison", "Light", "Dark", "Spear"}
+        };
+        enemyList.Add(enemy);
+        
+        // Gentleman Catfish
+        enemy = new Enemy
+        {
+            enemyId = 209,
+            enemyName = "Gentleman Catfish",
+            spriteList = { "Enemy/lickitung" },
+            health = 75,
+            armor = 45,
+            magicResist = 80,
+            xpToGive = 8,
+            goldToGive = 8,
+            weaknesses = { "Sword", "Claw", "Dagger", "Axe", "Staff", "Ice" },
+            resistances = { "Fire", "Dark", "Mace", "Bow", "Gun", "Chakram"}
+        };
+        enemyList.Add(enemy);
+        
+        // The Ferryman (creepy)
+        enemy = new Enemy
+        {
+            enemyId = 210,
+            enemyName = "The Ferryman",
+            spriteList = { "Enemy/mrmime" },
+            health = 180,
+            armor = 85,
+            magicResist = 25,
+            xpToGive = 10,
+            goldToGive = 10,
+            weaknesses = {"Fire", "Mace", "Light", "Air", "Claw", "Staff" },
+            resistances = {"Poison", "Sword", "Spear", "Dark", "Poison", "Earth" }
+        };
+        enemyList.Add(enemy);
+        
+        // Mokele-Mbembe 
+        enemy = new Enemy
+        {
+            enemyId = 211,
+            enemyName = "Mokele-Mbembe",
+            spriteList = { "Enemy/nidoking" },
+            health = 400,
+            armor = 95,
+            magicResist = 95,
+            xpToGive = 20,
+            goldToGive = 20,
+            weaknesses = { "Ice", "Air", "Poison", "Mace", "Spear", "Wand"},
+            resistances = { "Fire", "Water", "Sword", "Dagger", "Spell", "Lightning"},
         };
         enemyList.Add(enemy);
         
