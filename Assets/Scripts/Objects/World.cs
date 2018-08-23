@@ -40,6 +40,8 @@ public class World {
             player.world5 = true;
         if (world.worldName == "Swamp")
             player.world6 = true;
+        if (world.worldName == "Desert")
+            player.world7 = true;
     }
 
     // List of all worlds
@@ -152,6 +154,25 @@ public class World {
             armorList = armor.GetListByTier(al, 5),
             prefixList = mod.GetListByTier(pl, 5),
             suffixList = mod.GetListByTier(sl, 5)
+        };
+        worldList.Add(world);
+                                                                                         
+                                                                                         // Create Swamp
+        world = new World
+        {
+            worldName = "Desert",
+            enemyScaling = 7.8,
+            backgroundPath = "Background/desert",
+            soundPath = "Music/desertmusic",
+            enemyList = new List<Enemy> { enemy.GetEnemyById(el, 212), enemy.GetEnemyById(el, 213), enemy.GetEnemyById(el, 214), enemy.GetEnemyById(el, 215),
+            enemy.GetEnemyById(el, 216), enemy.GetEnemyById(el, 217), enemy.GetEnemyById(el, 218),
+            enemy.GetEnemyById(el, 219), enemy.GetEnemyById(el, 220), enemy.GetEnemyById(el, 221},
+            miniBoss = enemy.GetEnemyById(el, 222),
+            boss = enemy.GetEnemyById(el, 223),
+            weaponList = weapon.GetListByTier(wl, 06),
+            armorList = armor.GetListByTier(al, 6),
+            prefixList = mod.GetListByTier(pl, 6),
+            suffixList = mod.GetListByTier(sl, 6)
         };
         worldList.Add(world);
 
