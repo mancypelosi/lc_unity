@@ -1812,7 +1812,7 @@ public class Weapon : Item
         weapon = new Weapon
         {
             itemId = 036101,
-            name = "Hurricane Sword",
+            name = "Whirlwind Sword",
             flavorText = "Measure twice, cut once",
             spritePath = "Icons/windblade",
             soundPath = "Sfx/windbladesfx",
@@ -2783,7 +2783,7 @@ public class Weapon : Item
         weapon = new Weapon
         {
             itemId = 046101,
-            name = "Typhoon Blade",
+            name = "Vortex Blade",
             flavorText = "Measure twice, cut once",
             spritePath = "Icons/windblade",
             soundPath = "Sfx/windbladesfx",
@@ -2799,7 +2799,7 @@ public class Weapon : Item
             apc = 1,
             minDamage = 16,
             maxDamage = 30,
-            critChance = 5,
+            critChance = 4,
             ilvl = 100,
             tier = 4,
         };
@@ -3758,7 +3758,7 @@ public class Weapon : Item
         weapon = new Weapon
         {
             itemId = 056101,
-            name = "Vortex Blade",
+            name = "Typhoon Blade",
             flavorText = "Measure twice, cut once",
             spritePath = "Icons/windblade",
             soundPath = "Sfx/windbladesfx",
@@ -3774,7 +3774,7 @@ public class Weapon : Item
             apc = 1,
             minDamage = 24,
             maxDamage = 45,
-            critChance = 7,
+            critChance = 5,
             ilvl = 200,
             tier = 5,
         };
@@ -4465,7 +4465,7 @@ public class Weapon : Item
             apc = 2,
             minDamage = 1,
             maxDamage = 36,
-            critChance = 6,
+            critChance = 5,
             ilvl = 200,
             tier = 5,
         };
@@ -4490,7 +4490,7 @@ public class Weapon : Item
             apc = 2,
             minDamage = 1,
             maxDamage = 36,
-            critChance = 6,
+            critChance = 5,
             ilvl = 200,
             tier = 5,
         };
@@ -4809,7 +4809,7 @@ public class Weapon : Item
         weapon = new Weapon
         {
             itemId = 066101,
-            name = "Whirlwind Blade",
+            name = "Hurricane Blade",
             flavorText = "Measure twice, cut once",
             spritePath = "Icons/windblade",
             soundPath = "Sfx/windbladesfx",
@@ -4825,7 +4825,7 @@ public class Weapon : Item
             apc = 1,
             minDamage = 36,
             maxDamage = 67,
-            critChance = 9,
+            critChance = 6,
             ilvl = 400,
             tier = 6,
         };
@@ -5516,7 +5516,7 @@ public class Weapon : Item
             apc = 2,
             minDamage = 1,
             maxDamage = 54,
-            critChance = 8,
+            critChance = 6,
             ilvl = 400,
             tier = 6,
         };
@@ -5541,7 +5541,7 @@ public class Weapon : Item
             apc = 2,
             minDamage = 1,
             maxDamage = 54,
-            critChance = 8,
+            critChance = 6,
             ilvl = 400,
             tier = 6,
         };
@@ -5778,7 +5778,7 @@ public class Weapon : Item
         };
         weaponList.Add(weapon);
         
-        // Create blackjack
+        // Create fake spell
         weapon = new Weapon
         {
             itemId = 060006,
@@ -5802,6 +5802,1140 @@ public class Weapon : Item
             dexterity = 35,
             ilvl = 600,
             tier = 6,
+        };
+        weaponList.Add(weapon);
+        
+        /***************/
+        /*** TIER 7 ***/
+        /*************/
+
+        // Create sword weapon
+        weapon = new Weapon
+        {
+            itemId = 070101,
+            name = "Titanium Sword",
+            spritePath = "Icons/sword",
+            soundPath = "Sfx/swordsfx",
+            rarity = Rarity.Common,
+            buyValue = 250000,
+            sellValue = 25000,
+            requiredLevel = 25,
+            requiredStr = 125,
+            weaponType = WeaponType.Sword,
+            elementType = ElementType.None,
+            damageType = DamageType.Physical,
+            statMod = StatModifier.Strength,
+            apc = 1,
+            minDamage = 60,
+            maxDamage = 112,
+            ilvl = 800,
+            tier = 7,
+        };
+        weaponList.Add(weapon);
+
+        // Create flaming sword weapon
+        weapon = new Weapon
+        {
+            itemId = 071101,
+            name = "Flaming Titanium Sword",
+            spritePath = "Icons/sword",
+            soundPath = "Sfx/swordsfx",
+            rarity = Rarity.Uncommon,
+            buyValue = 375000,
+            sellValue = 37500,
+            requiredLevel = 25,
+            requiredStr = 125,
+            weaponType = WeaponType.Sword,
+            elementType = ElementType.Fire,
+            damageType = DamageType.Magical,
+            statMod = StatModifier.Strength,
+            apc = 1,
+            minDamage = 60,
+            maxDamage = 112,
+            ilvl = 800,
+            tier = 7,
+        };
+        weaponList.Add(weapon);
+
+        // Create windblade weapon
+        weapon = new Weapon
+        {
+            itemId = 076101,
+            name = "Monsoon Blade",
+            flavorText = "Measure twice, cut once",
+            spritePath = "Icons/windblade",
+            soundPath = "Sfx/windbladesfx",
+            rarity = Rarity.Uncommon,
+            buyValue = 375000,
+            sellValue = 37500,
+            requiredLevel = 25,
+            requiredStr = 125,
+            weaponType = WeaponType.Sword,
+            elementType = ElementType.Air,
+            damageType = DamageType.Magical,
+            statMod = StatModifier.Strength,
+            apc = 1,
+            minDamage = 54,
+            maxDamage = 100,
+            critChance = 7,
+            ilvl = 800,
+            tier = 6,
+        };
+        weaponList.Add(weapon);
+
+
+        // Create axe weapon
+        weapon = new Weapon
+        {
+            itemId = 070102,
+            name = "Titanium Axe",
+            spritePath = "Icons/axe",
+            soundPath = "Sfx/axesfx",
+            rarity = Rarity.Common,
+            buyValue = 250000,
+            sellValue = 25000,
+            requiredLevel = 25,
+            requiredStr = 125,
+            weaponType = WeaponType.Axe,
+            elementType = ElementType.None,
+            damageType = DamageType.Physical,
+            statMod = StatModifier.Strength,
+            apc = 1,
+            minDamage = 67,
+            maxDamage = 143,
+            armorPen = -50,
+            ilvl = 800,
+            tier = 7,
+        };
+        weaponList.Add(weapon);
+
+        // Create axe weapon
+        weapon = new Weapon
+        {
+            itemId = 077102,
+            name = "Titanium Conductive Axe",
+            spritePath = "Icons/axe",
+            soundPath = "Sfx/axesfx",
+            rarity = Rarity.Uncommon,
+            buyValue = 375000,
+            sellValue = 37500,
+            requiredLevel = 25,
+            requiredStr = 125,
+            weaponType = WeaponType.Axe,
+            elementType = ElementType.Lightning,
+            damageType = DamageType.Magical,
+            statMod = StatModifier.Strength,
+            apc = 1,
+            minDamage = 67,
+            maxDamage = 143,
+            magicPen = -50,
+            ilvl = 800,
+            tier = 7,
+        };
+        weaponList.Add(weapon);
+
+        // Create axe weapon
+        weapon = new Weapon
+        {
+            itemId = 073102,
+            name = "Titanium Poisoned Hatchets",
+            spritePath = "Icons/axes",
+            soundPath = "Sfx/axesfx",
+            rarity = Rarity.Uncommon,
+            buyValue = 375000,
+            sellValue = 37500,
+            requiredLevel = 25,
+            requiredStr = 125,
+            weaponType = WeaponType.Axe,
+            elementType = ElementType.Poison,
+            damageType = DamageType.Physical,
+            statMod = StatModifier.Strength,
+            apc = 2,
+            isDot = true,
+            minDamage = 22,
+            maxDamage = 45,
+            armorPen = -50,
+            ilvl = 800,
+            tier = 7,
+        };
+        weaponList.Add(weapon);
+
+        // Create mace weapon
+        weapon = new Weapon
+        {
+            itemId = 070103,
+            name = "Titanium Mace",
+            spritePath = "Icons/mace",
+            soundPath = "Sfx/macesfx",
+            rarity = Rarity.Common,
+            buyValue = 250000,
+            sellValue = 25000,
+            requiredLevel = 25,
+            requiredStr = 125,
+            weaponType = WeaponType.Mace,
+            elementType = ElementType.None,
+            damageType = DamageType.Physical,
+            statMod = StatModifier.Strength,
+            apc = 1,
+            minDamage = 54,
+            maxDamage = 90,
+            armorPen = 50,
+            ilvl = 800,
+            tier = 7,
+        };
+        weaponList.Add(weapon);
+
+        // Create mace weapon
+        weapon = new Weapon
+        {
+            itemId = 078103,
+            name = "Titanium Crusader Mace",
+            spritePath = "Icons/mace",
+            soundPath = "Sfx/macesfx",
+            rarity = Rarity.Uncommon,
+            buyValue = 375000,
+            sellValue = 37500,
+            requiredLevel = 25,
+            requiredStr = 125,
+            weaponType = WeaponType.Mace,
+            elementType = ElementType.Light,
+            damageType = DamageType.Magical,
+            statMod = StatModifier.Strength,
+            apc = 1,
+            minDamage = 54,
+            maxDamage = 90,
+            magicPen = 50,
+            ilvl = 800,
+            tier = 7,
+        };
+        weaponList.Add(weapon);
+
+
+        // Create spear
+        weapon = new Weapon
+        {
+            itemId = 070106,
+            name = "Titanium Halberd",
+            spritePath = "Icons/halberd",
+            soundPath = "Sfx/spearsfx",
+            rarity = Rarity.Common,
+            buyValue = 250000,
+            sellValue = 25000,
+            requiredLevel = 25,
+            requiredStr = 125,
+            weaponType = WeaponType.Spear,
+            elementType = ElementType.None,
+            damageType = DamageType.Physical,
+            statMod = StatModifier.Strength,
+            apc = 1,
+            minDamage = 81,
+            maxDamage = 82,
+            ilvl = 800,
+            tier = 7,
+        };
+        weaponList.Add(weapon);
+
+        // Create dagger weapon
+        weapon = new Weapon
+        {
+            itemId = 070205,
+            name = "Titanium Dagger",
+            spritePath = "Icons/dagger",
+            soundPath = "Sfx/stabsfx",
+            rarity = Rarity.Common,
+            buyValue = 250000,
+            sellValue = 25000,
+            requiredLevel = 25,
+            requiredDex = 125,
+            weaponType = WeaponType.Dagger,
+            elementType = ElementType.None,
+            damageType = DamageType.Physical,
+            statMod = StatModifier.Dexterity,
+            apc = 2,
+            minDamage = 27,
+            maxDamage = 60,
+            ilvl = 800,
+            tier = 7,
+        };
+        weaponList.Add(weapon);
+
+        // Create flaming dagger weapon
+        weapon = new Weapon
+        {
+            itemId = 071205,
+            name = "Flaming Titanium Dagger",
+            spritePath = "Icons/dagger",
+            soundPath = "Sfx/stabsfx",
+            rarity = Rarity.Uncommon,
+            buyValue = 375000,
+            sellValue = 37500,
+            requiredLevel = 25,
+            requiredDex = 125,
+            weaponType = WeaponType.Dagger,
+            elementType = ElementType.Fire,
+            damageType = DamageType.Magical,
+            statMod = StatModifier.Dexterity,
+            apc = 2,
+            minDamage = 27,
+            maxDamage = 60,
+            ilvl = 800,
+            tier = 7,
+        };
+        weaponList.Add(weapon);
+        
+        // Create holy dagger weapon
+        weapon = new Weapon
+        {
+            itemId = 078205,
+            name = "Blessed Titanium Dagger",
+            spritePath = "Icons/dagger",
+            soundPath = "Sfx/stabsfx",
+            rarity = Rarity.Uncommon,
+            buyValue = 375000,
+            sellValue = 37500,
+            requiredLevel = 25,
+            requiredDex = 125,
+            weaponType = WeaponType.Dagger,
+            elementType = ElementType.Light,
+            damageType = DamageType.Magical,
+            statMod = StatModifier.Dexterity,
+            apc = 2,
+            minDamage = 27,
+            maxDamage = 60,
+            ilvl = 800,
+            tier = 7,
+        };
+        weaponList.Add(weapon);
+
+        // Create poison dagger weapon
+        weapon = new Weapon
+        {
+            itemId = 073202,
+            name = "Poisoned Titanium Dagger",
+            spritePath = "Icons/dagger",
+            soundPath = "Sfx/stabsfx",
+            rarity = Rarity.Uncommon,
+            buyValue = 375000,
+            sellValue = 37500,
+            requiredLevel = 25,
+            requiredDex = 125,
+            weaponType = WeaponType.Dagger,
+            elementType = ElementType.Poison,
+            damageType = DamageType.Physical,
+            statMod = StatModifier.Dexterity,
+            apc = 1,
+            isDot = true,
+            minDamage = 30,
+            maxDamage = 57,
+            ilvl = 800,
+            tier = 7,
+        };
+        weaponList.Add(weapon);
+
+        // Create staff weapon
+        weapon = new Weapon
+        {
+            itemId = 070309,
+            name = "Living Staff",
+            spritePath = "Icons/staff",
+            soundPath = "Sfx/bamboosfx",
+            rarity = Rarity.Common,
+            buyValue = 250000,
+            sellValue = 25000,
+            requiredLevel = 25,
+            requiredInt = 125,
+            weaponType = WeaponType.Staff,
+            elementType = ElementType.None,
+            damageType = DamageType.Physical,
+            statMod = StatModifier.Intelligence,
+            apc = 1,
+            minDamage = 60,
+            maxDamage = 112,
+            ilvl = 800,
+            tier = 7,
+        };
+        weaponList.Add(weapon);
+
+        // Create Earth staff weapon
+        weapon = new Weapon
+        {
+            itemId = 066309,
+            name = "Living Windy Staff",
+            spritePath = "Icons/staff",
+            soundPath = "Sfx/bamboosfx",
+            rarity = Rarity.Uncommon,
+            buyValue = 375000,
+            sellValue = 37500,
+            requiredLevel = 25,
+            requiredInt = 125,
+            weaponType = WeaponType.Staff,
+            elementType = ElementType.Air,
+            damageType = DamageType.Magical,
+            statMod = StatModifier.Intelligence,
+            apc = 1,
+            minDamage = 60,
+            maxDamage = 112,
+            ilvl = 800,
+            tier = 7,
+        };
+        weaponList.Add(weapon);
+
+        // Create rifle
+        weapon = new Weapon
+        {
+            itemId = 070104,
+            name = "Titanium Rifle",
+            spritePath = "Icons/rifle",
+            soundPath = "Sfx/gunsfx",
+            rarity = Rarity.Common,
+            buyValue = 250000,
+            sellValue = 25000,
+            requiredLevel = 25,
+            requiredStr = 125,
+            weaponType = WeaponType.Gun,
+            elementType = ElementType.None,
+            damageType = DamageType.Physical,
+            statMod = StatModifier.Strength,
+            apc = 1,
+            minDamage = 60,
+            maxDamage = 112,
+            ilvl = 800,
+            tier = 7,
+        };
+        weaponList.Add(weapon);
+
+        // Create rifle
+        weapon = new Weapon
+        {
+            itemId = 072104,
+            name = "Titanium Boulder Launcher",
+            flavorText = "Beats throwing them",
+            spritePath = "Icons/rifle",
+            soundPath = "Sfx/gunsfx",
+            rarity = Rarity.Uncommon,
+            buyValue = 375000,
+            sellValue = 37500,
+            requiredLevel = 25,
+            requiredStr = 125,
+            weaponType = WeaponType.Gun,
+            elementType = ElementType.Earth,
+            damageType = DamageType.Magical,
+            statMod = StatModifier.Strength,
+            apc = 1,
+            minDamage = 60,
+            maxDamage = 112,
+            ilvl = 800,
+            tier = 7,
+        };
+        weaponList.Add(weapon);
+        
+        // Create rifle
+        weapon = new Weapon
+        {
+            itemId = 079104,
+            name = "Titanium Shadow Rifle",
+            flavorText = "Painted black for extra edge",
+            spritePath = "Icons/rifle",
+            soundPath = "Sfx/gunsfx",
+            rarity = Rarity.Uncommon,
+            buyValue = 375000,
+            sellValue = 37500,
+            requiredLevel = 25,
+            requiredStr = 125,
+            weaponType = WeaponType.Gun,
+            elementType = ElementType.Dark,
+            damageType = DamageType.Magical,
+            statMod = StatModifier.Strength,
+            apc = 1,
+            minDamage = 60,
+            maxDamage = 112,
+            ilvl = 800,
+            tier = 7,
+        };
+        weaponList.Add(weapon);
+
+
+        // Create spear
+        weapon = new Weapon
+        {
+            itemId = 070206,
+            name = "Titanium Spear",
+            spritePath = "Icons/spear",
+            soundPath = "Sfx/spearsfx",
+            rarity = Rarity.Common,
+            buyValue = 250000,
+            sellValue = 25000,
+            requiredLevel = 25,
+            requiredDex = 125,
+            weaponType = WeaponType.Spear,
+            elementType = ElementType.None,
+            damageType = DamageType.Physical,
+            statMod = StatModifier.Dexterity,
+            apc = 1,
+            minDamage = 75,
+            maxDamage = 90,
+            ilvl = 800,
+            tier = 7,
+        };
+        weaponList.Add(weapon);
+
+
+        // Create spear
+        weapon = new Weapon
+        {
+            itemId = 074206,
+            name = "Titanium Water Trident",
+            spritePath = "Icons/trident",
+            soundPath = "Sfx/spearsfx",
+            rarity = Rarity.Uncommon,
+            buyValue = 375000,
+            sellValue = 37500,
+            requiredLevel = 25,
+            requiredDex = 125,
+            weaponType = WeaponType.Spear,
+            elementType = ElementType.Water,
+            damageType = DamageType.Magical,
+            statMod = StatModifier.Dexterity,
+            apc = 1,
+            minDamage = 75,
+            maxDamage = 90,
+            ilvl = 800,
+            tier = 7,
+        };
+        weaponList.Add(weapon);
+
+        // Create spear
+        weapon = new Weapon
+        {
+            itemId = 075206,
+            name = "Titanium Ice Javelin",
+            spritePath = "Icons/trident",
+            soundPath = "Sfx/spearsfx",
+            rarity = Rarity.Uncommon,
+            buyValue = 375000,
+            sellValue = 37500,
+            requiredLevel = 25,
+            requiredDex = 125,
+            weaponType = WeaponType.Spear,
+            elementType = ElementType.Ice,
+            damageType = DamageType.Magical,
+            statMod = StatModifier.Dexterity,
+            apc = 1,
+            minDamage = 75,
+            maxDamage = 90,
+            ilvl = 800,
+            tier = 7,
+        };
+        weaponList.Add(weapon);
+
+        // Create bow
+        weapon = new Weapon
+        {
+            itemId = 070208,
+            name = "Living Bow",
+            spritePath = "Icons/bow",
+            soundPath = "Sfx/bowsfx",
+            rarity = Rarity.Common,
+            buyValue = 250000,
+            sellValue = 25000,
+            requiredLevel = 25,
+            requiredDex = 125,
+            weaponType = WeaponType.Bow,
+            elementType = ElementType.None,
+            damageType = DamageType.Physical,
+            statMod = StatModifier.Dexterity,
+            apc = 1,
+            minDamage = 60,
+            maxDamage = 112,
+            ilvl = 800,
+            tier = 7,
+        };
+        weaponList.Add(weapon);
+
+        // Create thunder bow
+        weapon = new Weapon
+        {
+            itemId = 077208,
+            name = "Living Thunder Bow",
+            spritePath = "Icons/bow",
+            soundPath = "Sfx/thundersfx",
+            rarity = Rarity.Uncommon,
+            buyValue = 375000,
+            sellValue = 37500,
+            requiredLevel = 25,
+            requiredDex = 125,
+            weaponType = WeaponType.Bow,
+            elementType = ElementType.Lightning,
+            damageType = DamageType.Magical,
+            statMod = StatModifier.Dexterity,
+            apc = 1,
+            minDamage = 60,
+            maxDamage = 112,
+            ilvl = 800,
+            tier = 7,
+        };
+        weaponList.Add(weapon);
+
+        // Create mace weapon
+        weapon = new Weapon
+        {
+            itemId = 070103,
+            name = "Titanium Blackjack",
+            spritePath = "Icons/blackjack",
+            soundPath = "Sfx/blackjacksfx",
+            rarity = Rarity.Common,
+            buyValue = 250000,
+            sellValue = 25000,
+            requiredLevel = 25,
+            requiredDex = 125,
+            weaponType = WeaponType.Mace,
+            elementType = ElementType.None,
+            damageType = DamageType.Physical,
+            statMod = StatModifier.Dexterity,
+            apc = 1,
+            minDamage = 50,
+            maxDamage = 90,
+            armorPen = 70,
+            ilvl = 800,
+            tier = 7,
+        };
+        weaponList.Add(weapon);
+
+        // Create claw
+        weapon = new Weapon
+        {
+            itemId = 070206,
+            name = "Titanium Claws",
+            spritePath = "Icons/claws",
+            soundPath = "Sfx/clawsfx",
+            rarity = Rarity.Common,
+            buyValue = 250000,
+            sellValue = 25000,
+            requiredLevel = 25,
+            requiredDex = 125,
+            weaponType = WeaponType.Claw,
+            elementType = ElementType.None,
+            damageType = DamageType.Physical,
+            statMod = StatModifier.Dexterity,
+            apc = 2,
+            minDamage = 15,
+            maxDamage = 63,
+            critDamage = 55,
+            ilvl = 800,
+            tier = 7,
+        };
+        weaponList.Add(weapon);
+
+        // Create claw
+        weapon = new Weapon
+        {
+            itemId = 079206,
+            name = "Titanium Shadow Claws",
+            spritePath = "Icons/claws",
+            soundPath = "Sfx/clawsfx",
+            rarity = Rarity.Uncommon,
+            buyValue = 375000,
+            sellValue = 37500,
+            requiredLevel = 25,
+            requiredDex = 125,
+            weaponType = WeaponType.Claw,
+            elementType = ElementType.Dark,
+            damageType = DamageType.Magical,
+            statMod = StatModifier.Dexterity,
+            apc = 2,
+            minDamage = 15,
+            maxDamage = 63,
+            critDamage = 55,
+            ilvl = 800,
+            tier = 7,
+        };
+        weaponList.Add(weapon);
+
+        // Create fireball
+        weapon = new Weapon
+        {
+            itemId = 071312,
+            name = "Eruption",
+            spritePath = "Icons/spell",
+            soundPath = "Sfx/fireballsfx",
+            rarity = Rarity.Common,
+            buyValue = 250000,
+            sellValue = 25000,
+            requiredLevel = 25,
+            requiredInt = 125,
+            weaponType = WeaponType.Spell,
+            elementType = ElementType.Fire,
+            damageType = DamageType.Magical,
+            statMod = StatModifier.Intelligence,
+            apc = 1,
+            minDamage = 60,
+            maxDamage = 112,
+            ilvl = 800,
+            tier = 7,
+        };
+        weaponList.Add(weapon);
+
+        // Create ice storm
+        weapon = new Weapon
+        {
+            itemId = 075312,
+            name = "Flash Winter",
+            spritePath = "Icons/spell",
+            soundPath = "Sfx/icesfx",
+            rarity = Rarity.Uncommon,
+            buyValue = 375000,
+            sellValue = 37500,
+            requiredLevel = 25,
+            requiredInt = 125,
+            weaponType = WeaponType.Spell,
+            elementType = ElementType.Ice,
+            damageType = DamageType.Magical,
+            statMod = StatModifier.Intelligence,
+            apc = 1,
+            minDamage = 1,
+            maxDamage = 170,
+            ilvl = 800,
+            tier = 7,
+        };
+        weaponList.Add(weapon);
+
+        // Create lightning storm
+        weapon = new Weapon
+        {
+            itemId = 076312,
+            name = "Dread Lightning",
+            spritePath = "Icons/spell",
+            soundPath = "Sfx/thundersfx",
+            rarity = Rarity.Uncommon,
+            buyValue = 375000,
+            sellValue = 37500,
+            requiredLevel = 25,
+            requiredInt = 125,
+            weaponType = WeaponType.Spell,
+            elementType = ElementType.Lightning,
+            damageType = DamageType.Magical,
+            statMod = StatModifier.Intelligence,
+            apc = 3,
+            minDamage = 20,
+            maxDamage = 34,
+            ilvl = 800,
+            tier = 7,
+        };
+        weaponList.Add(weapon);
+        
+        // Aquaman stuff
+        weapon = new Weapon
+        {
+            itemId = 074312,
+            name = "Call of the Ocean",
+            spritePath = "Icons/spell",
+            soundPath = "Sfx/whalesfx",
+            rarity = Rarity.Uncommon,
+            buyValue = 375000,
+            sellValue = 37500,
+            requiredLevel = 25,
+            requiredInt = 125,
+            weaponType = WeaponType.Spell,
+            elementType = ElementType.Water,
+            damageType = DamageType.Magical,
+            statMod = StatModifier.Intelligence,
+            apc = 2,
+            minDamage = 15,
+            maxDamage = 29,
+            isDot = true,
+            ilvl = 800,
+            tier = 7,
+        };
+        weaponList.Add(weapon);
+
+        // Create wand
+        weapon = new Weapon
+        {
+            itemId = 071310,
+            name = "Living Wand",
+            spritePath = "Icons/wand",
+            soundPath = "Sfx/wandsfx1",
+            rarity = Rarity.Common,
+            buyValue = 250000,
+            sellValue = 25000,
+            requiredLevel = 25,
+            requiredInt = 125,
+            weaponType = WeaponType.Wand,
+            elementType = ElementType.None,
+            damageType = DamageType.Magical,
+            statMod = StatModifier.Intelligence,
+            apc = 1,
+            minDamage = 50,
+            maxDamage = 121,
+            ilvl = 800,
+            tier = 7,
+        };
+        weaponList.Add(weapon);
+
+        // Create enfeebling ray
+        weapon = new Weapon
+        {
+            itemId = 079312,
+            name = "Felforce",
+            spritePath = "Icons/spell",
+            soundPath = "Sfx/lasersfx",
+            rarity = Rarity.Common,
+            buyValue = 250000,
+            sellValue = 25000,
+            requiredLevel = 25,
+            requiredInt = 125,
+            weaponType = WeaponType.Spell,
+            elementType = ElementType.Dark,
+            damageType = DamageType.Magical,
+            statMod = StatModifier.Intelligence,
+            apc = 1,
+            minDamage = 75,
+            maxDamage = 75,
+            magicPen = 50,
+            ilvl = 800,
+            tier = 7,
+        };
+        weaponList.Add(weapon);
+
+        // Create ZOMBIES
+        weapon = new Weapon
+        {
+            itemId = 079303,
+            name = "Summon Zombie Saurian",
+            spritePath = "Icons/zombie",
+            soundPath = "Sfx/groansfx",
+            rarity = Rarity.Uncommon,
+            buyValue = 250000,
+            sellValue = 25000,
+            requiredLevel = 25,
+            requiredInt = 125,
+            weaponType = WeaponType.Mace,
+            elementType = ElementType.Dark,
+            damageType = DamageType.Physical,
+            statMod = StatModifier.Intelligence,
+            apc = 1,
+            isDot = true,
+            minDamage = 30,
+            maxDamage = 57,
+            ilvl = 800,
+            tier = 7,
+
+        };
+        weaponList.Add(weapon);
+
+        // Create chakram
+        weapon = new Weapon
+        {
+            itemId = 070311,
+            name = "Titanium Chakram",
+            spritePath = "Icons/chakram",
+            soundPath = "Sfx/chakramsfx",
+            rarity = Rarity.Common,
+            buyValue = 250000,
+            sellValue = 25000,
+            requiredLevel = 25,
+            requiredInt = 125,
+            weaponType = WeaponType.Chakram,
+            elementType = ElementType.None,
+            damageType = DamageType.Physical,
+            statMod = StatModifier.Intelligence,
+            apc = 2,
+            minDamage = 1,
+            maxDamage = 81,
+            critChance = 7,
+            ilvl = 800,
+            tier = 7,
+        };
+        weaponList.Add(weapon);
+
+        // Create chakram
+        weapon = new Weapon
+        {
+            itemId = 078311,
+            name = "Thorium Angelic Chakram",
+            spritePath = "Icons/chakram",
+            soundPath = "Sfx/chakramsfx",
+            rarity = Rarity.Uncommon,
+            buyValue = 375000,
+            sellValue = 37500,
+            requiredLevel = 25,
+            requiredInt = 125,
+            weaponType = WeaponType.Chakram,
+            elementType = ElementType.Light,
+            damageType = DamageType.Magical,
+            statMod = StatModifier.Intelligence,
+            apc = 2,
+            minDamage = 1,
+            maxDamage = 81,
+            critChance = 7,
+            ilvl = 800,
+            tier = 7,
+        };
+        weaponList.Add(weapon);
+
+        // Create sword weapon
+        weapon = new Weapon
+        {
+            itemId = 070301,
+            name = "Astral Blade",
+            spritePath = "Icons/mindblade",
+            soundPath = "Sfx/energyswordsfx",
+            rarity = Rarity.Common,
+            buyValue = 250000,
+            sellValue = 25000,
+            requiredLevel = 25,
+            requiredInt = 125,
+            weaponType = WeaponType.Sword,
+            elementType = ElementType.None,
+            damageType = DamageType.Physical,
+            statMod = StatModifier.Intelligence,
+            apc = 1,
+            minDamage = 60,
+            maxDamage = 112,
+            ilvl = 800,
+            tier = 7,
+        };
+        weaponList.Add(weapon);
+/*
+        // Create str shield
+        weapon = new Weapon
+        {
+            itemId = 060113,
+            name = "Thorium Shield",
+            spritePath = "Icons/shield",
+            soundPath = "Sfx/donksfx",
+            rarity = Rarity.Common,
+            buyValue = 80000,
+            sellValue = 10000,
+            requiredLevel = 20,
+            requiredStr = 100,
+            weaponType = WeaponType.Shield,
+            elementType = ElementType.None,
+            damageType = DamageType.Physical,
+            statMod = StatModifier.Strength,
+            apc = 1,
+            minDamage = 1,
+            maxDamage = 8,
+            strength = 35,
+            
+        };
+        weaponList.Add(weapon);
+
+        // Create dex shield
+        weapon = new Weapon
+        {
+            itemId = 060213,
+            name = "Thorium Buckler",
+            spritePath = "Icons/shield",
+            soundPath = "Sfx/donksfx",
+            rarity = Rarity.Common,
+            buyValue = 80000,
+            sellValue = 10000,
+            requiredLevel = 20,
+            requiredDex = 100,
+            weaponType = WeaponType.Shield,
+            elementType = ElementType.None,
+            damageType = DamageType.Physical,
+            statMod = StatModifier.Dexterity,
+            apc = 1,
+            minDamage = 1,
+            maxDamage = 8,
+            dexterity = 35
+        };
+        weaponList.Add(weapon);
+
+        // Create int shield
+        weapon = new Weapon
+        {
+            itemId = 060313,
+            name = "Elven Spirit Totem",
+            spritePath = "Icons/shield",
+            soundPath = "Sfx/donksfx",
+            rarity = Rarity.Common,
+            buyValue = 80000,
+            sellValue = 10000,
+            requiredLevel = 20,
+            requiredInt = 100,
+            weaponType = WeaponType.Shield,
+            elementType = ElementType.None,
+            damageType = DamageType.Physical,
+            statMod = StatModifier.Intelligence,
+            apc = 1,
+            minDamage = 1,
+            maxDamage = 8,
+            intelligence = 35
+        };
+        weaponList.Add(weapon);*/
+
+        /********************/
+        /*** LEGENDARIES ***/
+        /******************/
+        // Create spell
+        weapon = new Weapon
+        {
+            itemId = 070001,
+            name = "Shards of the Wind",
+            spritePath = "Icons/chakram",
+            soundPath = "Sfx/windbladesfx",
+            rarity = Rarity.Legendary,
+            buyValue = 15000000,
+            sellValue = 100000,
+            requiredLevel = 25,
+            requiredInt = 125,
+            weaponType = WeaponType.Chakram,
+            elementType = ElementType.Air,
+            damageType = DamageType.Magical,
+            statMod = StatModifier.Intelligence,
+            apc = 4,
+            minDamage = 1,
+            maxDamage = 50,
+            critChance = 15,
+            ilvl = 1200,
+            tier = 7,
+        };
+        weaponList.Add(weapon);
+        
+        // Create saitama
+        weapon = new Weapon
+        {
+            itemId = 070002,
+            name = "Summon Potato",
+            spritePath = "Icons/spell",
+            flavorText = "Breaks all laws of thermodynamics, but utterly fails to harm your enemies",
+            soundPath = "Sfx/potatosfx",
+            rarity = Rarity.Legendary,
+            buyValue = 15000000,
+            sellValue = 100000,
+            requiredLevel = 25,
+            requiredInt = 125,
+            weaponType = WeaponType.Mace,
+            elementType = ElementType.None,
+            damageType = DamageType.Physical,
+            statMod = StatModifier.Intelligence,
+            apc = 1,
+            minDamage = 1,
+            maxDamage = 5,
+            isDot = true,
+            critDamage = 100,
+            critChance = 100,
+            armorPen = 100,
+            itemFind = 100,
+            goldFind = 100,
+            magicFind = 100,
+            bonusExp = 100,
+            ilvl = 1200,
+            tier = 7,
+        };
+        weaponList.Add(weapon);
+        
+        // Create baguette
+        weapon = new Weapon
+        {
+            itemId = 070003,
+            name = "Weeping Blade",
+            spritePath = "Icons/sword",
+            flavorText = "The salty tears of a thousand gamers flow from this ancient blade",
+            soundPath = "Sfx/swordsfx",
+            rarity = Rarity.Legendary,
+            buyValue = 15000000,
+            sellValue = 100000,
+            requiredLevel = 25,
+            requiredStr = 100,
+            weaponType = WeaponType.Sword,
+            elementType = ElementType.Water,
+            damageType = DamageType.Physical,
+            statMod = StatModifier.Strength,
+            apc = 1,
+            minDamage = 35,
+            maxDamage = 105,
+            armorPen = 100,
+            isSundering = true,
+            isDot = true,
+            ilvl = 1200,
+            tier = 7,
+
+        };
+        weaponList.Add(weapon);
+        
+        // Create spell
+        weapon = new Weapon
+        {
+            itemId = 070004,
+            name = "Branch of the Galaxy Tree",
+            spritePath = "Icons/staff",
+            flavorText = "I am copyrighted",
+            soundPath = "Sfx/staffsfx",
+            rarity = Rarity.Legendary,
+            buyValue = 15000000,
+            sellValue = 100000,
+            requiredLevel = 25,
+            requiredStr = 125,
+            weaponType = WeaponType.Staff,
+            elementType = ElementType.Earth,
+            damageType = DamageType.Physical,
+            statMod = StatModifier.Strength,
+            apc = 1,
+            minDamage = 60,
+            maxDamage = 140,
+            bonusPhysical = 10,
+            isSundering = true,
+            ilvl = 1200,
+            tier = 7,
+        };
+        weaponList.Add(weapon);
+        
+        // Create earth dagger
+        weapon = new Weapon
+        {
+            itemId = 070005,
+            name = "Dirty Titanium Dagger",
+            spritePath = "Icons/dagger",
+            soundPath = "Sfx/stabsfx",
+            rarity = Rarity.Legendary,
+            buyValue = 15000000,
+            sellValue = 3100000,
+            requiredLevel = 25,
+            requiredDex = 125,
+            weaponType = WeaponType.Dagger,
+            elementType = ElementType.Earth,
+            damageType = DamageType.Physical,
+            statMod = StatModifier.Dexterity,
+            apc = 2,
+            minDamage = 25,
+            maxDamage = 65,
+            armorPen = 75,
+            isSundering = true,
+            critChance = 10,
+            ilvl = 1200,
+            tier = 7,
+        };
+        weaponList.Add(weapon);
+        
+        // Create machine gun
+        weapon = new Weapon
+        {
+            itemId = 070006,
+            name = "Automatic Rifle",
+            flavorText = "Forged in the distant land of America, this weapon fires an unending stream of bullets ",
+            spritePath = "Icons/gun",
+            soundPath = "Sfx/machinegunsfx",
+            rarity = Rarity.Legendary,
+            buyValue = 5000000,
+            sellValue = 35000,
+            requiredLevel = 25,
+            requiredDex = 125,
+            weaponType = WeaponType.Gun,
+            elementType = ElementType.None,
+            damageType = DamageType.Physical,
+            statMod = StatModifier.Dexterity,
+            apc = 10,
+            minDamage = 1,
+            maxDamage = 30,
+            bonusPhysical = -10,
+            dexterity = -15,
+            armorPen = -50
+            ilvl = 1200,
+            tier = 7,
         };
         weaponList.Add(weapon);
         
