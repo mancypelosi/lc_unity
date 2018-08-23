@@ -1590,7 +1590,7 @@ public class Enemy {
             enemyId = 209,
             enemyName = "Gentleman Catfish",
             spriteList = { "Enemy/lickitung" },
-            health = 75,
+            health = 115,
             armor = 45,
             magicResist = 80,
             xpToGive = 8,
@@ -1629,6 +1629,198 @@ public class Enemy {
             goldToGive = 20,
             weaknesses = { "Ice", "Air", "Poison", "Mace", "Spear", "Wand"},
             resistances = { "Fire", "Water", "Sword", "Dagger", "Spell", "Lightning"},
+        };
+        enemyList.Add(enemy);
+        
+        // Anubite
+        enemy = new Enemy
+        {
+            enemyId = 212,
+            enemyName = "Anubite",
+            spriteList = { "Enemy/hitmonchan" },
+            health = 35,
+            armor = 40,
+            magicResist = 15,
+            xpToGive = 3,
+            goldToGive = 3,
+            weaknesses = { "Sword", "Staff", "Claw", "Dark", "Ice" },
+            resistances = { "Mace", "Spell", "Bow", "Gun", "Chakram", "Dark" }
+        };
+        enemyList.Add(enemy);
+        
+        // Ghoul
+        enemy = new Enemy
+        {
+            enemyId = 212,
+            enemyName = "Ghoul",
+            spriteList = { "Enemy/sandslash" },
+            health = 35,
+            armor = 25,
+            magicResist = 25,
+            xpToGive = 3,
+            goldToGive = 3,
+            weaknesses = { "Gun", "Bow", "Chakram", "Fire", "Light", "Spear" },
+            resistances = { "Water", "Poison", "Dark", "Sword", "Claw", "Dagger" }
+        };
+        enemyList.Add(enemy);
+        
+        // Floating sword (this is on fire)
+        enemy = new Enemy
+        {
+            enemyId = 213,
+            enemyName = "Floating Scimitar",
+            spriteList = { "Enemy/charmander" },
+            health = 15,
+            armor = 55,
+            magicResist = 55,
+            xpToGive = 3,
+            goldToGive = 3,
+            weaknesses = { "Water", "Dark", "Mace", "Spell", "Air", "Lightning" },
+            resistances = { "Staff", "Poison", "Spear", "Axe", "Wand", "Fire" }
+        };
+        enemyList.Add(enemy);
+        
+        // Mirage
+        enemy = new Enemy
+        {
+            enemyId = 214,
+            enemyName = "Mirage",
+            spriteList = { "Enemy/ghastly" },
+            health = 25,
+            armor = 10,
+            magicResist = 40,
+            xpToGive = 3,
+            goldToGive = 3,
+            weaknesses = { "Spell", "Air", "Water", "Earth" },
+            resistances = { "Wand", "Gun", "Bow", "Chakram", "Poison", "Ice" }
+        };
+        enemyList.Add(enemy);
+        
+        // Djinn
+        enemy = new Enemy
+        {
+            enemyId = 215,
+            enemyName = "Djinn",
+            spriteList = { "Enemy/haunter" },
+            health = 65,
+            armor = 25,
+            magicResist = 75,
+            xpToGive = 5,
+            goldToGive = 5,
+            weaknesses = { "Air", "Dagger", "Lightning", "Earth"},
+            resistances = {"Dark", "Ice", "Poison", "Light" }
+        };
+        enemyList.Add(enemy);
+        
+        // Roc
+        enemy = new Enemy
+        {
+            enemyId = 216,
+            enemyName = "Roc",
+            spriteList = { "Enemy/fearow" },
+            health = 85,
+            armor = 40,
+            magicResist = 40,
+            xpToGive = 5,
+            goldToGive = 5,
+            weaknesses = { "Gun", "Bow", "Chakram", "Spear", "Air", "Ice" },
+            resistances = { "Dark", "Poison", "Water", "Light", "Sword", "Claw"}
+        };
+        enemyList.Add(enemy);
+        
+        // Monkey Cavalry
+        enemy = new Enemy
+        {
+            enemyId = 217,
+            enemyName = "Monkey Cavalry",
+            spriteList = { "Enemy/primeape" },
+            health = 55,
+            armor = 95,
+            magicResist = 45,
+            xpToGive = 5,
+            goldToGive = 5,
+            weaknesses = { "Spear", "Axe", "Sword", "Claw", "Ice", "Fire"},
+            resistances = { "Dagger", "Mace", "Gun", "Bow", "Chakram", "Earth"}
+        };
+        enemyList.Add(enemy);
+        
+        // Hierophant (a hierophant riding an elephant)
+        enemy = new Enemy
+        {
+            enemyId = 218,
+            enemyName = "Hierophant",
+            spriteList = { "Enemy/rhydon" },
+            health = 75,
+            armor = 135,
+            magicResist = 235,
+            xpToGive = 8,
+            goldToGive = 8,
+            weaknesses = { "Dark", "Fire", "Gun", "Dagger", "Bow", "Chakram" },
+            resistances = { "Spear", "Staff", "Spell", "Sword", "Claw", "Light"}
+        };
+        enemyList.Add(enemy);
+        
+        // Sphynx
+        enemy = new Enemy
+        {
+            enemyId = 219,
+            enemyName = "Sphynx",
+            spriteList = { "Enemy/persian" },
+            health = 65,
+            armor = 185,
+            magicResist = 185,
+            xpToGive = 8,
+            goldToGive = 8,
+            weaknesses = { "Mace", "Ice", "Water", "Earth", "Wand", "Spear"},
+            resistances = { "Fire", "Axe", "Poison", "Dagger", "Light", "Claw"}
+        };
+        enemyList.Add(enemy);
+        
+        // Scorpicore
+        enemy = new Enemy
+        {
+            enemyId = 220,
+            enemyName = "Scorpicore",
+            spriteList = { "Enemy/parasect" },
+            health = 85,
+            armor = 245,
+            magicResist = 80,
+            xpToGive = 8,
+            goldToGive = 8,
+            weaknesses = { "Mace", "Axe", "Light", "Staff", "Spear", "Ice" },
+            resistances = { "Sword", "Claw", "Poison", "Earth", "Air", "Wand"}
+        };
+        enemyList.Add(enemy);
+        
+        // Bahamut (sandwhale
+        enemy = new Enemy
+        {
+            enemyId = 221,
+            enemyName = "Bahamut",
+            spriteList = { "Enemy/dewgong" },
+            health = 280,
+            armor = 5,
+            magicResist = 5,
+            xpToGive = 10,
+            goldToGive = 10,
+            weaknesses = {"Poison", "Spear", "Light", "Axe", "Earth", "Lightning" },
+            resistances = {"Water", "Fire", "Mace", "Dark", "Dagger", "Staff" }
+        };
+        enemyList.Add(enemy);
+        
+        // Watcher of the Sand (think illuminati pyramid eye)
+        enemy = new Enemy
+        {
+            enemyId = 222,
+            enemyName = "Watcher of the Sand",
+            spriteList = { "Enemy/porygon" },
+            health = 300,
+            armor = 175,
+            magicResist = 95,
+            xpToGive = 20,
+            goldToGive = 20,
+            weaknesses = { "Ice", "Mace", "Earth", "Lightning", "Dagger", "Staff"},
+            resistances = { "Gun", "Water", "Bow", "Chakram", "Axe", "Fire", "Poison"},
         };
         enemyList.Add(enemy);
         
