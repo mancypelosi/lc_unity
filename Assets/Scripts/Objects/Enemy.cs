@@ -29,13 +29,13 @@ public class Enemy {
     // Scale the monster based on the world's enemyScaling
     public Enemy ScaleDifficulty(World world)
     {
-        int scale = world.enemyScaling;
+        double scale = world.enemyScaling;
 
-        health = health * scale;
-        armor = Convert.ToInt32((armor * scale) * .5);
+        health = (int)(health * scale);
+        armor = (int)((armor * scale) * .5);
         magicResist = Convert.ToInt32((magicResist * scale) * .5);
-        xpToGive = xpToGive * scale;
-        goldToGive = goldToGive * scale;
+        xpToGive = (int)(xpToGive * scale);
+        goldToGive = (int)(goldToGive * scale);
 
         return this;
     }
@@ -1397,7 +1397,7 @@ public class Enemy {
         {
             enemyId = 197,
             enemyName = "Tlanusi",
-            spriteList = { "Enemy/gyarodos" },
+            spriteList = { "Enemy/gyarados" },
             health = 55,
             armor = 205,
             magicResist = 205,
@@ -1573,7 +1573,7 @@ public class Enemy {
         {
             enemyId = 208,
             enemyName = "Rusted Automaton",
-            spriteList = { "Enemy/onyx" },
+            spriteList = { "Enemy/onix" },
             health = 65,
             armor = 185,
             magicResist = 185,

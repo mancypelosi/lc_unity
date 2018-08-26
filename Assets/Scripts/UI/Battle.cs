@@ -90,6 +90,8 @@ public class Battle : MonoBehaviour
             LevelUp();
         if (Input.GetKeyDown(KeyCode.I))
             SpawnItem();
+        if (Input.GetKeyDown(KeyCode.S))
+            GameManager.gm.Save();
 
         // Anti-cheat, check if user clicks over 15 times in a second
         AntiCheat();
@@ -134,7 +136,7 @@ public class Battle : MonoBehaviour
                 GameObject.Find("EnemyHealthBar").GetComponent<Slider>().value = enemy.health;
 
                 // Instatiate attack animation
-                GameObject attack = Instantiate(attackAnimation, Input.mousePosition + new Vector3(0, -80, 0), UnityEngine.Random.rotation, transform);
+                GameObject attack = Instantiate(attackAnimation, Input.mousePosition + new Vector3(0, -100, 0), UnityEngine.Random.rotation, transform);
                 attack.transform.SetParent(GameObject.Find("EnemyPanel").transform);
                 attack.transform.localScale = new Vector3(1.5f, 1.5f, 0);
             }          

@@ -1088,7 +1088,7 @@ public class Armor : Item {
             critChance = 0,
             critDamage = 0,
             bonusPhysical = 10,
-            bonusExp = -10
+            bonusExp = -10,
             ilvl = 35,
             tier = 2,
 
@@ -3456,7 +3456,7 @@ public class Armor : Item {
             itemId = 7115,
             name = "Magnetic Magisteel Boots",
             spritePath = "Icons/boots2",
-            flavorText = "Forged by the Dwarfpire Draculon Ironaxe so he could hang from the ceiling of his mountain."
+            flavorText = "Forged by the Dwarfpire Draculon Ironaxe so he could hang from the ceiling of his mountain.",
             rarity = Rarity.Legendary,
             buyValue = 500000,
             sellValue = 35000,
@@ -3484,7 +3484,7 @@ public class Armor : Item {
             buyValue = 500000,
             sellValue = 35000,
             requiredLevel = 20,
-            armorType = ArmorType.Helm,
+            armorType = ArmorType.Head,
             strength = 15,
             dexterity = 15,
             intelligence = 50,

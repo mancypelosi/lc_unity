@@ -6820,7 +6820,7 @@ public class Weapon : Item
             critChance = 100,
             armorPen = 100,
             itemFind = 100,
-            goldFind = 100,
+            bonusGold = 100,
             magicFind = 100,
             bonusExp = 100,
             ilvl = 1200,
@@ -6933,7 +6933,7 @@ public class Weapon : Item
             maxDamage = 30,
             bonusPhysical = -10,
             dexterity = -15,
-            armorPen = -50
+            armorPen = -50,
             ilvl = 1200,
             tier = 7,
         };

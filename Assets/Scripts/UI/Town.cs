@@ -57,6 +57,11 @@ public class Town : MonoBehaviour {
                 if (t.name == "World5Panel")
                     t.gameObject.SetActive(true);
             }
+            if (GameManager.gm.player.world6)
+            {
+                if (t.name == "World6Panel")
+                    t.gameObject.SetActive(true);
+            }
         }
     }
 

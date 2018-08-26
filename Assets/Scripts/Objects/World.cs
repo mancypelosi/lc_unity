@@ -66,7 +66,7 @@ public class World {
         world = new World
         {
             worldName = "Plains",
-            enemyScaling = 1,
+            enemyScaling = 0.8,
             backgroundPath = "Background/plains",
             soundPath = "Music/plains",
             enemyList = new List<Enemy> { enemy.GetEnemyById(el, 152), enemy.GetEnemyById(el, 153), enemy.GetEnemyById(el, 154), enemy.GetEnemyById(el, 155), enemy.GetEnemyById(el, 156),
@@ -77,7 +77,6 @@ public class World {
             armorList = armor.GetListByTier(al, 1),
             prefixList = mod.GetListByTier(pl, 1),
             suffixList = mod.GetListByTier(sl, 1)
-
         };
         worldList.Add(world);
 
@@ -108,7 +107,7 @@ public class World {
             backgroundPath = "Background/cave1",
             soundPath = "Music/cavemusic",
             enemyList = new List<Enemy> { enemy.GetEnemyById(el, 176), enemy.GetEnemyById(el, 177), enemy.GetEnemyById(el, 178), enemy.GetEnemyById(el, 179),
-            enemy.GetEnemyById(el, 180), enemy.GetEnemyById(el, 181), enemy.GetEnemyById(el, 182), enemy.GetEnemyById(el, 183), enemy.GetEnemyById(el, 184)
+            enemy.GetEnemyById(el, 180), enemy.GetEnemyById(el, 181), enemy.GetEnemyById(el, 182), enemy.GetEnemyById(el, 183), enemy.GetEnemyById(el, 184),
             enemy.GetEnemyById(el, 184), enemy.GetEnemyById(el, 185)},
             miniBoss = enemy.GetEnemyById(el, 186),
             boss = enemy.GetEnemyById(el, 187),
@@ -147,7 +146,7 @@ public class World {
             soundPath = "Music/swampmusic",
             enemyList = new List<Enemy> { enemy.GetEnemyById(el, 200), enemy.GetEnemyById(el, 201), enemy.GetEnemyById(el, 202), enemy.GetEnemyById(el, 203),
             enemy.GetEnemyById(el, 204), enemy.GetEnemyById(el, 205), enemy.GetEnemyById(el, 206),
-            enemy.GetEnemyById(el, 207), enemy.GetEnemyById(el, 208), enemy.GetEnemyById(el, 209},
+            enemy.GetEnemyById(el, 207), enemy.GetEnemyById(el, 208), enemy.GetEnemyById(el, 209) },
             miniBoss = enemy.GetEnemyById(el, 210),
             boss = enemy.GetEnemyById(el, 211),
             weaponList = weapon.GetListByTier(wl, 05),
@@ -157,7 +156,7 @@ public class World {
         };
         worldList.Add(world);
                                                                                          
-                                                                                         // Create Swamp
+        // Create Desert
         world = new World
         {
             worldName = "Desert",
@@ -166,7 +165,7 @@ public class World {
             soundPath = "Music/desertmusic",
             enemyList = new List<Enemy> { enemy.GetEnemyById(el, 212), enemy.GetEnemyById(el, 213), enemy.GetEnemyById(el, 214), enemy.GetEnemyById(el, 215),
             enemy.GetEnemyById(el, 216), enemy.GetEnemyById(el, 217), enemy.GetEnemyById(el, 218),
-            enemy.GetEnemyById(el, 219), enemy.GetEnemyById(el, 220), enemy.GetEnemyById(el, 221},
+            enemy.GetEnemyById(el, 219), enemy.GetEnemyById(el, 220), enemy.GetEnemyById(el, 221) },
             miniBoss = enemy.GetEnemyById(el, 222),
             boss = enemy.GetEnemyById(el, 223),
             weaponList = weapon.GetListByTier(wl, 06),
