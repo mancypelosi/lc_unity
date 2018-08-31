@@ -175,8 +175,8 @@ public class Weapon : Item
             damageType = DamageType.Physical,
             statMod = StatModifier.Strength,
             apc = 1,
-            minDamage = 1,
-            maxDamage = 5
+            minDamage = 3,
+            maxDamage = 7
         };
         weaponList.Add(weapon);
 
@@ -196,10 +196,10 @@ public class Weapon : Item
             damageType = DamageType.Physical,
             statMod = StatModifier.Dexterity,
             apc = 2,
-            minDamage = 1,
-            maxDamage = 3,
-            critChance = 1,
-            critDamage = 5
+            minDamage = 2,
+            maxDamage = 4,
+            critChance = 0,
+            critDamage = 0
         };
         weaponList.Add(weapon);
 
@@ -219,8 +219,8 @@ public class Weapon : Item
             damageType = DamageType.Physical,
             statMod = StatModifier.Intelligence,
             apc = 1,
-            minDamage = 1,
-            maxDamage = 5
+            minDamage = 3,
+            maxDamage = 7
         };
         weaponList.Add(weapon);
 
