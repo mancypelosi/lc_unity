@@ -96,14 +96,19 @@ public class ItemPanel : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
         transform.position = startPosition;
         GetComponent<CanvasGroup>().blocksRaycasts = true;
         // Update outlines
-        GameObject.Find("Weapon1Panel").GetComponent<Outline>().effectColor = player.weapon1.GetRarityColor();
-        GameObject.Find("Weapon2Panel").GetComponent<Outline>().effectColor = player.weapon2.GetRarityColor();
+            GameObject.Find("Weapon1Panel").GetComponent<Outline>().effectColor = player.weapon1.GetRarityColor();
+            GameObject.Find("Weapon2Panel").GetComponent<Outline>().effectColor = player.weapon2.GetRarityColor();
         GameObject.Find("Weapon3Panel").GetComponent<Outline>().effectColor = player.weapon3.GetRarityColor();
-        GameObject.Find("HeadPanel").GetComponent<Outline>().effectColor = player.head.GetRarityColor();
-        GameObject.Find("ChestPanel").GetComponent<Outline>().effectColor = player.chest.GetRarityColor();
-        GameObject.Find("LegsPanel").GetComponent<Outline>().effectColor = player.legs.GetRarityColor();
-        GameObject.Find("BootsPanel").GetComponent<Outline>().effectColor = player.boots.GetRarityColor();
-        GameObject.Find("GlovesPanel").GetComponent<Outline>().effectColor = player.gloves.GetRarityColor();
+        if (player.head != null)
+            GameObject.Find("HeadPanel").GetComponent<Outline>().effectColor = player.head.GetRarityColor();
+        if (player.chest != null)
+            GameObject.Find("ChestPanel").GetComponent<Outline>().effectColor = player.chest.GetRarityColor();
+        if (player.legs != null)
+            GameObject.Find("LegsPanel").GetComponent<Outline>().effectColor = player.legs.GetRarityColor();
+        if (player.boots != null)
+            GameObject.Find("BootsPanel").GetComponent<Outline>().effectColor = player.boots.GetRarityColor();
+        if (player.gloves != null)
+            GameObject.Find("GlovesPanel").GetComponent<Outline>().effectColor = player.gloves.GetRarityColor();
     }
 
     public void OnDrop(PointerEventData eventData)
@@ -382,7 +387,8 @@ public class ItemPanel : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
                 player.inventory.Add(startItem);
                 player.inventory.Remove(item);
                 startObject.transform.SetParent(startParent);
-                player.Unequip(startItem);
+                if (startItem is Armor)
+                    player.Unequip(startItem);
                 SetItem(startObject, item);
                 SetItem(gameObject, startItem);
             }
@@ -392,7 +398,8 @@ public class ItemPanel : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
                 Debug.Log("No Swap");
                 player.inventory.Add(startItem);
                 RemoveItem(startObject);
-                player.Unequip(startItem);
+                if (startItem is Armor)
+                    player.Unequip(startItem);
                 // Set Item
                 SetItem(gameObject, startItem);
             }
@@ -430,6 +437,8 @@ public class ItemPanel : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
         Debug.Log("Set Item: " + item.name);
         // Set gameObject item to item
         gameObject.GetComponent<ItemPanel>().item = item;
+        Debug.Log("Item ilvl: " + item.ilvl.ToString());
+        gameObject.GetComponentInChildren<Text>().text = item.ilvl.ToString();
         // Sprite
         gameObject.GetComponentInChildren<Image>().sprite = Resources.Load<Sprite>(item.spritePath);
         // Rarities
@@ -529,13 +538,13 @@ public class ItemPanel : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
         }
 
         // Update Character sheet
-        GameObject.Find("Strength").GetComponentInChildren<Text>().text = "Strength: " + player.strength.ToString() + " (" + player.GetBaseStat(player.strength, player.modifiedStrength) + ")";
-        GameObject.Find("Dexterity").GetComponentInChildren<Text>().text = "Dexterity: " + player.dexterity.ToString() + " (" + player.GetBaseStat(player.dexterity, player.modifiedDexterity) + ")";
-        GameObject.Find("Intelligence").GetComponentInChildren<Text>().text = "Intelligence: " + player.intelligence.ToString() + " (" + player.GetBaseStat(player.intelligence, player.modifiedIntelligence) + ")";
-        GameObject.Find("ArmorPen").GetComponentInChildren<Text>().text = "Armor Pen: " + player.armorPen.ToString();
-        GameObject.Find("MagicPen").GetComponentInChildren<Text>().text = "Magic Pen: " + player.magicPen.ToString();
-        GameObject.Find("CritChance").GetComponentInChildren<Text>().text = "Crit Chance: " + player.critChance.ToString() + "%";
-        GameObject.Find("CritDamage").GetComponentInChildren<Text>().text = "Crit Damage: " + player.critDamage.ToString() + "%";
+        GameObject.Find("Strength").GetComponentInChildren<Text>().text = "Strength: " + player.strength + " (" + player.GetBaseStat(player.strength, player.modifiedStrength) + ")";
+        GameObject.Find("Dexterity").GetComponentInChildren<Text>().text = "Dexterity: " + player.dexterity + " (" + player.GetBaseStat(player.dexterity, player.modifiedDexterity) + ")";
+        GameObject.Find("Intelligence").GetComponentInChildren<Text>().text = "Intelligence: " + player.intelligence + " (" + player.GetBaseStat(player.intelligence, player.modifiedIntelligence) + ")";
+        GameObject.Find("ArmorPen").GetComponentInChildren<Text>().text = "Armor Pen: " + player.armorPen;
+        GameObject.Find("MagicPen").GetComponentInChildren<Text>().text = "Magic Pen: " + player.magicPen;
+        GameObject.Find("CritChance").GetComponentInChildren<Text>().text = "Crit Chance: " + player.critChance + "%";
+        GameObject.Find("CritDamage").GetComponentInChildren<Text>().text = "Crit Damage: " + player.critDamage+ "%";
     }
 
     // Remove item from ui component and set to default
@@ -547,10 +556,9 @@ public class ItemPanel : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
         gameObject.GetComponentInParent<Outline>().effectColor = Color.black;
     }
 
-    // Pointer variables
+    // Pointer properties
     private GameObject tooltip;
     private Vector3 offset = new Vector3(0, 0, 0);
-    // tooltip 160 x 270
 
     // Event for mouseover on item panel
     public void OnPointerEnter(PointerEventData eventData)

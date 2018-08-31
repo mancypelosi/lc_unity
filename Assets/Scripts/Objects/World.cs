@@ -5,7 +5,7 @@ using UnityEngine;
 public class World {
 
     public string worldName = "";
-    public int enemyScaling = 1;
+    public double enemyScaling = 1;
     public int currentStage = 1;
     public string backgroundPath;
     public string soundPath;
@@ -40,6 +40,8 @@ public class World {
             player.world5 = true;
         if (world.worldName == "Swamp")
             player.world6 = true;
+        if (world.worldName == "Desert")
+            player.world7 = true;
     }
 
     // List of all worlds
@@ -64,7 +66,7 @@ public class World {
         world = new World
         {
             worldName = "Plains",
-            enemyScaling = 1,
+            enemyScaling = 0.8,
             backgroundPath = "Background/plains",
             soundPath = "Music/plains",
             enemyList = new List<Enemy> { enemy.GetEnemyById(el, 152), enemy.GetEnemyById(el, 153), enemy.GetEnemyById(el, 154), enemy.GetEnemyById(el, 155), enemy.GetEnemyById(el, 156),
@@ -75,7 +77,6 @@ public class World {
             armorList = armor.GetListByTier(al, 1),
             prefixList = mod.GetListByTier(pl, 1),
             suffixList = mod.GetListByTier(sl, 1)
-
         };
         worldList.Add(world);
 
@@ -83,7 +84,7 @@ public class World {
         world = new World
         {
             worldName = "Forest",
-            enemyScaling = 2,
+            enemyScaling = 2.1,
             backgroundPath = "Background/forest1",
             soundPath = "Music/forestmusic",
             enemyList = new List<Enemy> { enemy.GetEnemyById(el, 164), enemy.GetEnemyById(el, 165), enemy.GetEnemyById(el, 166), enemy.GetEnemyById(el, 167),
@@ -102,13 +103,14 @@ public class World {
         world = new World
         {
             worldName = "Cave",
-            enemyScaling = 3,
+            enemyScaling = 3.3,
             backgroundPath = "Background/cave1",
             soundPath = "Music/cavemusic",
-            enemyList = new List<Enemy> { enemy.GetEnemyById(el, 004), enemy.GetEnemyById(el, 050), enemy.GetEnemyById(el, 051), enemy.GetEnemyById(el, 041),
-            enemy.GetEnemyById(el, 042), enemy.GetEnemyById(el, 027), enemy.GetEnemyById(el, 028)},
-            miniBoss = enemy.GetEnemyById(el, 005),
-            boss = enemy.GetEnemyById(el, 006),
+            enemyList = new List<Enemy> { enemy.GetEnemyById(el, 176), enemy.GetEnemyById(el, 177), enemy.GetEnemyById(el, 178), enemy.GetEnemyById(el, 179),
+            enemy.GetEnemyById(el, 180), enemy.GetEnemyById(el, 181), enemy.GetEnemyById(el, 182), enemy.GetEnemyById(el, 183), enemy.GetEnemyById(el, 184),
+            enemy.GetEnemyById(el, 184), enemy.GetEnemyById(el, 185)},
+            miniBoss = enemy.GetEnemyById(el, 186),
+            boss = enemy.GetEnemyById(el, 187),
             weaponList = weapon.GetListByTier(wl, 03),
             armorList = armor.GetListByTier(al, 3),
             prefixList = mod.GetListByTier(pl, 3),
@@ -120,13 +122,14 @@ public class World {
         world = new World
         {
             worldName = "River",
-            enemyScaling = 4,
+            enemyScaling = 4.7,
             backgroundPath = "Background/river",
             soundPath = "Music/rivermusic",
-            enemyList = new List<Enemy> { enemy.GetEnemyById(el, 007), enemy.GetEnemyById(el, 019), enemy.GetEnemyById(el, 020), enemy.GetEnemyById(el, 021),
-            enemy.GetEnemyById(el, 022), enemy.GetEnemyById(el, 014), enemy.GetEnemyById(el, 025), enemy.GetEnemyById(el, 026)},
-            miniBoss = enemy.GetEnemyById(el, 008),
-            boss = enemy.GetEnemyById(el, 009),
+            enemyList = new List<Enemy> { enemy.GetEnemyById(el, 188), enemy.GetEnemyById(el, 189), enemy.GetEnemyById(el, 190), enemy.GetEnemyById(el, 191),
+            enemy.GetEnemyById(el, 192), enemy.GetEnemyById(el, 193), enemy.GetEnemyById(el, 194), enemy.GetEnemyById(el, 195),
+            enemy.GetEnemyById(el, 196), enemy.GetEnemyById(el, 197)},
+            miniBoss = enemy.GetEnemyById(el, 198),
+            boss = enemy.GetEnemyById(el, 199),
             weaponList = weapon.GetListByTier(wl, 04),
             armorList = armor.GetListByTier(al, 4),
             prefixList = mod.GetListByTier(pl, 4),
@@ -138,17 +141,37 @@ public class World {
         world = new World
         {
             worldName = "Swamp",
-            enemyScaling = 5,
+            enemyScaling = 6.2,
             backgroundPath = "Background/forest2",
             soundPath = "Music/swampmusic",
-            enemyList = new List<Enemy> { enemy.GetEnemyById(el, 043), enemy.GetEnemyById(el, 046), enemy.GetEnemyById(el, 047), enemy.GetEnemyById(el, 048),
-            enemy.GetEnemyById(el, 049), enemy.GetEnemyById(el, 023), enemy.GetEnemyById(el, 024)},
-            miniBoss = enemy.GetEnemyById(el, 044),
-            boss = enemy.GetEnemyById(el, 045),
+            enemyList = new List<Enemy> { enemy.GetEnemyById(el, 200), enemy.GetEnemyById(el, 201), enemy.GetEnemyById(el, 202), enemy.GetEnemyById(el, 203),
+            enemy.GetEnemyById(el, 204), enemy.GetEnemyById(el, 205), enemy.GetEnemyById(el, 206),
+            enemy.GetEnemyById(el, 207), enemy.GetEnemyById(el, 208), enemy.GetEnemyById(el, 209) },
+            miniBoss = enemy.GetEnemyById(el, 210),
+            boss = enemy.GetEnemyById(el, 211),
             weaponList = weapon.GetListByTier(wl, 05),
             armorList = armor.GetListByTier(al, 5),
             prefixList = mod.GetListByTier(pl, 5),
             suffixList = mod.GetListByTier(sl, 5)
+        };
+        worldList.Add(world);
+                                                                                         
+        // Create Desert
+        world = new World
+        {
+            worldName = "Desert",
+            enemyScaling = 7.8,
+            backgroundPath = "Background/desert",
+            soundPath = "Music/desertmusic",
+            enemyList = new List<Enemy> { enemy.GetEnemyById(el, 212), enemy.GetEnemyById(el, 213), enemy.GetEnemyById(el, 214), enemy.GetEnemyById(el, 215),
+            enemy.GetEnemyById(el, 216), enemy.GetEnemyById(el, 217), enemy.GetEnemyById(el, 218),
+            enemy.GetEnemyById(el, 219), enemy.GetEnemyById(el, 220), enemy.GetEnemyById(el, 221) },
+            miniBoss = enemy.GetEnemyById(el, 222),
+            boss = enemy.GetEnemyById(el, 223),
+            weaponList = weapon.GetListByTier(wl, 06),
+            armorList = armor.GetListByTier(al, 6),
+            prefixList = mod.GetListByTier(pl, 6),
+            suffixList = mod.GetListByTier(sl, 6)
         };
         worldList.Add(world);
 

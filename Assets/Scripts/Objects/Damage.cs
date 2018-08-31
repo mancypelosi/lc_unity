@@ -95,7 +95,7 @@ public class Damage {
         if (damage <= 0)
             damage = 1;
 
-        // Check for crit
+        // Check for crit, implicit check have to set to 101
         if (UnityEngine.Random.Range(0, 101) < player.critChance)
         {
             damage = damage * (player.critDamage / 100);

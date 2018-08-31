@@ -210,6 +210,8 @@ public class Armor : Item {
             intelligence = 1,
             critChance = 0,
             critDamage = 0,
+            ilvl = 5,
+            tier = 1,
 
 
         };
@@ -230,6 +232,8 @@ public class Armor : Item {
             intelligence = 1,
             critChance = 0,
             critDamage = 0,
+            ilvl = 5,
+            tier = 1,
   
 
         };
@@ -250,6 +254,8 @@ public class Armor : Item {
             intelligence = 1,
             critChance = 0,
             critDamage = 0,
+            ilvl = 5,
+            tier = 1,
      
 
         };
@@ -270,6 +276,8 @@ public class Armor : Item {
             intelligence = 1,
             critChance = 0,
             critDamage = 0,
+            ilvl = 5,
+            tier = 1,
      
 
         };
@@ -290,6 +298,8 @@ public class Armor : Item {
             intelligence = 1,
             critChance = 0,
             critDamage = 0,
+            ilvl = 5,
+            tier = 1,
       
 
         };
@@ -309,6 +319,8 @@ public class Armor : Item {
             dexterity = 3,
             intelligence = 1,
             critChance = 0,
+            ilvl = 5,
+            tier = 1,
     
 
         };
@@ -328,6 +340,8 @@ public class Armor : Item {
             dexterity = 3,
             intelligence = 1,
             critChance = 0,
+            ilvl = 5,
+            tier = 1,
 
 
         };
@@ -347,6 +361,8 @@ public class Armor : Item {
             dexterity = 3,
             intelligence = 1,
             critChance = 0,
+            ilvl = 5,
+            tier = 1,
  
 
         };
@@ -366,6 +382,8 @@ public class Armor : Item {
             dexterity = 3,
             intelligence = 1,
             critChance = 0,
+            ilvl = 5,
+            tier = 1,
 
 
         };
@@ -385,6 +403,8 @@ public class Armor : Item {
             dexterity = 3,
             intelligence = 1,
             critChance = 0,
+            ilvl = 5,
+            tier = 1,
 
         };
         armorList.Add(armor);
@@ -404,6 +424,8 @@ public class Armor : Item {
             intelligence = 3,
             critChance = 0,
             critDamage = 0,
+            ilvl = 5,
+            tier = 1,
 
 
         };
@@ -424,6 +446,8 @@ public class Armor : Item {
             intelligence = 3,
             critChance = 0,
             critDamage = 0,
+            ilvl = 5,
+            tier = 1,
 
 
         };
@@ -444,6 +468,8 @@ public class Armor : Item {
             intelligence = 3,
             critChance = 0,
             critDamage = 0,
+            ilvl = 5,
+            tier = 1,
 
 
         };
@@ -464,6 +490,8 @@ public class Armor : Item {
             intelligence = 3,
             critChance = 0,
             critDamage = 0,
+            ilvl = 5,
+            tier = 1,
 
 
         };
@@ -484,6 +512,8 @@ public class Armor : Item {
             intelligence = 3,
             critChance = 0,
             critDamage = 0,
+            ilvl = 5,
+            tier = 1,
 
 
         };
@@ -511,6 +541,8 @@ public class Armor : Item {
             bonusPhysical = 1,
             itemFind = 2,
             magicFind = 2,
+            ilvl = 10,
+            tier = 1,
 
         };
         armorList.Add(armor);
@@ -530,6 +562,8 @@ public class Armor : Item {
             intelligence = 1,
             critChance = 3,
             critDamage = 10,
+            ilvl = 10,
+            tier = 1,
 
         };
         armorList.Add(armor);
@@ -549,6 +583,8 @@ public class Armor : Item {
             intelligence = 1,
             critChance = 3,
             critDamage = 10,
+            ilvl = 10,
+            tier = 1,
 
         };
         armorList.Add(armor);
@@ -568,6 +604,8 @@ public class Armor : Item {
             intelligence = 1,
             critChance = 3,
             critDamage = 10,
+            ilvl = 10,
+            tier = 1,
 
         };
         armorList.Add(armor);
@@ -590,6 +628,8 @@ public class Armor : Item {
             critDamage = 0,
             bonusMagical = 0,
             bonusPhysical = 3,
+            ilvl = 10,
+            tier = 1,
 
         };
         armorList.Add(armor);
@@ -612,6 +652,8 @@ public class Armor : Item {
             intelligence = 2,
             critChance = 0,
             critDamage = 0,
+            ilvl = 25,
+            tier = 2,
  
 
         };
@@ -633,6 +675,8 @@ public class Armor : Item {
             intelligence = 2,
             critChance = 0,
             critDamage = 0,
+            ilvl = 25,
+            tier = 2,
     
 
         };
@@ -654,6 +698,8 @@ public class Armor : Item {
             intelligence = 2,
             critChance = 0,
             critDamage = 0,
+            ilvl = 25,
+            tier = 2,
  
 
         };
@@ -675,6 +721,8 @@ public class Armor : Item {
             intelligence = 2,
             critChance = 0,
             critDamage = 0,
+            ilvl = 25,
+            tier = 2,
   
 
         };
@@ -696,6 +744,8 @@ public class Armor : Item {
             intelligence = 2,
             critChance = 0,
             critDamage = 0,
+            ilvl = 25,
+            tier = 2,
  
 
         };
@@ -716,6 +766,8 @@ public class Armor : Item {
             dexterity = 5,
             intelligence = 2,
             critChance = 0,
+            ilvl = 25,
+            tier = 2,
 
 
         };
@@ -736,6 +788,8 @@ public class Armor : Item {
             dexterity = 5,
             intelligence = 2,
             critChance = 0,
+            ilvl = 25,
+            tier = 2,
 
 
         };
@@ -756,6 +810,8 @@ public class Armor : Item {
             dexterity = 5,
             intelligence = 2,
             critChance = 0,
+            ilvl = 25,
+            tier = 2,
 
 
         };
@@ -776,6 +832,8 @@ public class Armor : Item {
             dexterity = 5,
             intelligence = 2,
             critChance = 0,
+            ilvl = 25,
+            tier = 2,
 
 
         };
@@ -796,6 +854,8 @@ public class Armor : Item {
             dexterity = 5,
             intelligence = 2,
             critChance = 0,
+            ilvl = 25,
+            tier = 2,
 
 
         };
@@ -817,6 +877,8 @@ public class Armor : Item {
             intelligence = 5,
             critChance = 0,
             critDamage = 0,
+            ilvl = 25,
+            tier = 2,
 
 
         };
@@ -838,6 +900,8 @@ public class Armor : Item {
             intelligence = 5,
             critChance = 0,
             critDamage = 0,
+            ilvl = 25,
+            tier = 2,
 
 
         };
@@ -859,6 +923,8 @@ public class Armor : Item {
             intelligence = 5,
             critChance = 0,
             critDamage = 0,
+            ilvl = 25,
+            tier = 2,
 
 
         };
@@ -880,6 +946,8 @@ public class Armor : Item {
             intelligence = 5,
             critChance = 0,
             critDamage = 0,
+            ilvl = 25,
+            tier = 2,
 
 
         };
@@ -901,6 +969,8 @@ public class Armor : Item {
             intelligence = 5,
             critChance = 0,
             critDamage = 0,
+            ilvl = 25,
+            tier = 2,
 
 
         };
@@ -927,6 +997,8 @@ public class Armor : Item {
             bonusPhysical = 5,
             bonusMagical = -3,
             armorPen = 8,
+            ilvl = 35,
+            tier = 2,
 
         };
         armorList.Add(armor);
@@ -950,6 +1022,8 @@ public class Armor : Item {
             bonusPhysical = 5,
             bonusMagical = -3,
             armorPen = 8,
+            ilvl = 35,
+            tier = 2,
 
         };
         armorList.Add(armor);
@@ -971,6 +1045,8 @@ public class Armor : Item {
             critChance = 0,
             critDamage = 0,
             bonusGold = 35,
+            ilvl = 35,
+            tier = 2,
 
         };
         armorList.Add(armor);
@@ -990,6 +1066,8 @@ public class Armor : Item {
             dexterity = 1,
             intelligence = 1,
             bonusExp = 30,
+            ilvl = 35,
+            tier = 2,
         };
         armorList.Add(armor);
 
@@ -1010,7 +1088,9 @@ public class Armor : Item {
             critChance = 0,
             critDamage = 0,
             bonusPhysical = 10,
-            bonusExp = -10
+            bonusExp = -10,
+            ilvl = 35,
+            tier = 2,
 
         };
         armorList.Add(armor);
@@ -1034,6 +1114,8 @@ public class Armor : Item {
             critDamage = 0,
             bonusPhysical = 0,
             armorPen = 8,
+            ilvl = 35,
+            tier = 2,
 
         };
         armorList.Add(armor);
@@ -1056,6 +1138,8 @@ public class Armor : Item {
             intelligence = 3,
             critChance = 0,
             critDamage = 0,
+            ilvl = 50,
+            tier = 3,
 
 
         };
@@ -1077,6 +1161,9 @@ public class Armor : Item {
             intelligence = 3,
             critChance = 0,
             critDamage = 0,
+            ilvl = 50,
+            tier = 3,
+
 
 
         };
@@ -1098,6 +1185,9 @@ public class Armor : Item {
             intelligence = 3,
             critChance = 0,
             critDamage = 0,
+            ilvl = 50,
+            tier = 3,
+
 
         };
         armorList.Add(armor);
@@ -1118,6 +1208,9 @@ public class Armor : Item {
             intelligence = 3,
             critChance = 0,
             critDamage = 0,
+            ilvl = 50,
+            tier = 3,
+
 
 
         };
@@ -1139,6 +1232,9 @@ public class Armor : Item {
             intelligence = 3,
             critChance = 0,
             critDamage = 0,
+            ilvl = 50,
+            tier = 3,
+
 
         };
         armorList.Add(armor);
@@ -1158,6 +1254,9 @@ public class Armor : Item {
             dexterity = 7,
             intelligence = 3,
             critChance = 0,
+            ilvl = 50,
+            tier = 3,
+
 
 
         };
@@ -1178,6 +1277,9 @@ public class Armor : Item {
             dexterity = 7,
             intelligence = 3,
             critChance = 0,
+            ilvl = 50,
+            tier = 3,
+
 
 
         };
@@ -1198,6 +1300,9 @@ public class Armor : Item {
             dexterity = 7,
             intelligence = 3,
             critChance = 0,
+            ilvl = 50,
+            tier = 3,
+
 
 
         };
@@ -1218,6 +1323,9 @@ public class Armor : Item {
             dexterity = 7,
             intelligence = 3,
             critChance = 0,
+            ilvl = 50,
+            tier = 3,
+
 
 
         };
@@ -1238,6 +1346,9 @@ public class Armor : Item {
             dexterity = 7,
             intelligence = 3,
             critChance = 0,
+            ilvl = 50,
+            tier = 3,
+
  
 
         };
@@ -1259,6 +1370,9 @@ public class Armor : Item {
             intelligence = 7,
             critChance = 0,
             critDamage = 0,
+            ilvl = 50,
+            tier = 3,
+
 
 
         };
@@ -1280,6 +1394,9 @@ public class Armor : Item {
             intelligence = 7,
             critChance = 0,
             critDamage = 0,
+            ilvl = 50,
+            tier = 3,
+
 
 
         };
@@ -1301,6 +1418,9 @@ public class Armor : Item {
             intelligence = 7,
             critChance = 0,
             critDamage = 0,
+            ilvl = 50,
+            tier = 3,
+
 
 
         };
@@ -1322,6 +1442,9 @@ public class Armor : Item {
             intelligence = 7,
             critChance = 0,
             critDamage = 0,
+            ilvl = 50,
+            tier = 3,
+
 
 
         };
@@ -1343,6 +1466,9 @@ public class Armor : Item {
             intelligence = 7,
             critChance = 0,
             critDamage = 0,
+            ilvl = 50,
+            tier = 3,
+
 
 
         };
@@ -1369,6 +1495,9 @@ public class Armor : Item {
             critDamage = 0,
             bonusPhysical = -5,
             bonusMagical = 10,
+            ilvl = 75,
+            tier = 3,
+
 
         };
         armorList.Add(armor);
@@ -1391,6 +1520,8 @@ public class Armor : Item {
             critDamage = 0,
             bonusPhysical = -5,
             bonusMagical = 10,
+            ilvl = 75,
+            tier = 3,
 
         };
         armorList.Add(armor);
@@ -1413,6 +1544,8 @@ public class Armor : Item {
             critDamage = 0,
             bonusPhysical = -5,
             bonusMagical = 10,
+            ilvl = 75,
+            tier = 3,
 
         };
         armorList.Add(armor);
@@ -1436,6 +1569,8 @@ public class Armor : Item {
             critDamage = 0,
             bonusMagical = 10,
             bonusPhysical = -5,
+            ilvl = 75,
+            tier = 3,
 
         };
         armorList.Add(armor);
@@ -1456,6 +1591,8 @@ public class Armor : Item {
             intelligence = 3,
             critChance = 1,
             critDamage = 35,
+            ilvl = 75,
+            tier = 3,
 
         };
         armorList.Add(armor);
@@ -1477,6 +1614,8 @@ public class Armor : Item {
             intelligence = 3,
             critChance = 5,
             critDamage = 15,
+            ilvl = 75,
+            tier = 3,
 
         };
         armorList.Add(armor);
@@ -1499,6 +1638,8 @@ public class Armor : Item {
             intelligence = 5,
             critChance = 0,
             critDamage = 0,
+            ilvl = 100,
+            tier = 4,
 
 
         };
@@ -1520,6 +1661,9 @@ public class Armor : Item {
             intelligence = 5,
             critChance = 0,
             critDamage = 0,
+            ilvl = 100,
+            tier = 4,
+            
 
 
         };
@@ -1541,6 +1685,8 @@ public class Armor : Item {
             intelligence = 5,
             critChance = 0,
             critDamage = 0,
+            ilvl = 100,
+            tier = 4,
 
         };
         armorList.Add(armor);
@@ -1561,6 +1707,8 @@ public class Armor : Item {
             intelligence = 5,
             critChance = 0,
             critDamage = 0,
+            ilvl = 100,
+            tier = 4,
 
 
         };
@@ -1582,6 +1730,8 @@ public class Armor : Item {
             intelligence = 5,
             critChance = 0,
             critDamage = 0,
+            ilvl = 100,
+            tier = 4,
 
         };
         armorList.Add(armor);
@@ -1601,6 +1751,8 @@ public class Armor : Item {
             dexterity = 10,
             intelligence = 5,
             critChance = 0,
+            ilvl = 100,
+            tier = 4,
 
         };
         armorList.Add(armor);
@@ -1620,6 +1772,8 @@ public class Armor : Item {
             dexterity = 10,
             intelligence = 5,
             critChance = 0,
+            ilvl = 100,
+            tier = 4,
 
         };
         armorList.Add(armor);
@@ -1639,6 +1793,8 @@ public class Armor : Item {
             dexterity = 10,
             intelligence = 5,
             critChance = 0,
+            ilvl = 100,
+            tier = 4,
 
         };
         armorList.Add(armor);
@@ -1658,6 +1814,8 @@ public class Armor : Item {
             dexterity = 10,
             intelligence = 5,
             critChance = 0,
+            ilvl = 100,
+            tier = 4,
 
         };
         armorList.Add(armor);
@@ -1677,6 +1835,8 @@ public class Armor : Item {
             dexterity = 10,
             intelligence = 5,
             critChance = 0,
+            ilvl = 100,
+            tier = 4,
 
         };
         armorList.Add(armor);
@@ -1697,6 +1857,8 @@ public class Armor : Item {
             intelligence = 10,
             critChance = 0,
             critDamage = 0,
+            ilvl = 100,
+            tier = 4,
 
         };
         armorList.Add(armor);
@@ -1717,6 +1879,8 @@ public class Armor : Item {
             intelligence = 10,
             critChance = 0,
             critDamage = 0,
+            ilvl = 100,
+            tier = 4,
 
         };
         armorList.Add(armor);
@@ -1737,6 +1901,8 @@ public class Armor : Item {
             intelligence = 10,
             critChance = 0,
             critDamage = 0,
+            ilvl = 100,
+            tier = 4,
 
         };
         armorList.Add(armor);
@@ -1757,6 +1923,8 @@ public class Armor : Item {
             intelligence = 10,
             critChance = 0,
             critDamage = 0,
+            ilvl = 100,
+            tier = 4,
 
         };
         armorList.Add(armor);
@@ -1777,6 +1945,8 @@ public class Armor : Item {
             intelligence = 10,
             critChance = 0,
             critDamage = 0,
+            ilvl = 100,
+            tier = 4,
 
         };
         armorList.Add(armor);
@@ -1801,6 +1971,8 @@ public class Armor : Item {
             critChance = 5,
             critDamage = 25,
             bonusMagical = 0,
+            ilvl = 150,
+            tier = 4,
         };
         armorList.Add(armor);
         
@@ -1821,6 +1993,8 @@ public class Armor : Item {
             critChance = 5,
             critDamage = 25,
             bonusMagical = 0,
+            ilvl = 150,
+            tier = 4,
         };
         armorList.Add(armor);
         
@@ -1841,6 +2015,8 @@ public class Armor : Item {
             critChance = 5,
             critDamage = 25,
             bonusMagical = 0,
+            ilvl = 150,
+            tier = 4,
         };
         armorList.Add(armor);
         
@@ -1861,6 +2037,8 @@ public class Armor : Item {
             intelligence = 5,
             critChance = 0,
             critDamage = 20,
+            ilvl = 150,
+            tier = 4,
         };
         armorList.Add(armor);
         
@@ -1881,6 +2059,8 @@ public class Armor : Item {
             intelligence = 5,
             armorPen = 25,
             bonusPhysical = 0,
+            ilvl = 150,
+            tier = 4,
         };
         armorList.Add(armor);
         
@@ -1903,6 +2083,8 @@ public class Armor : Item {
             intelligence = 7,
             critChance = 0,
             critDamage = 0,
+            ilvl = 200,
+            tier = 5,
 
 
         };
@@ -1924,6 +2106,8 @@ public class Armor : Item {
             intelligence = 7,
             critChance = 0,
             critDamage = 0,
+            ilvl = 200,
+            tier = 5,
 
 
         };
@@ -1945,6 +2129,8 @@ public class Armor : Item {
             intelligence = 7,
             critChance = 0,
             critDamage = 0,
+            ilvl = 200,
+            tier = 5,
 
         };
         armorList.Add(armor);
@@ -1965,6 +2151,8 @@ public class Armor : Item {
             intelligence = 7,
             critChance = 0,
             critDamage = 0,
+            ilvl = 200,
+            tier = 5,
 
 
         };
@@ -1986,6 +2174,8 @@ public class Armor : Item {
             intelligence = 7,
             critChance = 0,
             critDamage = 0,
+            ilvl = 200,
+            tier = 5,
 
         };
         armorList.Add(armor);
@@ -2005,6 +2195,8 @@ public class Armor : Item {
             dexterity = 15,
             intelligence = 7,
             critChance = 0,
+            ilvl = 200,
+            tier = 5,
 
         };
         armorList.Add(armor);
@@ -2024,6 +2216,8 @@ public class Armor : Item {
             dexterity = 15,
             intelligence = 7,
             critChance = 0,
+            ilvl = 200,
+            tier = 5,
 
         };
         armorList.Add(armor);
@@ -2043,6 +2237,8 @@ public class Armor : Item {
             dexterity = 15,
             intelligence = 7,
             critChance = 0,
+            ilvl = 200,
+            tier = 5,
 
         };
         armorList.Add(armor);
@@ -2062,6 +2258,8 @@ public class Armor : Item {
             dexterity = 15,
             intelligence = 7,
             critChance = 0,
+            ilvl = 200,
+            tier = 5,
 
         };
         armorList.Add(armor);
@@ -2081,6 +2279,8 @@ public class Armor : Item {
             dexterity = 15,
             intelligence = 7,
             critChance = 0,
+            ilvl = 200,
+            tier = 5,
 
         };
         armorList.Add(armor);
@@ -2101,6 +2301,8 @@ public class Armor : Item {
             intelligence = 15,
             critChance = 0,
             critDamage = 0,
+            ilvl = 200,
+            tier = 5,
 
         };
         armorList.Add(armor);
@@ -2121,6 +2323,8 @@ public class Armor : Item {
             intelligence = 15,
             critChance = 0,
             critDamage = 0,
+            ilvl = 200,
+            tier = 5,
 
         };
         armorList.Add(armor);
@@ -2141,6 +2345,8 @@ public class Armor : Item {
             intelligence = 15,
             critChance = 0,
             critDamage = 0,
+            ilvl = 200,
+            tier = 5,
 
         };
         armorList.Add(armor);
@@ -2161,6 +2367,8 @@ public class Armor : Item {
             intelligence = 15,
             critChance = 0,
             critDamage = 0,
+            ilvl = 200,
+            tier = 5,
 
         };
         armorList.Add(armor);
@@ -2181,6 +2389,8 @@ public class Armor : Item {
             intelligence = 15,
             critChance = 0,
             critDamage = 0,
+            ilvl = 200,
+            tier = 5,
 
         };
         armorList.Add(armor);
@@ -2206,6 +2416,8 @@ public class Armor : Item {
             critDamage = 0,
             bonusMagical = 3,
             bonusPhysical = 3,
+            ilvl = 300,
+            tier = 5,
         };
         armorList.Add(armor);
         
@@ -2227,6 +2439,8 @@ public class Armor : Item {
             critDamage = 0,
             bonusMagical = 3,
             bonusPhysical = 3,
+            ilvl = 300,
+            tier = 5,
         };
         armorList.Add(armor);
         
@@ -2247,6 +2461,8 @@ public class Armor : Item {
             critDamage = 0,
             bonusMagical = 3,
             bonusPhysical = 3,
+            ilvl = 300,
+            tier = 5,
         };
         armorList.Add(armor);
         
@@ -2268,6 +2484,8 @@ public class Armor : Item {
             critDamage = 0,
             bonusMagical = 3,
             bonusPhysical = 3,
+            ilvl = 300,
+            tier = 5,
         };
         armorList.Add(armor);
         
@@ -2289,6 +2507,8 @@ public class Armor : Item {
             critDamage = 0,
             bonusMagical = 3,
             bonusPhysical = 3,
+            ilvl = 300,
+            tier = 5,
         };
         armorList.Add(armor);
         
@@ -2311,6 +2531,8 @@ public class Armor : Item {
             intelligence = 10,
             critChance = 0,
             critDamage = 0,
+            ilvl = 400,
+            tier = 6,
 
 
         };
@@ -2332,6 +2554,8 @@ public class Armor : Item {
             intelligence = 10,
             critChance = 0,
             critDamage = 0,
+            ilvl = 400,
+            tier = 6,
 
 
         };
@@ -2353,6 +2577,8 @@ public class Armor : Item {
             intelligence = 10,
             critChance = 0,
             critDamage = 0,
+            ilvl = 400,
+            tier = 6,
 
         };
         armorList.Add(armor);
@@ -2373,6 +2599,8 @@ public class Armor : Item {
             intelligence = 10,
             critChance = 0,
             critDamage = 0,
+            ilvl = 400,
+            tier = 6,
 
 
         };
@@ -2381,7 +2609,7 @@ public class Armor : Item {
         armor = new Armor
         {
             itemId = 6105,
-            name = "Darksteel Boots",
+            name = "Thorium Boots",
             spritePath = "Icons/boots2",
             rarity = Rarity.Uncommon,
             buyValue = 80000,
@@ -2394,6 +2622,8 @@ public class Armor : Item {
             intelligence = 10,
             critChance = 0,
             critDamage = 0,
+            ilvl = 400,
+            tier = 6,
 
         };
         armorList.Add(armor);
@@ -2413,6 +2643,8 @@ public class Armor : Item {
             dexterity = 22,
             intelligence = 10,
             critChance = 0,
+            ilvl = 400,
+            tier = 6,
 
         };
         armorList.Add(armor);
@@ -2432,6 +2664,8 @@ public class Armor : Item {
             dexterity = 22,
             intelligence = 7,
             critChance = 0,
+            ilvl = 400,
+            tier = 6,
 
         };
         armorList.Add(armor);
@@ -2450,6 +2684,8 @@ public class Armor : Item {
             dexterity = 22,
             intelligence = 7,
             critChance = 0,
+            ilvl = 400,
+            tier = 6,
 
         };
         armorList.Add(armor);
@@ -2469,6 +2705,8 @@ public class Armor : Item {
             dexterity = 22,
             intelligence = 7,
             critChance = 0,
+            ilvl = 400,
+            tier = 6,
 
         };
         armorList.Add(armor);
@@ -2488,6 +2726,8 @@ public class Armor : Item {
             dexterity = 22,
             intelligence = 7,
             critChance = 0,
+            ilvl = 400,
+            tier = 6,
 
         };
         armorList.Add(armor);
@@ -2508,6 +2748,8 @@ public class Armor : Item {
             intelligence = 22,
             critChance = 0,
             critDamage = 0,
+            ilvl = 400,
+            tier = 6,
 
         };
         armorList.Add(armor);
@@ -2528,6 +2770,8 @@ public class Armor : Item {
             intelligence = 22,
             critChance = 0,
             critDamage = 0,
+            ilvl = 400,
+            tier = 6,
 
         };
         armorList.Add(armor);
@@ -2548,6 +2792,8 @@ public class Armor : Item {
             intelligence = 22,
             critChance = 0,
             critDamage = 0,
+            ilvl = 400,
+            tier = 6,
 
         };
         armorList.Add(armor);
@@ -2568,6 +2814,8 @@ public class Armor : Item {
             intelligence = 22,
             critChance = 0,
             critDamage = 0,
+            ilvl = 400,
+            tier = 6,
 
         };
         armorList.Add(armor);
@@ -2588,6 +2836,8 @@ public class Armor : Item {
             intelligence = 22,
             critChance = 0,
             critDamage = 0,
+            ilvl = 400,
+            tier = 6,
 
         };
         armorList.Add(armor);
@@ -2616,6 +2866,8 @@ public class Armor : Item {
             bonusPhysical = -5,
             magicPen = 15,
             armorPen = 15,
+            ilvl = 600,
+            tier = 6,
         };
         armorList.Add(armor);
         
@@ -2640,6 +2892,8 @@ public class Armor : Item {
             bonusPhysical = -5,
             magicPen = 15,
             armorPen = 15,
+            ilvl = 600,
+            tier = 6,
         };
         armorList.Add(armor);
         
@@ -2664,6 +2918,8 @@ public class Armor : Item {
             bonusPhysical = -5,
             magicPen = 15,
             armorPen = 15,
+            ilvl = 600,
+            tier = 6,
         };
         armorList.Add(armor);
         
@@ -2685,6 +2941,8 @@ public class Armor : Item {
             critDamage = 10,
             bonusMagical = -10,
             bonusPhysical = 8,
+            ilvl = 600,
+            tier = 6,
         };
         armorList.Add(armor);
         
@@ -2705,6 +2963,8 @@ public class Armor : Item {
             critDamage = 0,
             magicPen = 25,
             armorPen = 25,
+            ilvl = 600,
+            tier = 6,
         };
         armorList.Add(armor);
         
@@ -2725,6 +2985,8 @@ public class Armor : Item {
             critChance = 0,
             critDamage = 0,
             bonusMagical = 5,
+            ilvl = 600,
+            tier = 6,
 
         };
         armorList.Add(armor);
@@ -2747,6 +3009,515 @@ public class Armor : Item {
             critDamage = 0,
             bonusMagical = -10,
             bonusPhysical = -10,
+            ilvl = 600,
+            tier = 6,
+        };
+        armorList.Add(armor);
+        
+        /********************/
+        /***   TIER 6    ***/
+        /******************/
+        armor = new Armor
+        {
+            itemId = 7101,
+            name = "Titanium Helm",
+            spritePath = "Icons/helm",
+            rarity = Rarity.Uncommon,
+            buyValue = 250000,
+            sellValue = 25000,
+            requiredLevel = 25,
+            requiredStr = 125,
+            armorType = ArmorType.Head,
+            strength = 33,
+            dexterity = 15,
+            intelligence = 15,
+            critChance = 0,
+            critDamage = 0,
+            ilvl = 800,
+            tier = 7,
+
+
+        };
+        armorList.Add(armor);
+
+        armor = new Armor
+        {
+            itemId = 7102,
+            name = "Titanium Breastplate",
+            spritePath = "Icons/chest",
+            rarity = Rarity.Uncommon,
+            buyValue = 250000,
+            sellValue = 25000,
+            requiredLevel = 25,
+            requiredStr = 125,
+            armorType = ArmorType.Chest,
+            strength = 33,
+            dexterity = 15,
+            intelligence = 15,
+            critChance = 0,
+            critDamage = 0,
+            ilvl = 800,
+            tier = 7,
+
+
+        };
+        armorList.Add(armor);
+
+        armor = new Armor
+        {
+            itemId = 7103,
+            name = "Titanium Gauntlets",
+            spritePath = "Icons/gloves2",
+            rarity = Rarity.Uncommon,
+            buyValue = 250000,
+            sellValue = 25000,
+            requiredLevel = 25,
+            requiredStr = 125,
+            armorType = ArmorType.Gloves,
+            strength = 33,
+            dexterity = 15,
+            intelligence = 15,
+            critChance = 0,
+            critDamage = 0,
+            ilvl = 800,
+            tier = 7,
+
+        };
+        armorList.Add(armor);
+
+        armor = new Armor
+        {
+            itemId = 7104,
+            name = "Titanium Greaves",
+            spritePath = "Icons/legs",
+            rarity = Rarity.Uncommon,
+            buyValue = 250000,
+            sellValue = 25000,
+            requiredLevel = 25,
+            requiredStr = 125,
+            armorType = ArmorType.Legs,
+            strength = 33,
+            dexterity = 15,
+            intelligence = 15,
+            critChance = 0,
+            critDamage = 0,
+            ilvl = 800,
+            tier = 7,
+
+
+        };
+        armorList.Add(armor);
+
+        armor = new Armor
+        {
+            itemId = 7105,
+            name = "Titanium Boots",
+            spritePath = "Icons/boots2",
+            rarity = Rarity.Uncommon,
+            buyValue = 250000,
+            sellValue = 25000,
+            requiredLevel = 25,
+            requiredStr = 125,
+            armorType = ArmorType.Boots,
+            strength = 33,
+            dexterity = 15,
+            intelligence = 15,
+            critChance = 0,
+            critDamage = 0,
+            ilvl = 800,
+            tier = 7,
+
+        };
+        armorList.Add(armor);
+
+        armor = new Armor
+        {
+            itemId = 7201,
+            name = "Sauridhide Cap",
+            spritePath = "Icons/helm",
+            rarity = Rarity.Uncommon,
+            buyValue = 250000,
+            sellValue = 25000,
+            requiredLevel = 25,
+            requiredDex = 125,
+            armorType = ArmorType.Head,
+            strength = 15,
+            dexterity = 33,
+            intelligence = 15,
+            critChance = 0,
+            critDamage = 0,
+            ilvl = 800,
+            tier = 7,
+
+        };
+        armorList.Add(armor);
+
+        armor = new Armor
+        {
+            itemId = 7202,
+            name = "Sauridhide Vest",
+            spritePath = "Icons/chest",
+            rarity = Rarity.Uncommon,
+            buyValue = 250000,
+            sellValue = 25000,
+            requiredLevel = 25,
+            requiredDex = 125,
+            armorType = ArmorType.Chest,
+            strength = 15,
+            dexterity = 33,
+            intelligence = 15,
+            critChance = 0,
+            critDamage = 0,
+            ilvl = 800,
+            tier = 7,
+
+        };
+        armorList.Add(armor);
+
+        armor = new Armor
+        {
+            itemId = 7203,
+            name = "Sauridhide Gloves",
+            spritePath = "Icons/gloves2",
+            buyValue = 250000,
+            sellValue = 25000,
+            requiredLevel = 25,
+            requiredDex = 125,
+            armorType = ArmorType.Gloves,
+            strength = 15,
+            dexterity = 33,
+            intelligence = 15,
+            critChance = 0,
+            critDamage = 0,
+            ilvl = 800,
+            tier = 7,
+
+        };
+        armorList.Add(armor);
+
+        armor = new Armor
+        {
+            itemId = 7204,
+            name = "Sauridhide Leggings",
+            spritePath = "Icons/legs",
+            rarity = Rarity.Uncommon,
+            buyValue = 250000,
+            sellValue = 25000,
+            requiredLevel = 25,
+            requiredDex = 125,
+            armorType = ArmorType.Legs,
+            strength = 15,
+            dexterity = 33,
+            intelligence = 15,
+            critChance = 0,
+            critDamage = 0,
+            ilvl = 800,
+            tier = 7,
+
+        };
+        armorList.Add(armor);
+
+        armor = new Armor
+        {
+            itemId = 7205,
+            name = "Sauridhide Boots",
+            spritePath = "Icons/boots2",
+            rarity = Rarity.Uncommon,
+            buyValue = 250000,
+            sellValue = 25000,
+            requiredLevel = 25,
+            requiredDex = 125,
+            armorType = ArmorType.Boots,
+            strength = 15,
+            dexterity = 33,
+            intelligence = 15,
+            critChance = 0,
+            critDamage = 0,
+            ilvl = 800,
+            tier = 7,
+
+        };
+        armorList.Add(armor);
+
+        armor = new Armor
+        {
+            itemId = 7301,
+            name = "Celestial Hood",
+            spritePath = "Icons/helm",
+            rarity = Rarity.Uncommon,
+            buyValue = 250000,
+            sellValue = 25000,
+            requiredLevel = 25,
+            requiredInt = 125,
+            armorType = ArmorType.Head,
+            strength = 15,
+            dexterity = 15,
+            intelligence = 33,
+            critChance = 0,
+            critDamage = 0,
+            ilvl = 800,
+            tier = 7,
+
+        };
+        armorList.Add(armor);
+
+        armor = new Armor
+        {
+            itemId = 7302,
+            name = "Celestial Robes",
+            spritePath = "Icons/chest",
+            rarity = Rarity.Uncommon,
+            buyValue = 250000,
+            sellValue = 25000,
+            requiredLevel = 25,
+            requiredInt = 125,
+            armorType = ArmorType.Chest,
+            strength = 15,
+            dexterity = 15,
+            intelligence = 33,
+            critChance = 0,
+            critDamage = 0,
+            ilvl = 800,
+            tier = 7,
+
+        };
+        armorList.Add(armor);
+
+        armor = new Armor
+        {
+            itemId = 7303,
+            name = "Celestial Gloves",
+            spritePath = "Icons/gloves2",
+            rarity = Rarity.Uncommon,
+            buyValue = 250000,
+            sellValue = 25000,
+            requiredLevel = 25,
+            requiredInt = 125,
+            armorType = ArmorType.Gloves,
+            strength = 15,
+            dexterity = 15,
+            intelligence = 33,
+            critChance = 0,
+            critDamage = 0,
+            ilvl = 800,
+            tier = 7,
+
+        };
+        armorList.Add(armor);
+
+        armor = new Armor
+        {
+            itemId = 7304,
+            name = "Celestial Pants",
+            spritePath = "Icons/legs",
+            rarity = Rarity.Uncommon,
+            buyValue = 250000,
+            sellValue = 25000,
+            requiredLevel = 25,
+            requiredInt = 125,
+            armorType = ArmorType.Legs,
+            strength = 15,
+            dexterity = 15,
+            intelligence = 33,
+            critChance = 0,
+            critDamage = 0,
+            ilvl = 800,
+            tier = 7,
+
+        };
+        armorList.Add(armor);
+
+        armor = new Armor
+        {
+            itemId = 7305,
+            name = "Celestial Shoes",
+            spritePath = "Icons/boots2",
+            rarity = Rarity.Uncommon,
+            buyValue = 250000,
+            sellValue = 25000,
+            requiredLevel = 25,
+            requiredInt = 125,
+            armorType = ArmorType.Boots,
+            strength = 15,
+            dexterity = 15,
+            intelligence = 33,
+            critChance = 0,
+            critDamage = 0,
+            ilvl = 800,
+            tier = 7,
+
+        };
+        armorList.Add(armor);
+        
+        /****************/
+        /****LEYENDOS****/
+        /****************/
+        armor = new Armor
+        {
+            itemId = 7212,
+            name = "9-Tailed Foxhide Jerkin",
+            spritePath = "Icons/chest",
+            flavorText = "Idk what a jerkin looks like",
+            rarity = Rarity.Set,
+            buyValue = 1500000,
+            sellValue = 100000,
+            requiredLevel = 25,
+            requiredDex = 125,
+            armorType = ArmorType.Chest,
+            strength = 15,
+            dexterity = 33,
+            intelligence = 15,
+            critChance = 0,
+            critDamage = 0,
+            bonusMagical = 0,
+            bonusPhysical = 0,
+            magicPen = 75,
+            armorPen = 75,
+            ilvl = 1200,
+            tier = 7,
+        };
+        armorList.Add(armor);
+        
+        armor = new Armor
+        {
+            itemId = 7214,
+            name = "9-Tailed Foxhide Jorts",
+            spritePath = "Icons/legs",
+            flavorText = "I don't even know where I'm going with this",
+            rarity = Rarity.Set,
+            buyValue = 1500000,
+            sellValue = 100000,
+            requiredLevel = 25,
+            requiredDex = 125,
+            armorType = ArmorType.Legs,
+            strength = 15,
+            dexterity = 33,
+            intelligence = 15,
+            critChance = 0,
+            critDamage = 0,
+            bonusMagical = 0,
+            bonusPhysical = 0,
+            magicPen = 75,
+            armorPen = 75,
+            ilvl = 1200,
+            tier = 7,
+        };
+        armorList.Add(armor);
+        
+        armor = new Armor
+        {
+            itemId = 7211,
+            name = "9-Tailed Foxhide Cowboy Hat",
+            spritePath = "Icons/helm",
+            rarity = Rarity.Set,
+            buyValue = 1500000,
+            sellValue = 100000,
+            requiredLevel = 25,
+            requiredDex = 125,
+            armorType = ArmorType.Head,
+            strength = 15,
+            dexterity = 33,
+            intelligence = 15,
+            critChance = 0,
+            critDamage = 0,
+            bonusMagical = 0,
+            bonusPhysical = 0,
+            magicPen = 75,
+            armorPen = 75,
+            ilvl = 1200,
+            tier = 7,
+        };
+        armorList.Add(armor);
+        
+        armor = new Armor
+        {
+            itemId = 7113,
+            name = "Meteoric Titanium Gauntlets",
+            spritePath = "Icons/gloves2",
+            rarity = Rarity.Legendary,
+            buyValue = 500000,
+            sellValue = 35000,
+            requiredLevel = 20,
+            armorType = ArmorType.Gloves,
+            strength = 50,
+            dexterity = 15,
+            intelligence = 15,
+            critChance = 10,
+            critDamage = 25,
+            bonusMagical = -10,
+            bonusPhysical = -10,
+            ilvl = 1200,
+            tier = 7,
+        };
+        armorList.Add(armor);
+        
+        armor = new Armor
+        {
+            itemId = 7115,
+            name = "Magnetic Magisteel Boots",
+            spritePath = "Icons/boots2",
+            flavorText = "Forged by the Dwarfpire Draculon Ironaxe so he could hang from the ceiling of his mountain.",
+            rarity = Rarity.Legendary,
+            buyValue = 500000,
+            sellValue = 35000,
+            requiredLevel = 20,
+            armorType = ArmorType.Boots,
+            strength = 50,
+            dexterity = 15,
+            intelligence = 15,
+            critChance = 0,
+            critDamage = 0,
+            magicPen = 175,
+            armorPen = -75,
+            ilvl = 1200,
+            tier = 7,
+        };
+        armorList.Add(armor);
+        
+        armor = new Armor
+        {
+            itemId = 7311,
+            name = "The Third Eye",
+            spritePath = "Icons/helm",
+            flavorText = "Sees through magical barriers and fake friends",
+            rarity = Rarity.Legendary,
+            buyValue = 500000,
+            sellValue = 35000,
+            requiredLevel = 20,
+            armorType = ArmorType.Head,
+            strength = 15,
+            dexterity = 15,
+            intelligence = 50,
+            critChance = 5,
+            critDamage = 50,
+            magicPen = 15,
+            armorPen = 0,
+            ilvl = 1200,
+            tier = 7,
+
+        };
+        armorList.Add(armor);
+        
+        armor = new Armor
+        {
+            itemId = 7314,
+            name = "Khakis of the White King",
+            spritePath = "Icons/legs",
+            flavorText = "Adventurer-casual",
+            rarity = Rarity.Legendary,
+            buyValue = 500000,
+            sellValue = 35000,
+            requiredLevel = 20,
+            armorType = ArmorType.Legs,
+            strength = 15,
+            dexterity = 15,
+            intelligence = 50,
+            bonusMagical = -25,
+            bonusPhysical = 25,
+            magicPen = 100,
+            armorPen = -100,
+            ilvl = 1200,
+            tier = 7,
         };
         armorList.Add(armor);
         
