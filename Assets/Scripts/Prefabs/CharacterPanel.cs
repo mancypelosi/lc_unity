@@ -27,6 +27,19 @@ public class CharacterPanel : MonoBehaviour {
         GameObject.Find("TalentButton").GetComponentInChildren<Text>().text = "TALENTS: " + player.talentPoints.ToString();
     }
 
+    public static void UpdateSheet()
+    {
+        Player player = GameManager.gm.player;
+        // Update Character sheet
+        GameObject.Find("Strength").GetComponentInChildren<Text>().text = "Strength: " + player.strength + " (" + player.GetBaseStat(player.strength, player.modifiedStrength) + ")";
+        GameObject.Find("Dexterity").GetComponentInChildren<Text>().text = "Dexterity: " + player.dexterity + " (" + player.GetBaseStat(player.dexterity, player.modifiedDexterity) + ")";
+        GameObject.Find("Intelligence").GetComponentInChildren<Text>().text = "Intelligence: " + player.intelligence + " (" + player.GetBaseStat(player.intelligence, player.modifiedIntelligence) + ")";
+        GameObject.Find("ArmorPen").GetComponentInChildren<Text>().text = "Armor Pen: " + player.armorPen;
+        GameObject.Find("MagicPen").GetComponentInChildren<Text>().text = "Magic Pen: " + player.magicPen;
+        GameObject.Find("CritChance").GetComponentInChildren<Text>().text = "Crit Chance: " + player.critChance + "%";
+        GameObject.Find("CritDamage").GetComponentInChildren<Text>().text = "Crit Damage: " + player.critDamage + "%";
+    }
+
     public void Save()
     {
         GameManager.gm.Save();

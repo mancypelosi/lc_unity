@@ -453,6 +453,7 @@ public class Battle : MonoBehaviour
         GameObject.Find("Slot1Button").GetComponentInChildren<Outline>().effectColor = Color.white;
         GameObject.Find("Slot2Button").GetComponentInChildren<Outline>().effectColor = Color.black;
         GameObject.Find("Slot3Button").GetComponentInChildren<Outline>().effectColor = Color.black;
+        CharacterPanel.UpdateSheet();
         Debug.Log(player.equippedWeapon.name + " equipped!");
     }
 
@@ -464,6 +465,7 @@ public class Battle : MonoBehaviour
         GameObject.Find("Slot1Button").GetComponentInChildren<Outline>().effectColor = Color.black;
         GameObject.Find("Slot2Button").GetComponentInChildren<Outline>().effectColor = Color.white;
         GameObject.Find("Slot3Button").GetComponentInChildren<Outline>().effectColor = Color.black;
+        CharacterPanel.UpdateSheet();
         Debug.Log(player.equippedWeapon.name + " equipped!");
     }
 
@@ -475,6 +477,7 @@ public class Battle : MonoBehaviour
         GameObject.Find("Slot1Button").GetComponentInChildren<Outline>().effectColor = Color.black;
         GameObject.Find("Slot2Button").GetComponentInChildren<Outline>().effectColor = Color.black;
         GameObject.Find("Slot3Button").GetComponentInChildren<Outline>().effectColor = Color.white;
+        CharacterPanel.UpdateSheet();
         Debug.Log(player.equippedWeapon.name + " equipped!");
     }
 

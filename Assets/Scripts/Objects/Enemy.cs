@@ -1573,7 +1573,7 @@ public class Enemy {
         {
             enemyId = 208,
             enemyName = "Rusted Automaton",
-            spriteList = { "Enemy/onix" },
+            spriteList = { "Enemy/onyx" },
             health = 65,
             armor = 185,
             magicResist = 185,

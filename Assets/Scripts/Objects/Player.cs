@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System;
+using UnityEngine;
 
 [Serializable]
 public class Player : Stats {
@@ -49,6 +50,7 @@ public class Player : Stats {
     // Add item stats to player stats
     public Item Equip(Item item)
     {
+        Debug.Log("Player equip");
         // Add stats to player
         strength += item.strength;
         dexterity += item.dexterity;
@@ -74,6 +76,7 @@ public class Player : Stats {
     // Remove item stats from player stats
     public Item Unequip(Item item)
     {
+        Debug.Log("Player unequip");
         // Remove stats from player
         strength -= item.strength;
         dexterity -= item.dexterity;
@@ -99,9 +102,11 @@ public class Player : Stats {
     // Set Equipped Weapon
     public void SetEquippedWeapon(Weapon weapon)
     {
-        this.Unequip(equippedWeapon);
+        Debug.Log("Begin equipped weapon: " + equippedWeapon.name);
+        Unequip(equippedWeapon);
         equippedWeapon = weapon;
-        this.Equip(equippedWeapon);
+        Equip(equippedWeapon);
+        Debug.Log("End equipped weapon: " + equippedWeapon.name);
     }
 
     // Level player up
